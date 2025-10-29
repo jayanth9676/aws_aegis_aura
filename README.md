@@ -8,6 +8,10 @@ Real-time Authorized Push Payment (APP) scam prevention built on AWS Bedrock Age
 - FastAPI backend with WebSocket streaming, Next.js analyst/customer portals, and deployment scripts for Bedrock guardrails, knowledge base, and ML endpoints.
 - Responsible AI baked in: guardrails, SHAP explainability, bias monitoring, audit logging, and security controls aligned to financial-services regulations.
 
+### TECHNICAL ARCHITECTURE
+![Technical Architecture](/tech_arch%20diagram.drawio.png)
+
+
 Refer to `docs/ARCHITECTURE.md` and `docs/AGENTS.md` for deep technical detail.
 
 ## Repository Layout

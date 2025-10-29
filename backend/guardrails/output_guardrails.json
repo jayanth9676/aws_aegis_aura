@@ -1,0 +1,126 @@
+{
+  "name": "AegisOutputGuardrails",
+  "description": "Output guardrails for customer-facing dialogue to ensure safe, helpful, and grounded responses",
+  "contentPolicyConfig": {
+    "filtersConfig": [
+      {
+        "type": "SEXUAL",
+        "inputStrength": "HIGH",
+        "outputStrength": "HIGH"
+      },
+      {
+        "type": "VIOLENCE",
+        "inputStrength": "HIGH",
+        "outputStrength": "HIGH"
+      },
+      {
+        "type": "HATE",
+        "inputStrength": "HIGH",
+        "outputStrength": "HIGH"
+      },
+      {
+        "type": "INSULTS",
+        "inputStrength": "MEDIUM",
+        "outputStrength": "HIGH"
+      },
+      {
+        "type": "MISCONDUCT",
+        "inputStrength": "MEDIUM",
+        "outputStrength": "HIGH"
+      }
+    ]
+  },
+  "topicPolicyConfig": {
+    "topicsConfig": [
+      {
+        "name": "FinancialAdvice",
+        "definition": "Providing specific investment advice, stock recommendations, or financial planning guidance",
+        "examples": [
+          "You should invest your money in",
+          "I recommend buying these stocks",
+          "The best investment strategy is",
+          "Put your money in cryptocurrency"
+        ],
+        "type": "DENY"
+      },
+      {
+        "name": "LegalAdvice",
+        "definition": "Providing legal counsel, interpretations of law, or recommendations for legal action",
+        "examples": [
+          "You should sue the bank",
+          "This violates the law",
+          "I recommend filing a lawsuit",
+          "You have legal grounds to"
+        ],
+        "type": "DENY"
+      },
+      {
+        "name": "MedicalAdvice",
+        "definition": "Providing medical diagnosis or health treatment recommendations",
+        "examples": [
+          "You should take this medication",
+          "This sounds like a medical condition"
+        ],
+        "type": "DENY"
+      }
+    ]
+  },
+  "sensitiveInformationPolicyConfig": {
+    "piiEntitiesConfig": [
+      {
+        "type": "NAME",
+        "action": "ANONYMIZE"
+      },
+      {
+        "type": "CREDIT_DEBIT_CARD_NUMBER",
+        "action": "BLOCK"
+      },
+      {
+        "type": "BANK_ACCOUNT_NUMBER",
+        "action": "ANONYMIZE"
+      },
+      {
+        "type": "SSN",
+        "action": "BLOCK"
+      },
+      {
+        "type": "EMAIL",
+        "action": "ANONYMIZE"
+      },
+      {
+        "type": "PHONE",
+        "action": "ANONYMIZE"
+      },
+      {
+        "type": "ADDRESS",
+        "action": "ANONYMIZE"
+      },
+      {
+        "type": "DATE_OF_BIRTH",
+        "action": "ANONYMIZE"
+      }
+    ]
+  },
+  "contextualGroundingPolicyConfig": {
+    "filtersConfig": [
+      {
+        "type": "GROUNDING",
+        "threshold": 0.75
+      },
+      {
+        "type": "RELEVANCE",
+        "threshold": 0.75
+      }
+    ]
+  },
+  "wordPolicyConfig": {
+    "managedWordListsConfig": [
+      {
+        "type": "PROFANITY"
+      }
+    ]
+  }
+}
+
+
+

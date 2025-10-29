@@ -1,0 +1,184 @@
+================================================================================
+AEGIS FRAUD DETECTION - TRAINING SUMMARY
+================================================================================
+
+Model Version: 20251013_144633
+Training Date: 2025-10-13T14:48:34.616227
+Random State: 42
+
+--------------------------------------------------------------------------------
+DATASET STATISTICS
+--------------------------------------------------------------------------------
+Training Samples: 72,214
+Validation Samples: 18,054
+Test Samples: 22,568
+Feature Count: 66
+Fraud Rate (Train): 5.12%
+Fraud Rate (Val): 5.12%
+Fraud Rate (Test): 5.12%
+
+--------------------------------------------------------------------------------
+MODEL PERFORMANCE
+--------------------------------------------------------------------------------
+
+NEURAL_NETWORK:
+  ROC-AUC:     0.9958
+  Precision:   0.9729
+  Recall:      0.9013
+  F1-Score:    0.9357
+  Accuracy:    0.9937
+  Threshold:   0.9698
+  Confusion Matrix:
+    TP: 1,041  FP: 29
+    FN: 114  TN: 21,384
+
+RANDOM_FOREST:
+  ROC-AUC:     0.9956
+  Precision:   0.9861
+  Recall:      0.9221
+  F1-Score:    0.9530
+  Accuracy:    0.9953
+  Threshold:   0.5439
+  Confusion Matrix:
+    TP: 1,065  FP: 15
+    FN: 90  TN: 21,398
+
+XGBOOST:
+  ROC-AUC:     0.9936
+  Precision:   0.9195
+  Recall:      0.9100
+  F1-Score:    0.9147
+  Accuracy:    0.9913
+  Threshold:   0.6822
+  Confusion Matrix:
+    TP: 1,051  FP: 92
+    FN: 104  TN: 21,321
+
+STACKING_ENSEMBLE:
+  ROC-AUC:     0.9929
+  Precision:   0.9749
+  Recall:      0.9091
+  F1-Score:    0.9409
+  Accuracy:    0.9942
+  Threshold:   0.9316
+  Confusion Matrix:
+    TP: 1,050  FP: 27
+    FN: 105  TN: 21,386
+
+LIGHTGBM:
+  ROC-AUC:     0.8916
+  Precision:   0.2336
+  Recall:      0.7134
+  F1-Score:    0.3520
+  Accuracy:    0.8656
+  Threshold:   0.1383
+  Confusion Matrix:
+    TP: 824  FP: 2,703
+    FN: 331  TN: 18,710
+
+ISOLATION_FOREST:
+  ROC-AUC:     0.6335
+  Precision:   0.0982
+  Recall:      0.0961
+  F1-Score:    0.0972
+  Accuracy:    0.9086
+  Threshold:   0.5000
+  Confusion Matrix:
+    TP: 111  FP: 1,019
+    FN: 1,044  TN: 20,394
+
+--------------------------------------------------------------------------------
+TOP FEATURES BY IMPORTANCE
+--------------------------------------------------------------------------------
+
+ISOLATION_FOREST - Top 20 Features:
+   1. known_device                                       0.540372
+   2. typing_pattern_anomaly                             0.535536
+   3. sar_flag                                           0.494642
+   4. sin_day_of_week                                    0.483804
+   5. is_flagged                                         0.481481
+   6. credit_score                                       0.471318
+   7. risk_profile_encoded                               0.471277
+   8. ctr_flag                                           0.469427
+   9. amount_risk_score                                  0.466012
+  10. cos_hour                                           0.462451
+  11. device_trust_gap                                   0.456429
+  12. txn_per_month                                      0.454711
+  13. is_business_hours                                  0.453924
+  14. amount_to_daily_limit_ratio                        0.452870
+  15. destination_is_mule_account                        0.451497
+  16. authentication_failures                            0.449948
+  17. annual_income                                      0.448762
+  18. transaction_type_encoded                           0.448033
+  19. velocity_risk_score                                0.447490
+  20. is_night                                           0.443729
+
+LIGHTGBM - Top 20 Features:
+   1. risk_score                                         8.000000
+   2. risk_velocity                                      7.000000
+   3. amount                                             7.000000
+   4. risk_score_gap                                     5.000000
+   5. log_amount                                         5.000000
+   6. anomaly_score                                      4.000000
+   7. hour                                               3.000000
+   8. annual_income                                      3.000000
+   9. typing_pattern_anomaly                             3.000000
+  10. destination_monthly_limit                          2.000000
+  11. txn_avg_alert_risk_score                           2.000000
+  12. sin_day_of_week                                    2.000000
+  13. sin_hour                                           2.000000
+  14. authentication_failures                            1.000000
+  15. max_risk_score                                     1.000000
+  16. hours_since_last_alert                             1.000000
+  17. amount_to_daily_limit_ratio                        1.000000
+  18. amount_risk_score                                  1.000000
+  19. velocity_risk_score                                1.000000
+  20. amount_to_monthly_limit_ratio                      1.000000
+
+RANDOM_FOREST - Top 20 Features:
+   1. risk_velocity                                      0.160783
+   2. log_amount                                         0.064728
+   3. amount                                             0.063401
+   4. risk_score                                         0.042613
+   5. risk_score_gap                                     0.037850
+   6. amount_to_daily_limit_ratio                        0.031142
+   7. typing_pattern_anomaly                             0.030603
+   8. anomaly_score                                      0.029646
+   9. avg_risk_score                                     0.028894
+  10. hour                                               0.028343
+  11. amount_to_monthly_limit_ratio                      0.026128
+  12. sin_hour                                           0.024172
+  13. max_risk_score                                     0.023451
+  14. destination_monthly_limit                          0.021427
+  15. age                                                0.021214
+  16. cos_hour                                           0.020418
+  17. sin_day_of_week                                    0.019223
+  18. customer_tenure_years                              0.019113
+  19. credit_score                                       0.018653
+  20. source_monthly_limit                               0.018646
+
+XGBOOST - Top 20 Features:
+   1. age                                                0.076444
+   2. risk_velocity                                      0.061152
+   3. log_amount                                         0.025480
+   4. amount                                             0.023272
+   5. txn_avg_false_positive_prob                        0.022774
+   6. location_risk_score                                0.022086
+   7. customer_tenure_years                              0.021912
+   8. txn_avg_alert_risk_score                           0.021673
+   9. txn_escalation_rate                                0.021383
+  10. risk_score_gap                                     0.021137
+  11. avg_risk_score                                     0.020060
+  12. is_flagged                                         0.019814
+  13. transaction_type_encoded                           0.019306
+  14. hours_since_last_alert                             0.018963
+  15. max_risk_score                                     0.018812
+  16. destination_is_mule_account                        0.018803
+  17. digital_literacy_level_encoded                     0.018433
+  18. velocity_risk_score                                0.018188
+  19. sin_day_of_week                                    0.017688
+  20. cos_day_of_week                                    0.016698
+
+================================================================================
+END OF REPORT
+================================================================================

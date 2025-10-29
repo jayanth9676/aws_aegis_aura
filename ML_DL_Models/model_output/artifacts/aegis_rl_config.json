@@ -1,0 +1,11 @@
+{
+  "env_name": "FraudDecisionEnv",
+  "action_space": 3,
+  "observation_space": 20,
+  "reward_weights": {
+    "correct_block": 100.0,
+    "correct_allow": 1.0,
+    "false_positive": -50.0,
+    "false_negative": -200.0
+  }
+}

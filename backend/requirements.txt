@@ -1,0 +1,76 @@
+# Backend API
+# fastapi
+# uvicorn[standard]
+
+# AWS SDK
+boto3
+botocore
+
+# AWS Bedrock AgentCore (Production)
+bedrock-agentcore[strands-agents]
+bedrock-agentcore-starter-toolkit
+
+# Strands Agents SDK (included via AgentCore extras)
+# strands-agents
+# strands-agents-tools
+
+# HTTP Client for Gateway
+httpx
+requests
+aiohttp
+
+# # Data Processing
+numpy
+pandas
+# pyarrow
+# fastparquet
+
+# # ML Models
+# scikit-learn
+# xgboost
+# lightgbm
+# catboost
+# torch
+# torchmetrics
+
+# ML Explainability
+shap
+
+# Graph Analysis
+# networkx
+
+# Visualization
+# matplotlib
+# seaborn
+
+# Utilities
+# joblib
+python-dotenv
+# structlog
+# python-json-logger
+
+# Authentication & Security
+# pyjwt[crypto]
+# cryptography
+
+# AWS X-Ray for Observability
+# aws-xray-sdk
+
+# Testing & Data Generation
+# pytest
+# pytest-asyncio
+# faker
+
+# # RL (Optional)
+# gymnasium
+
+# Optional dependencies for advanced models (can be installed separately)
+# torch-geometric
+# torch-scatter
+# torch-sparse
+# stable-baselines3
+# dgl
+
+aws-opentelemetry-distro>=0.10.0
+boto3
+sagemaker>=2.180.0

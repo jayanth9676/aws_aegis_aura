@@ -1,0 +1,107 @@
+.cursor/
+.specify/
+.venv/
+.venv*/
+.python-version
+.env
+.env.*
+*.env
+*.env.local
+*.local
+
+# Python artifacts
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+*.eggs/
+build/
+dist/
+.tox/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.benchmarks/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+
+# Node / Next.js artifacts
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+frontend/coverage/
+frontend/.eslintcache
+frontend/.swc/
+
+# Log and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Operating system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Sensitive config outputs
+gateway_config.json
+backend/.bedrock_agentcore.yaml
+backend/.bedrock_agentcore*.yaml
+backend/config/local_*.yaml
+**/secrets.*
+**/*secret*.json
+**/*secret*.yaml
+**/*secret*.yml
+**/*secret*.txt
+**/*secrets*
+**/*credentials*.json
+**/*credentials*.yaml
+**/*credentials*.yml
+
+# Infrastructure / build outputs
+infrastructure/cdk/cdk.out/
+infrastructure/cdk/.cdk.staging/
+.aws-sam/
+.serverless/
+
+# Local data caches
+backend/knowledge_base/temp/
+backend/logs/
+.tmp/
+
+# Documentation drafts and local research
+# PRDs/Temp.md
+
+# Generated datasets and models (local experiments)
+datasets/**/tmp/
+ML_DL_Models/**/tmp/
+ML_DL_Models/**/*.log
+
+# Tool outputs
+aws_cli_cmd/
+
+# Editor / IDE files
+.idea/
+.vscode/
+*.code-workspace
+
+aws_cli_cmd/
+
+specs/
+
+PRDs/
+
+*.pkl
+
+tests/
+backend/tests/

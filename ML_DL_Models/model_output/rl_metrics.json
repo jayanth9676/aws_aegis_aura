@@ -1,0 +1,5 @@
+{
+  "avg_episode_reward": -39533.2,
+  "num_episodes": 10,
+  "policy_type": "random_baseline"
+}

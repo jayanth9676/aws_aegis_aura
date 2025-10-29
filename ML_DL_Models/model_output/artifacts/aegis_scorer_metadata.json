@@ -1,0 +1,14 @@
+{
+  "categorical_columns": [
+    "payment_channel",
+    "device_model",
+    "ip_address_country",
+    "digital_literacy_level",
+    "risk_profile"
+  ],
+  "fusion_weights": {
+    "ensemble": 0.6,
+    "sequence": 0.25,
+    "autoencoder": 0.15
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "model_version": "20251013_144633",
+  "training_date": "2025-10-13T14:48:34.616227",
+  "train_samples": 72214,
+  "val_samples": 18054,
+  "test_samples": 22568,
+  "feature_count": 66,
+  "fraud_rate_train": 0.05115351593873764,
+  "fraud_rate_val": 0.0511797939514789,
+  "fraud_rate_test": 0.05117866004962779,
+  "random_state": 42,
+  "test_size": 0.2,
+  "parallel_processing": true,
+  "deep_learning_enabled": true
+}

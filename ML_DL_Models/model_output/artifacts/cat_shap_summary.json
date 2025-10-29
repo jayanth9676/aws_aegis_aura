@@ -1,0 +1,484 @@
+{
+  "feature_importance": [
+    {
+      "feature": "risk_velocity",
+      "mean_abs_shap": 2.6365051912381494,
+      "mean_shap": -1.9081420542278624,
+      "std_shap": 1.9424770282278514,
+      "min_shap": -4.0208886377104545,
+      "max_shap": 4.08249544575592
+    },
+    {
+      "feature": "risk_score",
+      "mean_abs_shap": 0.5009499426047687,
+      "mean_shap": -0.3690381010467958,
+      "std_shap": 0.6138761112647266,
+      "min_shap": -2.982131699514074,
+      "max_shap": 0.844626620506993
+    },
+    {
+      "feature": "device_model_encoded",
+      "mean_abs_shap": 0.43811179970806435,
+      "mean_shap": -0.18979541338203995,
+      "std_shap": 0.4895575251217527,
+      "min_shap": -1.4387330940380108,
+      "max_shap": 0.6809260586029849
+    },
+    {
+      "feature": "amount",
+      "mean_abs_shap": 0.3639660891531893,
+      "mean_shap": -0.17252599646652855,
+      "std_shap": 0.45507720649955063,
+      "min_shap": -1.6991016463290494,
+      "max_shap": 1.1070054834974226
+    },
+    {
+      "feature": "risk_profile_encoded",
+      "mean_abs_shap": 0.31157695651738726,
+      "mean_shap": -0.16561879001595234,
+      "std_shap": 0.2918091574006926,
+      "min_shap": -0.5892995118400345,
+      "max_shap": 0.46328551527294076
+    },
+    {
+      "feature": "log_amount",
+      "mean_abs_shap": 0.30081805410062223,
+      "mean_shap": -0.18144154475485846,
+      "std_shap": 0.3553507260252391,
+      "min_shap": -1.7540832376439626,
+      "max_shap": 0.8719367074539585
+    },
+    {
+      "feature": "risk_score_gap",
+      "mean_abs_shap": 0.2538331460434397,
+      "mean_shap": -0.09865524782978442,
+      "std_shap": 0.3637652574524028,
+      "min_shap": -1.516496839862203,
+      "max_shap": 0.654460793375645
+    },
+    {
+      "feature": "sin_hour",
+      "mean_abs_shap": 0.23701034034834523,
+      "mean_shap": -0.13574173035394324,
+      "std_shap": 0.31280810048550184,
+      "min_shap": -1.518543623646602,
+      "max_shap": 0.6377220113722519
+    },
+    {
+      "feature": "credit_score",
+      "mean_abs_shap": 0.2149434220171138,
+      "mean_shap": -0.07509208487051708,
+      "std_shap": 0.2462318221449948,
+      "min_shap": -0.9659438252037814,
+      "max_shap": 0.5245017622921321
+    },
+    {
+      "feature": "typing_pattern_anomaly",
+      "mean_abs_shap": 0.21248884629430653,
+      "mean_shap": -0.1690342069307585,
+      "std_shap": 0.2210780412508315,
+      "min_shap": -0.9730799289217198,
+      "max_shap": 0.6825590031189803
+    },
+    {
+      "feature": "hour",
+      "mean_abs_shap": 0.20204902548211318,
+      "mean_shap": -0.09573362652468438,
+      "std_shap": 0.28432204636467606,
+      "min_shap": -1.1874948773300866,
+      "max_shap": 0.32451859368138736
+    },
+    {
+      "feature": "payment_channel_encoded",
+      "mean_abs_shap": 0.19564060854924076,
+      "mean_shap": -0.1453660128644573,
+      "std_shap": 0.22202892625466952,
+      "min_shap": -0.7804166321081213,
+      "max_shap": 0.6933755359291546
+    },
+    {
+      "feature": "sin_day_of_week",
+      "mean_abs_shap": 0.1891278510449018,
+      "mean_shap": -0.07899980856880669,
+      "std_shap": 0.26784556973123647,
+      "min_shap": -1.1151893128052368,
+      "max_shap": 0.49259368747730253
+    },
+    {
+      "feature": "amount_to_daily_limit_ratio",
+      "mean_abs_shap": 0.18749871319146746,
+      "mean_shap": -0.1031646579964832,
+      "std_shap": 0.20659883879374788,
+      "min_shap": -0.7552701140805871,
+      "max_shap": 0.539137198203885
+    },
+    {
+      "feature": "txn_per_month",
+      "mean_abs_shap": 0.17760135243308728,
+      "mean_shap": 0.11989946238961337,
+      "std_shap": 0.17260316453698746,
+      "min_shap": -0.36633845557933115,
+      "max_shap": 0.46826345406281444
+    },
+    {
+      "feature": "day_of_week",
+      "mean_abs_shap": 0.1674562037143414,
+      "mean_shap": -0.05982703329241608,
+      "std_shap": 0.22223884875046707,
+      "min_shap": -0.7966968977388682,
+      "max_shap": 0.6583211223976753
+    },
+    {
+      "feature": "cos_hour",
+      "mean_abs_shap": 0.15601583045315323,
+      "mean_shap": -0.06590464945553554,
+      "std_shap": 0.22005825861849812,
+      "min_shap": -1.191891257212007,
+      "max_shap": 0.42861287542999155
+    },
+    {
+      "feature": "amount_to_monthly_limit_ratio",
+      "mean_abs_shap": 0.15232192137050896,
+      "mean_shap": -0.09423311675684154,
+      "std_shap": 0.1773777410456819,
+      "min_shap": -0.7316849276366403,
+      "max_shap": 0.32725888514583246
+    },
+    {
+      "feature": "anomaly_score",
+      "mean_abs_shap": 0.1433947324085799,
+      "mean_shap": -0.07874978500759681,
+      "std_shap": 0.20677960995864736,
+      "min_shap": -1.4872382751978637,
+      "max_shap": 0.40112819067677075
+    },
+    {
+      "feature": "amount_risk_score",
+      "mean_abs_shap": 0.12876039011982574,
+      "mean_shap": -0.0972427674710748,
+      "std_shap": 0.11515340346859186,
+      "min_shap": -0.5308371258793494,
+      "max_shap": 1.0776212679603725
+    },
+    {
+      "feature": "cos_day_of_week",
+      "mean_abs_shap": 0.128116892892892,
+      "mean_shap": -0.04961380020735415,
+      "std_shap": 0.1589362418636558,
+      "min_shap": -0.5665279375167349,
+      "max_shap": 0.4076494175425896
+    },
+    {
+      "feature": "hesitation_indicators",
+      "mean_abs_shap": 0.11968410516877012,
+      "mean_shap": -0.10103701655433658,
+      "std_shap": 0.10112061727900323,
+      "min_shap": -0.5431460644925191,
+      "max_shap": 0.31368959847333105
+    },
+    {
+      "feature": "annual_income",
+      "mean_abs_shap": 0.11645060476412351,
+      "mean_shap": -0.06339709165169155,
+      "std_shap": 0.12161328828689928,
+      "min_shap": -0.4427384702938432,
+      "max_shap": 0.3528467702445989
+    },
+    {
+      "feature": "call_to_txn_ratio",
+      "mean_abs_shap": 0.0991582327091391,
+      "mean_shap": -0.09089150543356346,
+      "std_shap": 0.16710867492406856,
+      "min_shap": -0.8842871110736389,
+      "max_shap": 0.23444824348395313
+    },
+    {
+      "feature": "age",
+      "mean_abs_shap": 0.09913433489556274,
+      "mean_shap": -0.06476968545302622,
+      "std_shap": 0.12224695016575692,
+      "min_shap": -0.5470966519700732,
+      "max_shap": 0.26991077952568654
+    },
+    {
+      "feature": "velocity_risk_score",
+      "mean_abs_shap": 0.09535043011190886,
+      "mean_shap": -0.08694247839349974,
+      "std_shap": 0.0872124322080224,
+      "min_shap": -0.8367576559667079,
+      "max_shap": 0.44440710730650673
+    },
+    {
+      "feature": "digital_literacy_level_encoded",
+      "mean_abs_shap": 0.09430316381143475,
+      "mean_shap": -0.0269517272299549,
+      "std_shap": 0.1250994936820286,
+      "min_shap": -0.4835895127504318,
+      "max_shap": 0.15833327092340205
+    },
+    {
+      "feature": "customer_tenure_years",
+      "mean_abs_shap": 0.0878752629284022,
+      "mean_shap": -0.046475050590429855,
+      "std_shap": 0.10210820994379148,
+      "min_shap": -0.47301411564982376,
+      "max_shap": 0.2733449337976156
+    },
+    {
+      "feature": "alert_to_txn_ratio",
+      "mean_abs_shap": 0.08616496109934149,
+      "mean_shap": -0.05448237746234729,
+      "std_shap": 0.16529960565089433,
+      "min_shap": -0.9019823442843817,
+      "max_shap": 0.22116713460146867
+    },
+    {
+      "feature": "location_risk_score",
+      "mean_abs_shap": 0.08397086860719227,
+      "mean_shap": -0.07615097329925252,
+      "std_shap": 0.0603573242938945,
+      "min_shap": -0.22170974167739954,
+      "max_shap": 0.7579882798171862
+    },
+    {
+      "feature": "authentication_failures",
+      "mean_abs_shap": 0.06445852367926311,
+      "mean_shap": -0.05885528519762158,
+      "std_shap": 0.053120640221977,
+      "min_shap": -0.38759847747298704,
+      "max_shap": 0.4168341336971954
+    },
+    {
+      "feature": "is_business_hours",
+      "mean_abs_shap": 0.05924274819704279,
+      "mean_shap": -0.008115664487816867,
+      "std_shap": 0.06992028256013799,
+      "min_shap": -0.18472977018840786,
+      "max_shap": 0.22084444657871338
+    },
+    {
+      "feature": "vulnerability_score",
+      "mean_abs_shap": 0.03573757796696695,
+      "mean_shap": -0.018076935667559992,
+      "std_shap": 0.07051695792498743,
+      "min_shap": -0.406096419273834,
+      "max_shap": 0.04721636888475953
+    },
+    {
+      "feature": "is_night",
+      "mean_abs_shap": 0.0300127071918274,
+      "mean_shap": -0.018855335940077805,
+      "std_shap": 0.03357947463797655,
+      "min_shap": -0.1931685663684934,
+      "max_shap": 0.15032840097947134
+    },
+    {
+      "feature": "device_trust_gap",
+      "mean_abs_shap": 0.025386354165740227,
+      "mean_shap": -0.005606387874271077,
+      "std_shap": 0.06408838805145119,
+      "min_shap": -0.60527936179994,
+      "max_shap": 0.07739025457840064
+    },
+    {
+      "feature": "is_weekend",
+      "mean_abs_shap": 0.021388919654328896,
+      "mean_shap": -0.0026159333213224127,
+      "std_shap": 0.03173032870099446,
+      "min_shap": -0.19065290204076646,
+      "max_shap": 0.13954354791403673
+    },
+    {
+      "feature": "ip_address_country_encoded",
+      "mean_abs_shap": 0.016405059969973164,
+      "mean_shap": -0.016402890703172794,
+      "std_shap": 0.03338070329767886,
+      "min_shap": -0.6630877277896247,
+      "max_shap": 0.0007079291460661533
+    },
+    {
+      "feature": "txn_avg_alert_risk_score",
+      "mean_abs_shap": 0.013933834595728025,
+      "mean_shap": -0.011091188427619178,
+      "std_shap": 0.03913446078426368,
+      "min_shap": -0.4267059639432422,
+      "max_shap": 0.27753725801249873
+    },
+    {
+      "feature": "new_payee_flag",
+      "mean_abs_shap": 0.011303977032490047,
+      "mean_shap": -0.00954038165637957,
+      "std_shap": 0.04458329171425926,
+      "min_shap": -0.60236851625852,
+      "max_shap": 0.27781672478002806
+    },
+    {
+      "feature": "hours_since_last_call",
+      "mean_abs_shap": 0.008003811035482682,
+      "mean_shap": -0.004097457805286816,
+      "std_shap": 0.05854611682251863,
+      "min_shap": -0.6886274895192432,
+      "max_shap": 0.013690265005613041
+    },
+    {
+      "feature": "txn_call_count",
+      "mean_abs_shap": 0.007274578779606818,
+      "mean_shap": -0.0062656896150031565,
+      "std_shap": 0.010169203487575393,
+      "min_shap": -0.08382424406031261,
+      "max_shap": 0.24081752932187786
+    },
+    {
+      "feature": "known_device",
+      "mean_abs_shap": 0.005033804697163029,
+      "mean_shap": -0.0021049925772466983,
+      "std_shap": 0.026279322283671122,
+      "min_shap": -0.3601411036114107,
+      "max_shap": 0.08530957516833533
+    },
+    {
+      "feature": "hours_since_last_alert",
+      "mean_abs_shap": 0.004993907746838892,
+      "mean_shap": -0.0026261391176179375,
+      "std_shap": 0.02684687912191004,
+      "min_shap": -0.37267846267132043,
+      "max_shap": 0.07445792946777023
+    },
+    {
+      "feature": "txn_high_priority_rate",
+      "mean_abs_shap": 0.004897487854638974,
+      "mean_shap": -0.0009700999593129879,
+      "std_shap": 0.02112774773692556,
+      "min_shap": -0.28579471093895026,
+      "max_shap": 0.08802661779264902
+    },
+    {
+      "feature": "txn_avg_false_positive_prob",
+      "mean_abs_shap": 0.004195380816805139,
+      "mean_shap": -0.0016764048636725597,
+      "std_shap": 0.020618743946147676,
+      "min_shap": -0.2685939824388089,
+      "max_shap": 0.06767404725187785
+    },
+    {
+      "feature": "copy_paste_detected",
+      "mean_abs_shap": 0.0031450979835424375,
+      "mean_shap": -0.00309615438759682,
+      "std_shap": 0.0071171508127622065,
+      "min_shap": -0.15195343200888256,
+      "max_shap": 0.019973928782688374
+    },
+    {
+      "feature": "txn_escalation_rate",
+      "mean_abs_shap": 0.001356547712468899,
+      "mean_shap": -0.001046443363867132,
+      "std_shap": 0.0036875111172703715,
+      "min_shap": -0.03062579909815461,
+      "max_shap": 0.083193821521406
+    },
+    {
+      "feature": "is_round_amount",
+      "mean_abs_shap": 0.0,
+      "mean_shap": 0.0,
+      "std_shap": 0.0,
+      "min_shap": 0.0,
+      "max_shap": 0.0
+    },
+    {
+      "feature": "relative_amount_to_avg",
+      "mean_abs_shap": 0.0,
+      "mean_shap": 0.0,
+      "std_shap": 0.0,
+      "min_shap": 0.0,
+      "max_shap": 0.0
+    }
+  ],
+  "global_stats": {
+    "total_features": 49,
+    "mean_abs_shap": 0.173409175364516,
+    "std_abs_shap": 0.4148822256097245,
+    "max_abs_shap": 4.08249544575592
+  },
+  "top_features": [
+    {
+      "feature": "risk_velocity",
+      "mean_abs_shap": 2.6365051912381494,
+      "mean_shap": -1.9081420542278624,
+      "std_shap": 1.9424770282278514,
+      "min_shap": -4.0208886377104545,
+      "max_shap": 4.08249544575592
+    },
+    {
+      "feature": "risk_score",
+      "mean_abs_shap": 0.5009499426047687,
+      "mean_shap": -0.3690381010467958,
+      "std_shap": 0.6138761112647266,
+      "min_shap": -2.982131699514074,
+      "max_shap": 0.844626620506993
+    },
+    {
+      "feature": "device_model_encoded",
+      "mean_abs_shap": 0.43811179970806435,
+      "mean_shap": -0.18979541338203995,
+      "std_shap": 0.4895575251217527,
+      "min_shap": -1.4387330940380108,
+      "max_shap": 0.6809260586029849
+    },
+    {
+      "feature": "amount",
+      "mean_abs_shap": 0.3639660891531893,
+      "mean_shap": -0.17252599646652855,
+      "std_shap": 0.45507720649955063,
+      "min_shap": -1.6991016463290494,
+      "max_shap": 1.1070054834974226
+    },
+    {
+      "feature": "risk_profile_encoded",
+      "mean_abs_shap": 0.31157695651738726,
+      "mean_shap": -0.16561879001595234,
+      "std_shap": 0.2918091574006926,
+      "min_shap": -0.5892995118400345,
+      "max_shap": 0.46328551527294076
+    },
+    {
+      "feature": "log_amount",
+      "mean_abs_shap": 0.30081805410062223,
+      "mean_shap": -0.18144154475485846,
+      "std_shap": 0.3553507260252391,
+      "min_shap": -1.7540832376439626,
+      "max_shap": 0.8719367074539585
+    },
+    {
+      "feature": "risk_score_gap",
+      "mean_abs_shap": 0.2538331460434397,
+      "mean_shap": -0.09865524782978442,
+      "std_shap": 0.3637652574524028,
+      "min_shap": -1.516496839862203,
+      "max_shap": 0.654460793375645
+    },
+    {
+      "feature": "sin_hour",
+      "mean_abs_shap": 0.23701034034834523,
+      "mean_shap": -0.13574173035394324,
+      "std_shap": 0.31280810048550184,
+      "min_shap": -1.518543623646602,
+      "max_shap": 0.6377220113722519
+    },
+    {
+      "feature": "credit_score",
+      "mean_abs_shap": 0.2149434220171138,
+      "mean_shap": -0.07509208487051708,
+      "std_shap": 0.2462318221449948,
+      "min_shap": -0.9659438252037814,
+      "max_shap": 0.5245017622921321
+    },
+    {
+      "feature": "typing_pattern_anomaly",
+      "mean_abs_shap": 0.21248884629430653,
+      "mean_shap": -0.1690342069307585,
+      "std_shap": 0.2210780412508315,
+      "min_shap": -0.9730799289217198,
+      "max_shap": 0.6825590031189803
+    }
+  ]
+}

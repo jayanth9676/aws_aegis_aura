@@ -1,0 +1,1001 @@
+customer_id,name,date_of_birth,gender,citizenship,marital_status,employment_status,annual_income,customer_segment,onboarding_date,digital_literacy_level,known_device_familiarity_score,scam_education_completed,risk_profile,is_vulnerable,vulnerability_score,vulnerability_flags,is_mule_account,credit_score,kyc_level,aml_risk_level
+AU-CUST00001,Allison Hill,1967-10-27,Male,AU,Single,Self-employed,116255,Premium,2024-09-24,Low,0.496,False,Low,False,0.0,NONE,False,631,Standard,Low
+AU-CUST00002,Noah Rhodes,1995-10-20,Male,AU,Married,Full-time,65382,Standard,2025-05-22,High,0.918,True,Low,False,0.0,NONE,False,568,Enhanced,Low
+AU-CUST00003,Angie Henderson,1956-10-29,Female,AU,Divorced,Part-time,35115,Standard,2025-03-09,Low,0.45,False,High,True,0.45,PRIOR_VICTIM,False,586,Standard,Medium
+AU-CUST00004,Daniel Wagner,1974-10-25,Female,AU,Divorced,Self-employed,68672,Standard,2024-11-16,Medium,0.53,False,Low,False,0.0,NONE,False,625,Standard,Low
+AU-CUST00005,Cristian Santos,1998-10-19,Male,AU,Married,Full-time,95794,Standard,2024-01-16,High,0.889,True,Low,False,0.0,NONE,False,841,Enhanced,Low
+AU-CUST00006,Connie Lawrence,1962-10-28,Male,AU,Married,Full-time,43865,Standard,2024-10-08,Low,0.352,True,Low,False,0.0,NONE,False,793,Standard,Low
+AU-CUST00007,Abigail Shaffer,1974-10-25,Male,AU,Married,Full-time,95990,Standard,2025-03-25,Medium,0.521,False,Low,False,0.0,NONE,False,688,Standard,Low
+AU-CUST00008,Gina Moore,1978-10-24,Male,AU,Married,Part-time,50895,Standard,2025-04-08,Medium,0.767,True,Low,False,0.0,NONE,False,548,Standard,Low
+AU-CUST00009,Gabrielle Davis,1998-10-19,Female,AU,Married,Full-time,115824,Premium,2025-02-28,High,0.814,False,Low,False,0.0,NONE,False,664,Standard,Low
+AU-CUST00010,Ryan Munoz,1986-10-22,Male,AU,Single,Full-time,43778,Standard,2025-06-25,Medium,0.764,True,Low,False,0.0,NONE,False,639,Enhanced,Low
+AU-CUST00011,Monica Herrera,1988-10-21,Female,AU,Single,Full-time,75292,Standard,2024-10-10,Medium,0.695,False,Low,False,0.0,NONE,False,764,Standard,Low
+AU-CUST00012,Jamie Arnold,1956-10-29,Male,AU,Married,Part-time,40210,Standard,2024-03-01,Low,0.31,True,Low,False,0.0,NONE,False,649,Enhanced,Low
+AU-CUST00013,Lisa Hensley,1978-10-24,Male,AU,Single,Self-employed,41642,Standard,2024-09-29,Medium,0.772,False,Low,False,0.0,NONE,False,752,Standard,Low
+AU-CUST00014,Michele Williams,1942-11-02,Male,AU,Single,Retired,34568,Standard,2024-06-23,Low,0.431,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,600,Simplified,Medium
+AU-CUST00015,Dylan Miller,1986-10-22,Male,AU,Divorced,Full-time,50975,Standard,2025-04-03,Medium,0.583,False,Low,False,0.0,NONE,False,647,Simplified,Low
+AU-CUST00016,Brian Ramirez,2004-10-17,Male,AU,Married,Student,11909,Standard,2025-03-02,High,0.983,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,539,Standard,Medium
+AU-CUST00017,Holly Wood,1974-10-25,Male,AU,Single,Full-time,91977,Standard,2024-08-21,Medium,0.704,True,Low,False,0.0,NONE,False,752,Standard,Low
+AU-CUST00018,Derek Zuniga,1999-10-19,Male,AU,Single,Full-time,70706,Standard,2024-08-01,High,0.847,False,Low,False,0.0,NONE,False,760,Standard,Low
+AU-CUST00019,Lisa Jackson,1948-10-31,Male,AU,Married,Part-time,39959,Standard,2024-03-28,Low,0.239,True,Medium,True,0.35,ELDERLY,False,564,Enhanced,Low
+AU-CUST00020,Carla Gray,1974-10-25,Female,AU,Married,Part-time,67582,Standard,2024-01-24,Medium,0.786,False,Low,False,0.0,NONE,False,731,Standard,Low
+AU-CUST00021,Margaret Hawkins DDS,1976-10-24,Female,AU,Married,Part-time,47871,Standard,2024-06-20,Medium,0.684,False,Low,False,0.0,NONE,False,635,Enhanced,Low
+AU-CUST00022,Patty Perez,1986-10-22,Female,AU,Married,Full-time,41753,Standard,2024-05-12,Medium,0.7,False,Low,False,0.0,NONE,False,735,Standard,Low
+AU-CUST00023,Ethan Adams,1949-10-31,Male,AU,Single,Retired,32841,Standard,2024-05-25,Low,0.517,False,Medium,True,0.35,ELDERLY,False,409,Standard,Low
+AU-CUST00024,Tommy Walter,1951-10-31,Male,AU,Married,Retired,40035,Standard,2025-07-02,Low,0.333,False,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,651,Enhanced,Medium
+AU-CUST00025,Matthew Foster,1979-10-24,Male,AU,Single,Full-time,50916,Standard,2025-01-08,Medium,0.716,True,High,True,0.45,PRIOR_VICTIM,False,602,Enhanced,Medium
+AU-CUST00026,Judy Baker,2002-10-18,Female,AU,Married,Student,16582,Standard,2024-10-29,High,0.845,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,509,Enhanced,Medium
+AU-CUST00027,Justin Baker,1986-10-22,Female,AU,Single,Full-time,60080,Standard,2024-04-08,Medium,0.736,True,Low,False,0.0,NONE,False,701,Enhanced,Low
+AU-CUST00028,Stephanie Ross,1996-10-19,Male,AU,Single,Full-time,97499,Standard,2025-04-06,High,0.857,True,Low,False,0.0,NONE,False,664,Enhanced,Low
+AU-CUST00029,Zachary Hicks,2001-10-18,Male,AU,Single,Unemployed,32406,Standard,2024-12-19,Medium,0.704,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,488,Standard,Medium
+AU-CUST00030,Anthony Rodriguez,1975-10-25,Male,AU,Divorced,Full-time,107381,Premium,2024-10-09,Medium,0.52,False,Low,False,0.0,NONE,False,766,Simplified,Low
+AU-CUST00031,Rebecca Henderson,1972-10-25,Male,AU,Single,Unemployed,83284,Standard,2024-09-12,Medium,0.555,True,Medium,False,0.25,LOW_INCOME,False,609,Enhanced,Low
+AU-CUST00032,James Ferrell,1961-10-28,Female,AU,Single,Part-time,111317,Premium,2024-10-30,Low,0.41,True,Low,False,0.0,NONE,False,638,Enhanced,Low
+AU-CUST00033,Tricia Valencia,1994-10-20,Male,AU,Single,Self-employed,68788,Standard,2025-04-05,Medium,0.791,False,Low,False,0.0,NONE,False,689,Simplified,Low
+AU-CUST00034,Nathan Maldonado,1985-10-22,Male,AU,Married,Full-time,26501,Standard,2025-01-30,Medium,0.79,True,Low,False,0.0,NONE,False,663,Standard,Low
+AU-CUST00035,Debra Davidson,1981-10-23,Male,AU,Married,Full-time,71959,Standard,2024-09-23,Medium,0.511,True,Low,False,0.0,NONE,False,664,Enhanced,Low
+AU-CUST00036,Jeffrey Chavez,1997-10-19,Male,AU,Widowed,Full-time,78975,Standard,2025-01-01,High,0.906,True,Low,False,0.0,NONE,False,733,Enhanced,Low
+AU-CUST00037,Sherri Baker,2000-10-18,Male,AU,Married,Full-time,104478,Premium,2025-05-25,High,0.873,True,Low,False,0.0,NONE,False,610,Standard,Low
+AU-CUST00038,Cassandra Gaines,1995-10-20,Male,AU,Married,Full-time,46391,Standard,2024-06-28,High,0.897,False,Low,False,0.0,NONE,False,669,Enhanced,Low
+AU-CUST00039,Elizabeth Fowler,1996-10-19,Male,AU,Married,Self-employed,105544,Premium,2025-05-09,Medium,0.526,True,Low,False,0.0,NONE,False,640,Standard,Low
+AU-CUST00040,Brittany Farmer,1974-10-25,Male,AU,Single,Unemployed,107926,Premium,2024-11-29,Medium,0.683,False,Medium,False,0.25,LOW_INCOME,False,541,Standard,Low
+AU-CUST00041,Paula Moreno,1991-10-21,Female,AU,Widowed,Part-time,54863,Standard,2024-04-11,Medium,0.543,False,Low,False,0.0,NONE,False,549,Standard,Low
+AU-CUST00042,Fred Smith,1943-11-02,Male,AU,Widowed,Retired,30361,Standard,2025-06-14,Low,0.554,True,Medium,True,0.35,ELDERLY,False,587,Enhanced,Low
+AU-CUST00043,Sherry Decker,1969-10-26,Male,AU,Single,Full-time,114186,Premium,2025-01-11,Low,0.365,False,Low,False,0.0,NONE,False,818,Enhanced,Low
+AU-CUST00044,Anthony Humphrey,1984-10-22,Female,AU,Married,Full-time,77915,Standard,2024-07-30,Medium,0.516,True,Low,False,0.0,NONE,False,644,Standard,Low
+AU-CUST00045,Angelica Tucker,1959-10-29,Male,AU,Single,Retired,28395,Standard,2024-04-27,Low,0.218,True,Medium,False,0.3,LOW_DIGITAL_LITERACY,False,682,Standard,Low
+AU-CUST00046,Philip Cannon,1941-11-02,Female,AU,Married,Retired,26158,Standard,2025-05-17,Low,0.436,True,Medium,True,0.35,ELDERLY,False,730,Standard,Low
+AU-CUST00047,John Pierce,1989-10-21,Female,AU,Married,Unemployed,63273,Standard,2025-03-27,Medium,0.723,True,Medium,False,0.25,LOW_INCOME,False,542,Standard,Low
+AU-CUST00048,Shane Henderson,1988-10-21,Male,AU,Widowed,Part-time,89726,Standard,2024-01-25,Medium,0.78,True,Low,False,0.0,NONE,False,611,Standard,Low
+AU-CUST00049,Joshua Blair,1969-10-26,Male,AU,Single,Full-time,41668,Standard,2024-12-15,Low,0.327,True,Low,False,0.0,NONE,False,670,Standard,Low
+AU-CUST00050,Eric Carney,2000-10-18,Female,AU,Married,Part-time,50147,Standard,2024-03-03,Medium,0.624,True,Low,False,0.0,NONE,False,650,Enhanced,Low
+AU-CUST00051,Jessica Holmes,2005-10-17,Male,AU,Married,Unemployed,16302,Standard,2024-06-10,Medium,0.608,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,518,Standard,Medium
+AU-CUST00052,Danny Morgan,2004-10-17,Male,AU,Single,Full-time,46651,Standard,2024-11-07,High,0.914,True,Low,False,0.2,YOUNG_ADULT,False,715,Standard,Low
+AU-CUST00053,Crystal Robinson,1975-10-25,Female,AU,Married,Full-time,51239,Standard,2024-05-16,Medium,0.605,False,Low,False,0.0,NONE,False,753,Enhanced,Low
+AU-CUST00054,Mark Perez,1966-10-27,Male,AU,Married,Unemployed,50136,Standard,2024-10-08,Low,0.357,False,Medium,False,0.25,LOW_INCOME,False,585,Standard,Low
+AU-CUST00055,Shannon Jones,1970-10-26,Female,AU,Married,Full-time,66088,Standard,2024-08-23,Low,0.339,False,Low,False,0.0,NONE,False,664,Enhanced,Low
+AU-CUST00056,Michael Lewis,1975-10-25,Female,AU,Widowed,Full-time,98700,Standard,2024-11-15,Medium,0.763,True,Low,False,0.0,NONE,False,687,Standard,Low
+AU-CUST00057,Timothy Duncan,1984-10-22,Female,AU,Single,Self-employed,60940,Standard,2025-03-15,Medium,0.573,False,Low,False,0.0,NONE,False,636,Standard,Low
+AU-CUST00058,Richard Aguirre,1969-10-26,Female,AU,Single,Part-time,45242,Standard,2024-03-26,Low,0.591,True,Low,False,0.0,NONE,False,679,Standard,Low
+AU-CUST00059,Brent Jordan,2003-10-18,Female,AU,Single,Student,18567,Standard,2025-03-13,High,0.801,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,545,Standard,Medium
+AU-CUST00060,John Daniel,2003-10-18,Male,AU,Single,Unemployed,11738,Standard,2024-05-02,Medium,0.511,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,619,Simplified,Medium
+AU-CUST00061,Victoria Garcia,1967-10-27,Female,AU,Married,Full-time,74296,Standard,2024-01-19,Low,0.358,True,Low,False,0.0,NONE,False,695,Enhanced,Low
+AU-CUST00062,Gerald Hensley,1987-10-22,Female,AU,Divorced,Part-time,33458,Standard,2024-09-02,Medium,0.665,True,Low,False,0.0,NONE,False,629,Enhanced,Low
+AU-CUST00063,Connor West,1978-10-24,Female,AU,Married,Full-time,95972,Standard,2024-06-14,Medium,0.717,True,Low,False,0.0,NONE,False,743,Standard,Low
+AU-CUST00064,Donald Wright,1970-10-26,Female,AU,Married,Full-time,42939,Standard,2024-04-11,Low,0.489,True,Low,False,0.0,NONE,False,718,Simplified,Low
+AU-CUST00065,Jessica Callahan,1972-10-25,Female,AU,Married,Full-time,63954,Standard,2024-08-20,Medium,0.799,False,Low,False,0.0,NONE,False,719,Standard,Low
+AU-CUST00066,Amber Kidd,1973-10-25,Male,AU,Single,Full-time,106872,Premium,2025-04-22,Medium,0.798,True,Low,False,0.0,NONE,False,629,Standard,Low
+AU-CUST00067,Tracy House,1970-10-26,Female,AU,Divorced,Full-time,90588,Standard,2024-11-17,Low,0.447,False,Low,False,0.0,NONE,False,552,Simplified,Low
+AU-CUST00068,Carol Tucker,1982-10-23,Male,AU,Married,Unemployed,64125,Standard,2025-02-03,Medium,0.76,False,Medium,False,0.25,LOW_INCOME,False,527,Standard,Low
+AU-CUST00069,James Brown,2004-10-17,Male,AU,Married,Full-time,51550,Standard,2024-03-23,High,0.993,False,Low,False,0.2,YOUNG_ADULT,False,737,Standard,Low
+AU-CUST00070,William Baker,1989-10-21,Male,AU,Divorced,Full-time,94332,Standard,2024-02-11,Medium,0.721,True,Low,False,0.0,NONE,False,766,Standard,Low
+AU-CUST00071,Jordan Henderson,2005-10-17,Female,AU,Married,Part-time,14400,Standard,2024-07-03,Medium,0.764,True,Low,False,0.2,YOUNG_ADULT,False,650,Standard,Low
+AU-CUST00072,Whitney Peters,1986-10-22,Female,AU,Single,Full-time,44053,Standard,2025-03-01,Medium,0.744,False,Low,False,0.0,NONE,False,682,Enhanced,Low
+AU-CUST00073,Brittney Phillips,1955-10-30,Male,AU,Married,Retired,34276,Standard,2025-05-01,Low,0.503,True,Low,False,0.0,NONE,False,637,Standard,Low
+AU-CUST00074,Lauren Daniels,2003-10-18,Male,AU,Married,Student,21940,Standard,2024-02-25,High,0.937,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,345,Simplified,Medium
+AU-CUST00075,Amy Silva,1999-10-19,Male,AU,Married,Part-time,101258,Premium,2024-09-18,Medium,0.746,False,Low,False,0.0,NONE,False,589,Standard,Low
+AU-CUST00076,Sarah Moore,1989-10-21,Male,AU,Divorced,Full-time,51042,Standard,2024-08-05,Medium,0.707,False,Low,False,0.0,NONE,False,751,Enhanced,Low
+AU-CUST00077,Angela Lopez,1989-10-21,Male,AU,Married,Full-time,37828,Standard,2025-02-12,Medium,0.54,False,Low,False,0.0,NONE,False,738,Enhanced,Low
+AU-CUST00078,Megan Young,1974-10-25,Female,AU,Married,Unemployed,63194,Standard,2024-04-22,Medium,0.534,True,Medium,False,0.25,LOW_INCOME,False,614,Enhanced,Low
+AU-CUST00079,Steve Sanchez,1977-10-24,Male,AU,Divorced,Full-time,105433,Premium,2024-09-23,Medium,0.732,False,Low,False,0.0,NONE,False,601,Standard,Low
+AU-CUST00080,Lisa Barnes,1979-10-24,Male,AU,Married,Full-time,28336,Standard,2025-04-11,Medium,0.688,False,Low,False,0.0,NONE,False,642,Standard,Low
+AU-CUST00081,Kelly Donovan,1968-10-26,Male,AU,Married,Full-time,85728,Standard,2024-09-12,Low,0.509,False,Low,False,0.0,NONE,False,735,Enhanced,Low
+AU-CUST00082,Mike Allen,1994-10-20,Female,AU,Single,Self-employed,45038,Standard,2025-03-04,Medium,0.772,True,Low,False,0.0,NONE,False,726,Enhanced,Low
+AU-CUST00083,Michael Evans,1957-10-29,Female,AU,Married,Unemployed,42019,Standard,2024-12-07,Low,0.422,True,Medium,False,0.25,LOW_INCOME,False,607,Standard,Low
+AU-CUST00084,Paul Jones,1999-10-19,Male,AU,Married,Part-time,46627,Standard,2024-11-23,Medium,0.619,True,Low,False,0.0,NONE,False,682,Standard,Low
+AU-CUST00085,Zachary Ferrell,2006-10-17,Male,AU,Single,Student,23011,Standard,2024-05-22,High,0.887,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,568,Enhanced,Medium
+AU-CUST00086,Daniel Baker,2000-10-18,Female,AU,Married,Full-time,83797,Standard,2025-06-28,High,0.842,True,Low,False,0.0,NONE,False,665,Standard,Low
+AU-CUST00087,Shirley Suarez,1970-10-26,Male,AU,Single,Self-employed,37187,Standard,2024-05-17,Low,0.397,False,Low,False,0.0,NONE,False,769,Standard,Low
+AU-CUST00088,Christopher Bass,1986-10-22,Female,AU,Single,Self-employed,114158,Premium,2025-05-26,Medium,0.669,False,Low,False,0.0,NONE,False,568,Simplified,Low
+AU-CUST00089,Lisa Archer,2004-10-17,Female,AU,Married,Full-time,29855,Standard,2025-06-27,High,0.963,True,Low,False,0.2,YOUNG_ADULT,False,662,Standard,Low
+AU-CUST00090,Aimee Montoya,1995-10-20,Female,AU,Single,Part-time,75108,Standard,2024-10-07,Medium,0.718,False,Low,False,0.0,NONE,False,687,Standard,Low
+AU-CUST00091,Matthew Mcmillan,1997-10-19,Female,AU,Married,Self-employed,102948,Premium,2025-04-22,Medium,0.712,True,Low,False,0.0,NONE,False,584,Enhanced,Low
+AU-CUST00092,Brian Rodriguez,1976-10-24,Male,AU,Married,Self-employed,52346,Standard,2025-01-27,Medium,0.749,True,Low,False,0.0,NONE,False,652,Standard,Low
+AU-CUST00093,Denise Jacobs,1983-10-23,Male,AU,Single,Full-time,47642,Standard,2025-02-09,Medium,0.519,False,High,True,0.45,PRIOR_VICTIM,False,731,Standard,Medium
+AU-CUST00094,Christina Walters,1993-10-20,Male,AU,Single,Full-time,73001,Standard,2024-02-07,High,0.916,True,Low,False,0.0,NONE,False,792,Standard,Low
+AU-CUST00095,John Whitehead,1993-10-20,Male,AU,Married,Full-time,62534,Standard,2024-03-16,High,0.904,False,Low,False,0.0,NONE,False,677,Standard,Low
+AU-CUST00096,Anna Henderson,1969-10-26,Male,AU,Single,Self-employed,111749,Premium,2024-02-08,Low,0.314,False,Low,False,0.0,NONE,False,668,Standard,Low
+AU-CUST00097,Aaron Wise,1981-10-23,Male,AU,Married,Full-time,94969,Standard,2024-01-17,Medium,0.704,True,Low,False,0.0,NONE,False,708,Enhanced,Low
+AU-CUST00098,Deborah Figueroa,1997-10-19,Male,AU,Married,Self-employed,74693,Standard,2025-04-03,Medium,0.715,True,Low,False,0.0,NONE,False,688,Standard,Low
+AU-CUST00099,Jessica Smith,1998-10-19,Male,AU,Married,Full-time,100547,Premium,2024-04-06,High,0.886,False,Low,False,0.0,NONE,False,690,Standard,Low
+AU-CUST00100,Stephen Mckee,1959-10-29,Female,AU,Married,Unemployed,39436,Standard,2024-01-04,Low,0.277,False,Medium,False,0.25,LOW_INCOME,False,549,Enhanced,Low
+AU-CUST00101,Sandra Aguilar,1943-11-02,Male,AU,Widowed,Unemployed,44683,Standard,2025-05-29,Low,0.454,False,High,True,0.6,ELDERLY|LOW_INCOME,False,476,Standard,Medium
+AU-CUST00102,Cameron Parker,1970-10-26,Male,AU,Single,Full-time,85631,Standard,2024-06-02,Low,0.276,False,Low,False,0.0,NONE,False,729,Standard,Low
+AU-CUST00103,Rebecca Valencia,1993-10-20,Male,AU,Divorced,Full-time,118729,Premium,2025-03-24,High,0.908,False,Low,False,0.0,NONE,False,732,Standard,Low
+AU-CUST00104,Christine Wright,1962-10-28,Female,AU,Divorced,Full-time,64175,Standard,2025-06-11,Low,0.588,False,Low,False,0.0,NONE,False,743,Standard,Low
+AU-CUST00105,Richard Henson,1967-10-27,Female,AU,Married,Part-time,51984,Standard,2024-10-14,Low,0.463,True,Low,False,0.0,NONE,False,627,Standard,Low
+AU-CUST00106,Marc Moore,1976-10-24,Female,AU,Single,Self-employed,61364,Standard,2025-05-23,Medium,0.754,True,Low,False,0.0,NONE,False,668,Standard,Low
+AU-CUST00107,Sharon Cherry,1984-10-22,Male,AU,Single,Unemployed,108935,Premium,2025-06-15,Medium,0.716,True,Medium,False,0.25,LOW_INCOME,False,458,Enhanced,Low
+AU-CUST00108,Sierra Johnson,1993-10-20,Male,AU,Widowed,Full-time,98168,Standard,2024-03-20,High,0.941,True,Low,False,0.0,NONE,False,760,Simplified,Low
+AU-CUST00109,Evelyn Galvan,2004-10-17,Female,AU,Single,Student,19095,Standard,2024-03-21,High,0.882,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,534,Enhanced,Medium
+AU-CUST00110,Sharon Cochran,1958-10-29,Male,AU,Divorced,Retired,41591,Standard,2024-07-22,Low,0.423,True,Low,False,0.0,NONE,False,691,Standard,Low
+AU-CUST00111,Richard Rodriguez,1991-10-21,Male,AU,Married,Full-time,45914,Standard,2024-11-02,High,0.836,True,Low,False,0.0,NONE,False,661,Enhanced,Low
+AU-CUST00112,Shannon Walker,1999-10-19,Male,AU,Married,Self-employed,78534,Standard,2025-03-07,Medium,0.574,True,Low,False,0.0,NONE,False,709,Standard,Low
+AU-CUST00113,Julia Torres,1982-10-23,Male,AU,Married,Full-time,30244,Standard,2024-04-10,Medium,0.658,True,Low,False,0.0,NONE,False,697,Standard,Low
+AU-CUST00114,Crystal Johnson,1967-10-27,Male,AU,Single,Full-time,107184,Premium,2024-04-16,Low,0.498,True,Low,False,0.0,NONE,False,799,Simplified,Low
+AU-CUST00115,Garrett Lin,1999-10-19,Male,AU,Married,Full-time,62661,Standard,2024-06-17,High,0.919,True,Low,False,0.0,NONE,False,709,Enhanced,Low
+AU-CUST00116,Diana May,1960-10-28,Female,AU,Widowed,Unemployed,26017,Standard,2024-05-28,Low,0.447,False,Medium,False,0.25,LOW_INCOME,False,629,Standard,Low
+AU-CUST00117,William Herrera,1966-10-27,Female,AU,Single,Self-employed,49473,Standard,2025-05-31,Low,0.303,False,Low,False,0.0,NONE,False,690,Simplified,Low
+AU-CUST00118,Ashley Waller,1972-10-25,Male,AU,Widowed,Part-time,95876,Standard,2024-08-05,Medium,0.696,True,Low,False,0.0,NONE,False,583,Standard,Low
+AU-CUST00119,Victor Baker,1987-10-22,Male,AU,Widowed,Part-time,45512,Standard,2025-04-21,Medium,0.665,False,Low,False,0.0,NONE,False,683,Standard,Low
+AU-CUST00120,Jeffrey Chandler,1970-10-26,Female,AU,Single,Full-time,99030,Standard,2024-01-31,Low,0.265,False,Low,False,0.0,NONE,False,794,Standard,Low
+AU-CUST00121,Larry Dixon,1969-10-26,Male,AU,Married,Full-time,46920,Standard,2024-02-25,Low,0.222,False,Low,False,0.0,NONE,False,779,Standard,Low
+AU-CUST00122,Kenneth Scott,1966-10-27,Female,AU,Single,Full-time,116058,Premium,2025-03-17,Low,0.454,False,Low,False,0.0,NONE,False,767,Simplified,Low
+AU-CUST00123,April Frost,2001-10-18,Male,AU,Married,Full-time,38600,Standard,2024-05-16,High,0.825,True,Low,False,0.2,YOUNG_ADULT,False,771,Standard,Low
+AU-CUST00124,Michelle Harmon,1986-10-22,Female,AU,Widowed,Self-employed,75503,Standard,2024-02-15,Medium,0.56,False,High,True,0.45,PRIOR_VICTIM,False,702,Standard,Medium
+AU-CUST00125,Helen Jones,1999-10-19,Female,AU,Divorced,Full-time,67705,Standard,2024-11-22,High,0.976,False,Low,False,0.0,NONE,False,765,Enhanced,Low
+AU-CUST00126,Erin Edwards,1992-10-20,Male,AU,Widowed,Full-time,44145,Standard,2024-03-21,High,0.885,True,Low,False,0.0,NONE,False,659,Enhanced,Low
+AU-CUST00127,Michelle Evans,1991-10-21,Female,AU,Single,Part-time,102116,Premium,2024-02-03,Medium,0.581,False,Low,False,0.0,NONE,False,665,Simplified,Low
+AU-CUST00128,Jason Powell,2000-10-18,Female,AU,Married,Full-time,79967,Standard,2024-08-10,High,0.886,True,Low,False,0.0,NONE,False,685,Simplified,Low
+AU-CUST00129,Cameron Fisher,2007-10-17,Female,AU,Single,Student,24585,Standard,2024-10-28,High,0.879,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,493,Simplified,Medium
+AU-CUST00130,Megan Orr,1976-10-24,Male,AU,Divorced,Part-time,112580,Premium,2024-10-16,Medium,0.767,False,Low,False,0.0,NONE,False,652,Enhanced,Low
+AU-CUST00131,Elizabeth Kelley,1999-10-19,Male,AU,Single,Full-time,41067,Standard,2024-11-16,High,0.828,True,Low,False,0.0,NONE,False,764,Standard,Low
+AU-CUST00132,Dustin Jordan,1941-11-02,Male,AU,Single,Retired,26800,Standard,2024-01-13,Low,0.367,False,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,599,Simplified,Medium
+AU-CUST00133,Mary Marshall,1973-10-25,Female,AU,Single,Full-time,31773,Standard,2024-06-08,Medium,0.53,True,Low,False,0.0,NONE,False,731,Standard,Low
+AU-CUST00134,Daniel Kennedy,1990-10-21,Male,AU,Single,Unemployed,32035,Standard,2024-07-07,Medium,0.736,True,Medium,False,0.25,LOW_INCOME,False,406,Standard,Low
+AU-CUST00135,Rebecca Jackson,1974-10-25,Male,AU,Single,Full-time,103589,Premium,2024-06-09,Medium,0.798,True,Low,False,0.0,NONE,False,719,Standard,Low
+AU-CUST00136,Jose Schultz,1999-10-19,Female,AU,Single,Full-time,98569,Standard,2024-11-02,High,0.946,False,Low,False,0.0,NONE,False,819,Standard,Low
+AU-CUST00137,Robert Potter,1952-10-30,Male,AU,Divorced,Retired,42643,Standard,2024-05-05,Low,0.484,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,701,Enhanced,Medium
+AU-CUST00138,Courtney Gonzalez,1995-10-20,Female,AU,Married,Full-time,74601,Standard,2024-12-12,High,0.825,True,Low,False,0.0,NONE,False,716,Simplified,Low
+AU-CUST00139,David Alvarez,1972-10-25,Male,AU,Single,Self-employed,67502,Standard,2025-05-28,Medium,0.513,True,Low,False,0.0,NONE,False,715,Standard,Low
+AU-CUST00140,Angel Perry,2003-10-18,Female,AU,Married,Student,17014,Standard,2024-12-28,High,0.99,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,552,Standard,Medium
+AU-CUST00141,Cheyenne Horton,1985-10-22,Male,AU,Married,Full-time,100674,Premium,2024-08-01,Medium,0.674,True,Low,False,0.0,NONE,False,765,Standard,Low
+AU-CUST00142,David Douglas Jr.,1982-10-23,Male,AU,Married,Full-time,39585,Standard,2024-08-26,Medium,0.654,False,Low,False,0.0,NONE,False,730,Enhanced,Low
+AU-CUST00143,Patricia Rodriguez,1941-11-02,Female,AU,Single,Retired,41841,Standard,2024-11-17,Low,0.286,False,Medium,True,0.35,ELDERLY,False,558,Standard,Low
+AU-CUST00144,Christopher Rubio,1971-10-26,Male,AU,Married,Full-time,90174,Standard,2025-02-01,Medium,0.576,True,Low,False,0.0,NONE,False,720,Standard,Low
+AU-CUST00145,Amber Wright,1990-10-21,Male,AU,Married,Part-time,32385,Standard,2024-06-14,Medium,0.68,True,Low,False,0.0,NONE,False,624,Enhanced,Low
+AU-CUST00146,Joyce Solis,1989-10-21,Male,AU,Single,Self-employed,54228,Standard,2024-01-22,Medium,0.509,False,Low,False,0.0,NONE,False,571,Standard,Low
+AU-CUST00147,Victoria Larson,1993-10-20,Female,AU,Married,Full-time,90445,Standard,2025-01-20,High,0.854,True,Low,False,0.0,NONE,False,740,Standard,Low
+AU-CUST00148,Stephanie Salazar,1981-10-23,Male,AU,Married,Part-time,53026,Standard,2024-12-29,Medium,0.72,True,Low,False,0.0,NONE,False,650,Standard,Low
+AU-CUST00149,Kathy Rivas,1983-10-23,Male,AU,Married,Full-time,52534,Standard,2024-02-25,Medium,0.702,True,Low,False,0.0,NONE,False,659,Standard,Low
+AU-CUST00150,Stephanie Manning,1997-10-19,Male,AU,Married,Full-time,84076,Standard,2024-12-09,High,0.823,True,Low,False,0.0,NONE,False,664,Enhanced,Low
+AU-CUST00151,David Wright,1957-10-29,Male,AU,Married,Retired,37470,Standard,2024-02-09,Low,0.407,True,Medium,False,0.3,LOW_DIGITAL_LITERACY,False,675,Standard,Low
+AU-CUST00152,Pamela Boyd,1957-10-29,Female,AU,Married,Retired,38870,Standard,2024-12-19,Low,0.217,True,Low,False,0.0,NONE,False,689,Standard,Low
+AU-CUST00153,Denise Jones,1997-10-19,Male,AU,Single,Self-employed,89845,Standard,2025-02-12,Medium,0.538,False,Low,False,0.0,NONE,False,667,Enhanced,Low
+AU-CUST00154,Devon Flores,1972-10-25,Female,AU,Single,Full-time,67449,Standard,2024-01-09,Medium,0.559,False,Low,False,0.0,NONE,False,687,Enhanced,Low
+AU-CUST00155,Brenda Hall,1999-10-19,Female,AU,Married,Full-time,33237,Standard,2025-02-02,High,0.887,True,Low,False,0.0,NONE,False,718,Standard,Low
+AU-CUST00156,Michelle Brown,1973-10-25,Female,AU,Single,Full-time,66891,Standard,2024-03-07,Medium,0.587,False,Low,False,0.0,NONE,False,677,Enhanced,Low
+AU-CUST00157,Joshua Perry,1989-10-21,Female,AU,Married,Self-employed,47520,Standard,2024-05-25,Medium,0.536,False,Low,False,0.0,NONE,False,647,Standard,Low
+AU-CUST00158,Jason Stein,1971-10-26,Male,AU,Single,Part-time,76850,Standard,2025-01-21,Medium,0.546,True,Low,False,0.0,NONE,False,730,Standard,Low
+AU-CUST00159,Melissa Gates,1968-10-26,Female,AU,Married,Self-employed,69892,Standard,2024-07-13,Low,0.291,False,Low,False,0.0,NONE,False,775,Enhanced,Low
+AU-CUST00160,Jamie Smith,1975-10-25,Female,AU,Married,Full-time,83873,Standard,2025-06-20,Medium,0.643,False,Low,False,0.0,NONE,False,704,Standard,Low
+AU-CUST00161,Paul Castaneda,1998-10-19,Female,AU,Married,Unemployed,71722,Standard,2025-06-09,Medium,0.682,True,Medium,False,0.25,LOW_INCOME,False,576,Standard,Low
+AU-CUST00162,Jennifer Adkins,1959-10-29,Male,AU,Married,Retired,37039,Standard,2025-06-25,Low,0.331,False,Medium,False,0.3,LOW_DIGITAL_LITERACY,False,762,Enhanced,Low
+AU-CUST00163,Lindsey Walker,2003-10-18,Male,AU,Married,Full-time,13233,Standard,2024-02-27,High,0.878,True,Low,False,0.2,YOUNG_ADULT,False,562,Enhanced,Low
+AU-CUST00164,Jeffrey Johnson,1997-10-19,Female,AU,Widowed,Full-time,70751,Standard,2024-04-06,High,0.873,False,Low,False,0.0,NONE,False,732,Simplified,Low
+AU-CUST00165,Michael Powell,1966-10-27,Male,AU,Married,Unemployed,71883,Standard,2024-04-10,Low,0.225,True,Medium,False,0.25,LOW_INCOME,False,582,Enhanced,Low
+AU-CUST00166,John Anderson,1982-10-23,Female,AU,Married,Full-time,116408,Premium,2024-11-17,Medium,0.567,False,Low,False,0.0,NONE,False,638,Standard,Low
+AU-CUST00167,Alyssa Long,1958-10-29,Male,AU,Single,Retired,28617,Standard,2024-08-24,Low,0.359,True,High,True,0.45,PRIOR_VICTIM,False,636,Enhanced,Medium
+AU-CUST00168,Alyssa Day,1944-11-01,Female,AU,Married,Retired,26903,Standard,2025-02-13,Low,0.521,False,Medium,True,0.35,ELDERLY,False,583,Standard,Low
+AU-CUST00169,Joel Williams,1981-10-23,Male,AU,Married,Full-time,17677,Standard,2024-06-03,Medium,0.648,False,Very High,True,0.6,NONE,True,652,Enhanced,High
+AU-CUST00170,Daniel Murphy,1941-11-02,Male,AU,Married,Part-time,39669,Standard,2024-04-19,Low,0.583,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,586,Standard,Medium
+AU-CUST00171,Jamie Walton,1995-10-20,Male,AU,Married,Full-time,79148,Standard,2024-12-22,High,0.822,False,Low,False,0.0,NONE,False,646,Standard,Low
+AU-CUST00172,Darlene Miller,1984-10-22,Female,AU,Divorced,Full-time,114402,Premium,2024-12-04,Medium,0.547,True,High,True,0.45,PRIOR_VICTIM,False,608,Standard,Medium
+AU-CUST00173,Joshua Cooke,1981-10-23,Female,AU,Widowed,Full-time,84530,Standard,2025-01-14,Medium,0.753,False,Low,False,0.0,NONE,False,759,Enhanced,Low
+AU-CUST00174,Matthew Harrington,1946-11-01,Female,AU,Married,Retired,37831,Standard,2024-06-20,Low,0.451,False,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,574,Standard,Medium
+AU-CUST00175,Nicole Herring,2005-10-17,Female,AU,Widowed,Full-time,44183,Standard,2024-10-15,High,0.845,False,Low,False,0.2,YOUNG_ADULT,False,739,Standard,Low
+AU-CUST00176,Alex Hernandez,1998-10-19,Female,AU,Divorced,Full-time,111050,Premium,2025-05-24,High,0.856,True,Low,False,0.0,NONE,False,765,Enhanced,Low
+AU-CUST00177,Michael Elliott,1994-10-20,Male,AU,Single,Full-time,96828,Standard,2024-12-01,High,0.888,False,Low,False,0.0,NONE,False,762,Enhanced,Low
+AU-CUST00178,Michael Wang,1953-10-30,Female,AU,Married,Part-time,44976,Standard,2025-05-26,Low,0.284,False,Medium,True,0.35,ELDERLY,False,533,Standard,Low
+AU-CUST00179,Lawrence Adkins,1950-10-31,Female,AU,Single,Retired,30737,Standard,2024-08-25,Low,0.262,True,Medium,True,0.35,ELDERLY,False,535,Standard,Low
+AU-CUST00180,Robert Oconnell,1974-10-25,Female,AU,Single,Full-time,49972,Standard,2024-01-25,Medium,0.733,False,Low,False,0.0,NONE,False,738,Simplified,Low
+AU-CUST00181,Alexander Collins,1948-10-31,Male,AU,Single,Retired,44870,Standard,2025-02-21,Low,0.571,True,Medium,True,0.35,ELDERLY,False,732,Standard,Low
+AU-CUST00182,Tina Sanders,1959-10-29,Female,AU,Married,Unemployed,35535,Standard,2024-09-09,Low,0.206,True,Medium,False,0.25,LOW_INCOME,False,585,Standard,Low
+AU-CUST00183,Angela Vaughn,1986-10-22,Male,AU,Single,Full-time,106697,Premium,2024-01-24,Medium,0.659,True,Low,False,0.0,NONE,False,715,Simplified,Low
+AU-CUST00184,Ashley Barton,1986-10-22,Male,AU,Single,Unemployed,44366,Standard,2024-03-17,Medium,0.518,True,Medium,False,0.25,LOW_INCOME,False,619,Standard,Low
+AU-CUST00185,Lindsay Martinez,1971-10-26,Female,AU,Single,Full-time,104119,Premium,2024-06-20,Medium,0.75,False,Low,False,0.0,NONE,False,726,Standard,Low
+AU-CUST00186,Dr. Hannah Patterson,1976-10-24,Female,AU,Married,Full-time,66781,Standard,2024-04-14,Medium,0.508,True,Low,False,0.0,NONE,False,616,Standard,Low
+AU-CUST00187,Jonathan Peterson,1991-10-21,Male,AU,Divorced,Unemployed,118579,Premium,2025-01-10,Medium,0.542,True,Medium,False,0.25,LOW_INCOME,False,578,Standard,Low
+AU-CUST00188,Samantha Garcia,2004-10-17,Male,AU,Widowed,Unemployed,45930,Standard,2024-12-01,Medium,0.739,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,405,Standard,Medium
+AU-CUST00189,Madison Poole,1974-10-25,Female,AU,Married,Full-time,55480,Standard,2024-06-29,Medium,0.639,True,Low,False,0.0,NONE,False,648,Enhanced,Low
+AU-CUST00190,Jessica Gross,1987-10-22,Male,AU,Single,Full-time,78273,Standard,2024-02-16,Medium,0.764,True,Low,False,0.0,NONE,False,745,Standard,Low
+AU-CUST00191,Debra Morton,1956-10-29,Male,AU,Divorced,Retired,37733,Standard,2024-02-13,Low,0.498,True,Low,False,0.0,NONE,False,707,Enhanced,Low
+AU-CUST00192,Karen Graham,2003-10-18,Female,AU,Single,Full-time,43712,Standard,2025-06-03,High,0.824,False,Low,False,0.2,YOUNG_ADULT,False,715,Enhanced,Low
+AU-CUST00193,Debra Christian,2004-10-17,Female,AU,Widowed,Student,14960,Standard,2024-07-08,High,0.936,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,346,Enhanced,Medium
+AU-CUST00194,Angelica Keith,1960-10-28,Female,AU,Married,Retired,28774,Standard,2024-02-28,Low,0.348,True,Medium,False,0.3,LOW_DIGITAL_LITERACY,False,666,Standard,Low
+AU-CUST00195,John Bishop,2000-10-18,Female,AU,Married,Part-time,67396,Standard,2025-01-25,Medium,0.788,True,Low,False,0.0,NONE,False,547,Enhanced,Low
+AU-CUST00196,Allen Rosales,1998-10-19,Male,AU,Single,Full-time,97137,Standard,2025-04-22,High,0.893,False,Low,False,0.0,NONE,False,706,Standard,Low
+AU-CUST00197,Daniel Salinas,1976-10-24,Male,AU,Single,Full-time,27009,Standard,2024-03-07,Medium,0.659,False,Low,False,0.0,NONE,False,739,Enhanced,Low
+AU-CUST00198,Spencer Haynes,1944-11-01,Female,AU,Married,Retired,28540,Standard,2025-06-02,Low,0.496,False,Medium,True,0.35,ELDERLY,False,594,Standard,Low
+AU-CUST00199,Adam Vaughan,2001-10-18,Female,AU,Married,Full-time,22376,Standard,2025-02-01,High,0.865,False,Low,False,0.2,YOUNG_ADULT,False,768,Enhanced,Low
+AU-CUST00200,Nathan Freeman,1993-10-20,Male,AU,Divorced,Full-time,30218,Standard,2024-05-18,High,0.963,True,Low,False,0.0,NONE,False,746,Standard,Low
+AU-CUST00201,Melissa Brewer,1975-10-25,Male,AU,Married,Full-time,27063,Standard,2025-03-01,Medium,0.739,False,Low,False,0.0,NONE,False,808,Enhanced,Low
+AU-CUST00202,Ricky Davis II,1965-10-27,Male,AU,Married,Part-time,39762,Standard,2024-08-18,Low,0.461,False,Low,False,0.0,NONE,False,620,Standard,Low
+AU-CUST00203,Elizabeth Perkins,1995-10-20,Male,AU,Single,Full-time,67245,Standard,2024-12-14,High,0.984,True,Low,False,0.0,NONE,False,735,Standard,Low
+AU-CUST00204,Joseph Coleman,2003-10-18,Male,AU,Married,Full-time,13230,Standard,2024-03-10,High,0.882,True,Low,False,0.2,YOUNG_ADULT,False,669,Enhanced,Low
+AU-CUST00205,Erin Warner,2002-10-18,Male,AU,Single,Part-time,50187,Standard,2024-05-14,Medium,0.64,False,Low,False,0.2,YOUNG_ADULT,False,697,Standard,Low
+AU-CUST00206,David Martinez,1998-10-19,Female,AU,Married,Full-time,41967,Standard,2025-02-28,High,0.832,True,Low,False,0.0,NONE,False,689,Enhanced,Low
+AU-CUST00207,Bryan Herrera,2006-10-17,Male,AU,Married,Unemployed,34727,Standard,2025-03-18,Medium,0.724,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,524,Enhanced,Medium
+AU-CUST00208,Cathy Robinson,1968-10-26,Female,AU,Divorced,Full-time,44265,Standard,2024-01-07,Low,0.403,True,Low,False,0.0,NONE,False,704,Enhanced,Low
+AU-CUST00209,Dr. William Warren,2005-10-17,Female,AU,Married,Full-time,42616,Standard,2024-04-27,High,0.895,False,Low,False,0.2,YOUNG_ADULT,False,774,Enhanced,Low
+AU-CUST00210,Brian Lee,1993-10-20,Female,AU,Single,Full-time,115549,Premium,2024-11-29,High,0.868,True,Low,False,0.0,NONE,False,763,Enhanced,Low
+AU-CUST00211,Christopher Smith,1970-10-26,Female,AU,Divorced,Full-time,53525,Standard,2025-05-12,Low,0.304,True,Low,False,0.0,NONE,False,725,Simplified,Low
+AU-CUST00212,Denise Mccann,1969-10-26,Male,AU,Married,Full-time,59168,Standard,2025-01-05,Low,0.565,False,Low,False,0.0,NONE,False,751,Standard,Low
+AU-CUST00213,Melissa Martinez,2000-10-18,Male,AU,Married,Full-time,29366,Standard,2025-01-22,High,0.943,True,Low,False,0.0,NONE,False,732,Standard,Low
+AU-CUST00214,Katherine Salas,1963-10-28,Female,AU,Married,Full-time,92583,Standard,2024-08-01,Low,0.59,False,Medium,False,0.3,LOW_DIGITAL_LITERACY,False,778,Enhanced,Low
+AU-CUST00215,Julie Alexander,1979-10-24,Male,AU,Divorced,Full-time,66721,Standard,2024-01-31,Medium,0.798,True,Low,False,0.0,NONE,False,677,Standard,Low
+AU-CUST00216,Anthony Everett,1975-10-25,Male,AU,Single,Full-time,82988,Standard,2025-02-24,Medium,0.574,False,Low,False,0.0,NONE,False,665,Standard,Low
+AU-CUST00217,Rodney Morales,2002-10-18,Male,AU,Married,Part-time,46473,Standard,2025-03-14,Medium,0.593,True,Low,False,0.2,YOUNG_ADULT,False,633,Standard,Low
+AU-CUST00218,Mark Brown,1996-10-19,Female,AU,Married,Self-employed,34765,Standard,2024-08-31,Medium,0.575,True,Low,False,0.0,NONE,False,588,Standard,Low
+AU-CUST00219,Justin Torres,1958-10-29,Male,AU,Single,Retired,37068,Standard,2024-10-05,Low,0.458,True,Low,False,0.0,NONE,False,692,Standard,Low
+AU-CUST00220,Bailey Duran DDS,1993-10-20,Male,AU,Divorced,Full-time,29042,Standard,2024-05-09,High,0.831,False,Low,False,0.0,NONE,False,661,Enhanced,Low
+AU-CUST00221,Courtney Mills,1981-10-23,Male,AU,Married,Full-time,68214,Standard,2024-09-05,Medium,0.572,True,Low,False,0.0,NONE,False,663,Enhanced,Low
+AU-CUST00222,Jeremy Dalton,1993-10-20,Female,AU,Single,Full-time,41783,Standard,2024-05-12,High,0.945,True,Low,False,0.0,NONE,False,792,Enhanced,Low
+AU-CUST00223,Elizabeth Oliver DDS,1980-10-23,Male,AU,Single,Part-time,112940,Premium,2024-08-18,Medium,0.697,False,Low,False,0.0,NONE,False,691,Standard,Low
+AU-CUST00224,Theresa Clark,1955-10-30,Female,AU,Divorced,Retired,43591,Standard,2024-03-14,Low,0.308,True,Low,False,0.0,NONE,False,561,Enhanced,Low
+AU-CUST00225,Matthew Moore,1989-10-21,Female,AU,Married,Full-time,112871,Premium,2024-11-29,Medium,0.708,False,Low,False,0.0,NONE,False,662,Enhanced,Low
+AU-CUST00226,Benjamin Smith,1950-10-31,Male,AU,Single,Unemployed,25241,Standard,2024-05-15,Low,0.398,False,Very High,True,0.9,ELDERLY|LOW_INCOME|LOW_DIGITAL_LITERACY,False,507,Standard,Medium
+AU-CUST00227,Kirk Carter,1997-10-19,Male,AU,Single,Self-employed,117169,Premium,2025-02-01,Medium,0.544,True,Low,False,0.0,NONE,False,710,Standard,Low
+AU-CUST00228,Michael Warner,1967-10-27,Female,AU,Single,Part-time,117217,Premium,2024-10-11,Low,0.439,False,Low,False,0.0,NONE,False,717,Standard,Low
+AU-CUST00229,Michael Bradshaw,1976-10-24,Female,AU,Single,Full-time,32424,Standard,2025-05-06,Medium,0.511,False,Low,False,0.0,NONE,False,630,Simplified,Low
+AU-CUST00230,Lori Guerrero,1996-10-19,Male,AU,Married,Part-time,83313,Standard,2024-05-01,Medium,0.579,True,Low,False,0.0,NONE,False,547,Standard,Low
+AU-CUST00231,Jessica Stephens,2000-10-18,Male,AU,Single,Full-time,64639,Standard,2024-05-29,High,0.919,True,Low,False,0.0,NONE,False,806,Standard,Low
+AU-CUST00232,Susan Serrano,1994-10-20,Male,AU,Single,Full-time,39590,Standard,2024-05-13,High,0.957,False,Low,False,0.0,NONE,False,676,Standard,Low
+AU-CUST00233,Christopher Parker,1942-11-02,Male,AU,Single,Part-time,26500,Standard,2024-12-12,Low,0.486,False,Medium,True,0.35,ELDERLY,False,529,Standard,Low
+AU-CUST00234,Laura Roberts,1978-10-24,Male,AU,Married,Self-employed,105652,Premium,2024-02-28,Medium,0.696,True,Low,False,0.0,NONE,False,717,Standard,Low
+AU-CUST00235,Michael Lyons,1951-10-31,Male,AU,Married,Retired,35196,Standard,2025-01-11,Low,0.438,True,Medium,True,0.35,ELDERLY,False,655,Enhanced,Low
+AU-CUST00236,Kathryn Snyder,1946-11-01,Male,AU,Married,Retired,44389,Standard,2025-03-25,Low,0.587,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,555,Standard,Medium
+AU-CUST00237,Andrew Reynolds,1992-10-20,Female,AU,Married,Self-employed,60053,Standard,2025-01-05,Medium,0.637,True,Low,False,0.0,NONE,False,800,Enhanced,Low
+AU-CUST00238,David Davis,1976-10-24,Female,AU,Widowed,Full-time,45860,Standard,2024-03-14,Medium,0.514,True,Low,False,0.0,NONE,False,648,Standard,Low
+AU-CUST00239,Sara Johnston,2002-10-18,Female,AU,Married,Full-time,52415,Standard,2024-09-27,High,0.846,True,Low,False,0.2,YOUNG_ADULT,False,726,Standard,Low
+AU-CUST00240,Yvonne Chambers,1997-10-19,Female,AU,Divorced,Self-employed,45448,Standard,2024-10-19,Medium,0.692,False,Low,False,0.0,NONE,False,590,Enhanced,Low
+AU-CUST00241,Andrew Avila,1960-10-28,Female,AU,Married,Part-time,32564,Standard,2024-08-02,Low,0.315,False,Medium,False,0.3,LOW_DIGITAL_LITERACY,False,652,Enhanced,Low
+AU-CUST00242,Matthew Moon,1971-10-26,Male,AU,Single,Part-time,47961,Standard,2024-09-13,Medium,0.523,False,Low,False,0.0,NONE,False,643,Enhanced,Low
+AU-CUST00243,Kevin Walters,2002-10-18,Female,AU,Divorced,Full-time,51700,Standard,2025-02-22,High,0.872,False,Low,False,0.2,YOUNG_ADULT,False,606,Standard,Low
+AU-CUST00244,Brandon Bailey MD,1994-10-20,Male,AU,Married,Full-time,90828,Standard,2025-04-03,High,0.943,False,Low,False,0.0,NONE,False,821,Standard,Low
+AU-CUST00245,Shannon Rivera,1970-10-26,Female,AU,Married,Unemployed,39306,Standard,2024-06-13,Low,0.343,True,Medium,False,0.25,LOW_INCOME,False,502,Enhanced,Low
+AU-CUST00246,Donna Landry,1945-11-01,Female,AU,Single,Retired,38483,Standard,2024-06-30,Low,0.27,False,Medium,True,0.35,ELDERLY,False,595,Standard,Low
+AU-CUST00247,Krista Gibson,1972-10-25,Female,AU,Married,Full-time,31768,Standard,2024-04-24,Medium,0.649,False,Low,False,0.0,NONE,False,786,Enhanced,Low
+AU-CUST00248,Frank Cordova,1993-10-20,Male,AU,Divorced,Full-time,96608,Standard,2024-08-08,High,0.849,True,Low,False,0.0,NONE,False,777,Standard,Low
+AU-CUST00249,Jose Travis,1993-10-20,Female,AU,Single,Full-time,56829,Standard,2024-10-26,High,0.847,True,High,True,0.45,PRIOR_VICTIM,False,694,Standard,Medium
+AU-CUST00250,Kimberly Gutierrez,1989-10-21,Male,AU,Single,Part-time,74406,Standard,2025-01-26,Medium,0.572,False,Low,False,0.0,NONE,False,589,Enhanced,Low
+AU-CUST00251,Isaiah Avila,1973-10-25,Male,AU,Single,Part-time,67407,Standard,2024-05-26,Medium,0.732,True,Low,False,0.0,NONE,False,660,Enhanced,Low
+AU-CUST00252,Olivia Harris,1952-10-30,Male,AU,Married,Unemployed,38015,Standard,2024-04-28,Low,0.269,True,High,True,0.6,ELDERLY|LOW_INCOME,False,377,Enhanced,Medium
+AU-CUST00253,Tanya Kim,1992-10-20,Male,AU,Divorced,Full-time,109083,Premium,2024-01-19,High,0.806,True,Low,False,0.0,NONE,False,727,Enhanced,Low
+AU-CUST00254,Barbara Dudley,2001-10-18,Female,AU,Married,Full-time,16373,Standard,2024-02-21,High,0.924,True,Low,False,0.2,YOUNG_ADULT,False,653,Standard,Low
+AU-CUST00255,Cynthia Moore,2004-10-17,Male,AU,Divorced,Student,20313,Standard,2024-01-29,High,0.925,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,457,Enhanced,Medium
+AU-CUST00256,Kristen Davis,1970-10-26,Male,AU,Married,Full-time,52226,Standard,2024-04-23,Low,0.345,False,High,True,0.45,PRIOR_VICTIM,False,649,Simplified,Medium
+AU-CUST00257,Susan Murray MD,1946-11-01,Female,AU,Married,Retired,33821,Standard,2025-01-16,Low,0.3,True,Medium,True,0.35,ELDERLY,False,628,Standard,Low
+AU-CUST00258,Kathleen Moran,2000-10-18,Female,AU,Single,Full-time,74578,Standard,2025-03-01,High,0.975,False,Low,False,0.0,NONE,False,717,Standard,Low
+AU-CUST00259,Denise Davenport,2007-10-17,Male,AU,Single,Student,10480,Standard,2025-06-18,High,0.916,True,Very High,True,0.9,YOUNG_ADULT|LOW_INCOME|PRIOR_VICTIM,False,524,Simplified,Medium
+AU-CUST00260,Mrs. Kristen Reyes,1966-10-27,Female,AU,Married,Full-time,60503,Standard,2024-10-26,Low,0.211,True,Low,False,0.0,NONE,False,686,Standard,Low
+AU-CUST00261,Katie Suarez,2007-10-17,Female,AU,Single,Full-time,14890,Standard,2024-09-06,High,0.893,False,Low,False,0.2,YOUNG_ADULT,False,715,Simplified,Low
+AU-CUST00262,Desiree Tyler,1941-11-02,Male,AU,Single,Retired,29965,Standard,2025-05-08,Low,0.279,True,Medium,True,0.35,ELDERLY,False,558,Standard,Low
+AU-CUST00263,Timothy Romero,1995-10-20,Female,AU,Divorced,Full-time,62436,Standard,2024-03-21,High,0.962,False,Low,False,0.0,NONE,False,794,Enhanced,Low
+AU-CUST00264,Diane Evans,2001-10-18,Female,AU,Married,Part-time,27002,Standard,2024-12-12,Medium,0.7,False,Low,False,0.2,YOUNG_ADULT,False,609,Enhanced,Low
+AU-CUST00265,Yvonne Burns,1963-10-28,Male,AU,Single,Full-time,81383,Standard,2025-03-25,Low,0.588,True,Low,False,0.0,NONE,False,770,Enhanced,Low
+AU-CUST00266,Joshua Reed,2006-10-17,Male,AU,Married,Student,17727,Standard,2024-10-02,High,0.845,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,527,Enhanced,Medium
+AU-CUST00267,Kimberly Gibson,1985-10-22,Male,AU,Married,Full-time,65021,Standard,2024-05-23,Medium,0.748,True,Low,False,0.0,NONE,False,700,Standard,Low
+AU-CUST00268,Colin Terry,1999-10-19,Female,AU,Divorced,Full-time,99367,Standard,2024-12-06,High,0.832,False,Low,False,0.0,NONE,False,706,Enhanced,Low
+AU-CUST00269,Cynthia Rowe,2006-10-17,Male,AU,Married,Unemployed,11002,Standard,2025-06-30,Medium,0.7,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,317,Simplified,Medium
+AU-CUST00270,Patrick Thornton,1996-10-19,Male,AU,Single,Full-time,97565,Standard,2024-05-09,High,0.867,False,Low,False,0.0,NONE,False,670,Simplified,Low
+AU-CUST00271,Jasmin Alvarado,2004-10-17,Female,AU,Single,Student,21813,Standard,2024-11-05,High,0.927,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,532,Simplified,Medium
+AU-CUST00272,Veronica Simpson,2004-10-17,Female,AU,Single,Full-time,51812,Standard,2024-01-28,High,0.838,True,Low,False,0.2,YOUNG_ADULT,False,777,Enhanced,Low
+AU-CUST00273,Jonathan Lawrence,2004-10-17,Male,AU,Married,Unemployed,11905,Standard,2024-05-07,Medium,0.785,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,460,Enhanced,Medium
+AU-CUST00274,Shelly Alexander,1974-10-25,Male,AU,Married,Full-time,76963,Standard,2025-02-25,Medium,0.645,False,Low,False,0.0,NONE,False,657,Standard,Low
+AU-CUST00275,Joyce Bowen,1978-10-24,Male,AU,Married,Full-time,56947,Standard,2024-09-29,Medium,0.532,True,Low,False,0.0,NONE,False,592,Enhanced,Low
+AU-CUST00276,Matthew Moore,1989-10-21,Female,AU,Married,Unemployed,26541,Standard,2024-04-19,Medium,0.706,False,Very High,True,0.7,LOW_INCOME|PRIOR_VICTIM,False,470,Enhanced,Medium
+AU-CUST00277,Wayne Morgan,1992-10-20,Male,AU,Single,Full-time,105052,Premium,2024-07-03,High,0.941,False,Low,False,0.0,NONE,False,613,Standard,Low
+AU-CUST00278,Marie Christian,1995-10-20,Male,AU,Single,Full-time,70580,Standard,2024-03-07,High,0.871,True,Low,False,0.0,NONE,False,710,Standard,Low
+AU-CUST00279,Shannon James,1956-10-29,Female,AU,Single,Unemployed,34497,Standard,2025-03-03,Low,0.519,True,Medium,False,0.25,LOW_INCOME,False,605,Enhanced,Low
+AU-CUST00280,Nathan Malone,1949-10-31,Male,AU,Married,Retired,26034,Standard,2025-06-01,Low,0.535,True,Medium,True,0.35,ELDERLY,False,585,Standard,Low
+AU-CUST00281,Amanda Jones,1998-10-19,Male,AU,Married,Unemployed,50251,Standard,2024-02-28,Medium,0.674,True,Medium,False,0.25,LOW_INCOME,False,608,Standard,Low
+AU-CUST00282,Tammie Bright,2003-10-18,Female,AU,Widowed,Full-time,14081,Standard,2024-05-10,High,0.894,True,Low,False,0.2,YOUNG_ADULT,False,676,Standard,Low
+AU-CUST00283,Jessica Garcia,2004-10-17,Male,AU,Single,Full-time,51854,Standard,2025-04-15,High,0.871,False,Low,False,0.2,YOUNG_ADULT,False,685,Enhanced,Low
+AU-CUST00284,Shelia Wallace,1998-10-19,Female,AU,Married,Full-time,117257,Premium,2025-04-27,High,0.923,False,Low,False,0.0,NONE,False,627,Simplified,Low
+AU-CUST00285,Stephanie Williams,1970-10-26,Female,AU,Single,Full-time,72931,Standard,2025-02-25,Low,0.497,False,Low,False,0.0,NONE,False,710,Enhanced,Low
+AU-CUST00286,Elaine Brooks,1983-10-23,Male,AU,Married,Part-time,67583,Standard,2025-01-27,Medium,0.536,True,Low,False,0.0,NONE,False,567,Simplified,Low
+AU-CUST00287,Joseph Knight,1997-10-19,Female,AU,Single,Full-time,106270,Premium,2025-04-17,High,0.953,False,Low,False,0.0,NONE,False,658,Enhanced,Low
+AU-CUST00288,Carolyn Miller,1983-10-23,Female,AU,Married,Full-time,75418,Standard,2024-07-24,Medium,0.547,True,High,True,0.45,PRIOR_VICTIM,False,563,Standard,Medium
+AU-CUST00289,Lisa Allen,1981-10-23,Female,AU,Single,Unemployed,42715,Standard,2025-05-06,Medium,0.518,True,Medium,False,0.25,LOW_INCOME,False,569,Standard,Low
+AU-CUST00290,Briana Murray,2003-10-18,Female,AU,Single,Student,10466,Standard,2025-05-01,High,0.888,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,476,Standard,Medium
+AU-CUST00291,David Smith,1956-10-29,Male,AU,Married,Retired,29003,Standard,2024-05-06,Low,0.525,False,Low,False,0.0,NONE,False,617,Standard,Low
+AU-CUST00292,Stephanie Byrd,2004-10-17,Male,AU,Married,Full-time,18159,Standard,2024-02-10,High,0.93,False,Low,False,0.2,YOUNG_ADULT,False,848,Standard,Low
+AU-CUST00293,Jeremy Reed,1960-10-28,Female,AU,Married,Retired,30269,Standard,2024-10-13,Low,0.201,True,Low,False,0.0,NONE,False,658,Standard,Low
+AU-CUST00294,Margaret Coleman,1999-10-19,Male,AU,Single,Full-time,58141,Standard,2025-02-20,High,0.881,True,Low,False,0.0,NONE,False,744,Simplified,Low
+AU-CUST00295,Ryan Gonzalez,1948-10-31,Male,AU,Widowed,Part-time,34330,Standard,2025-04-11,Low,0.229,True,Medium,True,0.35,ELDERLY,False,585,Enhanced,Low
+AU-CUST00296,John Young,1945-11-01,Male,AU,Single,Retired,42052,Standard,2024-03-19,Low,0.591,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,631,Standard,Medium
+AU-CUST00297,Laura Haney,1961-10-28,Male,AU,Married,Full-time,45313,Standard,2024-07-26,Low,0.202,True,Medium,False,0.3,LOW_DIGITAL_LITERACY,False,737,Simplified,Low
+AU-CUST00298,William Barrett,1953-10-30,Female,AU,Divorced,Unemployed,31853,Standard,2025-02-25,Low,0.487,False,High,True,0.6,ELDERLY|LOW_INCOME,False,588,Simplified,Medium
+AU-CUST00299,Keith Jennings,1977-10-24,Female,AU,Married,Full-time,71987,Standard,2024-02-03,Medium,0.536,True,Low,False,0.0,NONE,False,775,Enhanced,Low
+AU-CUST00300,Amber Obrien,1967-10-27,Female,AU,Single,Full-time,47654,Standard,2025-01-31,Low,0.587,False,Low,False,0.0,NONE,False,647,Enhanced,Low
+AU-CUST00301,Tanner Mitchell DDS,1976-10-24,Male,AU,Married,Self-employed,37421,Standard,2024-06-09,Medium,0.547,True,Low,False,0.0,NONE,False,637,Simplified,Low
+AU-CUST00302,Heather Fields,2006-10-17,Male,AU,Single,Part-time,52160,Standard,2024-01-13,Medium,0.747,False,Low,False,0.2,YOUNG_ADULT,False,646,Enhanced,Low
+AU-CUST00303,Megan Le,1987-10-22,Female,AU,Married,Full-time,92484,Standard,2024-05-12,Medium,0.723,False,Low,False,0.0,NONE,False,642,Enhanced,Low
+AU-CUST00304,Sara Fuller,1982-10-23,Male,AU,Married,Self-employed,119316,Premium,2025-02-11,Medium,0.785,False,Low,False,0.0,NONE,False,681,Standard,Low
+AU-CUST00305,Maria Parker,1943-11-02,Female,AU,Married,Retired,28257,Standard,2025-04-22,Low,0.595,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,564,Standard,Medium
+AU-CUST00306,Kevin Oconnor,1994-10-20,Female,AU,Divorced,Full-time,75658,Standard,2024-02-14,High,0.968,True,Low,False,0.0,NONE,False,780,Standard,Low
+AU-CUST00307,Edward Burgess,1991-10-21,Male,AU,Single,Full-time,83245,Standard,2024-09-11,High,0.976,False,Low,False,0.0,NONE,False,657,Standard,Low
+AU-CUST00308,Carlos Ryan,1978-10-24,Male,AU,Single,Full-time,113128,Premium,2024-04-20,Medium,0.764,False,Low,False,0.0,NONE,False,731,Standard,Low
+AU-CUST00309,Kiara Mcintyre,1991-10-21,Female,AU,Married,Full-time,28758,Standard,2025-01-10,High,0.927,False,Low,False,0.0,NONE,False,665,Standard,Low
+AU-CUST00310,Dawn Summers,2001-10-18,Male,AU,Married,Student,13603,Standard,2025-03-04,High,0.922,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,499,Standard,Medium
+AU-CUST00311,Dr. Paul Morgan,1991-10-21,Female,AU,Married,Full-time,28116,Standard,2025-06-12,High,0.887,True,Low,False,0.0,NONE,False,560,Standard,Low
+AU-CUST00312,Victor Taylor,1994-10-20,Female,AU,Married,Full-time,43329,Standard,2024-07-13,High,0.864,False,Low,False,0.0,NONE,False,785,Standard,Low
+AU-CUST00313,Shannon Ramsey,2001-10-18,Male,AU,Married,Student,15777,Standard,2024-06-13,High,0.918,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,404,Enhanced,Medium
+AU-CUST00314,Tracy Ballard,1995-10-20,Female,AU,Widowed,Full-time,56152,Standard,2024-06-19,High,0.805,True,Low,False,0.0,NONE,False,749,Enhanced,Low
+AU-CUST00315,Richard Smith,1992-10-20,Male,AU,Married,Full-time,27394,Standard,2025-02-21,High,0.801,False,Low,False,0.0,NONE,False,725,Enhanced,Low
+AU-CUST00316,Jordan Chambers,1995-10-20,Male,AU,Single,Full-time,96881,Standard,2024-09-01,High,0.97,True,Low,False,0.0,NONE,False,762,Standard,Low
+AU-CUST00317,Lauren Carson,1994-10-20,Female,AU,Single,Unemployed,113209,Premium,2024-01-13,Medium,0.537,True,Medium,False,0.25,LOW_INCOME,False,440,Enhanced,Low
+AU-CUST00318,Ashley Hall,1974-10-25,Female,AU,Married,Full-time,75523,Standard,2025-06-04,Medium,0.506,True,Low,False,0.0,NONE,False,671,Standard,Low
+AU-CUST00319,Stephen Hoffman,1983-10-23,Female,AU,Single,Full-time,98524,Standard,2024-02-27,Medium,0.798,True,Low,False,0.0,NONE,False,639,Standard,Low
+AU-CUST00320,Connie Brown,1946-11-01,Female,AU,Single,Part-time,41885,Standard,2025-05-24,Low,0.45,False,Very High,True,0.8,ELDERLY|PRIOR_VICTIM,False,475,Standard,Medium
+AU-CUST00321,Susan Turner,1963-10-28,Female,AU,Single,Part-time,66263,Standard,2024-03-29,Low,0.241,False,High,True,0.45,PRIOR_VICTIM,False,610,Simplified,Medium
+AU-CUST00322,Charles Shah,1995-10-20,Male,AU,Married,Self-employed,101607,Premium,2024-10-22,Medium,0.585,True,Low,False,0.0,NONE,False,672,Simplified,Low
+AU-CUST00323,Johnathan Davis,1990-10-21,Male,AU,Widowed,Full-time,113278,Premium,2024-06-20,Medium,0.566,False,Low,False,0.0,NONE,False,749,Enhanced,Low
+AU-CUST00324,Brandy Chavez,1986-10-22,Male,AU,Married,Full-time,119455,Premium,2025-01-12,Medium,0.628,True,Low,False,0.0,NONE,False,685,Enhanced,Low
+AU-CUST00325,Natalie Bautista,1947-11-01,Male,AU,Single,Part-time,26865,Standard,2024-08-09,Low,0.464,True,Medium,True,0.35,ELDERLY,False,607,Standard,Low
+AU-CUST00326,Patrick Moore,1968-10-26,Male,AU,Married,Self-employed,28247,Standard,2024-07-20,Low,0.279,True,High,True,0.45,PRIOR_VICTIM,False,612,Enhanced,Medium
+AU-CUST00327,Brett Burns,1957-10-29,Female,AU,Married,Part-time,40984,Standard,2024-09-18,Low,0.234,False,Low,False,0.0,NONE,False,596,Standard,Low
+AU-CUST00328,Trevor Johnson,1993-10-20,Male,AU,Widowed,Full-time,106401,Premium,2025-06-16,High,0.88,False,Low,False,0.0,NONE,False,690,Standard,Low
+AU-CUST00329,Jeremy Sampson,1980-10-23,Female,AU,Married,Full-time,51212,Standard,2024-05-14,Medium,0.659,True,Low,False,0.0,NONE,False,696,Simplified,Low
+AU-CUST00330,Ariana Jennings,1993-10-20,Female,AU,Married,Full-time,29033,Standard,2024-04-30,High,1.0,False,Low,False,0.0,NONE,False,622,Simplified,Low
+AU-CUST00331,Vanessa Howard,1980-10-23,Female,AU,Divorced,Full-time,50195,Standard,2024-02-06,Medium,0.618,False,Low,False,0.0,NONE,False,686,Standard,Low
+AU-CUST00332,Colton Martinez,1997-10-19,Male,AU,Married,Full-time,65384,Standard,2025-02-09,High,0.966,True,Low,False,0.0,NONE,False,698,Standard,Low
+AU-CUST00333,Jordan Bates,1976-10-24,Female,AU,Single,Part-time,50682,Standard,2025-01-06,Medium,0.58,True,Low,False,0.0,NONE,False,803,Standard,Low
+AU-CUST00334,Linda Smith,1945-11-01,Female,AU,Married,Part-time,33519,Standard,2024-11-30,Low,0.317,True,Medium,True,0.35,ELDERLY,False,485,Standard,Low
+AU-CUST00335,Dana Martinez,2001-10-18,Male,AU,Married,Student,17537,Standard,2024-01-13,High,0.845,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,466,Standard,Medium
+AU-CUST00336,Andrea Hubbard,1972-10-25,Male,AU,Married,Full-time,49450,Standard,2025-03-10,Medium,0.664,True,Low,False,0.0,NONE,False,666,Enhanced,Low
+AU-CUST00337,Daniel Kane,2002-10-18,Male,AU,Widowed,Full-time,16831,Standard,2025-03-20,High,0.912,True,Low,False,0.2,YOUNG_ADULT,False,715,Standard,Low
+AU-CUST00338,Charles Lester,1968-10-26,Female,AU,Single,Full-time,78750,Standard,2025-06-02,Low,0.372,True,Low,False,0.0,NONE,False,642,Standard,Low
+AU-CUST00339,Scott Thomas,2007-10-17,Female,AU,Married,Full-time,47076,Standard,2025-05-25,High,0.963,False,Low,False,0.2,YOUNG_ADULT,False,699,Standard,Low
+AU-CUST00340,David Thompson,1963-10-28,Male,AU,Single,Full-time,117128,Premium,2024-05-24,Low,0.353,False,Low,False,0.0,NONE,False,705,Enhanced,Low
+AU-CUST00341,Allison Smith,2002-10-18,Female,AU,Single,Part-time,53541,Standard,2025-01-24,Medium,0.54,False,Low,False,0.2,YOUNG_ADULT,False,640,Standard,Low
+AU-CUST00342,Cynthia Morris,1956-10-29,Male,AU,Married,Part-time,27842,Standard,2024-08-09,Low,0.256,True,Low,False,0.0,NONE,False,628,Standard,Low
+AU-CUST00343,Anthony Harmon,1952-10-30,Male,AU,Married,Retired,28399,Standard,2024-11-23,Low,0.434,True,Medium,True,0.35,ELDERLY,False,487,Enhanced,Low
+AU-CUST00344,Nichole Alvarez,1969-10-26,Female,AU,Married,Part-time,80495,Standard,2024-07-01,Low,0.363,True,Low,False,0.0,NONE,False,617,Enhanced,Low
+AU-CUST00345,Kayla Rodriguez,1972-10-25,Female,AU,Single,Full-time,113311,Premium,2024-12-26,Medium,0.691,True,Low,False,0.0,NONE,False,656,Standard,Low
+AU-CUST00346,Theresa Williams,1977-10-24,Female,AU,Single,Full-time,78566,Standard,2025-06-07,Medium,0.621,True,Low,False,0.0,NONE,False,684,Enhanced,Low
+AU-CUST00347,Sharon Boyd,1957-10-29,Male,AU,Married,Part-time,26176,Standard,2024-12-24,Low,0.309,True,Low,False,0.0,NONE,False,677,Standard,Low
+AU-CUST00348,Victor Brown,1984-10-22,Male,AU,Married,Full-time,102510,Premium,2025-05-20,Medium,0.62,True,Low,False,0.0,NONE,False,694,Enhanced,Low
+AU-CUST00349,James Parks,1977-10-24,Male,AU,Married,Full-time,73663,Standard,2025-05-26,Medium,0.6,True,Low,False,0.0,NONE,False,716,Standard,Low
+AU-CUST00350,Theodore Jones Jr.,2001-10-18,Male,AU,Married,Student,19943,Standard,2024-03-06,High,0.903,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,430,Simplified,Medium
+AU-CUST00351,Ana Hill,1972-10-25,Male,AU,Divorced,Full-time,114019,Premium,2025-06-13,Medium,0.646,True,Low,False,0.0,NONE,False,740,Simplified,Low
+AU-CUST00352,Kimberly Nguyen,1998-10-19,Female,AU,Married,Part-time,42667,Standard,2025-03-25,Medium,0.568,True,Low,False,0.0,NONE,False,615,Enhanced,Low
+AU-CUST00353,Kerry Chavez DDS,1970-10-26,Female,AU,Married,Full-time,80825,Standard,2024-08-22,Low,0.371,False,Low,False,0.0,NONE,False,796,Simplified,Low
+AU-CUST00354,Michael Farrell,1974-10-25,Male,AU,Married,Self-employed,67052,Standard,2024-11-25,Medium,0.541,True,Low,False,0.0,NONE,False,725,Standard,Low
+AU-CUST00355,Patricia Le,1991-10-21,Male,AU,Married,Full-time,34894,Standard,2024-12-04,High,0.859,True,Low,False,0.0,NONE,False,652,Enhanced,Low
+AU-CUST00356,Jesse Perez,1990-10-21,Male,AU,Widowed,Unemployed,68258,Standard,2025-03-07,Medium,0.515,False,Medium,False,0.25,LOW_INCOME,False,527,Standard,Low
+AU-CUST00357,Jesse Perry,1974-10-25,Male,AU,Married,Part-time,70825,Standard,2025-03-16,Medium,0.504,True,Low,False,0.0,NONE,False,649,Standard,Low
+AU-CUST00358,Jeffery Ortega,1977-10-24,Female,AU,Married,Unemployed,33337,Standard,2024-02-26,Medium,0.555,False,Medium,False,0.25,LOW_INCOME,False,598,Standard,Low
+AU-CUST00359,Christian Leblanc,1986-10-22,Male,AU,Married,Full-time,113315,Premium,2024-01-01,Medium,0.743,True,Low,False,0.0,NONE,False,680,Enhanced,Low
+AU-CUST00360,Ronald Davis,1977-10-24,Female,AU,Married,Unemployed,54898,Standard,2024-05-15,Medium,0.657,True,Medium,False,0.25,LOW_INCOME,False,519,Enhanced,Low
+AU-CUST00361,Parker Cain,1949-10-31,Male,AU,Divorced,Retired,34049,Standard,2024-10-16,Low,0.291,False,Medium,True,0.35,ELDERLY,False,602,Enhanced,Low
+AU-CUST00362,Laurie Hoffman,1998-10-19,Male,AU,Divorced,Full-time,43054,Standard,2025-04-11,High,0.83,True,Low,False,0.0,NONE,False,729,Standard,Low
+AU-CUST00363,Bryan Gomez,1996-10-19,Female,AU,Single,Part-time,49064,Standard,2024-12-24,Medium,0.521,False,Low,False,0.0,NONE,False,632,Simplified,Low
+AU-CUST00364,Nicole Parrish,2006-10-17,Male,AU,Single,Full-time,13022,Standard,2024-03-15,High,0.943,False,Low,False,0.2,YOUNG_ADULT,False,588,Enhanced,Low
+AU-CUST00365,Tracy Burke,1969-10-26,Male,AU,Married,Full-time,87104,Standard,2025-01-28,Low,0.524,True,Low,False,0.0,NONE,False,680,Enhanced,Low
+AU-CUST00366,Kenneth Lewis,1994-10-20,Female,AU,Married,Full-time,87268,Standard,2024-09-14,High,0.916,False,Low,False,0.0,NONE,False,702,Standard,Low
+AU-CUST00367,Courtney Rodriguez,1975-10-25,Male,AU,Divorced,Full-time,115235,Premium,2024-07-21,Medium,0.672,True,High,True,0.45,PRIOR_VICTIM,False,691,Standard,Medium
+AU-CUST00368,Holly Farmer,1978-10-24,Male,AU,Single,Self-employed,108245,Premium,2025-02-27,Medium,0.525,False,Low,False,0.0,NONE,False,724,Enhanced,Low
+AU-CUST00369,Renee Bruce,1993-10-20,Male,AU,Divorced,Full-time,55415,Standard,2024-06-11,High,0.987,False,Low,False,0.0,NONE,False,591,Simplified,Low
+AU-CUST00370,Sabrina Austin,1961-10-28,Male,AU,Married,Full-time,76031,Standard,2024-12-05,Low,0.503,True,Low,False,0.0,NONE,False,696,Standard,Low
+AU-CUST00371,Allison Hickman,1980-10-23,Female,AU,Single,Full-time,30759,Standard,2024-04-09,Medium,0.647,True,Low,False,0.0,NONE,False,718,Standard,Low
+AU-CUST00372,Debra White,1983-10-23,Male,AU,Single,Full-time,49182,Standard,2024-07-28,Medium,0.572,True,Low,False,0.0,NONE,False,765,Standard,Low
+AU-CUST00373,Ellen Morgan,1995-10-20,Female,AU,Married,Full-time,43711,Standard,2024-11-02,High,0.987,True,Low,False,0.0,NONE,False,729,Standard,Low
+AU-CUST00374,Sergio Knight,1990-10-21,Female,AU,Single,Full-time,84560,Standard,2024-12-08,Medium,0.719,True,Low,False,0.0,NONE,False,646,Enhanced,Low
+AU-CUST00375,Charles Schultz,1999-10-19,Male,AU,Married,Full-time,57811,Standard,2025-05-19,High,0.882,False,Low,False,0.0,NONE,False,826,Standard,Low
+AU-CUST00376,Paul Lewis,1996-10-19,Male,AU,Married,Full-time,98326,Standard,2024-06-08,High,0.952,False,Low,False,0.0,NONE,False,717,Standard,Low
+AU-CUST00377,Glen Wood,1944-11-01,Male,AU,Married,Retired,36750,Standard,2025-05-06,Low,0.535,True,Medium,True,0.35,ELDERLY,False,527,Enhanced,Low
+AU-CUST00378,Paula Bradley,1993-10-20,Male,AU,Single,Unemployed,74588,Standard,2025-03-24,Medium,0.682,False,Medium,False,0.25,LOW_INCOME,False,527,Standard,Low
+AU-CUST00379,Anthony Moore,1981-10-23,Male,AU,Widowed,Part-time,100398,Premium,2024-07-16,Medium,0.792,True,Low,False,0.0,NONE,False,661,Standard,Low
+AU-CUST00380,Megan Nelson,1971-10-26,Female,AU,Married,Full-time,65764,Standard,2024-03-17,Medium,0.612,True,Low,False,0.0,NONE,False,725,Enhanced,Low
+AU-CUST00381,Karla Ramos,1978-10-24,Male,AU,Married,Self-employed,20938,Standard,2024-05-21,Medium,0.52,False,Very High,True,0.6,NONE,True,613,Standard,High
+AU-CUST00382,Paul Wilson,1954-10-30,Male,AU,Married,Retired,26855,Standard,2024-12-27,Low,0.334,True,Medium,True,0.35,ELDERLY,False,609,Simplified,Low
+AU-CUST00383,Douglas Gregory,1967-10-27,Female,AU,Married,Full-time,37023,Standard,2025-03-09,Low,0.294,True,Low,False,0.0,NONE,False,634,Enhanced,Low
+AU-CUST00384,Mr. Andrew Foster,1990-10-21,Female,AU,Widowed,Self-employed,73229,Standard,2024-12-02,Medium,0.542,False,Low,False,0.0,NONE,False,599,Simplified,Low
+AU-CUST00385,Aimee Turner,1993-10-20,Male,AU,Married,Self-employed,107589,Premium,2025-02-02,Medium,0.666,True,Low,False,0.0,NONE,False,594,Standard,Low
+AU-CUST00386,Chad Scott,1944-11-01,Male,AU,Married,Retired,37248,Standard,2024-02-25,Low,0.302,True,Medium,True,0.35,ELDERLY,False,548,Enhanced,Low
+AU-CUST00387,Adam Burgess,1966-10-27,Female,AU,Single,Self-employed,105033,Premium,2024-10-04,Low,0.429,False,Low,False,0.0,NONE,False,791,Standard,Low
+AU-CUST00388,James Padilla,1941-11-02,Male,AU,Single,Part-time,25728,Standard,2025-04-24,Low,0.225,True,Medium,True,0.35,ELDERLY,False,660,Enhanced,Low
+AU-CUST00389,Sandra Drake,1996-10-19,Female,AU,Married,Full-time,45545,Standard,2024-08-01,High,0.965,True,Low,False,0.0,NONE,False,704,Standard,Low
+AU-CUST00390,Scott Williams,1944-11-01,Female,AU,Single,Part-time,37967,Standard,2025-05-08,Low,0.218,False,Medium,True,0.35,ELDERLY,False,542,Standard,Low
+AU-CUST00391,Thomas Atkins,1974-10-25,Female,AU,Married,Full-time,42869,Standard,2024-03-08,Medium,0.794,True,Low,False,0.0,NONE,False,756,Standard,Low
+AU-CUST00392,Laura Mckinney,2005-10-17,Male,AU,Widowed,Student,20556,Standard,2025-06-21,High,0.858,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,518,Enhanced,Medium
+AU-CUST00393,Brian Smith,1971-10-26,Male,AU,Married,Full-time,33890,Standard,2025-03-07,Medium,0.61,False,Low,False,0.0,NONE,False,587,Enhanced,Low
+AU-CUST00394,Robert Montgomery,1977-10-24,Male,AU,Single,Part-time,97599,Standard,2024-12-09,Medium,0.68,True,Low,False,0.0,NONE,False,621,Standard,Low
+AU-CUST00395,Tamara Davis,2002-10-18,Female,AU,Married,Student,14384,Standard,2024-12-04,High,0.834,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,562,Enhanced,Medium
+AU-CUST00396,Dana Chapman,1986-10-22,Female,AU,Single,Unemployed,92277,Standard,2025-05-29,Medium,0.615,False,Medium,False,0.25,LOW_INCOME,False,473,Enhanced,Low
+AU-CUST00397,Jennifer Collins,1942-11-02,Female,AU,Married,Retired,31152,Standard,2024-07-25,Low,0.472,False,Medium,True,0.35,ELDERLY,False,515,Standard,Low
+AU-CUST00398,Gary Jackson,1991-10-21,Female,AU,Married,Full-time,16728,Standard,2024-03-31,High,0.987,False,Very High,True,0.6,NONE,True,696,Standard,High
+AU-CUST00399,Ashley Hicks,1992-10-20,Female,AU,Married,Self-employed,29101,Standard,2025-05-19,Medium,0.623,False,Low,False,0.0,NONE,False,643,Enhanced,Low
+AU-CUST00400,Hannah Luna,1984-10-22,Female,AU,Married,Full-time,23557,Standard,2024-02-26,Medium,0.729,False,Very High,True,0.6,NONE,True,627,Enhanced,High
+AU-CUST00401,Robin Young,1995-10-20,Male,AU,Married,Unemployed,96867,Standard,2024-12-28,Medium,0.616,True,Medium,False,0.25,LOW_INCOME,False,577,Enhanced,Low
+AU-CUST00402,Craig Morrison,1951-10-31,Male,AU,Single,Retired,34720,Standard,2024-05-26,Low,0.476,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,594,Enhanced,Medium
+AU-CUST00403,Mary Thompson,1969-10-26,Female,AU,Single,Full-time,55841,Standard,2025-05-25,Low,0.292,False,Low,False,0.0,NONE,False,850,Enhanced,Low
+AU-CUST00404,Kathleen Webster,2001-10-18,Female,AU,Married,Full-time,29401,Standard,2025-06-18,High,0.901,False,Low,False,0.2,YOUNG_ADULT,False,707,Standard,Low
+AU-CUST00405,Joann Glass,1956-10-29,Male,AU,Divorced,Retired,42962,Standard,2024-09-17,Low,0.36,True,Medium,False,0.3,LOW_DIGITAL_LITERACY,False,647,Simplified,Low
+AU-CUST00406,Madison Weber,1945-11-01,Female,AU,Single,Unemployed,26574,Standard,2024-10-19,Low,0.203,True,High,True,0.6,ELDERLY|LOW_INCOME,False,583,Standard,Medium
+AU-CUST00407,Lori Hernandez,1990-10-21,Male,AU,Single,Full-time,42167,Standard,2024-09-06,Medium,0.706,True,Low,False,0.0,NONE,False,733,Enhanced,Low
+AU-CUST00408,Jeremy Turner,1948-10-31,Male,AU,Single,Retired,30749,Standard,2024-08-21,Low,0.547,False,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,523,Enhanced,Medium
+AU-CUST00409,Anthony Romero,2002-10-18,Female,AU,Married,Student,21461,Standard,2025-05-29,High,0.911,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,440,Enhanced,Medium
+AU-CUST00410,Jesse Brown,1965-10-27,Male,AU,Single,Full-time,112328,Premium,2024-06-06,Low,0.599,True,Low,False,0.0,NONE,False,771,Standard,Low
+AU-CUST00411,Angela Lin,1973-10-25,Female,AU,Married,Full-time,31362,Standard,2025-06-10,Medium,0.573,False,Low,False,0.0,NONE,False,746,Standard,Low
+AU-CUST00412,Lisa Hunter,1980-10-23,Female,AU,Single,Full-time,32626,Standard,2024-12-23,Medium,0.502,False,Low,False,0.0,NONE,False,725,Standard,Low
+AU-CUST00413,Julian Conner,1996-10-19,Female,AU,Married,Full-time,118672,Premium,2025-06-11,High,0.983,False,Low,False,0.0,NONE,False,624,Enhanced,Low
+AU-CUST00414,Joanna Pacheco,1950-10-31,Male,AU,Single,Retired,28962,Standard,2024-12-02,Low,0.322,False,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,594,Standard,Medium
+AU-CUST00415,Erica Alvarez,2003-10-18,Female,AU,Married,Full-time,32409,Standard,2025-03-25,High,0.86,False,Low,False,0.2,YOUNG_ADULT,False,808,Standard,Low
+AU-CUST00416,Antonio Garcia,2002-10-18,Male,AU,Single,Full-time,26953,Standard,2024-09-25,High,0.835,True,Low,False,0.2,YOUNG_ADULT,False,701,Simplified,Low
+AU-CUST00417,Gwendolyn Klein,2000-10-18,Female,AU,Married,Part-time,38165,Standard,2024-09-10,Medium,0.718,True,High,True,0.45,PRIOR_VICTIM,False,593,Standard,Medium
+AU-CUST00418,Carrie Wright,1977-10-24,Male,AU,Widowed,Full-time,90527,Standard,2024-05-21,Medium,0.579,True,Low,False,0.0,NONE,False,639,Standard,Low
+AU-CUST00419,Jeffrey Mills,2004-10-17,Female,AU,Single,Part-time,18347,Standard,2024-04-25,Medium,0.599,False,Very High,True,0.8,YOUNG_ADULT,True,543,Standard,High
+AU-CUST00420,Jake Campbell,1955-10-30,Female,AU,Widowed,Retired,26382,Standard,2024-01-21,Low,0.471,True,Medium,False,0.3,LOW_DIGITAL_LITERACY,False,662,Enhanced,Low
+AU-CUST00421,George Harper,1977-10-24,Male,AU,Single,Full-time,21928,Standard,2024-07-29,Medium,0.787,False,Very High,True,0.6,NONE,True,611,Standard,High
+AU-CUST00422,Maria Jones,1998-10-19,Male,AU,Married,Self-employed,52365,Standard,2025-06-26,Medium,0.557,True,Low,False,0.0,NONE,False,698,Enhanced,Low
+AU-CUST00423,Michael Mitchell,2006-10-17,Male,AU,Married,Full-time,12987,Standard,2025-05-30,High,0.845,True,Low,False,0.2,YOUNG_ADULT,False,623,Standard,Low
+AU-CUST00424,Mary Escobar,1998-10-19,Female,AU,Single,Part-time,104375,Premium,2025-01-13,Medium,0.634,True,Low,False,0.0,NONE,False,567,Standard,Low
+AU-CUST00425,Felicia Aguilar,1975-10-25,Female,AU,Married,Full-time,27256,Standard,2024-07-18,Medium,0.557,False,Low,False,0.0,NONE,False,715,Standard,Low
+AU-CUST00426,Gregory Ponce,1951-10-31,Female,AU,Single,Retired,42072,Standard,2024-10-12,Low,0.485,True,Medium,True,0.35,ELDERLY,False,577,Standard,Low
+AU-CUST00427,Jenna Larson,2006-10-17,Female,AU,Married,Student,30871,Standard,2025-02-19,High,0.864,False,Very High,True,1.0,YOUNG_ADULT|LOW_INCOME,True,576,Enhanced,High
+AU-CUST00428,Emily Bennett,1956-10-29,Male,AU,Married,Retired,40910,Standard,2024-01-02,Low,0.238,True,Low,False,0.0,NONE,False,744,Standard,Low
+AU-CUST00429,Robin Santiago,1998-10-19,Female,AU,Divorced,Full-time,72562,Standard,2025-05-21,High,0.866,True,Low,False,0.0,NONE,False,832,Standard,Low
+AU-CUST00430,Nancy Jennings,1959-10-29,Male,AU,Single,Unemployed,28002,Standard,2025-04-22,Low,0.49,True,Medium,False,0.25,LOW_INCOME,False,465,Standard,Low
+AU-CUST00431,Maria Henderson,1962-10-28,Female,AU,Widowed,Part-time,29916,Standard,2025-06-16,Low,0.336,True,Low,False,0.0,NONE,False,678,Standard,Low
+AU-CUST00432,Jack White,1973-10-25,Male,AU,Single,Full-time,109201,Premium,2024-02-21,Medium,0.598,False,Low,False,0.0,NONE,False,701,Standard,Low
+AU-CUST00433,Travis Tucker,1978-10-24,Female,AU,Married,Self-employed,90095,Standard,2025-06-04,Medium,0.776,False,Low,False,0.0,NONE,False,659,Standard,Low
+AU-CUST00434,Chad Jones,1958-10-29,Male,AU,Single,Retired,33371,Standard,2024-12-02,Low,0.44,True,Medium,False,0.3,LOW_DIGITAL_LITERACY,False,632,Simplified,Low
+AU-CUST00435,Ashley Wise,2002-10-18,Male,AU,Single,Student,17821,Standard,2024-10-31,High,0.932,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,578,Standard,Medium
+AU-CUST00436,Sophia Johnson,2001-10-18,Male,AU,Single,Full-time,24710,Standard,2024-04-08,High,0.818,True,Low,False,0.2,YOUNG_ADULT,False,745,Standard,Low
+AU-CUST00437,Ralph Anderson,2000-10-18,Female,AU,Married,Full-time,48831,Standard,2024-09-27,High,0.895,False,Low,False,0.0,NONE,False,676,Enhanced,Low
+AU-CUST00438,Christopher Guerra,1985-10-22,Male,AU,Single,Full-time,39244,Standard,2024-07-18,Medium,0.585,True,Low,False,0.0,NONE,False,603,Standard,Low
+AU-CUST00439,Rhonda Martin,1968-10-26,Male,AU,Married,Part-time,82201,Standard,2025-06-26,Low,0.523,False,Low,False,0.0,NONE,False,682,Enhanced,Low
+AU-CUST00440,Jason Rhodes,1980-10-23,Male,AU,Widowed,Full-time,90916,Standard,2024-07-05,Medium,0.529,False,Low,False,0.0,NONE,False,642,Enhanced,Low
+AU-CUST00441,Jeremy Mitchell,1956-10-29,Male,AU,Single,Part-time,29750,Standard,2024-04-29,Low,0.542,False,Low,False,0.0,NONE,False,673,Enhanced,Low
+AU-CUST00442,Joann Ferguson,2007-10-17,Female,AU,Single,Student,10129,Standard,2025-06-03,High,0.918,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,424,Simplified,Medium
+AU-CUST00443,Robert Harrison,1980-10-23,Female,AU,Single,Full-time,97413,Standard,2024-04-12,Medium,0.501,True,Low,False,0.0,NONE,False,684,Enhanced,Low
+AU-CUST00444,Holly Valentine,2005-10-17,Female,AU,Single,Unemployed,12019,Standard,2025-05-11,Medium,0.779,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,444,Standard,Medium
+AU-CUST00445,Mrs. Diane Reyes,1987-10-22,Female,AU,Married,Self-employed,31826,Standard,2025-06-12,Medium,0.707,False,Low,False,0.0,NONE,False,746,Simplified,Low
+AU-CUST00446,Tracy Montoya,1967-10-27,Male,AU,Married,Full-time,96827,Standard,2024-06-17,Low,0.38,True,Low,False,0.0,NONE,False,645,Standard,Low
+AU-CUST00447,Brenda Wright,1946-11-01,Male,AU,Single,Retired,25218,Standard,2025-01-13,Low,0.428,False,Medium,True,0.35,ELDERLY,False,511,Standard,Low
+AU-CUST00448,Shelly Spencer,1971-10-26,Female,AU,Single,Full-time,119168,Premium,2025-03-13,Medium,0.671,False,Low,False,0.0,NONE,False,688,Enhanced,Low
+AU-CUST00449,Ryan Rosales,1998-10-19,Female,AU,Married,Full-time,43001,Standard,2024-10-21,High,0.93,False,Low,False,0.0,NONE,False,683,Enhanced,Low
+AU-CUST00450,Phillip Nelson,1978-10-24,Male,AU,Single,Full-time,77749,Standard,2025-01-17,Medium,0.696,False,Low,False,0.0,NONE,False,699,Simplified,Low
+AU-CUST00451,Brittany Kim,1997-10-19,Female,AU,Married,Full-time,100265,Premium,2024-03-13,High,0.873,True,Low,False,0.0,NONE,False,618,Standard,Low
+AU-CUST00452,Courtney Hayes,1943-11-02,Male,AU,Widowed,Part-time,42850,Standard,2024-10-10,Low,0.279,False,Medium,True,0.35,ELDERLY,False,622,Enhanced,Low
+AU-CUST00453,Alexander Brown,1979-10-24,Male,AU,Single,Part-time,48490,Standard,2024-10-08,Medium,0.604,False,Low,False,0.0,NONE,False,645,Standard,Low
+AU-CUST00454,Cynthia Vang,2002-10-18,Male,AU,Married,Full-time,23383,Standard,2024-11-06,High,0.866,False,Low,False,0.2,YOUNG_ADULT,False,551,Enhanced,Low
+AU-CUST00455,Alfred Galvan,1998-10-19,Female,AU,Divorced,Full-time,113534,Premium,2025-06-02,High,0.943,False,Low,False,0.0,NONE,False,712,Enhanced,Low
+AU-CUST00456,Marie Moody,2002-10-18,Female,AU,Married,Full-time,53856,Standard,2025-03-28,High,0.925,False,Low,False,0.2,YOUNG_ADULT,False,733,Standard,Low
+AU-CUST00457,Dustin Gallegos,1944-11-01,Female,AU,Married,Retired,35748,Standard,2024-11-26,Low,0.494,False,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,577,Enhanced,Medium
+AU-CUST00458,Brenda Thornton,1981-10-23,Female,AU,Married,Full-time,35192,Standard,2024-08-09,Medium,0.628,False,Low,False,0.0,NONE,False,701,Standard,Low
+AU-CUST00459,Aaron Miller,1973-10-25,Female,AU,Married,Full-time,75125,Standard,2024-08-10,Medium,0.628,False,Low,False,0.0,NONE,False,773,Standard,Low
+AU-CUST00460,Ruben Dunn,1980-10-23,Male,AU,Married,Full-time,113488,Premium,2024-01-12,Medium,0.797,True,Low,False,0.0,NONE,False,705,Simplified,Low
+AU-CUST00461,Kelsey Rodriguez,1975-10-25,Female,AU,Married,Full-time,43808,Standard,2024-10-29,Medium,0.712,False,Low,False,0.0,NONE,False,731,Enhanced,Low
+AU-CUST00462,Eric Williams,2005-10-17,Male,AU,Married,Part-time,14362,Standard,2024-05-18,Medium,0.608,False,Low,False,0.2,YOUNG_ADULT,False,511,Standard,Low
+AU-CUST00463,Riley Bryant,1954-10-30,Male,AU,Married,Unemployed,39514,Standard,2025-05-01,Low,0.569,True,High,True,0.6,ELDERLY|LOW_INCOME,False,614,Standard,Medium
+AU-CUST00464,Taylor Carlson,1987-10-22,Male,AU,Married,Full-time,90725,Standard,2025-02-28,Medium,0.629,False,Low,False,0.0,NONE,False,682,Standard,Low
+AU-CUST00465,Jose Allen,1974-10-25,Male,AU,Divorced,Full-time,96948,Standard,2025-05-16,Medium,0.511,True,Low,False,0.0,NONE,False,822,Standard,Low
+AU-CUST00466,Jeffrey Mendez,1978-10-24,Female,AU,Single,Part-time,93243,Standard,2025-06-30,Medium,0.658,False,Low,False,0.0,NONE,False,610,Standard,Low
+AU-CUST00467,Jason Beck,1976-10-24,Male,AU,Single,Full-time,55634,Standard,2024-08-07,Medium,0.743,True,Low,False,0.0,NONE,False,595,Standard,Low
+AU-CUST00468,William Jones,1949-10-31,Male,AU,Single,Retired,44139,Standard,2024-08-23,Low,0.343,True,Medium,True,0.35,ELDERLY,False,594,Standard,Low
+AU-CUST00469,Katie Mcneil,2007-10-17,Female,AU,Single,Full-time,39895,Standard,2024-11-29,High,0.811,False,Low,False,0.2,YOUNG_ADULT,False,744,Enhanced,Low
+AU-CUST00470,Jeanette Harrison,1992-10-20,Female,AU,Married,Full-time,96831,Standard,2024-08-24,High,0.973,False,Low,False,0.0,NONE,False,798,Standard,Low
+AU-CUST00471,Veronica King,1982-10-23,Male,AU,Single,Unemployed,40236,Standard,2024-06-02,Medium,0.716,True,Medium,False,0.25,LOW_INCOME,False,624,Enhanced,Low
+AU-CUST00472,Richard Cooper,1994-10-20,Male,AU,Married,Full-time,76246,Standard,2025-01-23,High,0.906,True,Low,False,0.0,NONE,False,728,Simplified,Low
+AU-CUST00473,Lori Ingram,2003-10-18,Male,AU,Married,Full-time,35720,Standard,2024-09-04,High,0.979,False,Low,False,0.2,YOUNG_ADULT,False,710,Standard,Low
+AU-CUST00474,Evelyn Williams,2005-10-17,Female,AU,Single,Student,16064,Standard,2025-06-01,High,0.914,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,507,Enhanced,Medium
+AU-CUST00475,Robin Thompson,1994-10-20,Female,AU,Single,Full-time,80593,Standard,2024-04-30,High,0.922,False,Low,False,0.0,NONE,False,743,Standard,Low
+AU-CUST00476,Julie Dominguez,1989-10-21,Male,AU,Married,Self-employed,93420,Standard,2024-08-31,Medium,0.541,True,Low,False,0.0,NONE,False,632,Standard,Low
+AU-CUST00477,Robin Brown,1988-10-21,Female,AU,Married,Full-time,100073,Premium,2024-10-18,Medium,0.558,False,Low,False,0.0,NONE,False,708,Enhanced,Low
+AU-CUST00478,Judith Carter,1978-10-24,Female,AU,Married,Full-time,76063,Standard,2025-05-13,Medium,0.646,True,Low,False,0.0,NONE,False,784,Standard,Low
+AU-CUST00479,Curtis Williams,1979-10-24,Female,AU,Single,Full-time,19918,Standard,2024-11-13,Medium,0.513,False,Very High,True,0.6,NONE,True,737,Standard,High
+AU-CUST00480,Kaylee Hays,1993-10-20,Male,AU,Single,Full-time,75102,Standard,2024-02-07,High,0.995,True,Low,False,0.0,NONE,False,738,Enhanced,Low
+AU-CUST00481,Dawn Mullins,1986-10-22,Female,AU,Single,Part-time,89509,Standard,2024-07-04,Medium,0.736,False,Low,False,0.0,NONE,False,543,Standard,Low
+AU-CUST00482,Howard Norman,1997-10-19,Female,AU,Single,Full-time,81266,Standard,2025-05-01,High,0.869,True,Low,False,0.0,NONE,False,687,Enhanced,Low
+AU-CUST00483,Evelyn Martinez,1978-10-24,Male,AU,Widowed,Full-time,94731,Standard,2024-05-29,Medium,0.638,True,Low,False,0.0,NONE,False,655,Enhanced,Low
+AU-CUST00484,Steve Paul,1991-10-21,Male,AU,Single,Part-time,81378,Standard,2024-07-06,Medium,0.797,True,High,True,0.45,PRIOR_VICTIM,False,611,Standard,Medium
+AU-CUST00485,Jasmine Beltran,2003-10-18,Male,AU,Single,Full-time,25236,Standard,2024-03-23,High,0.851,True,Low,False,0.2,YOUNG_ADULT,False,646,Enhanced,Low
+AU-CUST00486,Jonathan Glass MD,1990-10-21,Male,AU,Divorced,Full-time,107090,Premium,2025-01-29,Medium,0.649,True,Low,False,0.0,NONE,False,698,Standard,Low
+AU-CUST00487,Monica Miller,1992-10-20,Female,AU,Married,Self-employed,74376,Standard,2024-03-17,Medium,0.668,True,Low,False,0.0,NONE,False,640,Standard,Low
+AU-CUST00488,Samantha Gardner,2007-10-17,Female,AU,Married,Student,10755,Standard,2024-07-20,High,0.892,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,416,Simplified,Medium
+AU-CUST00489,Bobby Guerrero,1973-10-25,Male,AU,Married,Full-time,43337,Standard,2025-01-25,Medium,0.544,True,Low,False,0.0,NONE,False,823,Standard,Low
+AU-CUST00490,Lance Simmons,1975-10-25,Female,AU,Widowed,Full-time,114693,Premium,2025-05-06,Medium,0.703,True,Low,False,0.0,NONE,False,685,Enhanced,Low
+AU-CUST00491,Heather Williams,1975-10-25,Male,AU,Single,Full-time,47309,Standard,2024-05-01,Medium,0.619,True,Low,False,0.0,NONE,False,667,Standard,Low
+AU-CUST00492,Heather Bolton,1977-10-24,Female,AU,Single,Full-time,57139,Standard,2024-07-01,Medium,0.587,True,Low,False,0.0,NONE,False,731,Standard,Low
+AU-CUST00493,William Gould,1967-10-27,Male,AU,Divorced,Part-time,61417,Standard,2024-03-05,Low,0.269,True,Low,False,0.0,NONE,False,695,Enhanced,Low
+AU-CUST00494,Mark Cox,1986-10-22,Female,AU,Married,Self-employed,101256,Premium,2024-08-28,Medium,0.754,True,Low,False,0.0,NONE,False,719,Enhanced,Low
+AU-CUST00495,Meghan Cisneros,1974-10-25,Female,AU,Widowed,Full-time,82822,Standard,2025-07-02,Medium,0.51,True,Low,False,0.0,NONE,False,747,Standard,Low
+AU-CUST00496,Lawrence Harrington,1992-10-20,Female,AU,Single,Unemployed,63203,Standard,2024-06-16,Medium,0.725,True,Medium,False,0.25,LOW_INCOME,False,588,Enhanced,Low
+AU-CUST00497,Austin Osborne,1983-10-23,Female,AU,Widowed,Full-time,112713,Premium,2024-05-22,Medium,0.615,False,Low,False,0.0,NONE,False,803,Standard,Low
+AU-CUST00498,James Bradley,1967-10-27,Male,AU,Single,Part-time,74603,Standard,2024-08-07,Low,0.441,True,Low,False,0.0,NONE,False,671,Standard,Low
+AU-CUST00499,Meghan Rush,1995-10-20,Female,AU,Married,Full-time,45115,Standard,2025-05-06,High,0.881,True,Low,False,0.0,NONE,False,577,Enhanced,Low
+AU-CUST00500,Phillip Berry,1982-10-23,Female,AU,Divorced,Part-time,72367,Standard,2024-10-27,Medium,0.547,True,Low,False,0.0,NONE,False,623,Enhanced,Low
+AU-CUST00501,Jennifer Banks,1970-10-26,Male,AU,Single,Full-time,89886,Standard,2024-11-30,Low,0.476,True,Low,False,0.0,NONE,False,781,Standard,Low
+AU-CUST00502,Brian Fitzgerald,1963-10-28,Female,AU,Single,Unemployed,103769,Premium,2025-03-04,Low,0.486,True,High,True,0.55,LOW_INCOME|LOW_DIGITAL_LITERACY,False,376,Enhanced,Medium
+AU-CUST00503,Mr. Justin Green III,1947-11-01,Male,AU,Married,Retired,26066,Standard,2025-01-27,Low,0.31,True,Medium,True,0.35,ELDERLY,False,687,Standard,Low
+AU-CUST00504,Zachary Mitchell,1994-10-20,Male,AU,Divorced,Unemployed,114020,Premium,2024-11-24,Medium,0.631,True,Medium,False,0.25,LOW_INCOME,False,555,Simplified,Low
+AU-CUST00505,Katherine Martinez,1995-10-20,Female,AU,Single,Full-time,86020,Standard,2024-11-03,High,0.82,True,Low,False,0.0,NONE,False,755,Enhanced,Low
+AU-CUST00506,Jodi Roach,1979-10-24,Male,AU,Divorced,Full-time,64877,Standard,2024-10-19,Medium,0.565,True,Low,False,0.0,NONE,False,803,Standard,Low
+AU-CUST00507,Brandon Fleming,1989-10-21,Male,AU,Single,Full-time,34191,Standard,2024-04-09,Medium,0.67,True,Low,False,0.0,NONE,False,650,Standard,Low
+AU-CUST00508,Emma Reed,1950-10-31,Male,AU,Married,Retired,41732,Standard,2024-08-15,Low,0.254,False,Medium,True,0.35,ELDERLY,False,587,Simplified,Low
+AU-CUST00509,Joshua Vance,1989-10-21,Female,AU,Single,Full-time,46536,Standard,2025-04-10,Medium,0.653,True,Low,False,0.0,NONE,False,699,Enhanced,Low
+AU-CUST00510,Michelle Ho,2006-10-17,Female,AU,Divorced,Full-time,19680,Standard,2024-01-22,High,0.888,True,Low,False,0.2,YOUNG_ADULT,False,622,Standard,Low
+AU-CUST00511,Rebecca Hicks,2005-10-17,Male,AU,Single,Student,18449,Standard,2025-03-30,High,0.828,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,423,Standard,Medium
+AU-CUST00512,Curtis Taylor,1944-11-01,Female,AU,Married,Retired,37523,Standard,2024-11-06,Low,0.328,True,Medium,True,0.35,ELDERLY,False,592,Standard,Low
+AU-CUST00513,Allison Spencer,1996-10-19,Female,AU,Single,Part-time,39344,Standard,2024-07-10,Medium,0.636,False,Low,False,0.0,NONE,False,653,Enhanced,Low
+AU-CUST00514,Robert Arnold,1984-10-22,Female,AU,Widowed,Part-time,110736,Premium,2024-03-03,Medium,0.63,False,Low,False,0.0,NONE,False,723,Simplified,Low
+AU-CUST00515,Angelica Parker,1994-10-20,Female,AU,Married,Part-time,84972,Standard,2025-02-23,Medium,0.772,True,Low,False,0.0,NONE,False,571,Enhanced,Low
+AU-CUST00516,Dr. Kelly Hammond DVM,1998-10-19,Female,AU,Single,Full-time,85725,Standard,2024-01-01,High,0.983,True,Low,False,0.0,NONE,False,650,Standard,Low
+AU-CUST00517,William Day,1985-10-22,Male,AU,Single,Self-employed,26565,Standard,2024-10-25,Medium,0.746,True,Low,False,0.0,NONE,False,660,Enhanced,Low
+AU-CUST00518,Michael Cooper,1973-10-25,Male,AU,Married,Unemployed,80632,Standard,2024-03-30,Medium,0.568,False,Medium,False,0.25,LOW_INCOME,False,630,Standard,Low
+AU-CUST00519,Penny Bowman,2006-10-17,Female,AU,Married,Part-time,26977,Standard,2025-05-14,Medium,0.606,True,Low,False,0.2,YOUNG_ADULT,False,640,Standard,Low
+AU-CUST00520,Vincent Reynolds,1941-11-02,Male,AU,Divorced,Retired,35194,Standard,2024-04-10,Low,0.513,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,620,Standard,Medium
+AU-CUST00521,Amy Martinez,1954-10-30,Male,AU,Married,Retired,33739,Standard,2025-03-16,Low,0.346,True,Medium,True,0.35,ELDERLY,False,589,Standard,Low
+AU-CUST00522,Christopher Morris,1995-10-20,Male,AU,Married,Full-time,48733,Standard,2024-11-11,High,0.822,False,Low,False,0.0,NONE,False,706,Standard,Low
+AU-CUST00523,Hannah Everett,2005-10-17,Male,AU,Married,Full-time,26887,Standard,2024-01-23,High,0.888,False,Low,False,0.2,YOUNG_ADULT,False,714,Standard,Low
+AU-CUST00524,Sarah King,1974-10-25,Female,AU,Married,Unemployed,41428,Standard,2025-01-30,Medium,0.67,True,Medium,False,0.25,LOW_INCOME,False,590,Standard,Low
+AU-CUST00525,Krista Martinez,2007-10-17,Male,AU,Single,Student,14409,Standard,2025-04-27,High,0.828,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,472,Enhanced,Medium
+AU-CUST00526,Joseph Shaw,1991-10-21,Female,AU,Single,Full-time,72431,Standard,2024-05-01,High,0.859,True,Low,False,0.0,NONE,False,640,Standard,Low
+AU-CUST00527,Todd Moore,1954-10-30,Female,AU,Single,Retired,44000,Standard,2025-06-15,Low,0.481,False,Medium,True,0.35,ELDERLY,False,588,Standard,Low
+AU-CUST00528,Michelle Jacobs,1942-11-02,Male,AU,Married,Retired,38855,Standard,2025-03-14,Low,0.528,False,Medium,True,0.35,ELDERLY,False,538,Standard,Low
+AU-CUST00529,Kristy Bryan,1979-10-24,Male,AU,Single,Full-time,49926,Standard,2025-02-11,Medium,0.55,False,Low,False,0.0,NONE,False,723,Standard,Low
+AU-CUST00530,Angel May,1987-10-22,Male,AU,Married,Full-time,27944,Standard,2024-07-03,Medium,0.527,True,Low,False,0.0,NONE,False,731,Standard,Low
+AU-CUST00531,Marilyn Wang,1967-10-27,Male,AU,Single,Full-time,89439,Standard,2024-03-06,Low,0.552,False,Low,False,0.0,NONE,False,669,Enhanced,Low
+AU-CUST00532,Mark Jimenez,1968-10-26,Male,AU,Married,Self-employed,74074,Standard,2024-08-23,Low,0.279,True,Low,False,0.0,NONE,False,773,Standard,Low
+AU-CUST00533,Donna Frye,1982-10-23,Female,AU,Single,Full-time,62626,Standard,2025-03-19,Medium,0.685,True,Low,False,0.0,NONE,False,730,Standard,Low
+AU-CUST00534,Dr. Michael Evans,1978-10-24,Male,AU,Married,Full-time,34495,Standard,2024-11-18,Medium,0.614,True,Low,False,0.0,NONE,False,689,Enhanced,Low
+AU-CUST00535,Anthony Gonzales,1998-10-19,Male,AU,Single,Self-employed,119577,Premium,2024-12-21,Medium,0.75,False,Low,False,0.0,NONE,False,630,Standard,Low
+AU-CUST00536,Mr. Lawrence Edwards,1996-10-19,Male,AU,Single,Full-time,77970,Standard,2025-03-04,High,0.812,True,Low,False,0.0,NONE,False,661,Enhanced,Low
+AU-CUST00537,Morgan Valencia,1991-10-21,Male,AU,Single,Self-employed,103543,Premium,2024-07-05,Medium,0.629,True,High,True,0.45,PRIOR_VICTIM,False,631,Standard,Medium
+AU-CUST00538,Bianca Wood,2002-10-18,Male,AU,Married,Full-time,37896,Standard,2024-01-21,High,0.961,False,Low,False,0.2,YOUNG_ADULT,False,738,Simplified,Low
+AU-CUST00539,Emma Owens,2001-10-18,Female,AU,Married,Full-time,48653,Standard,2025-04-30,High,0.95,True,Low,False,0.2,YOUNG_ADULT,False,771,Standard,Low
+AU-CUST00540,David Davis,1953-10-30,Male,AU,Single,Retired,43523,Standard,2024-12-02,Low,0.22,False,Medium,True,0.35,ELDERLY,False,579,Standard,Low
+AU-CUST00541,James Gilbert,1958-10-29,Female,AU,Married,Retired,41723,Standard,2024-11-06,Low,0.379,True,Low,False,0.0,NONE,False,754,Enhanced,Low
+AU-CUST00542,Sean Moore,1966-10-27,Female,AU,Married,Full-time,43489,Standard,2024-11-10,Low,0.563,True,High,True,0.45,PRIOR_VICTIM,False,611,Standard,Medium
+AU-CUST00543,Kenneth Edwards,1942-11-02,Female,AU,Married,Retired,33905,Standard,2025-04-13,Low,0.485,False,Medium,True,0.35,ELDERLY,False,494,Enhanced,Low
+AU-CUST00544,Kathleen Robertson,1956-10-29,Female,AU,Married,Retired,28319,Standard,2025-02-26,Low,0.22,True,Medium,False,0.3,LOW_DIGITAL_LITERACY,False,597,Standard,Low
+AU-CUST00545,Mr. Alexander Landry MD,1998-10-19,Male,AU,Single,Full-time,63225,Standard,2025-01-02,High,0.93,True,Low,False,0.0,NONE,False,727,Standard,Low
+AU-CUST00546,Cindy Gomez,1990-10-21,Female,AU,Married,Self-employed,109847,Premium,2025-03-05,Medium,0.542,True,Low,False,0.0,NONE,False,603,Enhanced,Low
+AU-CUST00547,Johnny Khan,1984-10-22,Male,AU,Married,Self-employed,36818,Standard,2024-06-07,Medium,0.516,False,Low,False,0.0,NONE,False,711,Enhanced,Low
+AU-CUST00548,Julie Herrera,2000-10-18,Female,AU,Married,Full-time,111765,Premium,2025-01-25,High,0.977,False,Low,False,0.0,NONE,False,769,Standard,Low
+AU-CUST00549,Jessica Khan,1973-10-25,Male,AU,Single,Full-time,63651,Standard,2025-06-19,Medium,0.636,True,Low,False,0.0,NONE,False,828,Standard,Low
+AU-CUST00550,Pamela Diaz,1994-10-20,Female,AU,Married,Unemployed,115313,Premium,2024-05-08,Medium,0.752,True,Medium,False,0.25,LOW_INCOME,False,610,Enhanced,Low
+AU-CUST00551,Kelly Lee,1986-10-22,Female,AU,Single,Full-time,88402,Standard,2024-11-09,Medium,0.522,True,Low,False,0.0,NONE,False,824,Enhanced,Low
+AU-CUST00552,Angel Gordon,2004-10-17,Female,AU,Married,Full-time,43905,Standard,2025-01-08,High,0.974,False,Low,False,0.2,YOUNG_ADULT,False,729,Enhanced,Low
+AU-CUST00553,Diana Hays,2005-10-17,Male,AU,Single,Student,12162,Standard,2024-10-10,High,0.983,True,Very High,True,0.9,YOUNG_ADULT|LOW_INCOME|PRIOR_VICTIM,False,404,Enhanced,Medium
+AU-CUST00554,Barbara Hester,1961-10-28,Female,AU,Single,Full-time,47092,Standard,2025-06-15,Low,0.343,False,Medium,False,0.3,LOW_DIGITAL_LITERACY,False,734,Standard,Low
+AU-CUST00555,Robert Morgan,1996-10-19,Female,AU,Married,Self-employed,58366,Standard,2024-08-09,Medium,0.638,True,Low,False,0.0,NONE,False,572,Enhanced,Low
+AU-CUST00556,Nicole Gonzalez,2006-10-17,Male,AU,Divorced,Part-time,46866,Standard,2024-04-29,Medium,0.566,False,Low,False,0.2,YOUNG_ADULT,False,612,Standard,Low
+AU-CUST00557,Kathryn Williams,1984-10-22,Male,AU,Single,Full-time,98425,Standard,2024-03-15,Medium,0.678,False,Low,False,0.0,NONE,False,779,Standard,Low
+AU-CUST00558,Gary Wells,1983-10-23,Male,AU,Married,Full-time,71954,Standard,2025-04-11,Medium,0.508,False,Low,False,0.0,NONE,False,706,Enhanced,Low
+AU-CUST00559,Larry Robertson,1980-10-23,Male,AU,Married,Full-time,106784,Premium,2025-01-11,Medium,0.511,True,Low,False,0.0,NONE,False,646,Enhanced,Low
+AU-CUST00560,Louis Martin,1987-10-22,Female,AU,Widowed,Part-time,110704,Premium,2024-11-13,Medium,0.718,False,Low,False,0.0,NONE,False,590,Standard,Low
+AU-CUST00561,Nancy Evans MD,2001-10-18,Male,AU,Married,Part-time,53181,Standard,2024-08-24,Medium,0.563,True,Low,False,0.2,YOUNG_ADULT,False,649,Enhanced,Low
+AU-CUST00562,Kim Erickson,2003-10-18,Female,AU,Single,Student,23977,Standard,2024-08-13,High,0.944,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,554,Standard,Medium
+AU-CUST00563,Robert Richardson,1949-10-31,Female,AU,Single,Retired,33449,Standard,2025-05-28,Low,0.445,True,Very High,True,0.8,ELDERLY|PRIOR_VICTIM,False,615,Standard,Medium
+AU-CUST00564,Veronica Silva,1974-10-25,Female,AU,Married,Full-time,57547,Standard,2025-01-08,Medium,0.518,True,Low,False,0.0,NONE,False,667,Enhanced,Low
+AU-CUST00565,Molly Watts,1974-10-25,Female,AU,Single,Full-time,47924,Standard,2025-06-13,Medium,0.731,False,Low,False,0.0,NONE,False,644,Enhanced,Low
+AU-CUST00566,John Coffey,1974-10-25,Female,AU,Widowed,Full-time,72173,Standard,2025-03-16,Medium,0.581,False,Low,False,0.0,NONE,False,632,Standard,Low
+AU-CUST00567,Paula Lane,1968-10-26,Female,AU,Widowed,Part-time,84864,Standard,2025-02-25,Low,0.263,False,Low,False,0.0,NONE,False,669,Standard,Low
+AU-CUST00568,Lauren Jackson,2000-10-18,Male,AU,Widowed,Full-time,65716,Standard,2024-10-30,High,0.876,True,Low,False,0.0,NONE,False,746,Standard,Low
+AU-CUST00569,Lisa Randall,1990-10-21,Female,AU,Single,Full-time,44881,Standard,2024-05-13,Medium,0.752,True,Low,False,0.0,NONE,False,723,Standard,Low
+AU-CUST00570,Michael Johnson,1982-10-23,Female,AU,Married,Part-time,43846,Standard,2024-12-24,Medium,0.668,False,Low,False,0.0,NONE,False,539,Simplified,Low
+AU-CUST00571,Ashley Smith,1983-10-23,Male,AU,Married,Self-employed,97198,Standard,2025-01-28,Medium,0.651,True,Low,False,0.0,NONE,False,643,Standard,Low
+AU-CUST00572,Christian Vaughn,1942-11-02,Female,AU,Single,Retired,42258,Standard,2024-10-13,Low,0.247,True,Medium,True,0.35,ELDERLY,False,525,Enhanced,Low
+AU-CUST00573,Reginald Knapp,1985-10-22,Female,AU,Single,Full-time,108753,Premium,2024-01-12,Medium,0.6,True,Low,False,0.0,NONE,False,791,Standard,Low
+AU-CUST00574,Nancy Brown,1975-10-25,Male,AU,Single,Self-employed,100881,Premium,2025-06-11,Medium,0.767,True,Low,False,0.0,NONE,False,669,Standard,Low
+AU-CUST00575,Daniel Nguyen,1946-11-01,Female,AU,Married,Retired,41926,Standard,2025-03-29,Low,0.347,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,526,Standard,Medium
+AU-CUST00576,Kelly Edwards,1991-10-21,Female,AU,Widowed,Unemployed,64915,Standard,2024-07-12,Medium,0.779,True,Medium,False,0.25,LOW_INCOME,False,558,Enhanced,Low
+AU-CUST00577,Thomas Peterson,1959-10-29,Male,AU,Divorced,Part-time,39891,Standard,2024-09-27,Low,0.532,True,Low,False,0.0,NONE,False,767,Simplified,Low
+AU-CUST00578,Raymond Le,1974-10-25,Male,AU,Single,Full-time,113060,Premium,2024-03-08,Medium,0.797,False,Low,False,0.0,NONE,False,783,Standard,Low
+AU-CUST00579,Melissa Bishop,1941-11-02,Male,AU,Married,Retired,36309,Standard,2025-05-29,Low,0.458,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,586,Standard,Medium
+AU-CUST00580,David Grant,1987-10-22,Female,AU,Single,Full-time,46448,Standard,2024-05-06,Medium,0.739,True,Low,False,0.0,NONE,False,669,Standard,Low
+AU-CUST00581,William Evans,1990-10-21,Male,AU,Single,Part-time,62672,Standard,2024-07-26,Medium,0.741,True,Low,False,0.0,NONE,False,562,Standard,Low
+AU-CUST00582,Daniel Bush,1989-10-21,Female,AU,Single,Full-time,48368,Standard,2024-08-23,Medium,0.693,False,Low,False,0.0,NONE,False,642,Standard,Low
+AU-CUST00583,Gregory Peck,2004-10-17,Female,AU,Married,Full-time,46261,Standard,2024-05-24,High,0.852,True,Low,False,0.2,YOUNG_ADULT,False,589,Simplified,Low
+AU-CUST00584,Denise Martinez,1986-10-22,Female,AU,Married,Part-time,31660,Standard,2024-12-14,Medium,0.79,False,Low,False,0.0,NONE,False,736,Standard,Low
+AU-CUST00585,Jamie Baird,1957-10-29,Male,AU,Divorced,Retired,34345,Standard,2025-06-30,Low,0.383,True,Medium,False,0.3,LOW_DIGITAL_LITERACY,False,726,Enhanced,Low
+AU-CUST00586,Tina Ballard,1972-10-25,Male,AU,Divorced,Full-time,67491,Standard,2025-04-14,Medium,0.65,False,Low,False,0.0,NONE,False,717,Enhanced,Low
+AU-CUST00587,Dwayne Klein,2003-10-18,Male,AU,Single,Student,17078,Standard,2024-10-18,High,0.945,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,457,Standard,Medium
+AU-CUST00588,Jeremy Scott,1991-10-21,Male,AU,Married,Full-time,72593,Standard,2024-03-12,High,0.867,True,Low,False,0.0,NONE,False,589,Standard,Low
+AU-CUST00589,Dale Ryan,1996-10-19,Male,AU,Single,Full-time,102694,Premium,2025-04-18,High,0.802,False,Low,False,0.0,NONE,False,709,Enhanced,Low
+AU-CUST00590,Melissa Taylor,2003-10-18,Male,AU,Married,Full-time,25362,Standard,2024-05-20,High,0.926,False,Low,False,0.2,YOUNG_ADULT,False,776,Standard,Low
+AU-CUST00591,Laurie Sanchez,1964-10-27,Male,AU,Married,Part-time,106096,Premium,2025-05-15,Low,0.229,False,Low,False,0.0,NONE,False,656,Standard,Low
+AU-CUST00592,Kiara Little,1990-10-21,Female,AU,Single,Full-time,80354,Standard,2024-08-05,Medium,0.755,True,Low,False,0.0,NONE,False,687,Enhanced,Low
+AU-CUST00593,Jason Love,1988-10-21,Male,AU,Single,Full-time,95221,Standard,2024-10-11,Medium,0.605,True,Low,False,0.0,NONE,False,648,Standard,Low
+AU-CUST00594,Randy Smith,1979-10-24,Male,AU,Single,Full-time,88783,Standard,2024-08-27,Medium,0.713,True,Low,False,0.0,NONE,False,729,Enhanced,Low
+AU-CUST00595,Tanya Russell,2004-10-17,Female,AU,Single,Student,17667,Standard,2024-09-07,High,0.885,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,461,Standard,Medium
+AU-CUST00596,Sherry Woods,1993-10-20,Female,AU,Widowed,Unemployed,61224,Standard,2024-03-31,Medium,0.754,True,Medium,False,0.25,LOW_INCOME,False,506,Standard,Low
+AU-CUST00597,Victor Morris,1973-10-25,Female,AU,Single,Part-time,118759,Premium,2024-10-30,Medium,0.786,False,Low,False,0.0,NONE,False,603,Standard,Low
+AU-CUST00598,Susan Davis,1970-10-26,Female,AU,Married,Part-time,40757,Standard,2024-08-09,Low,0.447,True,Low,False,0.0,NONE,False,586,Standard,Low
+AU-CUST00599,Kimberly Sharp,1941-11-02,Male,AU,Widowed,Part-time,25642,Standard,2025-04-10,Low,0.325,True,Medium,True,0.35,ELDERLY,False,601,Standard,Low
+AU-CUST00600,Susan Thompson,1975-10-25,Female,AU,Married,Full-time,107719,Premium,2024-09-18,Medium,0.652,False,Low,False,0.0,NONE,False,730,Standard,Low
+AU-CUST00601,Casey Gillespie,1983-10-23,Female,AU,Married,Self-employed,75610,Standard,2025-06-13,Medium,0.659,True,Low,False,0.0,NONE,False,655,Standard,Low
+AU-CUST00602,Jennifer Simpson DVM,1977-10-24,Female,AU,Widowed,Full-time,102168,Premium,2024-06-11,Medium,0.712,True,Low,False,0.0,NONE,False,749,Standard,Low
+AU-CUST00603,Tammy Mcdowell,1946-11-01,Female,AU,Single,Part-time,34368,Standard,2024-06-29,Low,0.383,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,562,Enhanced,Medium
+AU-CUST00604,Keith Rodriguez,1972-10-25,Male,AU,Single,Part-time,46845,Standard,2024-01-21,Medium,0.68,True,Low,False,0.0,NONE,False,703,Standard,Low
+AU-CUST00605,Mrs. Virginia Daniels,1947-11-01,Male,AU,Married,Retired,37856,Standard,2025-02-09,Low,0.219,False,Medium,True,0.35,ELDERLY,False,577,Standard,Low
+AU-CUST00606,Todd Rosales MD,1969-10-26,Female,AU,Married,Unemployed,48489,Standard,2024-02-10,Low,0.215,True,Medium,False,0.25,LOW_INCOME,False,690,Standard,Low
+AU-CUST00607,Brian Martin,1952-10-30,Female,AU,Married,Retired,27789,Standard,2024-06-05,Low,0.357,False,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,570,Standard,Medium
+AU-CUST00608,David Lopez,2004-10-17,Male,AU,Single,Part-time,20187,Standard,2025-05-14,Medium,0.533,True,Low,False,0.2,YOUNG_ADULT,False,604,Standard,Low
+AU-CUST00609,Rachel Bradley,1973-10-25,Male,AU,Married,Full-time,119132,Premium,2024-12-01,Medium,0.679,False,Low,False,0.0,NONE,False,673,Standard,Low
+AU-CUST00610,Casey Chase,1983-10-23,Male,AU,Married,Full-time,77866,Standard,2024-11-02,Medium,0.555,True,Low,False,0.0,NONE,False,717,Standard,Low
+AU-CUST00611,Samantha Robertson,1966-10-27,Male,AU,Widowed,Full-time,101707,Premium,2025-03-17,Low,0.587,True,Low,False,0.0,NONE,False,587,Enhanced,Low
+AU-CUST00612,Michael Lopez,1967-10-27,Male,AU,Single,Full-time,63982,Standard,2025-02-27,Low,0.372,False,Low,False,0.0,NONE,False,733,Enhanced,Low
+AU-CUST00613,Franklin Wright,1961-10-28,Female,AU,Single,Full-time,95377,Standard,2025-05-01,Low,0.311,False,Low,False,0.0,NONE,False,585,Standard,Low
+AU-CUST00614,David Molina,1951-10-31,Male,AU,Widowed,Part-time,27733,Standard,2024-12-31,Low,0.371,False,Medium,True,0.35,ELDERLY,False,569,Enhanced,Low
+AU-CUST00615,Elizabeth Sharp,1994-10-20,Male,AU,Married,Full-time,109825,Premium,2024-09-03,High,0.953,True,High,True,0.45,PRIOR_VICTIM,False,663,Enhanced,Medium
+AU-CUST00616,Matthew Schwartz,1970-10-26,Male,AU,Single,Full-time,53382,Standard,2024-03-12,Low,0.554,True,Low,False,0.0,NONE,False,642,Enhanced,Low
+AU-CUST00617,Bryan Parker,1966-10-27,Female,AU,Single,Full-time,56738,Standard,2024-07-21,Low,0.344,False,Low,False,0.0,NONE,False,729,Standard,Low
+AU-CUST00618,Jonathan Jacobson,1995-10-20,Female,AU,Married,Full-time,68703,Standard,2025-01-22,High,0.832,True,Low,False,0.0,NONE,False,817,Standard,Low
+AU-CUST00619,Emily Wilson,2000-10-18,Female,AU,Married,Full-time,75314,Standard,2024-05-19,High,0.872,True,Low,False,0.0,NONE,False,625,Standard,Low
+AU-CUST00620,Elizabeth Mendez,1996-10-19,Female,AU,Married,Self-employed,79653,Standard,2025-01-03,Medium,0.614,True,Low,False,0.0,NONE,False,617,Standard,Low
+AU-CUST00621,Casey Hernandez,1968-10-26,Female,AU,Divorced,Full-time,105218,Premium,2024-03-14,Low,0.457,True,Low,False,0.0,NONE,False,671,Enhanced,Low
+AU-CUST00622,Lisa Perry,1990-10-21,Female,AU,Single,Full-time,97657,Standard,2024-02-03,Medium,0.601,True,Low,False,0.0,NONE,False,692,Standard,Low
+AU-CUST00623,Kaitlin Medina,1963-10-28,Female,AU,Single,Full-time,99362,Standard,2024-07-19,Low,0.253,True,Low,False,0.0,NONE,False,660,Standard,Low
+AU-CUST00624,Colleen Wright,1982-10-23,Male,AU,Married,Full-time,42732,Standard,2024-05-06,Medium,0.714,False,Low,False,0.0,NONE,False,798,Standard,Low
+AU-CUST00625,Shelley Miller,1942-11-02,Female,AU,Divorced,Retired,25658,Standard,2025-04-23,Low,0.419,False,Medium,True,0.35,ELDERLY,False,590,Standard,Low
+AU-CUST00626,Michael Miller,1987-10-22,Male,AU,Single,Full-time,93781,Standard,2024-07-26,Medium,0.772,True,Low,False,0.0,NONE,False,801,Standard,Low
+AU-CUST00627,Amy Kelley,1966-10-27,Female,AU,Married,Part-time,32674,Standard,2024-08-17,Low,0.551,True,Low,False,0.0,NONE,False,670,Standard,Low
+AU-CUST00628,Laura Hernandez,2007-10-17,Male,AU,Single,Part-time,45888,Standard,2024-08-09,Medium,0.636,False,Low,False,0.2,YOUNG_ADULT,False,599,Standard,Low
+AU-CUST00629,Joseph Wilson,1971-10-26,Male,AU,Single,Part-time,91350,Standard,2024-06-23,Medium,0.585,True,High,True,0.45,PRIOR_VICTIM,False,583,Standard,Medium
+AU-CUST00630,Kevin Davis,1965-10-27,Male,AU,Divorced,Self-employed,74883,Standard,2025-05-18,Low,0.415,False,Low,False,0.0,NONE,False,644,Standard,Low
+AU-CUST00631,Rhonda Chavez,1942-11-02,Female,AU,Single,Retired,43382,Standard,2025-02-09,Low,0.336,True,Medium,True,0.35,ELDERLY,False,623,Simplified,Low
+AU-CUST00632,Joyce Brown,1948-10-31,Female,AU,Single,Retired,31315,Standard,2024-03-28,Low,0.391,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,538,Enhanced,Medium
+AU-CUST00633,Robert Cummings,1997-10-19,Male,AU,Married,Full-time,114756,Premium,2024-04-28,High,0.933,True,Low,False,0.0,NONE,False,625,Standard,Low
+AU-CUST00634,Robert Reese,1987-10-22,Female,AU,Married,Full-time,89157,Standard,2024-02-14,Medium,0.707,True,Low,False,0.0,NONE,False,637,Standard,Low
+AU-CUST00635,Amber Cooper,2007-10-17,Male,AU,Married,Part-time,54595,Standard,2024-05-20,Medium,0.732,False,Low,False,0.2,YOUNG_ADULT,False,684,Enhanced,Low
+AU-CUST00636,Zachary Michael,2007-10-17,Female,AU,Married,Student,21992,Standard,2024-12-26,High,0.951,False,Very High,True,0.9,YOUNG_ADULT|LOW_INCOME|PRIOR_VICTIM,False,601,Simplified,Medium
+AU-CUST00637,Timothy Johnson,1975-10-25,Male,AU,Single,Part-time,29643,Standard,2025-05-28,Medium,0.729,False,Low,False,0.0,NONE,False,719,Standard,Low
+AU-CUST00638,Randy Cannon,1969-10-26,Male,AU,Married,Self-employed,58698,Standard,2024-09-21,Low,0.43,True,Low,False,0.0,NONE,False,648,Standard,Low
+AU-CUST00639,Maria Fisher,1978-10-24,Female,AU,Single,Full-time,73834,Standard,2024-02-14,Medium,0.582,False,Low,False,0.0,NONE,False,645,Enhanced,Low
+AU-CUST00640,Janet Kane DVM,1944-11-01,Female,AU,Single,Retired,27704,Standard,2024-01-27,Low,0.354,True,Medium,True,0.35,ELDERLY,False,601,Standard,Low
+AU-CUST00641,Michael Stanley,1977-10-24,Female,AU,Married,Full-time,34815,Standard,2024-08-15,Medium,0.598,False,Low,False,0.0,NONE,False,695,Enhanced,Low
+AU-CUST00642,Martha Bailey,1953-10-30,Female,AU,Single,Retired,32028,Standard,2024-05-25,Low,0.257,True,Medium,True,0.35,ELDERLY,False,495,Standard,Low
+AU-CUST00643,Joshua Rice,2005-10-17,Female,AU,Divorced,Student,20378,Standard,2024-11-12,High,0.873,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,441,Standard,Medium
+AU-CUST00644,Courtney Smith,2002-10-18,Male,AU,Divorced,Full-time,34262,Standard,2024-03-05,High,0.964,True,Low,False,0.2,YOUNG_ADULT,False,604,Enhanced,Low
+AU-CUST00645,Edwin Nunez,1974-10-25,Male,AU,Divorced,Unemployed,61614,Standard,2024-05-06,Medium,0.604,True,Medium,False,0.25,LOW_INCOME,False,540,Enhanced,Low
+AU-CUST00646,Kim Morrow,1965-10-27,Female,AU,Single,Part-time,32138,Standard,2024-11-01,Low,0.508,True,Low,False,0.0,NONE,False,655,Standard,Low
+AU-CUST00647,Gregory Hill,2001-10-18,Male,AU,Single,Full-time,54480,Standard,2024-06-03,High,0.828,True,Low,False,0.2,YOUNG_ADULT,False,672,Enhanced,Low
+AU-CUST00648,Molly Rodriguez,1984-10-22,Female,AU,Divorced,Part-time,80068,Standard,2024-07-19,Medium,0.539,True,Low,False,0.0,NONE,False,696,Enhanced,Low
+AU-CUST00649,Jennifer Miranda,1966-10-27,Male,AU,Married,Full-time,58562,Standard,2024-05-01,Low,0.274,False,Low,False,0.0,NONE,False,791,Standard,Low
+AU-CUST00650,Alexis Harris,2004-10-17,Male,AU,Married,Full-time,44667,Standard,2024-01-29,High,0.99,True,Low,False,0.2,YOUNG_ADULT,False,727,Simplified,Low
+AU-CUST00651,Andrew Harper,1982-10-23,Male,AU,Divorced,Unemployed,71783,Standard,2024-07-08,Medium,0.63,True,Medium,False,0.25,LOW_INCOME,False,566,Standard,Low
+AU-CUST00652,Amber Yang,1944-11-01,Female,AU,Single,Retired,36917,Standard,2024-06-30,Low,0.513,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,564,Standard,Medium
+AU-CUST00653,David Robinson,1966-10-27,Female,AU,Single,Full-time,48252,Standard,2025-05-08,Low,0.566,True,Low,False,0.0,NONE,False,669,Enhanced,Low
+AU-CUST00654,Amy Gordon,2003-10-18,Male,AU,Married,Student,20965,Standard,2025-05-05,High,0.863,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,471,Standard,Medium
+AU-CUST00655,Robert Dennis,1944-11-01,Male,AU,Married,Retired,28315,Standard,2024-08-24,Low,0.319,True,Medium,True,0.35,ELDERLY,False,720,Enhanced,Low
+AU-CUST00656,Kyle Chambers,1987-10-22,Male,AU,Single,Full-time,107957,Premium,2024-06-07,Medium,0.515,False,High,True,0.45,PRIOR_VICTIM,False,701,Standard,Medium
+AU-CUST00657,Eric Thomas,1964-10-27,Male,AU,Married,Self-employed,28794,Standard,2024-08-17,Low,0.414,False,Low,False,0.0,NONE,False,749,Standard,Low
+AU-CUST00658,Connie Turner,1991-10-21,Male,AU,Married,Full-time,78074,Standard,2024-11-29,High,0.919,False,Low,False,0.0,NONE,False,664,Standard,Low
+AU-CUST00659,Travis Hobbs,1970-10-26,Female,AU,Married,Full-time,81689,Standard,2024-07-31,Low,0.419,True,Low,False,0.0,NONE,False,812,Enhanced,Low
+AU-CUST00660,Lori Simmons,1993-10-20,Male,AU,Single,Full-time,112714,Premium,2025-02-19,High,0.936,False,Low,False,0.0,NONE,False,781,Enhanced,Low
+AU-CUST00661,William David DDS,1989-10-21,Male,AU,Married,Full-time,89518,Standard,2025-06-13,Medium,0.589,True,Low,False,0.0,NONE,False,713,Standard,Low
+AU-CUST00662,Emma Butler,1946-11-01,Male,AU,Married,Retired,44117,Standard,2024-08-09,Low,0.583,True,Medium,True,0.35,ELDERLY,False,610,Standard,Low
+AU-CUST00663,James Webster,2006-10-17,Male,AU,Widowed,Unemployed,43258,Standard,2024-03-05,Medium,0.587,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,548,Standard,Medium
+AU-CUST00664,Samuel Turner,2002-10-18,Male,AU,Single,Full-time,19899,Standard,2024-03-07,High,0.966,False,Low,False,0.2,YOUNG_ADULT,False,741,Standard,Low
+AU-CUST00665,Renee Melendez,1992-10-20,Female,AU,Divorced,Part-time,94953,Standard,2025-04-23,Medium,0.712,True,Low,False,0.0,NONE,False,664,Enhanced,Low
+AU-CUST00666,Tracy Grant,1972-10-25,Female,AU,Married,Full-time,27237,Standard,2024-08-16,Medium,0.762,False,Very High,True,0.6,NONE,True,619,Enhanced,High
+AU-CUST00667,David Harris,1959-10-29,Female,AU,Married,Retired,41528,Standard,2024-06-28,Low,0.578,True,Low,False,0.0,NONE,False,694,Standard,Low
+AU-CUST00668,Tammy Boone,1941-11-02,Male,AU,Single,Retired,37863,Standard,2024-12-06,Low,0.225,True,Medium,True,0.35,ELDERLY,False,539,Standard,Low
+AU-CUST00669,Nathaniel Lee,1994-10-20,Female,AU,Single,Full-time,50694,Standard,2025-06-09,High,0.848,False,Low,False,0.0,NONE,False,697,Enhanced,Low
+AU-CUST00670,Michael Morrison,1981-10-23,Female,AU,Married,Full-time,29337,Standard,2024-08-21,Medium,0.763,True,Low,False,0.0,NONE,False,755,Standard,Low
+AU-CUST00671,Chelsea Gill,1998-10-19,Female,AU,Single,Self-employed,66134,Standard,2024-06-22,Medium,0.583,False,Low,False,0.0,NONE,False,598,Standard,Low
+AU-CUST00672,Kristin Mendoza,1968-10-26,Female,AU,Single,Full-time,48308,Standard,2025-04-18,Low,0.251,True,Low,False,0.0,NONE,False,737,Enhanced,Low
+AU-CUST00673,Felicia Krueger,1944-11-01,Male,AU,Widowed,Retired,36756,Standard,2024-02-15,Low,0.214,False,Medium,True,0.35,ELDERLY,False,563,Standard,Low
+AU-CUST00674,Timothy Hayden,1978-10-24,Female,AU,Single,Full-time,31099,Standard,2025-04-08,Medium,0.56,True,Low,False,0.0,NONE,False,740,Standard,Low
+AU-CUST00675,Zachary Mendoza,1967-10-27,Female,AU,Widowed,Self-employed,60764,Standard,2024-10-12,Low,0.304,True,High,True,0.45,PRIOR_VICTIM,False,622,Standard,Medium
+AU-CUST00676,Larry Harris,1987-10-22,Female,AU,Married,Full-time,65975,Standard,2024-01-12,Medium,0.688,False,Low,False,0.0,NONE,False,741,Enhanced,Low
+AU-CUST00677,Kristen Rowe,1941-11-02,Female,AU,Divorced,Part-time,31416,Standard,2024-05-05,Low,0.286,True,Medium,True,0.35,ELDERLY,False,595,Standard,Low
+AU-CUST00678,Joseph Howard,1982-10-23,Female,AU,Single,Self-employed,114256,Premium,2025-01-07,Medium,0.54,False,Low,False,0.0,NONE,False,640,Enhanced,Low
+AU-CUST00679,Jose Crawford,2001-10-18,Male,AU,Married,Full-time,29425,Standard,2025-02-17,High,0.887,True,Low,False,0.2,YOUNG_ADULT,False,759,Standard,Low
+AU-CUST00680,William Harrison,1990-10-21,Female,AU,Married,Self-employed,68500,Standard,2024-04-17,Medium,0.728,True,Low,False,0.0,NONE,False,685,Standard,Low
+AU-CUST00681,Suzanne Wood,2006-10-17,Female,AU,Widowed,Full-time,33637,Standard,2024-12-26,High,0.862,True,Low,False,0.2,YOUNG_ADULT,False,681,Enhanced,Low
+AU-CUST00682,Justin Walker,2006-10-17,Female,AU,Single,Student,11563,Standard,2025-06-27,High,0.865,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,523,Standard,Medium
+AU-CUST00683,Dean Donovan,2003-10-18,Female,AU,Single,Full-time,15573,Standard,2025-01-11,High,0.938,True,Low,False,0.2,YOUNG_ADULT,False,613,Standard,Low
+AU-CUST00684,Jennifer Hernandez,1983-10-23,Male,AU,Widowed,Full-time,77908,Standard,2025-01-20,Medium,0.744,True,High,True,0.45,PRIOR_VICTIM,False,637,Standard,Medium
+AU-CUST00685,James Whitaker,1973-10-25,Male,AU,Single,Unemployed,28441,Standard,2024-04-16,Medium,0.548,True,Medium,False,0.25,LOW_INCOME,False,477,Enhanced,Low
+AU-CUST00686,Mr. Michael Scott PhD,1988-10-21,Male,AU,Married,Full-time,68484,Standard,2024-12-15,Medium,0.562,False,Low,False,0.0,NONE,False,776,Standard,Low
+AU-CUST00687,Maria Henry,1992-10-20,Female,AU,Single,Full-time,48707,Standard,2025-01-24,High,0.877,False,Low,False,0.0,NONE,False,662,Enhanced,Low
+AU-CUST00688,Robert Jackson,1951-10-31,Female,AU,Single,Retired,29335,Standard,2024-03-01,Low,0.406,True,Medium,True,0.35,ELDERLY,False,562,Standard,Low
+AU-CUST00689,Katherine Stark,1971-10-26,Female,AU,Married,Full-time,63124,Standard,2024-06-19,Medium,0.558,True,Low,False,0.0,NONE,False,749,Standard,Low
+AU-CUST00690,Maria Brown,1981-10-23,Female,AU,Married,Full-time,25094,Standard,2025-04-29,Medium,0.717,True,Low,False,0.0,NONE,False,714,Standard,Low
+AU-CUST00691,Ryan Landry,1985-10-22,Female,AU,Married,Full-time,33888,Standard,2025-07-02,Medium,0.789,True,Low,False,0.0,NONE,False,743,Standard,Low
+AU-CUST00692,Pamela Gutierrez,1950-10-31,Male,AU,Married,Retired,31581,Standard,2024-04-05,Low,0.43,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,546,Enhanced,Medium
+AU-CUST00693,Crystal Mann,1997-10-19,Female,AU,Married,Full-time,46073,Standard,2025-02-05,High,0.845,True,Low,False,0.0,NONE,False,652,Standard,Low
+AU-CUST00694,Jonathan Brooks,1989-10-21,Female,AU,Widowed,Full-time,114429,Premium,2024-10-02,Medium,0.564,True,Low,False,0.0,NONE,False,716,Simplified,Low
+AU-CUST00695,Mary Jensen,1942-11-02,Female,AU,Single,Retired,27537,Standard,2024-11-20,Low,0.506,True,Medium,True,0.35,ELDERLY,False,555,Standard,Low
+AU-CUST00696,Mr. Aaron Arnold,1990-10-21,Female,AU,Single,Full-time,118221,Premium,2024-10-07,Medium,0.728,True,Low,False,0.0,NONE,False,721,Standard,Low
+AU-CUST00697,Joseph Hill,1979-10-24,Female,AU,Single,Full-time,82977,Standard,2025-04-21,Medium,0.63,False,Low,False,0.0,NONE,False,739,Standard,Low
+AU-CUST00698,Alicia Li,1974-10-25,Male,AU,Married,Unemployed,33401,Standard,2024-09-01,Medium,0.784,True,Medium,False,0.25,LOW_INCOME,False,549,Enhanced,Low
+AU-CUST00699,Renee Browning,1979-10-24,Female,AU,Single,Unemployed,44381,Standard,2024-11-19,Medium,0.66,True,Medium,False,0.25,LOW_INCOME,False,715,Standard,Low
+AU-CUST00700,Brent Hernandez,1994-10-20,Female,AU,Married,Full-time,64907,Standard,2025-01-02,High,0.894,True,Low,False,0.0,NONE,False,673,Standard,Low
+AU-CUST00701,Joseph Ochoa,1997-10-19,Male,AU,Married,Full-time,113468,Premium,2024-10-30,High,0.806,False,Low,False,0.0,NONE,False,690,Simplified,Low
+AU-CUST00702,James Watson,1984-10-22,Male,AU,Married,Full-time,119721,Premium,2025-04-27,Medium,0.561,True,Low,False,0.0,NONE,False,615,Enhanced,Low
+AU-CUST00703,Karl Branch,2005-10-17,Male,AU,Divorced,Student,19731,Standard,2024-05-10,High,0.83,False,Very High,True,0.9,YOUNG_ADULT|LOW_INCOME|PRIOR_VICTIM,False,544,Standard,Medium
+AU-CUST00704,Michael Abbott,1945-11-01,Male,AU,Married,Unemployed,26152,Standard,2025-06-04,Low,0.239,False,Very High,True,1.0,ELDERLY|LOW_INCOME|PRIOR_VICTIM,False,533,Enhanced,Medium
+AU-CUST00705,Shannon Malone,1994-10-20,Female,AU,Married,Unemployed,78942,Standard,2025-01-07,Medium,0.602,True,Medium,False,0.25,LOW_INCOME,False,511,Standard,Low
+AU-CUST00706,James Tran,1976-10-24,Male,AU,Single,Self-employed,39172,Standard,2025-06-11,Medium,0.658,True,Low,False,0.0,NONE,False,708,Standard,Low
+AU-CUST00707,Adam Jackson,1970-10-26,Male,AU,Married,Full-time,88983,Standard,2024-07-24,Low,0.313,False,Low,False,0.0,NONE,False,620,Standard,Low
+AU-CUST00708,Mr. Richard Knight PhD,1976-10-24,Female,AU,Single,Full-time,39723,Standard,2024-09-19,Medium,0.735,True,Low,False,0.0,NONE,False,623,Enhanced,Low
+AU-CUST00709,Joseph Williams,1985-10-22,Male,AU,Divorced,Full-time,106167,Premium,2024-01-24,Medium,0.524,True,Low,False,0.0,NONE,False,818,Standard,Low
+AU-CUST00710,Sean Clay,1982-10-23,Female,AU,Married,Full-time,92341,Standard,2025-05-22,Medium,0.507,True,Low,False,0.0,NONE,False,625,Enhanced,Low
+AU-CUST00711,Anthony Jones,1964-10-27,Male,AU,Single,Unemployed,25710,Standard,2025-03-24,Low,0.597,True,Medium,False,0.25,LOW_INCOME,False,458,Enhanced,Low
+AU-CUST00712,Stephanie Elliott,1980-10-23,Male,AU,Single,Full-time,89043,Standard,2024-06-11,Medium,0.618,True,Low,False,0.0,NONE,False,761,Standard,Low
+AU-CUST00713,Timothy Edwards,1942-11-02,Female,AU,Married,Retired,36795,Standard,2024-01-29,Low,0.44,True,Medium,True,0.35,ELDERLY,False,534,Standard,Low
+AU-CUST00714,Laurie Goodwin,1952-10-30,Female,AU,Divorced,Retired,36762,Standard,2025-01-17,Low,0.572,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,580,Enhanced,Medium
+AU-CUST00715,Jennifer Jones,1973-10-25,Female,AU,Single,Full-time,91241,Standard,2025-01-04,Medium,0.623,True,Low,False,0.0,NONE,False,759,Standard,Low
+AU-CUST00716,David Davenport,2002-10-18,Female,AU,Single,Full-time,19343,Standard,2024-10-16,High,0.889,False,Low,False,0.2,YOUNG_ADULT,False,686,Standard,Low
+AU-CUST00717,Steven Rivera,1974-10-25,Male,AU,Married,Full-time,108781,Premium,2024-03-27,Medium,0.533,False,Low,False,0.0,NONE,False,694,Standard,Low
+AU-CUST00718,Brenda Hinton,1999-10-19,Female,AU,Widowed,Self-employed,69820,Standard,2025-05-19,Medium,0.775,True,Low,False,0.0,NONE,False,606,Enhanced,Low
+AU-CUST00719,Kathryn Mccann,1972-10-25,Male,AU,Divorced,Full-time,33159,Standard,2024-08-25,Medium,0.68,False,Low,False,0.0,NONE,False,686,Standard,Low
+AU-CUST00720,Jeffrey Roberson,1961-10-28,Male,AU,Single,Full-time,33023,Standard,2025-02-01,Low,0.374,False,Very High,True,0.6,NONE,True,616,Standard,High
+AU-CUST00721,Randy Friedman,1986-10-22,Male,AU,Married,Unemployed,46135,Standard,2025-04-16,Medium,0.652,False,Medium,False,0.25,LOW_INCOME,False,606,Standard,Low
+AU-CUST00722,Raymond Johnson,1985-10-22,Female,AU,Married,Part-time,41021,Standard,2024-10-28,Medium,0.594,True,Low,False,0.0,NONE,False,665,Standard,Low
+AU-CUST00723,Willie Henry,2006-10-17,Male,AU,Married,Student,16274,Standard,2024-02-21,High,0.989,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,454,Simplified,Medium
+AU-CUST00724,Todd Reynolds,1956-10-29,Male,AU,Married,Retired,40967,Standard,2025-05-02,Low,0.567,True,Low,False,0.0,NONE,False,651,Standard,Low
+AU-CUST00725,Mary Miller,1998-10-19,Male,AU,Married,Unemployed,108152,Premium,2025-01-01,Medium,0.648,True,Medium,False,0.25,LOW_INCOME,False,440,Enhanced,Low
+AU-CUST00726,Rebecca Marquez,2000-10-18,Female,AU,Married,Full-time,98785,Standard,2025-05-06,High,0.962,True,Low,False,0.0,NONE,False,735,Enhanced,Low
+AU-CUST00727,Christian Dawson,2006-10-17,Male,AU,Single,Student,23700,Standard,2024-12-02,High,0.964,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,567,Standard,Medium
+AU-CUST00728,Nancy Stewart,2007-10-17,Female,AU,Single,Full-time,25137,Standard,2025-05-13,High,0.948,False,Low,False,0.2,YOUNG_ADULT,False,824,Enhanced,Low
+AU-CUST00729,Aaron Parker,1987-10-22,Male,AU,Married,Full-time,26121,Standard,2025-04-21,Medium,0.568,True,Low,False,0.0,NONE,False,768,Simplified,Low
+AU-CUST00730,Derrick Anderson,1989-10-21,Female,AU,Single,Full-time,111831,Premium,2024-04-28,Medium,0.546,True,Low,False,0.0,NONE,False,674,Enhanced,Low
+AU-CUST00731,Jerry Peters,1981-10-23,Male,AU,Married,Self-employed,117130,Premium,2024-04-04,Medium,0.707,False,Low,False,0.0,NONE,False,681,Enhanced,Low
+AU-CUST00732,Alexander Gomez,2001-10-18,Female,AU,Divorced,Student,18882,Standard,2024-03-28,High,0.87,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,481,Standard,Medium
+AU-CUST00733,Kyle Nguyen,1996-10-19,Male,AU,Divorced,Full-time,76579,Standard,2025-03-15,High,0.907,True,Low,False,0.0,NONE,False,744,Enhanced,Low
+AU-CUST00734,Edgar Hughes,1992-10-20,Male,AU,Single,Full-time,51929,Standard,2024-05-11,High,0.889,False,Low,False,0.0,NONE,False,688,Standard,Low
+AU-CUST00735,Steven Stein,2002-10-18,Male,AU,Single,Full-time,18249,Standard,2024-09-04,High,0.801,True,Low,False,0.2,YOUNG_ADULT,False,596,Enhanced,Low
+AU-CUST00736,Laura Jackson,1978-10-24,Male,AU,Married,Full-time,86827,Standard,2025-03-08,Medium,0.585,False,Low,False,0.0,NONE,False,645,Standard,Low
+AU-CUST00737,Charles Turner,2001-10-18,Male,AU,Married,Student,23958,Standard,2024-08-23,High,0.95,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,506,Standard,Medium
+AU-CUST00738,Arthur Hamilton MD,1993-10-20,Male,AU,Single,Full-time,102855,Premium,2024-02-03,High,0.835,True,Low,False,0.0,NONE,False,811,Enhanced,Low
+AU-CUST00739,Mr. David Wright,1988-10-21,Female,AU,Divorced,Self-employed,92450,Standard,2024-07-17,Medium,0.7,True,Low,False,0.0,NONE,False,716,Enhanced,Low
+AU-CUST00740,Linda Gonzalez,1990-10-21,Female,AU,Single,Self-employed,108134,Premium,2024-02-21,Medium,0.724,True,High,True,0.45,PRIOR_VICTIM,False,671,Standard,Medium
+AU-CUST00741,Eric Rush,2005-10-17,Male,AU,Single,Full-time,22519,Standard,2024-07-30,High,0.836,False,Low,False,0.2,YOUNG_ADULT,False,798,Enhanced,Low
+AU-CUST00742,Manuel Brock,2006-10-17,Male,AU,Married,Student,19093,Standard,2025-02-08,High,0.929,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,529,Simplified,Medium
+AU-CUST00743,George Ochoa,1953-10-30,Male,AU,Married,Retired,29825,Standard,2024-10-12,Low,0.245,True,Medium,True,0.35,ELDERLY,False,557,Enhanced,Low
+AU-CUST00744,Valerie Taylor,1996-10-19,Male,AU,Married,Full-time,77144,Standard,2025-01-05,High,0.813,True,Low,False,0.0,NONE,False,684,Enhanced,Low
+AU-CUST00745,Travis Harris,1993-10-20,Male,AU,Married,Full-time,82988,Standard,2024-02-28,High,0.937,False,Low,False,0.0,NONE,False,730,Enhanced,Low
+AU-CUST00746,Vincent Novak,1989-10-21,Male,AU,Divorced,Self-employed,103078,Premium,2025-02-15,Medium,0.722,False,Low,False,0.0,NONE,False,711,Enhanced,Low
+AU-CUST00747,Michael Henry,1992-10-20,Male,AU,Single,Full-time,77150,Standard,2024-08-21,High,0.821,True,Low,False,0.0,NONE,False,742,Standard,Low
+AU-CUST00748,Dana Bennett,1983-10-23,Female,AU,Married,Full-time,69924,Standard,2024-06-06,Medium,0.58,True,Low,False,0.0,NONE,False,654,Standard,Low
+AU-CUST00749,Jenna Wilson,1974-10-25,Female,AU,Single,Self-employed,44958,Standard,2024-12-23,Medium,0.667,False,Low,False,0.0,NONE,False,679,Enhanced,Low
+AU-CUST00750,Leslie Gardner,1941-11-02,Female,AU,Married,Unemployed,26961,Standard,2024-03-15,Low,0.201,True,High,True,0.6,ELDERLY|LOW_INCOME,False,420,Simplified,Medium
+AU-CUST00751,Krista Benton,1992-10-20,Male,AU,Married,Part-time,81439,Standard,2024-09-30,Medium,0.575,False,Low,False,0.0,NONE,False,647,Standard,Low
+AU-CUST00752,Michael Gonzales,1994-10-20,Female,AU,Married,Full-time,95839,Standard,2024-08-19,High,0.828,True,Low,False,0.0,NONE,False,796,Standard,Low
+AU-CUST00753,Michael Fuentes,2001-10-18,Male,AU,Single,Student,21616,Standard,2024-04-01,High,0.904,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,392,Standard,Medium
+AU-CUST00754,Jennifer Porter,1986-10-22,Male,AU,Divorced,Full-time,35521,Standard,2025-06-06,Medium,0.76,False,Low,False,0.0,NONE,False,663,Enhanced,Low
+AU-CUST00755,Dana Hopkins,1966-10-27,Female,AU,Married,Full-time,96329,Standard,2024-07-18,Low,0.271,False,Low,False,0.0,NONE,False,677,Enhanced,Low
+AU-CUST00756,Rachel Jones,1997-10-19,Male,AU,Divorced,Full-time,109483,Premium,2024-01-23,High,0.813,False,Low,False,0.0,NONE,False,685,Standard,Low
+AU-CUST00757,Karen Morales DDS,1982-10-23,Male,AU,Married,Self-employed,91328,Standard,2024-08-31,Medium,0.798,True,Low,False,0.0,NONE,False,703,Standard,Low
+AU-CUST00758,Melissa Stephens,1950-10-31,Female,AU,Divorced,Retired,39178,Standard,2025-06-14,Low,0.384,False,Medium,True,0.35,ELDERLY,False,517,Standard,Low
+AU-CUST00759,Heather Woodard,2003-10-18,Female,AU,Married,Unemployed,14120,Standard,2025-01-02,Medium,0.535,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,496,Enhanced,Medium
+AU-CUST00760,Margaret Miller,1989-10-21,Female,AU,Married,Full-time,47293,Standard,2024-12-15,Medium,0.514,True,High,True,0.45,PRIOR_VICTIM,False,699,Standard,Medium
+AU-CUST00761,Mary Kelly,1978-10-24,Male,AU,Married,Full-time,95521,Standard,2025-05-09,Medium,0.737,True,Low,False,0.0,NONE,False,803,Standard,Low
+AU-CUST00762,Amanda Terrell,2002-10-18,Male,AU,Married,Full-time,35682,Standard,2024-02-16,High,0.89,True,Low,False,0.2,YOUNG_ADULT,False,731,Standard,Low
+AU-CUST00763,Jennifer Goodwin,2003-10-18,Female,AU,Married,Student,12119,Standard,2024-10-29,High,0.915,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,531,Enhanced,Medium
+AU-CUST00764,Jessica Smith,2007-10-17,Male,AU,Married,Student,22895,Standard,2024-06-25,High,1.0,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,494,Standard,Medium
+AU-CUST00765,Jorge Stone,1960-10-28,Male,AU,Married,Retired,32559,Standard,2025-01-06,Low,0.401,True,Low,False,0.0,NONE,False,749,Standard,Low
+AU-CUST00766,Laura Griffin,2001-10-18,Male,AU,Married,Part-time,12900,Standard,2025-04-13,Medium,0.64,True,Low,False,0.2,YOUNG_ADULT,False,690,Standard,Low
+AU-CUST00767,Raymond Chapman,2003-10-18,Female,AU,Married,Student,13451,Standard,2024-02-12,High,0.87,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,427,Simplified,Medium
+AU-CUST00768,Haley Johnson,1996-10-19,Female,AU,Married,Unemployed,92079,Standard,2024-03-27,Medium,0.72,True,Medium,False,0.25,LOW_INCOME,False,503,Standard,Low
+AU-CUST00769,Jason Nixon,2002-10-18,Male,AU,Married,Full-time,10224,Standard,2025-06-08,High,0.977,True,Low,False,0.2,YOUNG_ADULT,False,789,Standard,Low
+AU-CUST00770,Todd Thomas,1966-10-27,Female,AU,Married,Full-time,85376,Standard,2024-09-27,Low,0.516,True,Low,False,0.0,NONE,False,741,Standard,Low
+AU-CUST00771,Jesse Clark,2000-10-18,Male,AU,Married,Full-time,112806,Premium,2024-06-22,High,0.976,True,Low,False,0.0,NONE,False,601,Standard,Low
+AU-CUST00772,Mr. Jeffrey Horton,1980-10-23,Female,AU,Widowed,Self-employed,67501,Standard,2024-03-24,Medium,0.698,True,Low,False,0.0,NONE,False,724,Enhanced,Low
+AU-CUST00773,Eric Patrick,1977-10-24,Male,AU,Single,Self-employed,117663,Premium,2024-07-13,Medium,0.506,True,Low,False,0.0,NONE,False,611,Enhanced,Low
+AU-CUST00774,Samuel Wong,1948-10-31,Male,AU,Single,Retired,37850,Standard,2024-01-03,Low,0.209,True,Very High,True,1.0,ELDERLY|PRIOR_VICTIM|LOW_DIGITAL_LITERACY,False,630,Standard,Medium
+AU-CUST00775,Carly Riggs,2001-10-18,Male,AU,Single,Unemployed,21190,Standard,2024-05-02,Medium,0.578,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,496,Enhanced,Medium
+AU-CUST00776,Christopher Moore,1958-10-29,Female,AU,Married,Part-time,26950,Standard,2024-04-10,Low,0.6,False,Medium,False,0.3,LOW_DIGITAL_LITERACY,False,619,Standard,Low
+AU-CUST00777,Tina Hall,1973-10-25,Female,AU,Married,Full-time,99369,Standard,2024-02-16,Medium,0.755,False,Low,False,0.0,NONE,False,768,Enhanced,Low
+AU-CUST00778,Cody Davidson,1997-10-19,Female,AU,Married,Full-time,72075,Standard,2025-06-15,High,0.865,False,Low,False,0.0,NONE,False,652,Standard,Low
+AU-CUST00779,Allen Mendez,1975-10-25,Male,AU,Single,Full-time,39408,Standard,2025-03-09,Medium,0.754,True,Low,False,0.0,NONE,False,711,Standard,Low
+AU-CUST00780,Kevin Price,1964-10-27,Male,AU,Divorced,Full-time,50640,Standard,2025-05-31,Low,0.498,True,Medium,False,0.3,LOW_DIGITAL_LITERACY,False,682,Enhanced,Low
+AU-CUST00781,Christine Goodwin,1991-10-21,Male,AU,Married,Full-time,66980,Standard,2024-05-12,High,0.993,False,Low,False,0.0,NONE,False,709,Simplified,Low
+AU-CUST00782,Amy Garcia,1942-11-02,Male,AU,Married,Retired,42656,Standard,2024-06-07,Low,0.401,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,575,Enhanced,Medium
+AU-CUST00783,Chelsea Nguyen,1984-10-22,Male,AU,Single,Full-time,67373,Standard,2024-06-04,Medium,0.612,False,Low,False,0.0,NONE,False,749,Enhanced,Low
+AU-CUST00784,Dennis Huffman,1968-10-26,Female,AU,Single,Full-time,42284,Standard,2024-11-02,Low,0.21,True,Low,False,0.0,NONE,False,850,Enhanced,Low
+AU-CUST00785,Margaret Harper,1943-11-02,Female,AU,Single,Part-time,33969,Standard,2024-04-09,Low,0.401,False,Medium,True,0.35,ELDERLY,False,547,Enhanced,Low
+AU-CUST00786,Laurie Bailey,1994-10-20,Female,AU,Married,Full-time,116581,Premium,2024-05-09,High,0.901,True,Low,False,0.0,NONE,False,526,Standard,Low
+AU-CUST00787,Lisa Cervantes,1958-10-29,Male,AU,Married,Part-time,39471,Standard,2025-06-19,Low,0.275,True,Low,False,0.0,NONE,False,702,Standard,Low
+AU-CUST00788,Elizabeth Mendez,1995-10-20,Male,AU,Single,Part-time,26338,Standard,2024-07-12,Medium,0.763,False,Very High,True,0.6,NONE,True,588,Enhanced,High
+AU-CUST00789,Cesar Wilson,1980-10-23,Female,AU,Single,Full-time,83041,Standard,2025-03-04,Medium,0.732,True,Low,False,0.0,NONE,False,678,Standard,Low
+AU-CUST00790,Clayton Steele,1968-10-26,Male,AU,Single,Full-time,50393,Standard,2024-05-05,Low,0.494,False,Low,False,0.0,NONE,False,686,Enhanced,Low
+AU-CUST00791,Jennifer Taylor,1996-10-19,Female,AU,Married,Full-time,35821,Standard,2025-05-25,High,0.834,True,Low,False,0.0,NONE,False,664,Standard,Low
+AU-CUST00792,Cody Reid,1993-10-20,Female,AU,Single,Self-employed,99187,Standard,2025-01-15,Medium,0.514,False,Low,False,0.0,NONE,False,704,Standard,Low
+AU-CUST00793,Maria Cooke,1985-10-22,Male,AU,Single,Self-employed,55046,Standard,2025-04-18,Medium,0.677,True,Low,False,0.0,NONE,False,707,Standard,Low
+AU-CUST00794,Katherine Taylor,2001-10-18,Male,AU,Single,Student,16804,Standard,2024-10-10,High,0.918,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,500,Enhanced,Medium
+AU-CUST00795,Jerry Brown,2007-10-17,Female,AU,Married,Full-time,51358,Standard,2025-05-12,High,0.82,True,Low,False,0.2,YOUNG_ADULT,False,787,Standard,Low
+AU-CUST00796,Adam Taylor,1982-10-23,Male,AU,Widowed,Part-time,112025,Premium,2024-07-18,Medium,0.545,True,Low,False,0.0,NONE,False,634,Enhanced,Low
+AU-CUST00797,Tracey Wagner,1997-10-19,Female,AU,Married,Part-time,116635,Premium,2024-09-19,Medium,0.554,False,Low,False,0.0,NONE,False,630,Standard,Low
+AU-CUST00798,Michael Perry PhD,2001-10-18,Female,AU,Single,Full-time,12136,Standard,2024-02-03,High,0.865,True,Low,False,0.2,YOUNG_ADULT,False,789,Standard,Low
+AU-CUST00799,Bradley Johnson DDS,1970-10-26,Female,AU,Widowed,Full-time,62076,Standard,2024-04-03,Low,0.487,False,Low,False,0.0,NONE,False,706,Enhanced,Low
+AU-CUST00800,Donald Medina,1975-10-25,Male,AU,Widowed,Full-time,41144,Standard,2025-02-27,Medium,0.641,True,High,True,0.45,PRIOR_VICTIM,False,747,Standard,Medium
+AU-CUST00801,Jim Newton,1969-10-26,Female,AU,Married,Unemployed,43564,Standard,2024-06-28,Low,0.548,True,Medium,False,0.25,LOW_INCOME,False,502,Enhanced,Low
+AU-CUST00802,Krista Wilson,1989-10-21,Female,AU,Single,Unemployed,97279,Standard,2024-02-26,Medium,0.695,True,Medium,False,0.25,LOW_INCOME,False,594,Standard,Low
+AU-CUST00803,Reginald Morrow,1941-11-02,Male,AU,Married,Retired,38520,Standard,2024-06-09,Low,0.345,True,Medium,True,0.35,ELDERLY,False,649,Standard,Low
+AU-CUST00804,Rodney Williams,1980-10-23,Male,AU,Widowed,Full-time,86410,Standard,2024-07-12,Medium,0.591,True,Low,False,0.0,NONE,False,725,Standard,Low
+AU-CUST00805,Kimberly Fritz,2005-10-17,Female,AU,Married,Student,24065,Standard,2025-01-28,High,0.889,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,453,Enhanced,Medium
+AU-CUST00806,Ronald Potter,1996-10-19,Female,AU,Married,Full-time,49242,Standard,2024-02-19,High,0.85,True,Low,False,0.0,NONE,False,637,Standard,Low
+AU-CUST00807,Zachary Cole,1976-10-24,Male,AU,Married,Self-employed,87362,Standard,2024-01-15,Medium,0.513,True,Low,False,0.0,NONE,False,626,Standard,Low
+AU-CUST00808,Robert Gonzales,2004-10-17,Female,AU,Widowed,Full-time,38460,Standard,2025-02-01,High,0.935,True,Low,False,0.2,YOUNG_ADULT,False,723,Enhanced,Low
+AU-CUST00809,Patricia Young PhD,1984-10-22,Female,AU,Single,Full-time,88966,Standard,2024-03-18,Medium,0.603,False,Low,False,0.0,NONE,False,799,Simplified,Low
+AU-CUST00810,Heather Page,1961-10-28,Male,AU,Single,Full-time,50919,Standard,2024-08-18,Low,0.292,False,Low,False,0.0,NONE,False,626,Enhanced,Low
+AU-CUST00811,Carol Taylor,2001-10-18,Male,AU,Divorced,Student,14985,Standard,2025-01-09,High,0.861,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,469,Enhanced,Medium
+AU-CUST00812,Daniel Brown,2004-10-17,Male,AU,Single,Student,16812,Standard,2024-10-09,High,0.84,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,477,Standard,Medium
+AU-CUST00813,Douglas Ryan,1961-10-28,Male,AU,Married,Full-time,43335,Standard,2024-03-08,Low,0.353,True,Medium,False,0.3,LOW_DIGITAL_LITERACY,False,758,Standard,Low
+AU-CUST00814,Michael Roberts,1966-10-27,Female,AU,Single,Full-time,37243,Standard,2025-01-31,Low,0.269,False,Low,False,0.0,NONE,False,734,Enhanced,Low
+AU-CUST00815,Scott Duke,2005-10-17,Female,AU,Single,Full-time,52477,Standard,2024-01-27,High,0.869,False,Low,False,0.2,YOUNG_ADULT,False,713,Enhanced,Low
+AU-CUST00816,Anna Estes,1963-10-28,Male,AU,Single,Full-time,110605,Premium,2024-05-07,Low,0.235,True,Medium,False,0.3,LOW_DIGITAL_LITERACY,False,685,Enhanced,Low
+AU-CUST00817,Tamara Riddle,1949-10-31,Female,AU,Married,Retired,25859,Standard,2024-02-29,Low,0.357,False,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,592,Enhanced,Medium
+AU-CUST00818,Beth Cline,1982-10-23,Male,AU,Married,Self-employed,97297,Standard,2024-10-08,Medium,0.515,False,Low,False,0.0,NONE,False,686,Enhanced,Low
+AU-CUST00819,Michael Poole,1979-10-24,Male,AU,Married,Part-time,30397,Standard,2025-01-14,Medium,0.635,False,Low,False,0.0,NONE,False,617,Standard,Low
+AU-CUST00820,Megan Burns,1985-10-22,Male,AU,Single,Self-employed,60771,Standard,2024-12-22,Medium,0.551,False,Low,False,0.0,NONE,False,697,Standard,Low
+AU-CUST00821,Debra Perry,2001-10-18,Female,AU,Widowed,Student,12595,Standard,2024-03-17,High,0.86,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,482,Simplified,Medium
+AU-CUST00822,Mark Beard,1968-10-26,Female,AU,Married,Unemployed,31048,Standard,2024-07-07,Low,0.529,True,Medium,False,0.25,LOW_INCOME,False,480,Standard,Low
+AU-CUST00823,Jose Ramirez,1994-10-20,Female,AU,Widowed,Part-time,85751,Standard,2024-03-21,Medium,0.652,False,Low,False,0.0,NONE,False,607,Standard,Low
+AU-CUST00824,Jackie Clements,1966-10-27,Male,AU,Married,Self-employed,92613,Standard,2024-07-07,Low,0.307,True,Low,False,0.0,NONE,False,750,Standard,Low
+AU-CUST00825,Aaron Schroeder,1950-10-31,Male,AU,Single,Part-time,28675,Standard,2024-05-06,Low,0.579,True,Medium,True,0.35,ELDERLY,False,598,Enhanced,Low
+AU-CUST00826,Monica Ellis,1997-10-19,Male,AU,Married,Full-time,81860,Standard,2025-02-10,High,0.91,True,Low,False,0.0,NONE,False,708,Enhanced,Low
+AU-CUST00827,Heather Brown,1975-10-25,Female,AU,Divorced,Full-time,36759,Standard,2025-02-16,Medium,0.777,True,Low,False,0.0,NONE,False,743,Enhanced,Low
+AU-CUST00828,Claudia Jordan,1996-10-19,Male,AU,Single,Full-time,56516,Standard,2025-03-25,High,0.92,True,Low,False,0.0,NONE,False,764,Standard,Low
+AU-CUST00829,Derrick Clayton,1950-10-31,Female,AU,Married,Retired,26138,Standard,2024-04-19,Low,0.42,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,556,Standard,Medium
+AU-CUST00830,Kenneth Knight,1994-10-20,Female,AU,Married,Part-time,54649,Standard,2024-01-08,Medium,0.754,True,Low,False,0.0,NONE,False,691,Standard,Low
+AU-CUST00831,Mr. Michael Williams,1967-10-27,Male,AU,Single,Unemployed,116614,Premium,2024-01-20,Low,0.413,True,Medium,False,0.25,LOW_INCOME,False,649,Enhanced,Low
+AU-CUST00832,Richard Stevens,1969-10-26,Male,AU,Married,Full-time,92917,Standard,2025-04-08,Low,0.222,True,Low,False,0.0,NONE,False,814,Standard,Low
+AU-CUST00833,Scott Alexander,1991-10-21,Male,AU,Single,Full-time,90611,Standard,2025-05-12,High,0.934,True,Low,False,0.0,NONE,False,698,Enhanced,Low
+AU-CUST00834,Tyler Harris,1972-10-25,Female,AU,Single,Full-time,42913,Standard,2024-04-26,Medium,0.584,True,Low,False,0.0,NONE,False,717,Standard,Low
+AU-CUST00835,Bonnie Santos,1975-10-25,Female,AU,Divorced,Full-time,82392,Standard,2025-04-26,Medium,0.759,False,Low,False,0.0,NONE,False,728,Enhanced,Low
+AU-CUST00836,Timothy Hill,1972-10-25,Male,AU,Married,Unemployed,88838,Standard,2024-10-17,Medium,0.572,False,Medium,False,0.25,LOW_INCOME,False,550,Standard,Low
+AU-CUST00837,Danielle Watson,1966-10-27,Female,AU,Married,Self-employed,118535,Premium,2024-04-11,Low,0.319,False,Low,False,0.0,NONE,False,681,Enhanced,Low
+AU-CUST00838,Carol Sanders,1943-11-02,Male,AU,Married,Retired,25803,Standard,2024-06-20,Low,0.288,True,Medium,True,0.35,ELDERLY,False,638,Enhanced,Low
+AU-CUST00839,Michael Young,1992-10-20,Male,AU,Widowed,Part-time,59644,Standard,2024-05-25,Medium,0.548,True,Low,False,0.0,NONE,False,677,Standard,Low
+AU-CUST00840,Michele Smith,1981-10-23,Female,AU,Married,Full-time,73187,Standard,2025-02-23,Medium,0.614,True,Low,False,0.0,NONE,False,644,Standard,Low
+AU-CUST00841,Casey Perez,2002-10-18,Female,AU,Married,Unemployed,21579,Standard,2024-04-13,Medium,0.756,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,541,Standard,Medium
+AU-CUST00842,Alexandra Dominguez,1970-10-26,Male,AU,Single,Full-time,41508,Standard,2024-04-10,Low,0.329,False,Low,False,0.0,NONE,False,692,Standard,Low
+AU-CUST00843,Virginia Henderson,1984-10-22,Female,AU,Married,Full-time,32651,Standard,2025-01-30,Medium,0.763,False,High,True,0.45,PRIOR_VICTIM,False,618,Enhanced,Medium
+AU-CUST00844,Benjamin Reyes,1988-10-21,Female,AU,Married,Self-employed,107087,Premium,2024-06-14,Medium,0.569,True,Low,False,0.0,NONE,False,665,Standard,Low
+AU-CUST00845,Ashley Edwards,2002-10-18,Female,AU,Married,Student,14324,Standard,2024-05-17,High,0.986,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,472,Enhanced,Medium
+AU-CUST00846,Breanna Ayala,1954-10-30,Female,AU,Married,Retired,25537,Standard,2025-03-19,Low,0.317,False,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,571,Standard,Medium
+AU-CUST00847,Brandi Haney,1983-10-23,Male,AU,Single,Full-time,91492,Standard,2025-05-26,Medium,0.535,False,Low,False,0.0,NONE,False,673,Enhanced,Low
+AU-CUST00848,Joseph Smith,1975-10-25,Male,AU,Divorced,Full-time,18875,Standard,2024-10-31,Medium,0.783,False,Very High,True,0.6,NONE,True,644,Standard,High
+AU-CUST00849,Jessica Bowen,2004-10-17,Female,AU,Divorced,Full-time,14234,Standard,2025-03-30,High,0.987,False,Low,False,0.2,YOUNG_ADULT,False,663,Standard,Low
+AU-CUST00850,Brittany Jenkins,1956-10-29,Male,AU,Married,Retired,43635,Standard,2025-04-06,Low,0.554,True,Low,False,0.0,NONE,False,729,Standard,Low
+AU-CUST00851,Shannon Miller,2005-10-17,Male,AU,Married,Part-time,51523,Standard,2024-11-19,Medium,0.673,True,Low,False,0.2,YOUNG_ADULT,False,579,Enhanced,Low
+AU-CUST00852,Paul Lawrence,2003-10-18,Male,AU,Married,Unemployed,39222,Standard,2025-03-31,Medium,0.651,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,545,Standard,Medium
+AU-CUST00853,Victor Edwards,1963-10-28,Male,AU,Married,Unemployed,64586,Standard,2024-01-05,Low,0.562,True,High,True,0.55,LOW_INCOME|LOW_DIGITAL_LITERACY,False,431,Enhanced,Medium
+AU-CUST00854,Donald Miller,1963-10-28,Male,AU,Married,Full-time,30944,Standard,2024-01-20,Low,0.591,False,Low,False,0.0,NONE,False,642,Standard,Low
+AU-CUST00855,Lindsay Lawson,1999-10-19,Male,AU,Married,Full-time,34058,Standard,2025-04-30,High,0.83,False,Low,False,0.0,NONE,False,659,Simplified,Low
+AU-CUST00856,Melissa Abbott,1994-10-20,Male,AU,Single,Full-time,91620,Standard,2024-03-18,High,0.804,True,Low,False,0.0,NONE,False,819,Enhanced,Low
+AU-CUST00857,Elizabeth Holmes,1972-10-25,Male,AU,Single,Self-employed,81070,Standard,2025-02-03,Medium,0.694,False,Low,False,0.0,NONE,False,662,Enhanced,Low
+AU-CUST00858,Nicole Phillips,1946-11-01,Female,AU,Married,Retired,39958,Standard,2024-08-18,Low,0.344,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,518,Enhanced,Medium
+AU-CUST00859,Steven Blevins,1985-10-22,Female,AU,Married,Full-time,26234,Standard,2025-03-08,Medium,0.63,True,Low,False,0.0,NONE,False,630,Standard,Low
+AU-CUST00860,Brian Porter MD,1989-10-21,Male,AU,Single,Full-time,56407,Standard,2024-12-31,Medium,0.687,False,Low,False,0.0,NONE,False,639,Enhanced,Low
+AU-CUST00861,Vanessa Hatfield,1978-10-24,Male,AU,Single,Full-time,102127,Premium,2024-02-09,Medium,0.633,False,Low,False,0.0,NONE,False,693,Standard,Low
+AU-CUST00862,Bonnie Valencia,1967-10-27,Male,AU,Married,Self-employed,91077,Standard,2024-07-03,Low,0.211,True,Low,False,0.0,NONE,False,657,Enhanced,Low
+AU-CUST00863,Holly Vega,1968-10-26,Female,AU,Married,Full-time,101744,Premium,2025-01-23,Low,0.207,True,Low,False,0.0,NONE,False,668,Standard,Low
+AU-CUST00864,Tiffany Townsend,1971-10-26,Female,AU,Married,Self-employed,43509,Standard,2025-05-20,Medium,0.788,True,Low,False,0.0,NONE,False,520,Standard,Low
+AU-CUST00865,Austin Baker,2006-10-17,Female,AU,Married,Full-time,31758,Standard,2025-03-17,High,0.94,False,Low,False,0.2,YOUNG_ADULT,False,669,Enhanced,Low
+AU-CUST00866,Antonio Mccormick,1965-10-27,Female,AU,Divorced,Full-time,35651,Standard,2025-05-04,Low,0.539,True,Low,False,0.0,NONE,False,717,Standard,Low
+AU-CUST00867,Lori Mason,1958-10-29,Male,AU,Single,Retired,26998,Standard,2025-06-09,Low,0.264,False,Low,False,0.0,NONE,False,731,Standard,Low
+AU-CUST00868,Michael Miller,1978-10-24,Male,AU,Divorced,Full-time,37591,Standard,2025-05-05,Medium,0.553,False,Low,False,0.0,NONE,False,662,Standard,Low
+AU-CUST00869,Lisa Ramirez,1997-10-19,Male,AU,Single,Unemployed,52062,Standard,2024-11-14,Medium,0.644,True,Medium,False,0.25,LOW_INCOME,False,548,Enhanced,Low
+AU-CUST00870,Jorge Harris,2005-10-17,Male,AU,Married,Student,14831,Standard,2024-07-03,High,0.99,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,512,Standard,Medium
+AU-CUST00871,Kimberly Myers,1976-10-24,Male,AU,Single,Part-time,78481,Standard,2024-10-05,Medium,0.501,True,Low,False,0.0,NONE,False,657,Standard,Low
+AU-CUST00872,Sandra Becker,1996-10-19,Female,AU,Single,Part-time,53492,Standard,2025-03-12,Medium,0.79,True,Low,False,0.0,NONE,False,589,Simplified,Low
+AU-CUST00873,Michael Blair,1945-11-01,Male,AU,Single,Retired,36124,Standard,2024-08-21,Low,0.447,False,Medium,True,0.35,ELDERLY,False,648,Simplified,Low
+AU-CUST00874,Amy Miller,1992-10-20,Female,AU,Single,Full-time,101181,Premium,2025-04-01,High,0.923,True,Low,False,0.0,NONE,False,734,Standard,Low
+AU-CUST00875,Jesse Lynch,1975-10-25,Male,AU,Divorced,Part-time,69894,Standard,2025-01-20,Medium,0.576,False,Low,False,0.0,NONE,False,643,Standard,Low
+AU-CUST00876,Patrick Yang,1953-10-30,Male,AU,Married,Unemployed,36060,Standard,2024-04-24,Low,0.562,True,Very High,True,0.9,ELDERLY|LOW_INCOME|LOW_DIGITAL_LITERACY,False,595,Standard,Medium
+AU-CUST00877,Michael Miles,1986-10-22,Female,AU,Widowed,Full-time,71452,Standard,2025-05-20,Medium,0.63,False,Low,False,0.0,NONE,False,755,Simplified,Low
+AU-CUST00878,Troy Mills,1981-10-23,Male,AU,Married,Full-time,101380,Premium,2025-04-09,Medium,0.741,True,Low,False,0.0,NONE,False,697,Standard,Low
+AU-CUST00879,Michelle Jackson,1967-10-27,Male,AU,Married,Full-time,54331,Standard,2024-11-25,Low,0.446,False,Low,False,0.0,NONE,False,686,Standard,Low
+AU-CUST00880,Richard Adams,1966-10-27,Male,AU,Single,Full-time,29082,Standard,2024-04-16,Low,0.555,True,Low,False,0.0,NONE,False,618,Standard,Low
+AU-CUST00881,Patricia Johnson,1995-10-20,Female,AU,Married,Full-time,91131,Standard,2024-05-04,High,0.983,False,Low,False,0.0,NONE,False,735,Standard,Low
+AU-CUST00882,Denise Brown,1977-10-24,Male,AU,Married,Full-time,70322,Standard,2025-04-05,Medium,0.58,True,Low,False,0.0,NONE,False,789,Standard,Low
+AU-CUST00883,Laura Jones,1951-10-31,Female,AU,Widowed,Retired,29561,Standard,2024-01-10,Low,0.362,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,622,Enhanced,Medium
+AU-CUST00884,Ian Porter,1995-10-20,Female,AU,Widowed,Full-time,97524,Standard,2024-09-22,High,0.895,True,Low,False,0.0,NONE,False,738,Standard,Low
+AU-CUST00885,Holly Scott,2003-10-18,Female,AU,Single,Unemployed,16308,Standard,2024-12-05,Medium,0.505,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,508,Standard,Medium
+AU-CUST00886,Kenneth Sharp,1993-10-20,Male,AU,Married,Unemployed,81502,Standard,2024-05-07,Medium,0.534,False,Very High,True,0.7,LOW_INCOME|PRIOR_VICTIM,False,538,Enhanced,Medium
+AU-CUST00887,Jordan Williams,1982-10-23,Female,AU,Married,Full-time,92443,Standard,2025-04-19,Medium,0.582,True,Low,False,0.0,NONE,False,610,Standard,Low
+AU-CUST00888,Dana Ruiz,2007-10-17,Male,AU,Married,Full-time,46891,Standard,2024-10-13,High,0.982,True,Low,False,0.2,YOUNG_ADULT,False,602,Standard,Low
+AU-CUST00889,Chris Velazquez,2006-10-17,Female,AU,Single,Full-time,34001,Standard,2024-02-06,High,0.91,False,Low,False,0.2,YOUNG_ADULT,False,663,Standard,Low
+AU-CUST00890,Kristen Sloan,1978-10-24,Female,AU,Married,Full-time,34999,Standard,2024-06-24,Medium,0.532,True,Low,False,0.0,NONE,False,828,Enhanced,Low
+AU-CUST00891,Jennifer Morris,1993-10-20,Male,AU,Married,Self-employed,28192,Standard,2024-08-06,Medium,0.76,True,Low,False,0.0,NONE,False,743,Standard,Low
+AU-CUST00892,Nathan Nelson,1951-10-31,Male,AU,Single,Retired,26884,Standard,2024-05-02,Low,0.226,True,Very High,True,0.8,ELDERLY|PRIOR_VICTIM,False,572,Enhanced,Medium
+AU-CUST00893,Jake Shaw,2003-10-18,Female,AU,Married,Student,19580,Standard,2025-05-31,High,0.886,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,397,Standard,Medium
+AU-CUST00894,Cassie Brock,1997-10-19,Female,AU,Single,Full-time,65000,Standard,2024-07-16,High,0.942,True,Low,False,0.0,NONE,False,590,Standard,Low
+AU-CUST00895,Dr. Andrea Marshall,1977-10-24,Female,AU,Widowed,Full-time,66170,Standard,2024-10-02,Medium,0.715,True,Low,False,0.0,NONE,False,680,Standard,Low
+AU-CUST00896,Ryan Murphy,1952-10-30,Male,AU,Single,Retired,39409,Standard,2024-10-20,Low,0.497,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,600,Standard,Medium
+AU-CUST00897,Aimee Gonzalez,1986-10-22,Female,AU,Single,Full-time,71698,Standard,2024-05-01,Medium,0.653,True,Low,False,0.0,NONE,False,715,Standard,Low
+AU-CUST00898,Elizabeth Dean,2000-10-18,Female,AU,Single,Full-time,116798,Premium,2024-11-07,High,0.93,False,Low,False,0.0,NONE,False,805,Enhanced,Low
+AU-CUST00899,Kevin Snyder,1998-10-19,Female,AU,Divorced,Self-employed,72213,Standard,2024-07-13,Medium,0.796,True,High,True,0.45,PRIOR_VICTIM,False,583,Standard,Medium
+AU-CUST00900,Christie Mccullough,1992-10-20,Male,AU,Married,Full-time,27515,Standard,2024-01-06,High,0.845,True,Low,False,0.0,NONE,False,725,Standard,Low
+AU-CUST00901,Danielle Smith,1988-10-21,Female,AU,Single,Unemployed,55321,Standard,2024-08-12,Medium,0.624,False,Medium,False,0.25,LOW_INCOME,False,525,Simplified,Low
+AU-CUST00902,David Reed,1983-10-23,Female,AU,Single,Full-time,119943,Premium,2024-11-16,Medium,0.755,True,Low,False,0.0,NONE,False,770,Standard,Low
+AU-CUST00903,Sherry Tapia,1997-10-19,Male,AU,Married,Self-employed,29499,Standard,2024-03-05,Medium,0.573,True,Low,False,0.0,NONE,False,644,Standard,Low
+AU-CUST00904,Matthew Sweeney,1986-10-22,Male,AU,Married,Full-time,27422,Standard,2025-03-03,Medium,0.58,True,Low,False,0.0,NONE,False,738,Standard,Low
+AU-CUST00905,Ashley Moreno,1949-10-31,Male,AU,Single,Retired,26431,Standard,2024-12-28,Low,0.328,True,Medium,True,0.35,ELDERLY,False,569,Standard,Low
+AU-CUST00906,Johnathan Brown,1968-10-26,Male,AU,Widowed,Unemployed,114006,Premium,2024-06-19,Low,0.497,False,Medium,False,0.25,LOW_INCOME,False,513,Simplified,Low
+AU-CUST00907,Michelle Davis DVM,1986-10-22,Female,AU,Single,Full-time,83580,Standard,2024-11-21,Medium,0.501,True,Low,False,0.0,NONE,False,713,Simplified,Low
+AU-CUST00908,Kelly Haynes,1996-10-19,Male,AU,Married,Full-time,31077,Standard,2024-06-15,High,0.923,True,Low,False,0.0,NONE,False,590,Standard,Low
+AU-CUST00909,William Miller,1994-10-20,Female,AU,Single,Self-employed,34669,Standard,2024-12-21,Medium,0.504,True,Low,False,0.0,NONE,False,663,Simplified,Low
+AU-CUST00910,Casey Wilkins,1990-10-21,Male,AU,Married,Full-time,54566,Standard,2024-03-25,Medium,0.773,False,Low,False,0.0,NONE,False,736,Standard,Low
+AU-CUST00911,Keith Graham,1979-10-24,Female,AU,Married,Full-time,66233,Standard,2024-12-01,Medium,0.693,True,Low,False,0.0,NONE,False,692,Simplified,Low
+AU-CUST00912,Cynthia Green,1963-10-28,Female,AU,Married,Self-employed,101128,Premium,2024-01-31,Low,0.561,True,Low,False,0.0,NONE,False,603,Enhanced,Low
+AU-CUST00913,Robert Haynes,1954-10-30,Female,AU,Married,Retired,41937,Standard,2024-01-10,Low,0.22,False,Medium,True,0.35,ELDERLY,False,534,Standard,Low
+AU-CUST00914,Emily Nelson,1960-10-28,Female,AU,Divorced,Retired,41975,Standard,2024-05-19,Low,0.535,True,Low,False,0.0,NONE,False,715,Standard,Low
+AU-CUST00915,Dale Chan,1955-10-30,Male,AU,Divorced,Retired,29460,Standard,2024-04-05,Low,0.404,True,Low,False,0.0,NONE,False,657,Enhanced,Low
+AU-CUST00916,Brittney Martin,1955-10-30,Female,AU,Married,Unemployed,30499,Standard,2024-09-26,Low,0.481,True,High,True,0.55,LOW_INCOME|LOW_DIGITAL_LITERACY,False,557,Standard,Medium
+AU-CUST00917,Jason Herrera,2000-10-18,Female,AU,Married,Full-time,48054,Standard,2024-03-31,High,0.884,True,Low,False,0.0,NONE,False,729,Standard,Low
+AU-CUST00918,Christine Parker,1996-10-19,Male,AU,Divorced,Full-time,58378,Standard,2024-05-14,High,0.814,True,Low,False,0.0,NONE,False,646,Enhanced,Low
+AU-CUST00919,Bryan Moore,1983-10-23,Female,AU,Single,Full-time,108897,Premium,2024-02-23,Medium,0.738,True,Low,False,0.0,NONE,False,665,Standard,Low
+AU-CUST00920,Samantha Terry,1975-10-25,Male,AU,Single,Full-time,74473,Standard,2025-05-01,Medium,0.579,True,Low,False,0.0,NONE,False,802,Standard,Low
+AU-CUST00921,Russell Murphy,2004-10-17,Female,AU,Single,Student,22326,Standard,2025-02-07,High,0.853,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,523,Standard,Medium
+AU-CUST00922,David Kelly,1946-11-01,Male,AU,Divorced,Retired,27070,Standard,2024-04-29,Low,0.58,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,602,Enhanced,Medium
+AU-CUST00923,Megan Green,1979-10-24,Female,AU,Single,Full-time,88829,Standard,2024-03-06,Medium,0.738,True,Low,False,0.0,NONE,False,642,Standard,Low
+AU-CUST00924,Amanda Sullivan MD,1987-10-22,Male,AU,Single,Self-employed,81014,Standard,2025-04-11,Medium,0.616,False,Low,False,0.0,NONE,False,559,Standard,Low
+AU-CUST00925,Danielle Murray,2002-10-18,Male,AU,Married,Part-time,27671,Standard,2025-01-01,Medium,0.507,False,Low,False,0.2,YOUNG_ADULT,False,633,Standard,Low
+AU-CUST00926,Brenda Smith,1993-10-20,Male,AU,Single,Full-time,36029,Standard,2025-05-01,High,0.959,True,Low,False,0.0,NONE,False,622,Standard,Low
+AU-CUST00927,Vickie Anderson,2000-10-18,Female,AU,Single,Full-time,56249,Standard,2024-04-07,High,0.957,True,Low,False,0.0,NONE,False,803,Enhanced,Low
+AU-CUST00928,Jacqueline Mccoy,1957-10-29,Male,AU,Married,Retired,32126,Standard,2024-07-15,Low,0.482,True,Low,False,0.0,NONE,False,679,Standard,Low
+AU-CUST00929,Lauren Green,1978-10-24,Female,AU,Single,Full-time,70657,Standard,2024-03-05,Medium,0.688,True,Low,False,0.0,NONE,False,665,Enhanced,Low
+AU-CUST00930,Alison Brown,1971-10-26,Female,AU,Widowed,Self-employed,88361,Standard,2024-08-20,Medium,0.53,True,Low,False,0.0,NONE,False,584,Standard,Low
+AU-CUST00931,Jill Anderson,1993-10-20,Female,AU,Single,Full-time,57890,Standard,2024-03-30,High,0.916,False,Low,False,0.0,NONE,False,731,Enhanced,Low
+AU-CUST00932,Sandra Rivera,1985-10-22,Male,AU,Divorced,Full-time,81661,Standard,2024-01-03,Medium,0.508,True,Low,False,0.0,NONE,False,709,Standard,Low
+AU-CUST00933,Joel Jackson,1993-10-20,Female,AU,Married,Full-time,56380,Standard,2024-10-06,High,0.887,True,Low,False,0.0,NONE,False,689,Enhanced,Low
+AU-CUST00934,Samantha Foster,1974-10-25,Female,AU,Single,Self-employed,86504,Standard,2025-06-21,Medium,0.593,False,Low,False,0.0,NONE,False,648,Standard,Low
+AU-CUST00935,Michael Thompson,1968-10-26,Male,AU,Single,Full-time,66898,Standard,2024-12-20,Low,0.528,True,Low,False,0.0,NONE,False,716,Enhanced,Low
+AU-CUST00936,Cody Ramirez,2005-10-17,Male,AU,Married,Part-time,11633,Standard,2025-02-19,Medium,0.797,True,Low,False,0.2,YOUNG_ADULT,False,681,Standard,Low
+AU-CUST00937,Amanda Harvey,1946-11-01,Female,AU,Married,Part-time,28263,Standard,2025-03-21,Low,0.411,True,Medium,True,0.35,ELDERLY,False,659,Standard,Low
+AU-CUST00938,Edward Jenkins,1999-10-19,Male,AU,Single,Full-time,65311,Standard,2025-06-17,High,0.872,True,Low,False,0.0,NONE,False,766,Standard,Low
+AU-CUST00939,Amy Ramirez,1943-11-02,Male,AU,Widowed,Retired,43307,Standard,2024-03-11,Low,0.286,False,Medium,True,0.35,ELDERLY,False,611,Standard,Low
+AU-CUST00940,Curtis Wilkerson,2005-10-17,Male,AU,Married,Full-time,52942,Standard,2024-05-17,High,0.841,True,Low,False,0.2,YOUNG_ADULT,False,714,Standard,Low
+AU-CUST00941,Lydia Pham,1985-10-22,Female,AU,Widowed,Full-time,107296,Premium,2024-12-04,Medium,0.68,True,Low,False,0.0,NONE,False,727,Enhanced,Low
+AU-CUST00942,Virginia Casey,1942-11-02,Female,AU,Single,Unemployed,36136,Standard,2025-03-26,Low,0.511,True,High,True,0.6,ELDERLY|LOW_INCOME,False,398,Enhanced,Medium
+AU-CUST00943,Joshua Washington,1998-10-19,Female,AU,Single,Full-time,90098,Standard,2025-02-28,High,0.827,False,Low,False,0.0,NONE,False,660,Enhanced,Low
+AU-CUST00944,Kathryn Price,1993-10-20,Female,AU,Married,Full-time,114730,Premium,2025-02-03,High,0.949,True,Low,False,0.0,NONE,False,689,Simplified,Low
+AU-CUST00945,Francis Robinson,1983-10-23,Male,AU,Single,Full-time,50508,Standard,2024-06-20,Medium,0.6,False,Low,False,0.0,NONE,False,667,Standard,Low
+AU-CUST00946,Paula Brown,2006-10-17,Male,AU,Single,Student,20479,Standard,2024-07-19,High,0.803,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,450,Standard,Medium
+AU-CUST00947,Kendra Wang DVM,1972-10-25,Male,AU,Single,Unemployed,27692,Standard,2024-02-13,Medium,0.541,True,Medium,False,0.25,LOW_INCOME,False,501,Enhanced,Low
+AU-CUST00948,Ariel Sandoval,1953-10-30,Male,AU,Single,Part-time,43538,Standard,2024-06-21,Low,0.574,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,651,Standard,Medium
+AU-CUST00949,Robert Stark,1952-10-30,Male,AU,Married,Retired,27203,Standard,2024-03-26,Low,0.258,True,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,695,Standard,Medium
+AU-CUST00950,Zachary Robinson,1988-10-21,Female,AU,Single,Self-employed,86556,Standard,2025-05-30,Medium,0.715,False,Low,False,0.0,NONE,False,619,Standard,Low
+AU-CUST00951,Rebecca Kelly,1995-10-20,Male,AU,Widowed,Full-time,104270,Premium,2024-02-20,High,0.851,True,Low,False,0.0,NONE,False,665,Standard,Low
+AU-CUST00952,Sarah Thompson,2001-10-18,Male,AU,Single,Full-time,50823,Standard,2024-07-18,High,0.978,True,Low,False,0.2,YOUNG_ADULT,False,727,Standard,Low
+AU-CUST00953,Renee Wolfe,1996-10-19,Male,AU,Married,Part-time,102188,Premium,2025-05-02,Medium,0.558,True,Low,False,0.0,NONE,False,688,Standard,Low
+AU-CUST00954,Alyssa Haynes,2002-10-18,Male,AU,Married,Full-time,21326,Standard,2025-06-08,High,0.966,True,Low,False,0.2,YOUNG_ADULT,False,644,Standard,Low
+AU-CUST00955,Kristy Hart,1959-10-29,Male,AU,Married,Retired,27016,Standard,2024-07-25,Low,0.597,True,Low,False,0.0,NONE,False,613,Enhanced,Low
+AU-CUST00956,William Keith,1941-11-02,Male,AU,Divorced,Retired,27679,Standard,2024-09-12,Low,0.27,False,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,608,Simplified,Medium
+AU-CUST00957,Eric Henry Jr.,1979-10-24,Male,AU,Divorced,Full-time,30166,Standard,2024-10-14,Medium,0.653,False,Low,False,0.0,NONE,False,807,Standard,Low
+AU-CUST00958,Daniel Fox,1988-10-21,Female,AU,Single,Full-time,47047,Standard,2025-03-27,Medium,0.631,True,High,True,0.45,PRIOR_VICTIM,False,657,Standard,Medium
+AU-CUST00959,Thomas Harris,1988-10-21,Female,AU,Married,Full-time,99744,Standard,2025-02-26,Medium,0.705,True,Low,False,0.0,NONE,False,717,Standard,Low
+AU-CUST00960,Mitchell Sellers,1988-10-21,Female,AU,Divorced,Full-time,105776,Premium,2024-10-14,Medium,0.541,True,High,True,0.45,PRIOR_VICTIM,False,626,Standard,Medium
+AU-CUST00961,Erica Johnson,1982-10-23,Female,AU,Single,Part-time,57515,Standard,2024-07-22,Medium,0.631,True,Low,False,0.0,NONE,False,638,Standard,Low
+AU-CUST00962,Sylvia Schroeder,1989-10-21,Female,AU,Married,Self-employed,63248,Standard,2024-07-23,Medium,0.768,True,Low,False,0.0,NONE,False,631,Enhanced,Low
+AU-CUST00963,Shannon Yu,1996-10-19,Female,AU,Single,Full-time,75222,Standard,2024-12-22,High,0.951,True,Low,False,0.0,NONE,False,698,Enhanced,Low
+AU-CUST00964,Tom Foster,2007-10-17,Female,AU,Married,Student,23177,Standard,2025-04-03,High,0.874,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,571,Standard,Medium
+AU-CUST00965,Eric Taylor,1947-11-01,Female,AU,Married,Unemployed,41432,Standard,2024-02-12,Low,0.599,False,High,True,0.6,ELDERLY|LOW_INCOME,False,529,Enhanced,Medium
+AU-CUST00966,Travis Conner,1987-10-22,Male,AU,Married,Full-time,77971,Standard,2025-02-26,Medium,0.766,True,Low,False,0.0,NONE,False,755,Enhanced,Low
+AU-CUST00967,Marie Thompson,1959-10-29,Male,AU,Divorced,Unemployed,29958,Standard,2024-09-21,Low,0.381,True,High,True,0.55,LOW_INCOME|LOW_DIGITAL_LITERACY,False,597,Enhanced,Medium
+AU-CUST00968,Melissa Mcfarland,2005-10-17,Male,AU,Married,Student,18429,Standard,2024-03-20,High,0.917,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,497,Standard,Medium
+AU-CUST00969,Courtney Chapman,1970-10-26,Male,AU,Divorced,Full-time,55622,Standard,2024-02-22,Low,0.21,False,Low,False,0.0,NONE,False,648,Enhanced,Low
+AU-CUST00970,Eric Barker,2000-10-18,Female,AU,Married,Full-time,81642,Standard,2024-07-04,High,0.803,True,Low,False,0.0,NONE,False,741,Enhanced,Low
+AU-CUST00971,Nicholas Rush,1986-10-22,Male,AU,Married,Full-time,42846,Standard,2024-05-16,Medium,0.783,True,Low,False,0.0,NONE,False,675,Standard,Low
+AU-CUST00972,Jenna Gamble,2007-10-17,Female,AU,Married,Student,15465,Standard,2024-02-27,High,0.839,False,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,604,Enhanced,Medium
+AU-CUST00973,Amanda Guzman,2000-10-18,Female,AU,Married,Part-time,56983,Standard,2024-06-10,Medium,0.667,False,Low,False,0.0,NONE,False,665,Enhanced,Low
+AU-CUST00974,Tracy Walker,1941-11-02,Male,AU,Divorced,Retired,40130,Standard,2025-04-02,Low,0.347,False,Medium,True,0.35,ELDERLY,False,639,Standard,Low
+AU-CUST00975,Taylor Taylor,1995-10-20,Male,AU,Single,Full-time,103055,Premium,2025-01-28,High,0.909,False,Low,False,0.0,NONE,False,695,Standard,Low
+AU-CUST00976,Cynthia Haas,1973-10-25,Male,AU,Widowed,Self-employed,78128,Standard,2024-04-24,Medium,0.518,True,Low,False,0.0,NONE,False,691,Standard,Low
+AU-CUST00977,Stephen Davis,1988-10-21,Male,AU,Married,Full-time,28333,Standard,2025-01-05,Medium,0.768,True,Low,False,0.0,NONE,False,708,Enhanced,Low
+AU-CUST00978,Margaret Tanner,1982-10-23,Female,AU,Married,Unemployed,99316,Standard,2024-09-04,Medium,0.745,True,Medium,False,0.25,LOW_INCOME,False,612,Standard,Low
+AU-CUST00979,Derek Wright,1991-10-21,Female,AU,Married,Unemployed,110718,Premium,2025-02-14,Medium,0.637,False,Medium,False,0.25,LOW_INCOME,False,624,Standard,Low
+AU-CUST00980,David Rodriguez,2002-10-18,Female,AU,Married,Student,21877,Standard,2024-05-15,High,0.858,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,528,Standard,Medium
+AU-CUST00981,James Oconnor,1948-10-31,Female,AU,Married,Retired,40791,Standard,2024-02-03,Low,0.327,False,Medium,True,0.35,ELDERLY,False,627,Enhanced,Low
+AU-CUST00982,Stacey Snyder,1964-10-27,Female,AU,Married,Full-time,52378,Standard,2024-06-20,Low,0.532,True,Medium,False,0.3,LOW_DIGITAL_LITERACY,False,712,Enhanced,Low
+AU-CUST00983,Joshua Garcia,1968-10-26,Female,AU,Single,Self-employed,100336,Premium,2025-06-29,Low,0.245,True,Low,False,0.0,NONE,False,617,Standard,Low
+AU-CUST00984,Sean Curtis,1983-10-23,Male,AU,Married,Full-time,53619,Standard,2024-11-01,Medium,0.667,True,High,True,0.45,PRIOR_VICTIM,False,592,Standard,Medium
+AU-CUST00985,Carla Jones,1999-10-19,Male,AU,Married,Full-time,116842,Premium,2024-01-30,High,0.965,True,Low,False,0.0,NONE,False,773,Standard,Low
+AU-CUST00986,Elizabeth Flores,1949-10-31,Male,AU,Married,Retired,33942,Standard,2025-06-19,Low,0.411,False,Very High,True,0.65,ELDERLY|LOW_DIGITAL_LITERACY,False,544,Standard,Medium
+AU-CUST00987,Angela Jackson,1984-10-22,Male,AU,Married,Full-time,63902,Standard,2025-03-29,Medium,0.794,False,Low,False,0.0,NONE,False,774,Enhanced,Low
+AU-CUST00988,Nicholas Payne,1998-10-19,Female,AU,Single,Full-time,66071,Standard,2024-10-25,High,0.952,True,Low,False,0.0,NONE,False,697,Standard,Low
+AU-CUST00989,Anna Wheeler,1982-10-23,Female,AU,Married,Part-time,111359,Premium,2025-02-10,Medium,0.638,False,Low,False,0.0,NONE,False,665,Enhanced,Low
+AU-CUST00990,Karen Johnson,1974-10-25,Male,AU,Married,Unemployed,78608,Standard,2024-04-11,Medium,0.648,True,Medium,False,0.25,LOW_INCOME,False,594,Enhanced,Low
+AU-CUST00991,Carmen Preston,1974-10-25,Female,AU,Married,Full-time,91997,Standard,2024-11-20,Medium,0.55,False,Low,False,0.0,NONE,False,661,Enhanced,Low
+AU-CUST00992,Brian Harris,1971-10-26,Male,AU,Married,Part-time,78483,Standard,2025-05-16,Medium,0.659,True,Low,False,0.0,NONE,False,601,Standard,Low
+AU-CUST00993,Michael Bowen,1978-10-24,Male,AU,Married,Self-employed,96224,Standard,2024-08-28,Medium,0.682,False,Low,False,0.0,NONE,False,720,Standard,Low
+AU-CUST00994,Deborah Campbell,1997-10-19,Female,AU,Married,Self-employed,95882,Standard,2024-01-22,Medium,0.547,False,Low,False,0.0,NONE,False,667,Standard,Low
+AU-CUST00995,Anthony Armstrong,1946-11-01,Female,AU,Single,Retired,34967,Standard,2025-02-19,Low,0.374,True,Medium,True,0.35,ELDERLY,False,616,Simplified,Low
+AU-CUST00996,Brittany Ward,1986-10-22,Female,AU,Single,Full-time,25235,Standard,2025-02-04,Medium,0.757,True,Low,False,0.0,NONE,False,818,Enhanced,Low
+AU-CUST00997,Edward Stanley,1976-10-24,Male,AU,Married,Part-time,82952,Standard,2025-02-10,Medium,0.593,True,Low,False,0.0,NONE,False,629,Enhanced,Low
+AU-CUST00998,Christina Johnson,2003-10-18,Female,AU,Single,Student,22245,Standard,2024-12-21,High,0.937,True,High,True,0.45,YOUNG_ADULT|LOW_INCOME,False,533,Enhanced,Medium
+AU-CUST00999,Edgar Miller,1955-10-30,Female,AU,Single,Part-time,40165,Standard,2024-03-16,Low,0.309,False,Low,False,0.0,NONE,False,652,Standard,Low
+AU-CUST01000,Elizabeth Sanders,1986-10-22,Female,AU,Single,Full-time,106149,Premium,2024-03-03,Medium,0.752,False,Low,False,0.0,NONE,False,601,Enhanced,Low

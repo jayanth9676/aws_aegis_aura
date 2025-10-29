@@ -1,0 +1,397 @@
+{
+    "tables": {
+        "aegis_customers": {
+            "columns": {
+                "customer_id": {
+                    "sdtype": "id"
+                },
+                "name": {
+                    "sdtype": "categorical"
+                },
+                "date_of_birth": {
+                    "datetime_format": "%Y-%m-%d",
+                    "sdtype": "datetime"
+                },
+                "gender": {
+                    "sdtype": "categorical"
+                },
+                "citizenship": {
+                    "sdtype": "categorical"
+                },
+                "marital_status": {
+                    "sdtype": "categorical"
+                },
+                "employment_status": {
+                    "sdtype": "categorical"
+                },
+                "annual_income": {
+                    "sdtype": "numerical"
+                },
+                "customer_segment": {
+                    "sdtype": "categorical"
+                },
+                "onboarding_date": {
+                    "datetime_format": "%Y-%m-%d",
+                    "sdtype": "datetime"
+                },
+                "digital_literacy_level": {
+                    "sdtype": "categorical"
+                },
+                "known_device_familiarity_score": {
+                    "sdtype": "numerical"
+                },
+                "scam_education_completed": {
+                    "sdtype": "categorical"
+                },
+                "risk_profile": {
+                    "sdtype": "categorical"
+                },
+                "is_vulnerable": {
+                    "sdtype": "categorical"
+                },
+                "vulnerability_score": {
+                    "sdtype": "numerical"
+                },
+                "vulnerability_flags": {
+                    "sdtype": "categorical"
+                },
+                "is_mule_account": {
+                    "sdtype": "categorical"
+                },
+                "credit_score": {
+                    "sdtype": "numerical"
+                },
+                "kyc_level": {
+                    "sdtype": "categorical"
+                },
+                "aml_risk_level": {
+                    "sdtype": "categorical"
+                }
+            },
+            "primary_key": "customer_id"
+        },
+        "aegis_accounts": {
+            "columns": {
+                "account_id": {
+                    "sdtype": "id"
+                },
+                "customer_id": {
+                    "sdtype": "id"
+                },
+                "account_number": {
+                    "sdtype": "numerical"
+                },
+                "bsb_code": {
+                    "sdtype": "categorical"
+                },
+                "account_type": {
+                    "sdtype": "categorical"
+                },
+                "creation_date": {
+                    "datetime_format": "%Y-%m-%d",
+                    "sdtype": "datetime"
+                },
+                "balance": {
+                    "sdtype": "numerical"
+                },
+                "currency": {
+                    "sdtype": "categorical"
+                },
+                "status": {
+                    "sdtype": "categorical"
+                },
+                "is_mule_account": {
+                    "sdtype": "categorical"
+                },
+                "daily_limit": {
+                    "sdtype": "categorical"
+                },
+                "monthly_limit": {
+                    "sdtype": "categorical"
+                }
+            },
+            "primary_key": "account_id"
+        },
+        "aegis_transactions": {
+            "columns": {
+                "transaction_id": {
+                    "sdtype": "id"
+                },
+                "customer_id": {
+                    "sdtype": "id"
+                },
+                "source_account_id": {
+                    "sdtype": "id"
+                },
+                "destination_account_id": {
+                    "sdtype": "id"
+                },
+                "amount": {
+                    "sdtype": "numerical"
+                },
+                "currency": {
+                    "sdtype": "categorical"
+                },
+                "transaction_type": {
+                    "sdtype": "categorical"
+                },
+                "transaction_date": {
+                    "datetime_format": "%Y-%m-%d",
+                    "sdtype": "datetime"
+                },
+                "transaction_time": {
+                    "sdtype": "categorical"
+                },
+                "payee_payer_name": {
+                    "sdtype": "categorical"
+                },
+                "description": {
+                    "sdtype": "categorical"
+                },
+                "payment_channel": {
+                    "sdtype": "categorical"
+                },
+                "device_id": {
+                    "sdtype": "id"
+                },
+                "device_model": {
+                    "sdtype": "categorical"
+                },
+                "ip_address": {
+                    "pii": true,
+                    "sdtype": "ipv6_address"
+                },
+                "ip_address_country": {
+                    "pii": true,
+                    "sdtype": "ipv6_address"
+                },
+                "known_device": {
+                    "sdtype": "categorical"
+                },
+                "status": {
+                    "sdtype": "categorical"
+                },
+                "is_flagged": {
+                    "sdtype": "categorical"
+                },
+                "flag_reason": {
+                    "sdtype": "categorical"
+                },
+                "is_fraud": {
+                    "sdtype": "categorical"
+                },
+                "fraud_type": {
+                    "sdtype": "categorical"
+                },
+                "risk_score": {
+                    "sdtype": "numerical"
+                },
+                "location_risk": {
+                    "sdtype": "categorical"
+                },
+                "amount_risk": {
+                    "sdtype": "categorical"
+                },
+                "velocity_risk": {
+                    "sdtype": "categorical"
+                },
+                "ctr_flag": {
+                    "sdtype": "categorical"
+                },
+                "sar_flag": {
+                    "sdtype": "categorical"
+                }
+            },
+            "primary_key": "transaction_id"
+        },
+        "aegis_call_history": {
+            "columns": {
+                "call_id": {
+                    "sdtype": "id"
+                },
+                "customer_id": {
+                    "sdtype": "id"
+                },
+                "transaction_id": {
+                    "sdtype": "id"
+                },
+                "call_date": {
+                    "datetime_format": "%Y-%m-%d",
+                    "sdtype": "datetime"
+                },
+                "call_time": {
+                    "sdtype": "categorical"
+                },
+                "call_type": {
+                    "sdtype": "categorical"
+                },
+                "call_outcome_category": {
+                    "sdtype": "categorical"
+                },
+                "call_duration_seconds": {
+                    "sdtype": "numerical"
+                },
+                "analyst_team": {
+                    "sdtype": "categorical"
+                },
+                "risk_level": {
+                    "sdtype": "categorical"
+                },
+                "customer_profile": {
+                    "sdtype": "categorical"
+                },
+                "escalated": {
+                    "sdtype": "categorical"
+                },
+                "call_quality_score": {
+                    "sdtype": "numerical"
+                },
+                "resolution_time_hours": {
+                    "sdtype": "numerical"
+                }
+            },
+            "primary_key": "call_id"
+        },
+        "aegis_behavioral_events": {
+            "columns": {
+                "event_id": {
+                    "sdtype": "id"
+                },
+                "customer_id": {
+                    "sdtype": "id"
+                },
+                "transaction_id": {
+                    "sdtype": "id"
+                },
+                "event_timestamp": {
+                    "datetime_format": "%Y-%m-%dT%H:%M:%S",
+                    "sdtype": "datetime"
+                },
+                "anomaly_score": {
+                    "sdtype": "numerical"
+                },
+                "behavioral_flags": {
+                    "sdtype": "categorical"
+                },
+                "session_duration_seconds": {
+                    "sdtype": "numerical"
+                },
+                "hesitation_indicators": {
+                    "sdtype": "categorical"
+                },
+                "typing_pattern_anomaly": {
+                    "sdtype": "numerical"
+                },
+                "copy_paste_detected": {
+                    "sdtype": "categorical"
+                },
+                "new_payee_flag": {
+                    "sdtype": "categorical"
+                },
+                "authentication_failures": {
+                    "sdtype": "categorical"
+                }
+            },
+            "primary_key": "event_id"
+        },
+        "aegis_fraud_alerts": {
+            "columns": {
+                "alert_id": {
+                    "sdtype": "id"
+                },
+                "customer_id": {
+                    "sdtype": "id"
+                },
+                "transaction_id": {
+                    "sdtype": "id"
+                },
+                "rule_id": {
+                    "sdtype": "id"
+                },
+                "strategy": {
+                    "sdtype": "categorical"
+                },
+                "queue": {
+                    "sdtype": "categorical"
+                },
+                "priority": {
+                    "sdtype": "categorical"
+                },
+                "status": {
+                    "sdtype": "categorical"
+                },
+                "alert_date": {
+                    "datetime_format": "%Y-%m-%d",
+                    "sdtype": "datetime"
+                },
+                "alert_time": {
+                    "sdtype": "categorical"
+                },
+                "risk_score": {
+                    "sdtype": "numerical"
+                },
+                "escalation_level": {
+                    "sdtype": "categorical"
+                },
+                "false_positive_probability": {
+                    "sdtype": "numerical"
+                },
+                "customer_contact_attempts": {
+                    "sdtype": "categorical"
+                }
+            },
+            "primary_key": "alert_id"
+        }
+    },
+    "relationships": [
+        {
+            "parent_table_name": "aegis_customers",
+            "child_table_name": "aegis_transactions",
+            "parent_primary_key": "customer_id",
+            "child_foreign_key": "customer_id"
+        },
+        {
+            "parent_table_name": "aegis_customers",
+            "child_table_name": "aegis_fraud_alerts",
+            "parent_primary_key": "customer_id",
+            "child_foreign_key": "customer_id"
+        },
+        {
+            "parent_table_name": "aegis_customers",
+            "child_table_name": "aegis_behavioral_events",
+            "parent_primary_key": "customer_id",
+            "child_foreign_key": "customer_id"
+        },
+        {
+            "parent_table_name": "aegis_customers",
+            "child_table_name": "aegis_call_history",
+            "parent_primary_key": "customer_id",
+            "child_foreign_key": "customer_id"
+        },
+        {
+            "parent_table_name": "aegis_customers",
+            "child_table_name": "aegis_accounts",
+            "parent_primary_key": "customer_id",
+            "child_foreign_key": "customer_id"
+        },
+        {
+            "parent_table_name": "aegis_transactions",
+            "child_table_name": "aegis_fraud_alerts",
+            "parent_primary_key": "transaction_id",
+            "child_foreign_key": "transaction_id"
+        },
+        {
+            "parent_table_name": "aegis_transactions",
+            "child_table_name": "aegis_behavioral_events",
+            "parent_primary_key": "transaction_id",
+            "child_foreign_key": "transaction_id"
+        },
+        {
+            "parent_table_name": "aegis_transactions",
+            "child_table_name": "aegis_call_history",
+            "parent_primary_key": "transaction_id",
+            "child_foreign_key": "transaction_id"
+        }
+    ],
+    "METADATA_SPEC_VERSION": "MULTI_TABLE_V1"
+}

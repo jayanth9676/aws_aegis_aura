@@ -1,0 +1,75 @@
+{
+  "dataset_type": "synthetic_mule_data",
+  "generation_timestamp": "2025-10-14T13:34:38.622061",
+  "statistics": {
+    "n_mule_accounts": 1000,
+    "n_mule_transactions": 50000,
+    "n_mule_customers": 1000,
+    "avg_transactions_per_mule": 50.0,
+    "avg_incoming_amount": 4952.822245236122,
+    "avg_outgoing_amount": 4717.49872,
+    "fraud_rate": 1.0,
+    "weekend_activity_rate": 0.2983,
+    "night_activity_rate": 0.19394
+  },
+  "mule_characteristics": {
+    "avg_account_age_days": 9.704,
+    "avg_in_degree": 28.968,
+    "avg_out_degree": 37.759,
+    "avg_transaction_velocity": 12.414689999999998,
+    "new_customer_rate": 0.939,
+    "high_velocity_rate": 0.669,
+    "cross_border_rate": 0.69,
+    "structuring_rate": 1.0
+  },
+  "schema": {
+    "mule_accounts": [
+      "account_id",
+      "customer_id",
+      "is_mule_account",
+      "account_type",
+      "account_age_days",
+      "daily_limit",
+      "monthly_limit",
+      "in_degree",
+      "out_degree",
+      "total_degree",
+      "avg_incoming_amount",
+      "avg_outgoing_amount",
+      "transaction_velocity",
+      "risk_score",
+      "vulnerability_score",
+      "primary_country",
+      "is_new_customer",
+      "high_velocity",
+      "cross_border_activity",
+      "structuring_indicator"
+    ],
+    "mule_transactions": [
+      "transaction_id",
+      "source_account_id",
+      "destination_account_id",
+      "amount",
+      "is_fraud",
+      "transaction_type",
+      "payment_channel",
+      "hour",
+      "is_weekend",
+      "is_night",
+      "risk_score",
+      "known_device",
+      "is_flagged"
+    ],
+    "mule_customers": [
+      "customer_id",
+      "age",
+      "annual_income",
+      "is_vulnerable",
+      "vulnerability_score",
+      "credit_score",
+      "digital_literacy_level",
+      "risk_profile",
+      "customer_tenure_years"
+    ]
+  }
+}

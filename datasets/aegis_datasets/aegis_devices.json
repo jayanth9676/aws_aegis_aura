@@ -1,0 +1,5647 @@
+{
+  "metadata": {
+    "version": "4.0",
+    "created_date": "2025-10-16",
+    "description": "Aegis Fraud Prevention Platform - Device Trust Data",
+    "total_records": 312,
+    "system_compatibility": [
+      "Device Trust Service",
+      "Redis Session Store"
+    ]
+  },
+  "devices": [
+    {
+      "device_id": "AEGIS-DEV-000001",
+      "customer_id": "AEGIS-CUST-000001",
+      "device_fingerprint": "bd6c4ffb93ac494c",
+      "device_type": "Tablet",
+      "device_model": "Windows PC",
+      "device_os": "macOS 14",
+      "browser": "Chrome",
+      "is_trusted": false,
+      "trust_score": 0.57,
+      "first_seen": "2024-04-29",
+      "last_seen": "2025-10-14",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000002",
+      "customer_id": "AEGIS-CUST-000001",
+      "device_fingerprint": "d5d1656ef1964e5f",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "iPadOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.8,
+      "first_seen": "2024-05-25",
+      "last_seen": "2025-09-30",
+      "location_history": [
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000003",
+      "customer_id": "AEGIS-CUST-000001",
+      "device_fingerprint": "e5d12f806a7f4721",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "macOS 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.72,
+      "first_seen": "2024-06-09",
+      "last_seen": "2025-10-16",
+      "location_history": [
+        "Birmingham",
+        "Glasgow",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000004",
+      "customer_id": "AEGIS-CUST-000002",
+      "device_fingerprint": "03742f9ba0524bf8",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.94,
+      "first_seen": "2025-07-01",
+      "last_seen": "2025-10-02",
+      "location_history": [
+        "London",
+        "Glasgow",
+        "Birmingham"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000005",
+      "customer_id": "AEGIS-CUST-000003",
+      "device_fingerprint": "79b848ac21dc441f",
+      "device_type": "Mobile",
+      "device_model": "MacBook Pro",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.58,
+      "first_seen": "2023-05-17",
+      "last_seen": "2025-09-29",
+      "location_history": [
+        "Birmingham",
+        "Glasgow",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000006",
+      "customer_id": "AEGIS-CUST-000003",
+      "device_fingerprint": "477cea6bc0094529",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.94,
+      "first_seen": "2023-08-18",
+      "last_seen": "2025-09-29",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000007",
+      "customer_id": "AEGIS-CUST-000003",
+      "device_fingerprint": "5fd68e689b354043",
+      "device_type": "Mobile",
+      "device_model": "MacBook Pro",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.63,
+      "first_seen": "2023-03-02",
+      "last_seen": "2025-09-19",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000008",
+      "customer_id": "AEGIS-CUST-000003",
+      "device_fingerprint": "b6ecc18d7f374362",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.82,
+      "first_seen": "2024-12-22",
+      "last_seen": "2025-10-11",
+      "location_history": [
+        "Glasgow",
+        "Birmingham",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000009",
+      "customer_id": "AEGIS-CUST-000003",
+      "device_fingerprint": "fd4da4bb81474a6f",
+      "device_type": "Mobile",
+      "device_model": "iPhone 14",
+      "device_os": "Android 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.79,
+      "first_seen": "2025-04-18",
+      "last_seen": "2025-10-03",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000010",
+      "customer_id": "AEGIS-CUST-000004",
+      "device_fingerprint": "8c34e57bc7934c68",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "macOS 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.66,
+      "first_seen": "2023-10-04",
+      "last_seen": "2025-10-07",
+      "location_history": [
+        "Manchester",
+        "London",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000011",
+      "customer_id": "AEGIS-CUST-000004",
+      "device_fingerprint": "2ccd0978d90d4f34",
+      "device_type": "Desktop",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iPadOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.92,
+      "first_seen": "2024-11-09",
+      "last_seen": "2025-10-07",
+      "location_history": [
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000012",
+      "customer_id": "AEGIS-CUST-000004",
+      "device_fingerprint": "37eb5f7b924344e5",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "Windows 11",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.61,
+      "first_seen": "2024-05-20",
+      "last_seen": "2025-09-21",
+      "location_history": [
+        "Manchester",
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000013",
+      "customer_id": "AEGIS-CUST-000004",
+      "device_fingerprint": "8f8376f842194292",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "macOS 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.88,
+      "first_seen": "2023-10-29",
+      "last_seen": "2025-10-07",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000014",
+      "customer_id": "AEGIS-CUST-000004",
+      "device_fingerprint": "583649537c944edf",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Windows 11",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.94,
+      "first_seen": "2024-02-05",
+      "last_seen": "2025-10-10",
+      "location_history": [
+        "Glasgow",
+        "Manchester",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000015",
+      "customer_id": "AEGIS-CUST-000005",
+      "device_fingerprint": "1033fe2545ee49fe",
+      "device_type": "Mobile",
+      "device_model": "MacBook Pro",
+      "device_os": "Windows 11",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.66,
+      "first_seen": "2023-07-30",
+      "last_seen": "2025-09-18",
+      "location_history": [
+        "Birmingham",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000016",
+      "customer_id": "AEGIS-CUST-000005",
+      "device_fingerprint": "59408fbd99b64d6d",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "iOS 17",
+      "browser": "Safari",
+      "is_trusted": false,
+      "trust_score": 0.67,
+      "first_seen": "2023-11-21",
+      "last_seen": "2025-10-14",
+      "location_history": [
+        "London",
+        "Glasgow",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000017",
+      "customer_id": "AEGIS-CUST-000006",
+      "device_fingerprint": "f9be7d03b44645c9",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "Android 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.74,
+      "first_seen": "2023-09-06",
+      "last_seen": "2025-09-28",
+      "location_history": [
+        "Birmingham",
+        "London",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000018",
+      "customer_id": "AEGIS-CUST-000006",
+      "device_fingerprint": "5bf09a0070bf4b1f",
+      "device_type": "Desktop",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "macOS 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.56,
+      "first_seen": "2025-08-01",
+      "last_seen": "2025-10-15",
+      "location_history": [
+        "Birmingham",
+        "Glasgow",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000019",
+      "customer_id": "AEGIS-CUST-000006",
+      "device_fingerprint": "e9717c63475749b0",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.72,
+      "first_seen": "2025-03-12",
+      "last_seen": "2025-09-16",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000020",
+      "customer_id": "AEGIS-CUST-000006",
+      "device_fingerprint": "aa39d1b606bc4d01",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "iOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.79,
+      "first_seen": "2023-10-15",
+      "last_seen": "2025-10-15",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000021",
+      "customer_id": "AEGIS-CUST-000007",
+      "device_fingerprint": "9e2de0e1f7514b75",
+      "device_type": "Desktop",
+      "device_model": "MacBook Pro",
+      "device_os": "Windows 11",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.55,
+      "first_seen": "2025-04-05",
+      "last_seen": "2025-10-06",
+      "location_history": [
+        "Glasgow",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000022",
+      "customer_id": "AEGIS-CUST-000008",
+      "device_fingerprint": "eddef162b10c456c",
+      "device_type": "Desktop",
+      "device_model": "MacBook Pro",
+      "device_os": "Android 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.62,
+      "first_seen": "2023-07-15",
+      "last_seen": "2025-10-03",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000023",
+      "customer_id": "AEGIS-CUST-000008",
+      "device_fingerprint": "a98e8c492f384ccc",
+      "device_type": "Tablet",
+      "device_model": "Windows PC",
+      "device_os": "Windows 11",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.52,
+      "first_seen": "2024-04-20",
+      "last_seen": "2025-09-16",
+      "location_history": [
+        "Birmingham",
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000024",
+      "customer_id": "AEGIS-CUST-000008",
+      "device_fingerprint": "7b8b6db87af74b6d",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "Android 14",
+      "browser": "Edge",
+      "is_trusted": false,
+      "trust_score": 0.98,
+      "first_seen": "2025-07-02",
+      "last_seen": "2025-10-01",
+      "location_history": [
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000025",
+      "customer_id": "AEGIS-CUST-000009",
+      "device_fingerprint": "074fd797001242f6",
+      "device_type": "Desktop",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iPadOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.6,
+      "first_seen": "2025-01-03",
+      "last_seen": "2025-09-25",
+      "location_history": [
+        "Manchester",
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000026",
+      "customer_id": "AEGIS-CUST-000010",
+      "device_fingerprint": "858db3d2c2774786",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "macOS 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.86,
+      "first_seen": "2023-03-25",
+      "last_seen": "2025-10-03",
+      "location_history": [
+        "London",
+        "Manchester",
+        "Birmingham"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000027",
+      "customer_id": "AEGIS-CUST-000010",
+      "device_fingerprint": "843476625b864eac",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "macOS 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.98,
+      "first_seen": "2023-04-25",
+      "last_seen": "2025-10-05",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000028",
+      "customer_id": "AEGIS-CUST-000010",
+      "device_fingerprint": "79523707f03e4e6b",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "iOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.98,
+      "first_seen": "2023-05-02",
+      "last_seen": "2025-09-20",
+      "location_history": [
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000029",
+      "customer_id": "AEGIS-CUST-000010",
+      "device_fingerprint": "45eef7bf9299466f",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "iOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.62,
+      "first_seen": "2025-05-11",
+      "last_seen": "2025-09-21",
+      "location_history": [
+        "Manchester",
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000030",
+      "customer_id": "AEGIS-CUST-000010",
+      "device_fingerprint": "33421b31d44c42b6",
+      "device_type": "Mobile",
+      "device_model": "MacBook Pro",
+      "device_os": "Android 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.99,
+      "first_seen": "2025-05-06",
+      "last_seen": "2025-09-29",
+      "location_history": [
+        "Manchester",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000031",
+      "customer_id": "AEGIS-CUST-000011",
+      "device_fingerprint": "2a16d710e27c4a7d",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.88,
+      "first_seen": "2023-02-16",
+      "last_seen": "2025-10-06",
+      "location_history": [
+        "London",
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000032",
+      "customer_id": "AEGIS-CUST-000012",
+      "device_fingerprint": "9710772706d84c54",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "iPadOS 17",
+      "browser": "Chrome",
+      "is_trusted": false,
+      "trust_score": 0.67,
+      "first_seen": "2023-09-03",
+      "last_seen": "2025-09-16",
+      "location_history": [
+        "Manchester",
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000033",
+      "customer_id": "AEGIS-CUST-000012",
+      "device_fingerprint": "eabbed8f73974165",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iPadOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.83,
+      "first_seen": "2025-03-19",
+      "last_seen": "2025-09-16",
+      "location_history": [
+        "Glasgow",
+        "Manchester",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000034",
+      "customer_id": "AEGIS-CUST-000012",
+      "device_fingerprint": "4a4a3a498a324fd0",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "macOS 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.53,
+      "first_seen": "2024-06-21",
+      "last_seen": "2025-09-26",
+      "location_history": [
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000035",
+      "customer_id": "AEGIS-CUST-000012",
+      "device_fingerprint": "26adf28caf984716",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "macOS 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.53,
+      "first_seen": "2023-05-19",
+      "last_seen": "2025-10-07",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000036",
+      "customer_id": "AEGIS-CUST-000013",
+      "device_fingerprint": "87e5c613a754406f",
+      "device_type": "Tablet",
+      "device_model": "Windows PC",
+      "device_os": "iOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.86,
+      "first_seen": "2024-06-19",
+      "last_seen": "2025-09-27",
+      "location_history": [
+        "Glasgow",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000037",
+      "customer_id": "AEGIS-CUST-000013",
+      "device_fingerprint": "63b863d2406b4828",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.79,
+      "first_seen": "2024-06-22",
+      "last_seen": "2025-10-02",
+      "location_history": [
+        "Glasgow",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000038",
+      "customer_id": "AEGIS-CUST-000013",
+      "device_fingerprint": "25a1067293784d0f",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iPadOS 17",
+      "browser": "Chrome",
+      "is_trusted": false,
+      "trust_score": 0.53,
+      "first_seen": "2024-05-12",
+      "last_seen": "2025-09-19",
+      "location_history": [
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000039",
+      "customer_id": "AEGIS-CUST-000014",
+      "device_fingerprint": "2db8a790df844446",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "iPadOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.74,
+      "first_seen": "2023-12-06",
+      "last_seen": "2025-10-04",
+      "location_history": [
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000040",
+      "customer_id": "AEGIS-CUST-000014",
+      "device_fingerprint": "7b509aec229149fe",
+      "device_type": "Mobile",
+      "device_model": "MacBook Pro",
+      "device_os": "Android 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.87,
+      "first_seen": "2024-10-11",
+      "last_seen": "2025-10-12",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000041",
+      "customer_id": "AEGIS-CUST-000014",
+      "device_fingerprint": "dbcd12677fbc429b",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Windows 11",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.91,
+      "first_seen": "2025-07-14",
+      "last_seen": "2025-09-24",
+      "location_history": [
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000042",
+      "customer_id": "AEGIS-CUST-000014",
+      "device_fingerprint": "344d81169355472f",
+      "device_type": "Mobile",
+      "device_model": "iPhone 14",
+      "device_os": "macOS 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.99,
+      "first_seen": "2024-03-09",
+      "last_seen": "2025-10-01",
+      "location_history": [
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000043",
+      "customer_id": "AEGIS-CUST-000014",
+      "device_fingerprint": "2260165471ef4ae8",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "macOS 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.68,
+      "first_seen": "2023-03-21",
+      "last_seen": "2025-10-04",
+      "location_history": [
+        "Glasgow",
+        "Manchester",
+        "Birmingham"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000044",
+      "customer_id": "AEGIS-CUST-000015",
+      "device_fingerprint": "e910228408bc4c10",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "iPadOS 17",
+      "browser": "Firefox",
+      "is_trusted": false,
+      "trust_score": 0.93,
+      "first_seen": "2023-09-19",
+      "last_seen": "2025-09-24",
+      "location_history": [
+        "Manchester",
+        "Glasgow",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000045",
+      "customer_id": "AEGIS-CUST-000015",
+      "device_fingerprint": "50a7864140c54b90",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Android 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.78,
+      "first_seen": "2024-09-04",
+      "last_seen": "2025-10-02",
+      "location_history": [
+        "Manchester",
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000046",
+      "customer_id": "AEGIS-CUST-000015",
+      "device_fingerprint": "93a55d600f754135",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "iPadOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.91,
+      "first_seen": "2025-07-03",
+      "last_seen": "2025-10-12",
+      "location_history": [
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000047",
+      "customer_id": "AEGIS-CUST-000016",
+      "device_fingerprint": "cf0a1436800f46ba",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "iOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.63,
+      "first_seen": "2024-09-07",
+      "last_seen": "2025-09-22",
+      "location_history": [
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000048",
+      "customer_id": "AEGIS-CUST-000016",
+      "device_fingerprint": "43c73804c51b45f2",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.54,
+      "first_seen": "2024-04-18",
+      "last_seen": "2025-10-02",
+      "location_history": [
+        "Birmingham",
+        "Glasgow",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000049",
+      "customer_id": "AEGIS-CUST-000016",
+      "device_fingerprint": "74f9aac72d364ecc",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "macOS 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.68,
+      "first_seen": "2025-04-22",
+      "last_seen": "2025-10-10",
+      "location_history": [
+        "Glasgow",
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000050",
+      "customer_id": "AEGIS-CUST-000016",
+      "device_fingerprint": "ebf44efb299f42cd",
+      "device_type": "Mobile",
+      "device_model": "MacBook Pro",
+      "device_os": "Windows 11",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.95,
+      "first_seen": "2025-04-26",
+      "last_seen": "2025-10-06",
+      "location_history": [
+        "Birmingham",
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000051",
+      "customer_id": "AEGIS-CUST-000016",
+      "device_fingerprint": "6ddbb15b4c5b48cc",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "iPadOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.75,
+      "first_seen": "2024-05-03",
+      "last_seen": "2025-09-24",
+      "location_history": [
+        "Birmingham",
+        "Manchester",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000052",
+      "customer_id": "AEGIS-CUST-000017",
+      "device_fingerprint": "cd96b727fc8d491f",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iPadOS 17",
+      "browser": "Firefox",
+      "is_trusted": false,
+      "trust_score": 0.85,
+      "first_seen": "2025-04-29",
+      "last_seen": "2025-10-13",
+      "location_history": [
+        "Manchester",
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000053",
+      "customer_id": "AEGIS-CUST-000017",
+      "device_fingerprint": "f1c5b068b6904e71",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Android 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.67,
+      "first_seen": "2024-05-21",
+      "last_seen": "2025-10-13",
+      "location_history": [
+        "Manchester",
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000054",
+      "customer_id": "AEGIS-CUST-000017",
+      "device_fingerprint": "c4fe2dd4d8cc40e0",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.82,
+      "first_seen": "2023-03-02",
+      "last_seen": "2025-09-22",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000055",
+      "customer_id": "AEGIS-CUST-000017",
+      "device_fingerprint": "3f8331f603774e79",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "Android 14",
+      "browser": "Edge",
+      "is_trusted": false,
+      "trust_score": 0.59,
+      "first_seen": "2023-02-18",
+      "last_seen": "2025-10-15",
+      "location_history": [
+        "Glasgow",
+        "London"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000056",
+      "customer_id": "AEGIS-CUST-000018",
+      "device_fingerprint": "6a4a38eb6fd645c7",
+      "device_type": "Tablet",
+      "device_model": "Windows PC",
+      "device_os": "iPadOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.78,
+      "first_seen": "2025-07-15",
+      "last_seen": "2025-09-20",
+      "location_history": [
+        "Manchester",
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000057",
+      "customer_id": "AEGIS-CUST-000018",
+      "device_fingerprint": "dfd4bbeb61154662",
+      "device_type": "Tablet",
+      "device_model": "Windows PC",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.74,
+      "first_seen": "2023-03-11",
+      "last_seen": "2025-09-30",
+      "location_history": [
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000058",
+      "customer_id": "AEGIS-CUST-000019",
+      "device_fingerprint": "53edf19b8c8846a8",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "Android 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 1.0,
+      "first_seen": "2025-01-20",
+      "last_seen": "2025-09-20",
+      "location_history": [
+        "Birmingham",
+        "Glasgow",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000059",
+      "customer_id": "AEGIS-CUST-000019",
+      "device_fingerprint": "657be36ca2a14e0d",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "Android 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.53,
+      "first_seen": "2024-01-20",
+      "last_seen": "2025-09-18",
+      "location_history": [
+        "Manchester",
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000060",
+      "customer_id": "AEGIS-CUST-000020",
+      "device_fingerprint": "b68cf53152c44880",
+      "device_type": "Mobile",
+      "device_model": "iPhone 14",
+      "device_os": "iOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.82,
+      "first_seen": "2025-07-09",
+      "last_seen": "2025-09-24",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000061",
+      "customer_id": "AEGIS-CUST-000020",
+      "device_fingerprint": "0c11175b226447b9",
+      "device_type": "Desktop",
+      "device_model": "MacBook Pro",
+      "device_os": "iOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.51,
+      "first_seen": "2024-03-21",
+      "last_seen": "2025-09-29",
+      "location_history": [
+        "London",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000062",
+      "customer_id": "AEGIS-CUST-000021",
+      "device_fingerprint": "1066b6e35c1a4fcc",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "macOS 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.54,
+      "first_seen": "2025-04-12",
+      "last_seen": "2025-10-04",
+      "location_history": [
+        "Manchester",
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000063",
+      "customer_id": "AEGIS-CUST-000021",
+      "device_fingerprint": "11d6d9e1164b4e70",
+      "device_type": "Mobile",
+      "device_model": "iPhone 14",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.88,
+      "first_seen": "2025-06-04",
+      "last_seen": "2025-10-12",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000064",
+      "customer_id": "AEGIS-CUST-000021",
+      "device_fingerprint": "ffb993b02b6641b3",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "iPadOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.54,
+      "first_seen": "2024-02-27",
+      "last_seen": "2025-10-14",
+      "location_history": [
+        "Birmingham",
+        "Manchester",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000065",
+      "customer_id": "AEGIS-CUST-000021",
+      "device_fingerprint": "5233bca7730e402a",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "iPadOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.58,
+      "first_seen": "2024-08-23",
+      "last_seen": "2025-10-11",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000066",
+      "customer_id": "AEGIS-CUST-000021",
+      "device_fingerprint": "620a4bed3eb74ca2",
+      "device_type": "Desktop",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.71,
+      "first_seen": "2024-05-09",
+      "last_seen": "2025-09-21",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000067",
+      "customer_id": "AEGIS-CUST-000022",
+      "device_fingerprint": "fc33277ba9114a03",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "Windows 11",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.96,
+      "first_seen": "2025-06-21",
+      "last_seen": "2025-10-13",
+      "location_history": [
+        "Manchester",
+        "Glasgow",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000068",
+      "customer_id": "AEGIS-CUST-000022",
+      "device_fingerprint": "df40ad8eafab4cd2",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.72,
+      "first_seen": "2023-10-04",
+      "last_seen": "2025-10-02",
+      "location_history": [
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000069",
+      "customer_id": "AEGIS-CUST-000022",
+      "device_fingerprint": "37034f603e364de8",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.84,
+      "first_seen": "2025-04-01",
+      "last_seen": "2025-09-17",
+      "location_history": [
+        "Manchester",
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000070",
+      "customer_id": "AEGIS-CUST-000023",
+      "device_fingerprint": "77d73e1501c2421f",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": false,
+      "trust_score": 0.81,
+      "first_seen": "2024-07-05",
+      "last_seen": "2025-10-11",
+      "location_history": [
+        "Manchester",
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000071",
+      "customer_id": "AEGIS-CUST-000023",
+      "device_fingerprint": "15552787cdab43ed",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "iPadOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.58,
+      "first_seen": "2023-09-27",
+      "last_seen": "2025-10-07",
+      "location_history": [
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000072",
+      "customer_id": "AEGIS-CUST-000024",
+      "device_fingerprint": "128976a903ce41b3",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "Android 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.9,
+      "first_seen": "2025-06-03",
+      "last_seen": "2025-10-06",
+      "location_history": [
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000073",
+      "customer_id": "AEGIS-CUST-000025",
+      "device_fingerprint": "fe69568d971e43ff",
+      "device_type": "Tablet",
+      "device_model": "Windows PC",
+      "device_os": "Android 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.96,
+      "first_seen": "2025-05-21",
+      "last_seen": "2025-10-02",
+      "location_history": [
+        "London",
+        "Manchester",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000074",
+      "customer_id": "AEGIS-CUST-000025",
+      "device_fingerprint": "4a1a6e8cdbe2414b",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.67,
+      "first_seen": "2024-04-05",
+      "last_seen": "2025-09-21",
+      "location_history": [
+        "Birmingham",
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000075",
+      "customer_id": "AEGIS-CUST-000025",
+      "device_fingerprint": "efcfae93e6964d9a",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.64,
+      "first_seen": "2025-07-13",
+      "last_seen": "2025-10-08",
+      "location_history": [
+        "London",
+        "Manchester",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000076",
+      "customer_id": "AEGIS-CUST-000025",
+      "device_fingerprint": "1d7e7965466c4592",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "iPadOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.63,
+      "first_seen": "2025-06-03",
+      "last_seen": "2025-09-18",
+      "location_history": [
+        "London",
+        "Glasgow",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000077",
+      "customer_id": "AEGIS-CUST-000025",
+      "device_fingerprint": "4c89c3ddb45047fe",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.96,
+      "first_seen": "2025-03-17",
+      "last_seen": "2025-09-17",
+      "location_history": [
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000078",
+      "customer_id": "AEGIS-CUST-000026",
+      "device_fingerprint": "c1d69282cde94c10",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "macOS 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.54,
+      "first_seen": "2025-02-21",
+      "last_seen": "2025-10-12",
+      "location_history": [
+        "London",
+        "Glasgow",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000079",
+      "customer_id": "AEGIS-CUST-000026",
+      "device_fingerprint": "5a4f035538af4ddc",
+      "device_type": "Desktop",
+      "device_model": "MacBook Pro",
+      "device_os": "Windows 11",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.98,
+      "first_seen": "2025-02-16",
+      "last_seen": "2025-10-02",
+      "location_history": [
+        "Glasgow",
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000080",
+      "customer_id": "AEGIS-CUST-000026",
+      "device_fingerprint": "7ef983968fa34a98",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "macOS 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.93,
+      "first_seen": "2025-04-18",
+      "last_seen": "2025-10-14",
+      "location_history": [
+        "Manchester",
+        "Glasgow",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000081",
+      "customer_id": "AEGIS-CUST-000027",
+      "device_fingerprint": "faef28dd9c204de9",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "macOS 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.51,
+      "first_seen": "2024-01-14",
+      "last_seen": "2025-10-09",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000082",
+      "customer_id": "AEGIS-CUST-000027",
+      "device_fingerprint": "56386d65a66a4e9a",
+      "device_type": "Desktop",
+      "device_model": "iPad Air",
+      "device_os": "macOS 14",
+      "browser": "Chrome",
+      "is_trusted": false,
+      "trust_score": 0.55,
+      "first_seen": "2023-11-14",
+      "last_seen": "2025-10-09",
+      "location_history": [
+        "London",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000083",
+      "customer_id": "AEGIS-CUST-000027",
+      "device_fingerprint": "c6d5cc780ffa4ffa",
+      "device_type": "Desktop",
+      "device_model": "MacBook Pro",
+      "device_os": "Android 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.66,
+      "first_seen": "2023-08-23",
+      "last_seen": "2025-09-24",
+      "location_history": [
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000084",
+      "customer_id": "AEGIS-CUST-000027",
+      "device_fingerprint": "4f04e2b124734204",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "Android 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.91,
+      "first_seen": "2024-04-30",
+      "last_seen": "2025-09-29",
+      "location_history": [
+        "Manchester",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000085",
+      "customer_id": "AEGIS-CUST-000027",
+      "device_fingerprint": "fbe3217b3a2f42a7",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iPadOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.74,
+      "first_seen": "2024-10-12",
+      "last_seen": "2025-09-17",
+      "location_history": [
+        "Manchester",
+        "London",
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000086",
+      "customer_id": "AEGIS-CUST-000028",
+      "device_fingerprint": "96e4265f137a4441",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "macOS 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.7,
+      "first_seen": "2024-03-03",
+      "last_seen": "2025-09-20",
+      "location_history": [
+        "Manchester",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000087",
+      "customer_id": "AEGIS-CUST-000028",
+      "device_fingerprint": "914bd7494f7d47b3",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "macOS 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.51,
+      "first_seen": "2025-03-26",
+      "last_seen": "2025-09-26",
+      "location_history": [
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000088",
+      "customer_id": "AEGIS-CUST-000029",
+      "device_fingerprint": "03b2d75b95d843f1",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "macOS 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.91,
+      "first_seen": "2024-11-10",
+      "last_seen": "2025-10-07",
+      "location_history": [
+        "Glasgow",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000089",
+      "customer_id": "AEGIS-CUST-000029",
+      "device_fingerprint": "0bcae102515e4247",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "macOS 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.66,
+      "first_seen": "2023-09-01",
+      "last_seen": "2025-10-03",
+      "location_history": [
+        "London",
+        "Glasgow",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000090",
+      "customer_id": "AEGIS-CUST-000029",
+      "device_fingerprint": "2c3324220e784e3a",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "iPadOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.76,
+      "first_seen": "2025-04-07",
+      "last_seen": "2025-10-14",
+      "location_history": [
+        "Glasgow",
+        "London"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000091",
+      "customer_id": "AEGIS-CUST-000029",
+      "device_fingerprint": "7d32a8b547e84469",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.92,
+      "first_seen": "2023-05-13",
+      "last_seen": "2025-10-15",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000092",
+      "customer_id": "AEGIS-CUST-000030",
+      "device_fingerprint": "e6c1451e96104251",
+      "device_type": "Desktop",
+      "device_model": "MacBook Pro",
+      "device_os": "macOS 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.88,
+      "first_seen": "2023-03-10",
+      "last_seen": "2025-10-15",
+      "location_history": [
+        "Glasgow",
+        "Birmingham",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000093",
+      "customer_id": "AEGIS-CUST-000030",
+      "device_fingerprint": "4f49ee5c992e48b8",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "Windows 11",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.71,
+      "first_seen": "2024-08-15",
+      "last_seen": "2025-09-23",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000094",
+      "customer_id": "AEGIS-CUST-000030",
+      "device_fingerprint": "4eef4d7113884480",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iPadOS 17",
+      "browser": "Edge",
+      "is_trusted": false,
+      "trust_score": 0.84,
+      "first_seen": "2024-04-15",
+      "last_seen": "2025-10-07",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000095",
+      "customer_id": "AEGIS-CUST-000030",
+      "device_fingerprint": "ba69ef2f53f841dc",
+      "device_type": "Desktop",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "macOS 14",
+      "browser": "Chrome",
+      "is_trusted": false,
+      "trust_score": 0.95,
+      "first_seen": "2023-11-16",
+      "last_seen": "2025-10-14",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000096",
+      "customer_id": "AEGIS-CUST-000031",
+      "device_fingerprint": "4126fbf3b4294770",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Android 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.79,
+      "first_seen": "2025-03-27",
+      "last_seen": "2025-10-13",
+      "location_history": [
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000097",
+      "customer_id": "AEGIS-CUST-000031",
+      "device_fingerprint": "1165d69252a64a32",
+      "device_type": "Desktop",
+      "device_model": "iPad Air",
+      "device_os": "iPadOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.52,
+      "first_seen": "2025-05-29",
+      "last_seen": "2025-09-26",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000098",
+      "customer_id": "AEGIS-CUST-000031",
+      "device_fingerprint": "0350630cdafe4c06",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "Windows 11",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.74,
+      "first_seen": "2025-04-13",
+      "last_seen": "2025-10-10",
+      "location_history": [
+        "London",
+        "Manchester",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000099",
+      "customer_id": "AEGIS-CUST-000031",
+      "device_fingerprint": "765c7ac070964f6c",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "macOS 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.95,
+      "first_seen": "2024-04-11",
+      "last_seen": "2025-09-23",
+      "location_history": [
+        "London",
+        "Manchester",
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000100",
+      "customer_id": "AEGIS-CUST-000032",
+      "device_fingerprint": "7f9d9ad607474d6b",
+      "device_type": "Desktop",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.69,
+      "first_seen": "2024-09-14",
+      "last_seen": "2025-09-27",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000101",
+      "customer_id": "AEGIS-CUST-000032",
+      "device_fingerprint": "fcb8a793820b4963",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "Windows 11",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.63,
+      "first_seen": "2024-10-30",
+      "last_seen": "2025-10-16",
+      "location_history": [
+        "Manchester",
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000102",
+      "customer_id": "AEGIS-CUST-000032",
+      "device_fingerprint": "2ed82c792bf7403c",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "iOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.62,
+      "first_seen": "2024-09-27",
+      "last_seen": "2025-09-25",
+      "location_history": [
+        "Glasgow",
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000103",
+      "customer_id": "AEGIS-CUST-000032",
+      "device_fingerprint": "d0c18f34eae542dc",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Edge",
+      "is_trusted": false,
+      "trust_score": 0.54,
+      "first_seen": "2024-05-01",
+      "last_seen": "2025-10-06",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000104",
+      "customer_id": "AEGIS-CUST-000033",
+      "device_fingerprint": "f15e8b9bca434b4e",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iPadOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.96,
+      "first_seen": "2025-05-04",
+      "last_seen": "2025-09-24",
+      "location_history": [
+        "Manchester",
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000105",
+      "customer_id": "AEGIS-CUST-000034",
+      "device_fingerprint": "7753569fc82c4e2d",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Windows 11",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.61,
+      "first_seen": "2025-02-10",
+      "last_seen": "2025-09-25",
+      "location_history": [
+        "Birmingham",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000106",
+      "customer_id": "AEGIS-CUST-000034",
+      "device_fingerprint": "62614b26dce94c77",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.67,
+      "first_seen": "2025-01-13",
+      "last_seen": "2025-09-18",
+      "location_history": [
+        "Manchester",
+        "London",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000107",
+      "customer_id": "AEGIS-CUST-000034",
+      "device_fingerprint": "25a0a9484fd940ee",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "macOS 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.76,
+      "first_seen": "2023-07-21",
+      "last_seen": "2025-10-05",
+      "location_history": [
+        "Glasgow",
+        "Manchester",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000108",
+      "customer_id": "AEGIS-CUST-000035",
+      "device_fingerprint": "79d144dd2c1642ac",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.84,
+      "first_seen": "2025-01-19",
+      "last_seen": "2025-10-13",
+      "location_history": [
+        "London",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000109",
+      "customer_id": "AEGIS-CUST-000035",
+      "device_fingerprint": "d3ac2b7fa99340d4",
+      "device_type": "Desktop",
+      "device_model": "MacBook Pro",
+      "device_os": "iPadOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.58,
+      "first_seen": "2024-02-14",
+      "last_seen": "2025-10-05",
+      "location_history": [
+        "Glasgow",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000110",
+      "customer_id": "AEGIS-CUST-000035",
+      "device_fingerprint": "812e85f43def4912",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Windows 11",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.57,
+      "first_seen": "2023-08-28",
+      "last_seen": "2025-10-06",
+      "location_history": [
+        "Glasgow",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000111",
+      "customer_id": "AEGIS-CUST-000035",
+      "device_fingerprint": "be98dcc205154640",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "iPadOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.8,
+      "first_seen": "2023-05-09",
+      "last_seen": "2025-10-08",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000112",
+      "customer_id": "AEGIS-CUST-000035",
+      "device_fingerprint": "0847a395a8c54a61",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "iOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.82,
+      "first_seen": "2023-06-07",
+      "last_seen": "2025-09-28",
+      "location_history": [
+        "Glasgow",
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000113",
+      "customer_id": "AEGIS-CUST-000036",
+      "device_fingerprint": "790a6896fcd84031",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "Android 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.52,
+      "first_seen": "2024-02-08",
+      "last_seen": "2025-10-12",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000114",
+      "customer_id": "AEGIS-CUST-000036",
+      "device_fingerprint": "07aa956a792440ee",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Safari",
+      "is_trusted": false,
+      "trust_score": 0.86,
+      "first_seen": "2023-05-29",
+      "last_seen": "2025-10-07",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000115",
+      "customer_id": "AEGIS-CUST-000036",
+      "device_fingerprint": "1ff75bccff7e42b9",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "Android 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.8,
+      "first_seen": "2023-06-26",
+      "last_seen": "2025-09-28",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000116",
+      "customer_id": "AEGIS-CUST-000037",
+      "device_fingerprint": "b741254719774486",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.85,
+      "first_seen": "2025-04-04",
+      "last_seen": "2025-10-13",
+      "location_history": [
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000117",
+      "customer_id": "AEGIS-CUST-000038",
+      "device_fingerprint": "5ce89c079f27403f",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Windows 11",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.95,
+      "first_seen": "2024-12-15",
+      "last_seen": "2025-10-11",
+      "location_history": [
+        "Manchester",
+        "Glasgow",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000118",
+      "customer_id": "AEGIS-CUST-000038",
+      "device_fingerprint": "adcb9ef897dd4dba",
+      "device_type": "Mobile",
+      "device_model": "MacBook Pro",
+      "device_os": "Android 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.62,
+      "first_seen": "2023-12-23",
+      "last_seen": "2025-10-05",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000119",
+      "customer_id": "AEGIS-CUST-000038",
+      "device_fingerprint": "e205aa4917334607",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "iPadOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.77,
+      "first_seen": "2025-08-04",
+      "last_seen": "2025-09-19",
+      "location_history": [
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000120",
+      "customer_id": "AEGIS-CUST-000038",
+      "device_fingerprint": "eaf39121203b4566",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "Windows 11",
+      "browser": "Chrome",
+      "is_trusted": false,
+      "trust_score": 0.96,
+      "first_seen": "2024-12-04",
+      "last_seen": "2025-10-04",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000121",
+      "customer_id": "AEGIS-CUST-000039",
+      "device_fingerprint": "03e1c1fd2a78438b",
+      "device_type": "Desktop",
+      "device_model": "iPad Air",
+      "device_os": "iPadOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.59,
+      "first_seen": "2025-08-24",
+      "last_seen": "2025-10-12",
+      "location_history": [
+        "Manchester",
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000122",
+      "customer_id": "AEGIS-CUST-000039",
+      "device_fingerprint": "b2cf1202e7284a0f",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "Android 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.55,
+      "first_seen": "2023-01-31",
+      "last_seen": "2025-09-18",
+      "location_history": [
+        "London",
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000123",
+      "customer_id": "AEGIS-CUST-000039",
+      "device_fingerprint": "24d1d92b575443f0",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.54,
+      "first_seen": "2023-02-06",
+      "last_seen": "2025-09-18",
+      "location_history": [
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000124",
+      "customer_id": "AEGIS-CUST-000039",
+      "device_fingerprint": "ffed5ceea688400a",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "Android 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.59,
+      "first_seen": "2025-08-12",
+      "last_seen": "2025-09-25",
+      "location_history": [
+        "Birmingham",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000125",
+      "customer_id": "AEGIS-CUST-000040",
+      "device_fingerprint": "859b8099d7664d74",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.88,
+      "first_seen": "2025-04-20",
+      "last_seen": "2025-10-15",
+      "location_history": [
+        "Glasgow",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000126",
+      "customer_id": "AEGIS-CUST-000040",
+      "device_fingerprint": "3d3b851055a34906",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "macOS 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.56,
+      "first_seen": "2023-07-23",
+      "last_seen": "2025-09-24",
+      "location_history": [
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000127",
+      "customer_id": "AEGIS-CUST-000041",
+      "device_fingerprint": "e3eb6312bfae45a8",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.62,
+      "first_seen": "2023-09-09",
+      "last_seen": "2025-10-14",
+      "location_history": [
+        "Glasgow",
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000128",
+      "customer_id": "AEGIS-CUST-000042",
+      "device_fingerprint": "5547d45ae0754fec",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Firefox",
+      "is_trusted": false,
+      "trust_score": 0.78,
+      "first_seen": "2024-10-19",
+      "last_seen": "2025-09-19",
+      "location_history": [
+        "Glasgow",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000129",
+      "customer_id": "AEGIS-CUST-000042",
+      "device_fingerprint": "f1715bff80b14c79",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "iPadOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.61,
+      "first_seen": "2023-07-25",
+      "last_seen": "2025-09-29",
+      "location_history": [
+        "Birmingham",
+        "Manchester",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000130",
+      "customer_id": "AEGIS-CUST-000043",
+      "device_fingerprint": "28ef2756538647fd",
+      "device_type": "Mobile",
+      "device_model": "iPhone 14",
+      "device_os": "macOS 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.96,
+      "first_seen": "2025-06-17",
+      "last_seen": "2025-10-13",
+      "location_history": [
+        "Glasgow",
+        "Manchester",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000131",
+      "customer_id": "AEGIS-CUST-000043",
+      "device_fingerprint": "37b551f1d7e441b5",
+      "device_type": "Desktop",
+      "device_model": "MacBook Pro",
+      "device_os": "iPadOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.58,
+      "first_seen": "2024-09-23",
+      "last_seen": "2025-09-27",
+      "location_history": [
+        "Manchester",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000132",
+      "customer_id": "AEGIS-CUST-000043",
+      "device_fingerprint": "1cb0e4e4a421490c",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "macOS 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.93,
+      "first_seen": "2025-05-24",
+      "last_seen": "2025-09-23",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000133",
+      "customer_id": "AEGIS-CUST-000043",
+      "device_fingerprint": "e41db456a4c141e0",
+      "device_type": "Mobile",
+      "device_model": "MacBook Pro",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.56,
+      "first_seen": "2024-06-13",
+      "last_seen": "2025-10-01",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000134",
+      "customer_id": "AEGIS-CUST-000044",
+      "device_fingerprint": "24fbcfab8f6246d6",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.77,
+      "first_seen": "2023-09-11",
+      "last_seen": "2025-10-13",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000135",
+      "customer_id": "AEGIS-CUST-000044",
+      "device_fingerprint": "bd972f1b2d9e443d",
+      "device_type": "Mobile",
+      "device_model": "iPhone 14",
+      "device_os": "macOS 14",
+      "browser": "Edge",
+      "is_trusted": false,
+      "trust_score": 0.65,
+      "first_seen": "2023-08-15",
+      "last_seen": "2025-09-17",
+      "location_history": [
+        "Birmingham",
+        "London",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000136",
+      "customer_id": "AEGIS-CUST-000045",
+      "device_fingerprint": "2e740d3cbf244e12",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.97,
+      "first_seen": "2023-10-05",
+      "last_seen": "2025-09-29",
+      "location_history": [
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000137",
+      "customer_id": "AEGIS-CUST-000045",
+      "device_fingerprint": "c82a9e3d19384bec",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "Android 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.86,
+      "first_seen": "2025-02-22",
+      "last_seen": "2025-09-18",
+      "location_history": [
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000138",
+      "customer_id": "AEGIS-CUST-000045",
+      "device_fingerprint": "076c604976a948ea",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.72,
+      "first_seen": "2024-09-10",
+      "last_seen": "2025-10-14",
+      "location_history": [
+        "Glasgow",
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000139",
+      "customer_id": "AEGIS-CUST-000045",
+      "device_fingerprint": "5ceca0531fdf4ab2",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.83,
+      "first_seen": "2025-04-16",
+      "last_seen": "2025-10-11",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000140",
+      "customer_id": "AEGIS-CUST-000045",
+      "device_fingerprint": "dbf73b84e1c9432b",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "macOS 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.98,
+      "first_seen": "2024-11-25",
+      "last_seen": "2025-09-26",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000141",
+      "customer_id": "AEGIS-CUST-000046",
+      "device_fingerprint": "54f1619bf27346f5",
+      "device_type": "Desktop",
+      "device_model": "iPad Air",
+      "device_os": "macOS 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.66,
+      "first_seen": "2024-03-27",
+      "last_seen": "2025-09-28",
+      "location_history": [
+        "Birmingham",
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000142",
+      "customer_id": "AEGIS-CUST-000046",
+      "device_fingerprint": "e0afe9d7417f4033",
+      "device_type": "Tablet",
+      "device_model": "Windows PC",
+      "device_os": "Windows 11",
+      "browser": "Chrome",
+      "is_trusted": false,
+      "trust_score": 0.62,
+      "first_seen": "2024-11-23",
+      "last_seen": "2025-10-10",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000143",
+      "customer_id": "AEGIS-CUST-000046",
+      "device_fingerprint": "cc22d9178c4a4cfd",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "Android 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.67,
+      "first_seen": "2024-02-21",
+      "last_seen": "2025-09-21",
+      "location_history": [
+        "Manchester",
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000144",
+      "customer_id": "AEGIS-CUST-000047",
+      "device_fingerprint": "fcc92a2cfd2b4fc5",
+      "device_type": "Desktop",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.66,
+      "first_seen": "2024-06-22",
+      "last_seen": "2025-09-25",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000145",
+      "customer_id": "AEGIS-CUST-000047",
+      "device_fingerprint": "477c859d32fb4dfb",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "iOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.68,
+      "first_seen": "2024-10-25",
+      "last_seen": "2025-10-08",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000146",
+      "customer_id": "AEGIS-CUST-000047",
+      "device_fingerprint": "6b9b2f29aa0348d3",
+      "device_type": "Mobile",
+      "device_model": "iPhone 14",
+      "device_os": "macOS 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.53,
+      "first_seen": "2025-08-18",
+      "last_seen": "2025-10-01",
+      "location_history": [
+        "London",
+        "Glasgow",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000147",
+      "customer_id": "AEGIS-CUST-000047",
+      "device_fingerprint": "efba86f1fddd4549",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "Android 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.66,
+      "first_seen": "2023-06-02",
+      "last_seen": "2025-10-10",
+      "location_history": [
+        "London",
+        "Manchester",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000148",
+      "customer_id": "AEGIS-CUST-000048",
+      "device_fingerprint": "19524c8cfbde49fb",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "iPadOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.82,
+      "first_seen": "2025-07-16",
+      "last_seen": "2025-10-14",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000149",
+      "customer_id": "AEGIS-CUST-000048",
+      "device_fingerprint": "49bc74189b6242eb",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "Android 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.65,
+      "first_seen": "2023-12-26",
+      "last_seen": "2025-09-28",
+      "location_history": [
+        "Manchester",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000150",
+      "customer_id": "AEGIS-CUST-000048",
+      "device_fingerprint": "df990eb6781f42e8",
+      "device_type": "Desktop",
+      "device_model": "MacBook Pro",
+      "device_os": "iPadOS 17",
+      "browser": "Firefox",
+      "is_trusted": false,
+      "trust_score": 0.97,
+      "first_seen": "2023-09-12",
+      "last_seen": "2025-09-17",
+      "location_history": [
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000151",
+      "customer_id": "AEGIS-CUST-000048",
+      "device_fingerprint": "e7d078d308cb42ed",
+      "device_type": "Tablet",
+      "device_model": "Windows PC",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.95,
+      "first_seen": "2025-07-24",
+      "last_seen": "2025-10-16",
+      "location_history": [
+        "Birmingham",
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000152",
+      "customer_id": "AEGIS-CUST-000048",
+      "device_fingerprint": "803bb8e7f25f4400",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "iPadOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.86,
+      "first_seen": "2024-07-28",
+      "last_seen": "2025-10-04",
+      "location_history": [
+        "Manchester",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000153",
+      "customer_id": "AEGIS-CUST-000049",
+      "device_fingerprint": "a6943cfc8d354583",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": false,
+      "trust_score": 0.87,
+      "first_seen": "2023-11-12",
+      "last_seen": "2025-10-02",
+      "location_history": [
+        "Manchester",
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000154",
+      "customer_id": "AEGIS-CUST-000049",
+      "device_fingerprint": "f4191de4650d45b4",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "Android 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.54,
+      "first_seen": "2025-04-21",
+      "last_seen": "2025-09-27",
+      "location_history": [
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000155",
+      "customer_id": "AEGIS-CUST-000049",
+      "device_fingerprint": "581bf42c1b8a42a5",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "Android 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.58,
+      "first_seen": "2024-02-03",
+      "last_seen": "2025-09-23",
+      "location_history": [
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000156",
+      "customer_id": "AEGIS-CUST-000050",
+      "device_fingerprint": "fc50e594b37a4b92",
+      "device_type": "Mobile",
+      "device_model": "iPhone 14",
+      "device_os": "macOS 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.67,
+      "first_seen": "2025-07-17",
+      "last_seen": "2025-10-08",
+      "location_history": [
+        "Manchester",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000157",
+      "customer_id": "AEGIS-CUST-000050",
+      "device_fingerprint": "27ef5340e61a4966",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.55,
+      "first_seen": "2024-03-12",
+      "last_seen": "2025-09-22",
+      "location_history": [
+        "Manchester",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000158",
+      "customer_id": "AEGIS-CUST-000050",
+      "device_fingerprint": "601940b194c642c2",
+      "device_type": "Desktop",
+      "device_model": "MacBook Pro",
+      "device_os": "iOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.79,
+      "first_seen": "2025-01-03",
+      "last_seen": "2025-09-22",
+      "location_history": [
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000159",
+      "customer_id": "AEGIS-CUST-000051",
+      "device_fingerprint": "113a9762e2484984",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "macOS 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.57,
+      "first_seen": "2024-07-18",
+      "last_seen": "2025-10-11",
+      "location_history": [
+        "Birmingham",
+        "Glasgow",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000160",
+      "customer_id": "AEGIS-CUST-000052",
+      "device_fingerprint": "2864022fb4d94f0c",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Windows 11",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.61,
+      "first_seen": "2024-05-22",
+      "last_seen": "2025-09-28",
+      "location_history": [
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000161",
+      "customer_id": "AEGIS-CUST-000052",
+      "device_fingerprint": "fce666d00d5e4b98",
+      "device_type": "Tablet",
+      "device_model": "Windows PC",
+      "device_os": "Android 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.73,
+      "first_seen": "2025-03-02",
+      "last_seen": "2025-09-26",
+      "location_history": [
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000162",
+      "customer_id": "AEGIS-CUST-000053",
+      "device_fingerprint": "52953d5d46a04c9a",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.85,
+      "first_seen": "2025-09-15",
+      "last_seen": "2025-09-19",
+      "location_history": [
+        "London",
+        "Manchester",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000163",
+      "customer_id": "AEGIS-CUST-000053",
+      "device_fingerprint": "60b85f66159a4947",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "macOS 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.54,
+      "first_seen": "2023-03-30",
+      "last_seen": "2025-10-06",
+      "location_history": [
+        "London",
+        "Birmingham",
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000164",
+      "customer_id": "AEGIS-CUST-000053",
+      "device_fingerprint": "a00c7019bd5241c4",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "macOS 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.68,
+      "first_seen": "2025-03-21",
+      "last_seen": "2025-09-26",
+      "location_history": [
+        "London",
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000165",
+      "customer_id": "AEGIS-CUST-000053",
+      "device_fingerprint": "6b5f599933574f27",
+      "device_type": "Desktop",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iPadOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.87,
+      "first_seen": "2023-08-08",
+      "last_seen": "2025-09-28",
+      "location_history": [
+        "Manchester",
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000166",
+      "customer_id": "AEGIS-CUST-000054",
+      "device_fingerprint": "bdbb56eff2a64f08",
+      "device_type": "Desktop",
+      "device_model": "MacBook Pro",
+      "device_os": "Windows 11",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.58,
+      "first_seen": "2024-03-17",
+      "last_seen": "2025-10-07",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000167",
+      "customer_id": "AEGIS-CUST-000054",
+      "device_fingerprint": "a445b1f227ae49d3",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Android 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 1.0,
+      "first_seen": "2024-02-06",
+      "last_seen": "2025-10-12",
+      "location_history": [
+        "Birmingham",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000168",
+      "customer_id": "AEGIS-CUST-000054",
+      "device_fingerprint": "3003fdc9bb644f0e",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "macOS 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.72,
+      "first_seen": "2025-04-03",
+      "last_seen": "2025-09-29",
+      "location_history": [
+        "London",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000169",
+      "customer_id": "AEGIS-CUST-000055",
+      "device_fingerprint": "75f7cd4c9d8a4e0b",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "Windows 11",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.84,
+      "first_seen": "2025-01-09",
+      "last_seen": "2025-10-16",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000170",
+      "customer_id": "AEGIS-CUST-000056",
+      "device_fingerprint": "5c62e32dc9bf4baf",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "iOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.93,
+      "first_seen": "2025-04-24",
+      "last_seen": "2025-09-24",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000171",
+      "customer_id": "AEGIS-CUST-000056",
+      "device_fingerprint": "272359d2ad884c4e",
+      "device_type": "Mobile",
+      "device_model": "iPhone 14",
+      "device_os": "Windows 11",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.89,
+      "first_seen": "2023-08-03",
+      "last_seen": "2025-10-03",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000172",
+      "customer_id": "AEGIS-CUST-000056",
+      "device_fingerprint": "73e8ab3e321c4a77",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "iPadOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.95,
+      "first_seen": "2025-08-03",
+      "last_seen": "2025-10-14",
+      "location_history": [
+        "London",
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000173",
+      "customer_id": "AEGIS-CUST-000056",
+      "device_fingerprint": "02d14c3aa43743e8",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iPadOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.68,
+      "first_seen": "2025-06-16",
+      "last_seen": "2025-10-12",
+      "location_history": [
+        "Birmingham",
+        "Glasgow",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000174",
+      "customer_id": "AEGIS-CUST-000057",
+      "device_fingerprint": "151459d04c0643bd",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.83,
+      "first_seen": "2024-05-02",
+      "last_seen": "2025-09-30",
+      "location_history": [
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000175",
+      "customer_id": "AEGIS-CUST-000057",
+      "device_fingerprint": "ff954d81cbe24949",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "iOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.93,
+      "first_seen": "2024-06-20",
+      "last_seen": "2025-10-02",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000176",
+      "customer_id": "AEGIS-CUST-000057",
+      "device_fingerprint": "90db1ad711084724",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "Android 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.66,
+      "first_seen": "2024-08-14",
+      "last_seen": "2025-10-01",
+      "location_history": [
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000177",
+      "customer_id": "AEGIS-CUST-000058",
+      "device_fingerprint": "7938c3d6affc4a07",
+      "device_type": "Desktop",
+      "device_model": "MacBook Pro",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": false,
+      "trust_score": 0.7,
+      "first_seen": "2025-01-28",
+      "last_seen": "2025-09-27",
+      "location_history": [
+        "London",
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000178",
+      "customer_id": "AEGIS-CUST-000058",
+      "device_fingerprint": "db3cf50877604fc7",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "iPadOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.67,
+      "first_seen": "2025-06-30",
+      "last_seen": "2025-09-26",
+      "location_history": [
+        "Birmingham",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000179",
+      "customer_id": "AEGIS-CUST-000058",
+      "device_fingerprint": "2aa4bfb9c44f4a20",
+      "device_type": "Desktop",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Windows 11",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.76,
+      "first_seen": "2023-10-30",
+      "last_seen": "2025-09-22",
+      "location_history": [
+        "Manchester",
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000180",
+      "customer_id": "AEGIS-CUST-000058",
+      "device_fingerprint": "42c6ae9b81514ad7",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "macOS 14",
+      "browser": "Edge",
+      "is_trusted": false,
+      "trust_score": 0.86,
+      "first_seen": "2025-07-17",
+      "last_seen": "2025-09-30",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000181",
+      "customer_id": "AEGIS-CUST-000059",
+      "device_fingerprint": "1323a27c30104f16",
+      "device_type": "Desktop",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Android 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.98,
+      "first_seen": "2024-06-23",
+      "last_seen": "2025-10-03",
+      "location_history": [
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000182",
+      "customer_id": "AEGIS-CUST-000060",
+      "device_fingerprint": "890678ffdfd345bb",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "Windows 11",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.84,
+      "first_seen": "2023-05-24",
+      "last_seen": "2025-10-06",
+      "location_history": [
+        "Manchester",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000183",
+      "customer_id": "AEGIS-CUST-000060",
+      "device_fingerprint": "510a2a5efa7449e0",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "Windows 11",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.51,
+      "first_seen": "2024-02-23",
+      "last_seen": "2025-09-26",
+      "location_history": [
+        "Manchester",
+        "London",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000184",
+      "customer_id": "AEGIS-CUST-000060",
+      "device_fingerprint": "e70738dcf18f4a65",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.8,
+      "first_seen": "2025-04-17",
+      "last_seen": "2025-10-14",
+      "location_history": [
+        "Manchester",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000185",
+      "customer_id": "AEGIS-CUST-000060",
+      "device_fingerprint": "a1ed1250220a4292",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.75,
+      "first_seen": "2025-01-30",
+      "last_seen": "2025-09-24",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000186",
+      "customer_id": "AEGIS-CUST-000061",
+      "device_fingerprint": "cece628cbdb34398",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "macOS 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.87,
+      "first_seen": "2023-05-28",
+      "last_seen": "2025-10-08",
+      "location_history": [
+        "Manchester",
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000187",
+      "customer_id": "AEGIS-CUST-000062",
+      "device_fingerprint": "a2e7f122a3e748ff",
+      "device_type": "Desktop",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.76,
+      "first_seen": "2024-11-18",
+      "last_seen": "2025-09-28",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000188",
+      "customer_id": "AEGIS-CUST-000062",
+      "device_fingerprint": "286159a89be64289",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "iPadOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.73,
+      "first_seen": "2023-09-10",
+      "last_seen": "2025-09-28",
+      "location_history": [
+        "Birmingham",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000189",
+      "customer_id": "AEGIS-CUST-000063",
+      "device_fingerprint": "201fbbaa8ab2454b",
+      "device_type": "Desktop",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iPadOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.84,
+      "first_seen": "2023-02-16",
+      "last_seen": "2025-09-27",
+      "location_history": [
+        "Glasgow",
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000190",
+      "customer_id": "AEGIS-CUST-000063",
+      "device_fingerprint": "99bacdcb53374c94",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "macOS 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.92,
+      "first_seen": "2023-12-20",
+      "last_seen": "2025-10-10",
+      "location_history": [
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000191",
+      "customer_id": "AEGIS-CUST-000063",
+      "device_fingerprint": "2471942b35d541fc",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Android 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.71,
+      "first_seen": "2024-04-29",
+      "last_seen": "2025-10-07",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000192",
+      "customer_id": "AEGIS-CUST-000063",
+      "device_fingerprint": "e4bd5fd123fc452c",
+      "device_type": "Mobile",
+      "device_model": "MacBook Pro",
+      "device_os": "macOS 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.59,
+      "first_seen": "2023-04-20",
+      "last_seen": "2025-09-18",
+      "location_history": [
+        "London",
+        "Glasgow",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000193",
+      "customer_id": "AEGIS-CUST-000064",
+      "device_fingerprint": "1b55244daee44978",
+      "device_type": "Mobile",
+      "device_model": "MacBook Pro",
+      "device_os": "macOS 14",
+      "browser": "Edge",
+      "is_trusted": false,
+      "trust_score": 0.58,
+      "first_seen": "2025-07-16",
+      "last_seen": "2025-10-04",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000194",
+      "customer_id": "AEGIS-CUST-000065",
+      "device_fingerprint": "37eccca64a7e4ff8",
+      "device_type": "Desktop",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Windows 11",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.68,
+      "first_seen": "2024-03-27",
+      "last_seen": "2025-10-04",
+      "location_history": [
+        "Glasgow",
+        "Manchester",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000195",
+      "customer_id": "AEGIS-CUST-000066",
+      "device_fingerprint": "d642fc53416d4ca8",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "iPadOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.54,
+      "first_seen": "2023-12-23",
+      "last_seen": "2025-09-29",
+      "location_history": [
+        "London",
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000196",
+      "customer_id": "AEGIS-CUST-000066",
+      "device_fingerprint": "1d6072d2fa254e46",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": false,
+      "trust_score": 0.64,
+      "first_seen": "2025-02-18",
+      "last_seen": "2025-10-09",
+      "location_history": [
+        "Glasgow",
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000197",
+      "customer_id": "AEGIS-CUST-000066",
+      "device_fingerprint": "04c583b7d8f7433e",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.71,
+      "first_seen": "2023-04-20",
+      "last_seen": "2025-09-30",
+      "location_history": [
+        "Glasgow",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000198",
+      "customer_id": "AEGIS-CUST-000066",
+      "device_fingerprint": "c992d153b5164f0b",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.63,
+      "first_seen": "2025-06-17",
+      "last_seen": "2025-10-12",
+      "location_history": [
+        "Glasgow",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000199",
+      "customer_id": "AEGIS-CUST-000066",
+      "device_fingerprint": "644d8d07719a4708",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "Android 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.65,
+      "first_seen": "2025-06-07",
+      "last_seen": "2025-10-06",
+      "location_history": [
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000200",
+      "customer_id": "AEGIS-CUST-000067",
+      "device_fingerprint": "e83bc93922894080",
+      "device_type": "Desktop",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Windows 11",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.85,
+      "first_seen": "2023-11-25",
+      "last_seen": "2025-09-17",
+      "location_history": [
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000201",
+      "customer_id": "AEGIS-CUST-000067",
+      "device_fingerprint": "12edd09d71da4c98",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Windows 11",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.77,
+      "first_seen": "2023-07-03",
+      "last_seen": "2025-09-18",
+      "location_history": [
+        "London",
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000202",
+      "customer_id": "AEGIS-CUST-000067",
+      "device_fingerprint": "e36f2114cdfa4de0",
+      "device_type": "Tablet",
+      "device_model": "Windows PC",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": false,
+      "trust_score": 0.69,
+      "first_seen": "2024-01-10",
+      "last_seen": "2025-10-05",
+      "location_history": [
+        "Manchester",
+        "Birmingham"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000203",
+      "customer_id": "AEGIS-CUST-000068",
+      "device_fingerprint": "5b40610c3cc644da",
+      "device_type": "Mobile",
+      "device_model": "iPhone 14",
+      "device_os": "Windows 11",
+      "browser": "Firefox",
+      "is_trusted": false,
+      "trust_score": 0.85,
+      "first_seen": "2023-07-08",
+      "last_seen": "2025-10-12",
+      "location_history": [
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000204",
+      "customer_id": "AEGIS-CUST-000069",
+      "device_fingerprint": "0b9e073367184eeb",
+      "device_type": "Desktop",
+      "device_model": "iPad Air",
+      "device_os": "Android 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.88,
+      "first_seen": "2023-06-05",
+      "last_seen": "2025-10-06",
+      "location_history": [
+        "Glasgow",
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000205",
+      "customer_id": "AEGIS-CUST-000069",
+      "device_fingerprint": "e4a8a28e2281474a",
+      "device_type": "Mobile",
+      "device_model": "MacBook Pro",
+      "device_os": "iOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.78,
+      "first_seen": "2025-04-24",
+      "last_seen": "2025-10-07",
+      "location_history": [
+        "Manchester",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000206",
+      "customer_id": "AEGIS-CUST-000069",
+      "device_fingerprint": "cfe52a52d24c4529",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.59,
+      "first_seen": "2023-03-25",
+      "last_seen": "2025-10-08",
+      "location_history": [
+        "Manchester",
+        "Glasgow",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000207",
+      "customer_id": "AEGIS-CUST-000069",
+      "device_fingerprint": "817ba2815abd45fc",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "macOS 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.84,
+      "first_seen": "2024-08-24",
+      "last_seen": "2025-09-26",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000208",
+      "customer_id": "AEGIS-CUST-000069",
+      "device_fingerprint": "33897f6b98bb46ae",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.83,
+      "first_seen": "2023-01-27",
+      "last_seen": "2025-09-30",
+      "location_history": [
+        "Glasgow",
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000209",
+      "customer_id": "AEGIS-CUST-000070",
+      "device_fingerprint": "a164f781b5c74dd8",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "macOS 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.63,
+      "first_seen": "2023-08-15",
+      "last_seen": "2025-09-20",
+      "location_history": [
+        "Birmingham",
+        "London",
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000210",
+      "customer_id": "AEGIS-CUST-000070",
+      "device_fingerprint": "7ff711dc78b040f1",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "macOS 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.64,
+      "first_seen": "2024-09-27",
+      "last_seen": "2025-09-21",
+      "location_history": [
+        "Glasgow",
+        "Birmingham"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000211",
+      "customer_id": "AEGIS-CUST-000071",
+      "device_fingerprint": "9669be96311d4afb",
+      "device_type": "Desktop",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.91,
+      "first_seen": "2024-01-06",
+      "last_seen": "2025-09-21",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000212",
+      "customer_id": "AEGIS-CUST-000071",
+      "device_fingerprint": "6aee51aaea76447b",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "Windows 11",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.64,
+      "first_seen": "2023-03-29",
+      "last_seen": "2025-09-17",
+      "location_history": [
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000213",
+      "customer_id": "AEGIS-CUST-000071",
+      "device_fingerprint": "173e0de5b84d4320",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "iPadOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.59,
+      "first_seen": "2023-12-24",
+      "last_seen": "2025-09-23",
+      "location_history": [
+        "Glasgow",
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000214",
+      "customer_id": "AEGIS-CUST-000071",
+      "device_fingerprint": "c9c8aaabf4c447f0",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "iOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.52,
+      "first_seen": "2023-03-25",
+      "last_seen": "2025-09-19",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000215",
+      "customer_id": "AEGIS-CUST-000071",
+      "device_fingerprint": "55ffa3e3e8d6415d",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": false,
+      "trust_score": 0.71,
+      "first_seen": "2023-07-29",
+      "last_seen": "2025-09-29",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000216",
+      "customer_id": "AEGIS-CUST-000072",
+      "device_fingerprint": "9b129fa5072f48b2",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.99,
+      "first_seen": "2024-10-06",
+      "last_seen": "2025-09-20",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000217",
+      "customer_id": "AEGIS-CUST-000073",
+      "device_fingerprint": "ccff7843e3c14160",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.89,
+      "first_seen": "2025-08-07",
+      "last_seen": "2025-09-30",
+      "location_history": [
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000218",
+      "customer_id": "AEGIS-CUST-000073",
+      "device_fingerprint": "0ec1b9c4d9b34272",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "macOS 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.53,
+      "first_seen": "2023-02-20",
+      "last_seen": "2025-09-25",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000219",
+      "customer_id": "AEGIS-CUST-000073",
+      "device_fingerprint": "0030ffb49c024069",
+      "device_type": "Desktop",
+      "device_model": "iPad Air",
+      "device_os": "macOS 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.5,
+      "first_seen": "2023-04-10",
+      "last_seen": "2025-10-01",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000220",
+      "customer_id": "AEGIS-CUST-000074",
+      "device_fingerprint": "291a6bb1dd194553",
+      "device_type": "Mobile",
+      "device_model": "iPhone 14",
+      "device_os": "Windows 11",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.99,
+      "first_seen": "2025-06-26",
+      "last_seen": "2025-09-30",
+      "location_history": [
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000221",
+      "customer_id": "AEGIS-CUST-000074",
+      "device_fingerprint": "a159c55835a14b49",
+      "device_type": "Desktop",
+      "device_model": "MacBook Pro",
+      "device_os": "macOS 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.87,
+      "first_seen": "2023-08-08",
+      "last_seen": "2025-09-18",
+      "location_history": [
+        "London",
+        "Glasgow",
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000222",
+      "customer_id": "AEGIS-CUST-000074",
+      "device_fingerprint": "a56717e4d6664c02",
+      "device_type": "Desktop",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Windows 11",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.58,
+      "first_seen": "2024-05-01",
+      "last_seen": "2025-10-16",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000223",
+      "customer_id": "AEGIS-CUST-000074",
+      "device_fingerprint": "052b03dfb9df490f",
+      "device_type": "Desktop",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.59,
+      "first_seen": "2024-08-29",
+      "last_seen": "2025-10-11",
+      "location_history": [
+        "Manchester",
+        "London",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000224",
+      "customer_id": "AEGIS-CUST-000075",
+      "device_fingerprint": "b48d49c84da14b77",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.68,
+      "first_seen": "2025-08-01",
+      "last_seen": "2025-09-21",
+      "location_history": [
+        "Birmingham",
+        "Glasgow",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000225",
+      "customer_id": "AEGIS-CUST-000075",
+      "device_fingerprint": "e3f4c9e7d7e445ba",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "iPadOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.97,
+      "first_seen": "2023-01-26",
+      "last_seen": "2025-09-17",
+      "location_history": [
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000226",
+      "customer_id": "AEGIS-CUST-000075",
+      "device_fingerprint": "8300b6bc39f44b16",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Android 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.9,
+      "first_seen": "2024-11-12",
+      "last_seen": "2025-09-20",
+      "location_history": [
+        "Glasgow",
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000227",
+      "customer_id": "AEGIS-CUST-000075",
+      "device_fingerprint": "3569d1c4a7474937",
+      "device_type": "Desktop",
+      "device_model": "iPad Air",
+      "device_os": "Android 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.88,
+      "first_seen": "2023-11-11",
+      "last_seen": "2025-09-24",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000228",
+      "customer_id": "AEGIS-CUST-000075",
+      "device_fingerprint": "ee8960388982493e",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": false,
+      "trust_score": 0.88,
+      "first_seen": "2025-02-03",
+      "last_seen": "2025-09-23",
+      "location_history": [
+        "Glasgow",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000229",
+      "customer_id": "AEGIS-CUST-000076",
+      "device_fingerprint": "1d9676a9f5d54a66",
+      "device_type": "Desktop",
+      "device_model": "MacBook Pro",
+      "device_os": "Windows 11",
+      "browser": "Safari",
+      "is_trusted": false,
+      "trust_score": 0.67,
+      "first_seen": "2023-05-23",
+      "last_seen": "2025-09-24",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000230",
+      "customer_id": "AEGIS-CUST-000076",
+      "device_fingerprint": "60ac6411a6d348d8",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Windows 11",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.91,
+      "first_seen": "2023-02-25",
+      "last_seen": "2025-09-19",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000231",
+      "customer_id": "AEGIS-CUST-000076",
+      "device_fingerprint": "4e731947e7744d57",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "Windows 11",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.7,
+      "first_seen": "2024-03-25",
+      "last_seen": "2025-09-23",
+      "location_history": [
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000232",
+      "customer_id": "AEGIS-CUST-000076",
+      "device_fingerprint": "897e50d4f18a42f8",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.88,
+      "first_seen": "2024-01-31",
+      "last_seen": "2025-09-19",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000233",
+      "customer_id": "AEGIS-CUST-000076",
+      "device_fingerprint": "5f3a3e017ac74a4d",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "Android 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.65,
+      "first_seen": "2025-04-21",
+      "last_seen": "2025-10-10",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000234",
+      "customer_id": "AEGIS-CUST-000077",
+      "device_fingerprint": "3fb8ad8a939c41b8",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.99,
+      "first_seen": "2024-09-21",
+      "last_seen": "2025-09-27",
+      "location_history": [
+        "Manchester",
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000235",
+      "customer_id": "AEGIS-CUST-000078",
+      "device_fingerprint": "a16e3a62404f45a1",
+      "device_type": "Desktop",
+      "device_model": "iPad Air",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.76,
+      "first_seen": "2025-04-10",
+      "last_seen": "2025-09-25",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000236",
+      "customer_id": "AEGIS-CUST-000078",
+      "device_fingerprint": "a0ed7b4337824f19",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.62,
+      "first_seen": "2024-01-02",
+      "last_seen": "2025-10-03",
+      "location_history": [
+        "Glasgow",
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000237",
+      "customer_id": "AEGIS-CUST-000079",
+      "device_fingerprint": "c60174f7a06141f4",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "iOS 17",
+      "browser": "Edge",
+      "is_trusted": false,
+      "trust_score": 0.92,
+      "first_seen": "2025-07-20",
+      "last_seen": "2025-10-05",
+      "location_history": [
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000238",
+      "customer_id": "AEGIS-CUST-000079",
+      "device_fingerprint": "b5e412de7c7142ee",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": false,
+      "trust_score": 0.59,
+      "first_seen": "2024-09-18",
+      "last_seen": "2025-10-16",
+      "location_history": [
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000239",
+      "customer_id": "AEGIS-CUST-000079",
+      "device_fingerprint": "c2b9b7cc8c254984",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "iPadOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.96,
+      "first_seen": "2025-09-09",
+      "last_seen": "2025-10-12",
+      "location_history": [
+        "Birmingham",
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000240",
+      "customer_id": "AEGIS-CUST-000079",
+      "device_fingerprint": "13b78e0eb18346f4",
+      "device_type": "Desktop",
+      "device_model": "MacBook Pro",
+      "device_os": "Windows 11",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.63,
+      "first_seen": "2024-06-24",
+      "last_seen": "2025-09-25",
+      "location_history": [
+        "Manchester",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000241",
+      "customer_id": "AEGIS-CUST-000079",
+      "device_fingerprint": "dd4d233d3e9b44ef",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "macOS 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.64,
+      "first_seen": "2025-05-03",
+      "last_seen": "2025-10-04",
+      "location_history": [
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000242",
+      "customer_id": "AEGIS-CUST-000080",
+      "device_fingerprint": "16a8a29c07f14862",
+      "device_type": "Tablet",
+      "device_model": "Windows PC",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": false,
+      "trust_score": 0.59,
+      "first_seen": "2025-09-16",
+      "last_seen": "2025-10-15",
+      "location_history": [
+        "Birmingham",
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000243",
+      "customer_id": "AEGIS-CUST-000080",
+      "device_fingerprint": "291feece07fc4f0f",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "Windows 11",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.75,
+      "first_seen": "2024-10-09",
+      "last_seen": "2025-10-07",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000244",
+      "customer_id": "AEGIS-CUST-000081",
+      "device_fingerprint": "6a0cb43ee82f4779",
+      "device_type": "Mobile",
+      "device_model": "MacBook Pro",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": false,
+      "trust_score": 0.6,
+      "first_seen": "2025-05-21",
+      "last_seen": "2025-10-16",
+      "location_history": [
+        "Birmingham",
+        "Glasgow",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000245",
+      "customer_id": "AEGIS-CUST-000082",
+      "device_fingerprint": "fb93a9d9e73f4b08",
+      "device_type": "Mobile",
+      "device_model": "iPhone 14",
+      "device_os": "Android 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.69,
+      "first_seen": "2024-09-20",
+      "last_seen": "2025-09-26",
+      "location_history": [
+        "Manchester",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000246",
+      "customer_id": "AEGIS-CUST-000082",
+      "device_fingerprint": "53e1b82746214d40",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "Windows 11",
+      "browser": "Chrome",
+      "is_trusted": false,
+      "trust_score": 0.61,
+      "first_seen": "2024-12-02",
+      "last_seen": "2025-10-05",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000247",
+      "customer_id": "AEGIS-CUST-000082",
+      "device_fingerprint": "122d54f98bcc458f",
+      "device_type": "Mobile",
+      "device_model": "iPhone 14",
+      "device_os": "iPadOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.77,
+      "first_seen": "2024-01-11",
+      "last_seen": "2025-10-11",
+      "location_history": [
+        "Glasgow",
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000248",
+      "customer_id": "AEGIS-CUST-000083",
+      "device_fingerprint": "c3d7c380722a43ab",
+      "device_type": "Mobile",
+      "device_model": "iPhone 14",
+      "device_os": "Android 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.92,
+      "first_seen": "2024-07-17",
+      "last_seen": "2025-10-12",
+      "location_history": [
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000249",
+      "customer_id": "AEGIS-CUST-000083",
+      "device_fingerprint": "9e3f2ff638a74550",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "macOS 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.67,
+      "first_seen": "2023-07-09",
+      "last_seen": "2025-09-26",
+      "location_history": [
+        "London",
+        "Manchester",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000250",
+      "customer_id": "AEGIS-CUST-000084",
+      "device_fingerprint": "6ce67c4396674b3d",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "iPadOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.57,
+      "first_seen": "2024-11-23",
+      "last_seen": "2025-10-05",
+      "location_history": [
+        "Glasgow",
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000251",
+      "customer_id": "AEGIS-CUST-000084",
+      "device_fingerprint": "6480763b622243b3",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 1.0,
+      "first_seen": "2025-06-09",
+      "last_seen": "2025-09-21",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000252",
+      "customer_id": "AEGIS-CUST-000084",
+      "device_fingerprint": "4b35e6dfbdc04803",
+      "device_type": "Desktop",
+      "device_model": "iPad Air",
+      "device_os": "iOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.66,
+      "first_seen": "2023-02-03",
+      "last_seen": "2025-10-07",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000253",
+      "customer_id": "AEGIS-CUST-000084",
+      "device_fingerprint": "bc471b1388ec4638",
+      "device_type": "Desktop",
+      "device_model": "MacBook Pro",
+      "device_os": "iOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.89,
+      "first_seen": "2024-12-26",
+      "last_seen": "2025-10-01",
+      "location_history": [
+        "Glasgow",
+        "Birmingham"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000254",
+      "customer_id": "AEGIS-CUST-000084",
+      "device_fingerprint": "f893fb5ebb7f428c",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.64,
+      "first_seen": "2024-07-25",
+      "last_seen": "2025-09-19",
+      "location_history": [
+        "Manchester",
+        "Glasgow",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000255",
+      "customer_id": "AEGIS-CUST-000085",
+      "device_fingerprint": "b98c69857e51418c",
+      "device_type": "Desktop",
+      "device_model": "MacBook Pro",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": false,
+      "trust_score": 0.97,
+      "first_seen": "2024-04-23",
+      "last_seen": "2025-09-19",
+      "location_history": [
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000256",
+      "customer_id": "AEGIS-CUST-000085",
+      "device_fingerprint": "cf29820f287449d5",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "Windows 11",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.82,
+      "first_seen": "2024-02-02",
+      "last_seen": "2025-10-13",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000257",
+      "customer_id": "AEGIS-CUST-000086",
+      "device_fingerprint": "79986d5211e444ff",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.58,
+      "first_seen": "2024-10-21",
+      "last_seen": "2025-10-10",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000258",
+      "customer_id": "AEGIS-CUST-000086",
+      "device_fingerprint": "eed7f657465847d1",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "Android 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.77,
+      "first_seen": "2025-06-28",
+      "last_seen": "2025-09-28",
+      "location_history": [
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000259",
+      "customer_id": "AEGIS-CUST-000086",
+      "device_fingerprint": "a8973144477c4229",
+      "device_type": "Desktop",
+      "device_model": "MacBook Pro",
+      "device_os": "Android 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.61,
+      "first_seen": "2025-03-02",
+      "last_seen": "2025-09-29",
+      "location_history": [
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000260",
+      "customer_id": "AEGIS-CUST-000086",
+      "device_fingerprint": "ed0c28a5350741da",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "macOS 14",
+      "browser": "Safari",
+      "is_trusted": false,
+      "trust_score": 0.81,
+      "first_seen": "2023-12-03",
+      "last_seen": "2025-09-28",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000261",
+      "customer_id": "AEGIS-CUST-000087",
+      "device_fingerprint": "22b02ac24e00483a",
+      "device_type": "Mobile",
+      "device_model": "iPhone 14",
+      "device_os": "iPadOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.65,
+      "first_seen": "2023-05-24",
+      "last_seen": "2025-09-18",
+      "location_history": [
+        "Birmingham",
+        "Manchester",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000262",
+      "customer_id": "AEGIS-CUST-000088",
+      "device_fingerprint": "c67921b76da048de",
+      "device_type": "Tablet",
+      "device_model": "Windows PC",
+      "device_os": "Android 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.86,
+      "first_seen": "2023-06-08",
+      "last_seen": "2025-10-05",
+      "location_history": [
+        "London",
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000263",
+      "customer_id": "AEGIS-CUST-000088",
+      "device_fingerprint": "aa92e35e0835483b",
+      "device_type": "Mobile",
+      "device_model": "iPhone 14",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.66,
+      "first_seen": "2023-12-29",
+      "last_seen": "2025-09-21",
+      "location_history": [
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000264",
+      "customer_id": "AEGIS-CUST-000088",
+      "device_fingerprint": "5b51dad9917842bd",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.93,
+      "first_seen": "2023-08-07",
+      "last_seen": "2025-09-28",
+      "location_history": [
+        "Glasgow",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000265",
+      "customer_id": "AEGIS-CUST-000088",
+      "device_fingerprint": "8201f11b4156478a",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iPadOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.99,
+      "first_seen": "2024-10-22",
+      "last_seen": "2025-09-22",
+      "location_history": [
+        "Glasgow",
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000266",
+      "customer_id": "AEGIS-CUST-000088",
+      "device_fingerprint": "1ed56ee76e1b4180",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "macOS 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.87,
+      "first_seen": "2025-02-18",
+      "last_seen": "2025-09-24",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000267",
+      "customer_id": "AEGIS-CUST-000089",
+      "device_fingerprint": "0f549c88277e42dc",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.95,
+      "first_seen": "2024-02-05",
+      "last_seen": "2025-10-08",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000268",
+      "customer_id": "AEGIS-CUST-000089",
+      "device_fingerprint": "ba238f0c22014c30",
+      "device_type": "Desktop",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iPadOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.55,
+      "first_seen": "2023-08-27",
+      "last_seen": "2025-09-20",
+      "location_history": [
+        "Birmingham",
+        "Manchester",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000269",
+      "customer_id": "AEGIS-CUST-000090",
+      "device_fingerprint": "1cc24054686c4f2c",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "Windows 11",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.9,
+      "first_seen": "2024-09-26",
+      "last_seen": "2025-10-07",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000270",
+      "customer_id": "AEGIS-CUST-000090",
+      "device_fingerprint": "b024c44c85be4f0a",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Windows 11",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.64,
+      "first_seen": "2024-02-23",
+      "last_seen": "2025-09-25",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000271",
+      "customer_id": "AEGIS-CUST-000090",
+      "device_fingerprint": "e3bbf4ac95b64e2d",
+      "device_type": "Mobile",
+      "device_model": "MacBook Pro",
+      "device_os": "iOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.64,
+      "first_seen": "2024-01-18",
+      "last_seen": "2025-10-13",
+      "location_history": [
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000272",
+      "customer_id": "AEGIS-CUST-000091",
+      "device_fingerprint": "d020ba4464c742a6",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "Windows 11",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.5,
+      "first_seen": "2024-01-07",
+      "last_seen": "2025-09-18",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000273",
+      "customer_id": "AEGIS-CUST-000091",
+      "device_fingerprint": "066e6b82ccb24e00",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "iOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.96,
+      "first_seen": "2024-11-13",
+      "last_seen": "2025-10-04",
+      "location_history": [
+        "Manchester",
+        "London"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000274",
+      "customer_id": "AEGIS-CUST-000091",
+      "device_fingerprint": "252a49cd38994297",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "iPadOS 17",
+      "browser": "Edge",
+      "is_trusted": false,
+      "trust_score": 0.81,
+      "first_seen": "2024-07-01",
+      "last_seen": "2025-10-12",
+      "location_history": [
+        "London",
+        "Glasgow",
+        "Birmingham"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000275",
+      "customer_id": "AEGIS-CUST-000091",
+      "device_fingerprint": "c0e092233fd640ff",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Android 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.65,
+      "first_seen": "2023-11-03",
+      "last_seen": "2025-10-13",
+      "location_history": [
+        "Glasgow",
+        "Manchester",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000276",
+      "customer_id": "AEGIS-CUST-000092",
+      "device_fingerprint": "99e86f1062df472b",
+      "device_type": "Mobile",
+      "device_model": "MacBook Pro",
+      "device_os": "Windows 11",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.61,
+      "first_seen": "2023-08-19",
+      "last_seen": "2025-10-11",
+      "location_history": [
+        "Manchester",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000277",
+      "customer_id": "AEGIS-CUST-000092",
+      "device_fingerprint": "b3b00de35a6a4bb5",
+      "device_type": "Tablet",
+      "device_model": "iPhone 14",
+      "device_os": "Android 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.95,
+      "first_seen": "2024-09-13",
+      "last_seen": "2025-09-22",
+      "location_history": [
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000278",
+      "customer_id": "AEGIS-CUST-000092",
+      "device_fingerprint": "878c5b46d4a54b7f",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.79,
+      "first_seen": "2024-05-19",
+      "last_seen": "2025-09-30",
+      "location_history": [
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000279",
+      "customer_id": "AEGIS-CUST-000092",
+      "device_fingerprint": "be782127d0424f3c",
+      "device_type": "Mobile",
+      "device_model": "iPhone 14",
+      "device_os": "Windows 11",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.94,
+      "first_seen": "2024-02-12",
+      "last_seen": "2025-10-14",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000280",
+      "customer_id": "AEGIS-CUST-000092",
+      "device_fingerprint": "1653e61a651645ca",
+      "device_type": "Desktop",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.91,
+      "first_seen": "2024-11-24",
+      "last_seen": "2025-09-17",
+      "location_history": [
+        "Glasgow",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000281",
+      "customer_id": "AEGIS-CUST-000093",
+      "device_fingerprint": "5ee1f3ce62af4876",
+      "device_type": "Desktop",
+      "device_model": "iPad Air",
+      "device_os": "iPadOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.95,
+      "first_seen": "2023-09-25",
+      "last_seen": "2025-09-16",
+      "location_history": [
+        "Glasgow",
+        "Manchester",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000282",
+      "customer_id": "AEGIS-CUST-000094",
+      "device_fingerprint": "d0522a6180854a70",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.64,
+      "first_seen": "2023-04-11",
+      "last_seen": "2025-10-01",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000283",
+      "customer_id": "AEGIS-CUST-000094",
+      "device_fingerprint": "36e8e725cbeb40be",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.52,
+      "first_seen": "2023-10-17",
+      "last_seen": "2025-09-30",
+      "location_history": [
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000284",
+      "customer_id": "AEGIS-CUST-000094",
+      "device_fingerprint": "80c5824e45ae4fe4",
+      "device_type": "Mobile",
+      "device_model": "iPhone 14",
+      "device_os": "macOS 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.92,
+      "first_seen": "2023-05-01",
+      "last_seen": "2025-10-05",
+      "location_history": [
+        "London",
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000285",
+      "customer_id": "AEGIS-CUST-000094",
+      "device_fingerprint": "7a597161f4694ac9",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.62,
+      "first_seen": "2024-10-18",
+      "last_seen": "2025-09-28",
+      "location_history": [
+        "Glasgow",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000286",
+      "customer_id": "AEGIS-CUST-000094",
+      "device_fingerprint": "95b3ff953f954699",
+      "device_type": "Desktop",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.68,
+      "first_seen": "2024-07-26",
+      "last_seen": "2025-09-18",
+      "location_history": [
+        "Birmingham",
+        "Manchester",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000287",
+      "customer_id": "AEGIS-CUST-000095",
+      "device_fingerprint": "e48b4bcb0ef048dd",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "Android 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.93,
+      "first_seen": "2023-02-19",
+      "last_seen": "2025-10-04",
+      "location_history": [
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000288",
+      "customer_id": "AEGIS-CUST-000095",
+      "device_fingerprint": "b5c2543a304b48e9",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "macOS 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.91,
+      "first_seen": "2024-10-07",
+      "last_seen": "2025-09-28",
+      "location_history": [
+        "London",
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000289",
+      "customer_id": "AEGIS-CUST-000095",
+      "device_fingerprint": "4d97d70fd68846a2",
+      "device_type": "Desktop",
+      "device_model": "Windows PC",
+      "device_os": "Windows 11",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.72,
+      "first_seen": "2023-08-03",
+      "last_seen": "2025-10-01",
+      "location_history": [
+        "Manchester",
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000290",
+      "customer_id": "AEGIS-CUST-000095",
+      "device_fingerprint": "a5d82d55933d4e4f",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": false,
+      "trust_score": 0.8,
+      "first_seen": "2024-09-03",
+      "last_seen": "2025-09-25",
+      "location_history": [
+        "Glasgow",
+        "Manchester",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000291",
+      "customer_id": "AEGIS-CUST-000096",
+      "device_fingerprint": "3491d15179e244e1",
+      "device_type": "Mobile",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.67,
+      "first_seen": "2024-06-09",
+      "last_seen": "2025-09-26",
+      "location_history": [
+        "London",
+        "Birmingham",
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000292",
+      "customer_id": "AEGIS-CUST-000096",
+      "device_fingerprint": "aeb00c0b5cac47ba",
+      "device_type": "Mobile",
+      "device_model": "Windows PC",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.78,
+      "first_seen": "2023-05-13",
+      "last_seen": "2025-09-18",
+      "location_history": [
+        "London",
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000293",
+      "customer_id": "AEGIS-CUST-000096",
+      "device_fingerprint": "121d72d4f4ff4836",
+      "device_type": "Tablet",
+      "device_model": "Windows PC",
+      "device_os": "Android 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.58,
+      "first_seen": "2023-06-06",
+      "last_seen": "2025-10-11",
+      "location_history": [
+        "Glasgow",
+        "Manchester",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000294",
+      "customer_id": "AEGIS-CUST-000096",
+      "device_fingerprint": "458a33a2853b410f",
+      "device_type": "Mobile",
+      "device_model": "iPad Air",
+      "device_os": "Android 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.75,
+      "first_seen": "2023-12-31",
+      "last_seen": "2025-10-10",
+      "location_history": [
+        "Manchester",
+        "London",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000295",
+      "customer_id": "AEGIS-CUST-000097",
+      "device_fingerprint": "373825d9ccee4d0f",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "Windows 11",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.87,
+      "first_seen": "2024-12-14",
+      "last_seen": "2025-09-19",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000296",
+      "customer_id": "AEGIS-CUST-000097",
+      "device_fingerprint": "589ecac15e4d4dac",
+      "device_type": "Tablet",
+      "device_model": "Windows PC",
+      "device_os": "iOS 17",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.77,
+      "first_seen": "2023-02-18",
+      "last_seen": "2025-10-12",
+      "location_history": [
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000297",
+      "customer_id": "AEGIS-CUST-000097",
+      "device_fingerprint": "d5bffcac70e149ea",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "macOS 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.51,
+      "first_seen": "2024-12-10",
+      "last_seen": "2025-10-02",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000298",
+      "customer_id": "AEGIS-CUST-000097",
+      "device_fingerprint": "98ac895ac6804abf",
+      "device_type": "Tablet",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.55,
+      "first_seen": "2024-07-27",
+      "last_seen": "2025-09-29",
+      "location_history": [
+        "Glasgow",
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000299",
+      "customer_id": "AEGIS-CUST-000098",
+      "device_fingerprint": "f686b821cbf8439b",
+      "device_type": "Desktop",
+      "device_model": "iPad Air",
+      "device_os": "Android 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.63,
+      "first_seen": "2024-05-31",
+      "last_seen": "2025-10-10",
+      "location_history": [
+        "Manchester",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000300",
+      "customer_id": "AEGIS-CUST-000098",
+      "device_fingerprint": "92698bcaecf54a38",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "macOS 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.74,
+      "first_seen": "2025-09-11",
+      "last_seen": "2025-10-07",
+      "location_history": [
+        "Manchester",
+        "London",
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000301",
+      "customer_id": "AEGIS-CUST-000098",
+      "device_fingerprint": "1155bb223770412b",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "iOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.53,
+      "first_seen": "2023-12-05",
+      "last_seen": "2025-09-29",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000302",
+      "customer_id": "AEGIS-CUST-000098",
+      "device_fingerprint": "39679ac89e504425",
+      "device_type": "Mobile",
+      "device_model": "MacBook Pro",
+      "device_os": "macOS 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.65,
+      "first_seen": "2023-12-17",
+      "last_seen": "2025-09-22",
+      "location_history": [
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000303",
+      "customer_id": "AEGIS-CUST-000099",
+      "device_fingerprint": "00e66395ee7f4ba9",
+      "device_type": "Tablet",
+      "device_model": "Windows PC",
+      "device_os": "iPadOS 17",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.74,
+      "first_seen": "2023-04-05",
+      "last_seen": "2025-09-26",
+      "location_history": [
+        "London",
+        "Glasgow",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000304",
+      "customer_id": "AEGIS-CUST-000099",
+      "device_fingerprint": "b1ed5bac33884214",
+      "device_type": "Tablet",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Android 14",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.92,
+      "first_seen": "2025-05-17",
+      "last_seen": "2025-10-15",
+      "location_history": [
+        "London",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000305",
+      "customer_id": "AEGIS-CUST-000099",
+      "device_fingerprint": "00a8f7609cd1415c",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "Android 14",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.84,
+      "first_seen": "2023-03-10",
+      "last_seen": "2025-10-06",
+      "location_history": [
+        "Manchester",
+        "Birmingham",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000306",
+      "customer_id": "AEGIS-CUST-000099",
+      "device_fingerprint": "ba5ba0b3a46c4227",
+      "device_type": "Tablet",
+      "device_model": "Windows PC",
+      "device_os": "Windows 11",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.91,
+      "first_seen": "2024-04-21",
+      "last_seen": "2025-10-12",
+      "location_history": [
+        "Birmingham",
+        "London",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000307",
+      "customer_id": "AEGIS-CUST-000099",
+      "device_fingerprint": "f11c5490937f4ece",
+      "device_type": "Desktop",
+      "device_model": "iPad Air",
+      "device_os": "Android 14",
+      "browser": "Edge",
+      "is_trusted": true,
+      "trust_score": 0.87,
+      "first_seen": "2023-05-13",
+      "last_seen": "2025-09-16",
+      "location_history": [
+        "Birmingham"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000308",
+      "customer_id": "AEGIS-CUST-000100",
+      "device_fingerprint": "1b3140836c404338",
+      "device_type": "Tablet",
+      "device_model": "MacBook Pro",
+      "device_os": "iOS 17",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.67,
+      "first_seen": "2023-11-23",
+      "last_seen": "2025-09-18",
+      "location_history": [
+        "Manchester"
+      ],
+      "biometric_enabled": false
+    },
+    {
+      "device_id": "AEGIS-DEV-000309",
+      "customer_id": "AEGIS-CUST-000100",
+      "device_fingerprint": "fbb53a5bbfd24240",
+      "device_type": "Desktop",
+      "device_model": "Samsung Galaxy S23",
+      "device_os": "Windows 11",
+      "browser": "Chrome",
+      "is_trusted": true,
+      "trust_score": 0.72,
+      "first_seen": "2023-12-25",
+      "last_seen": "2025-10-02",
+      "location_history": [
+        "Glasgow",
+        "Birmingham",
+        "Manchester"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000310",
+      "customer_id": "AEGIS-CUST-000100",
+      "device_fingerprint": "195640acba194709",
+      "device_type": "Mobile",
+      "device_model": "MacBook Pro",
+      "device_os": "macOS 14",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.7,
+      "first_seen": "2025-08-06",
+      "last_seen": "2025-09-17",
+      "location_history": [
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000311",
+      "customer_id": "AEGIS-CUST-000100",
+      "device_fingerprint": "42de97e3999349af",
+      "device_type": "Desktop",
+      "device_model": "iPad Air",
+      "device_os": "Windows 11",
+      "browser": "Safari",
+      "is_trusted": true,
+      "trust_score": 0.58,
+      "first_seen": "2024-11-13",
+      "last_seen": "2025-09-18",
+      "location_history": [
+        "Manchester",
+        "Birmingham",
+        "London"
+      ],
+      "biometric_enabled": true
+    },
+    {
+      "device_id": "AEGIS-DEV-000312",
+      "customer_id": "AEGIS-CUST-000100",
+      "device_fingerprint": "73e9411e61c148ba",
+      "device_type": "Desktop",
+      "device_model": "iPhone 14",
+      "device_os": "iOS 17",
+      "browser": "Firefox",
+      "is_trusted": true,
+      "trust_score": 0.57,
+      "first_seen": "2024-09-27",
+      "last_seen": "2025-10-02",
+      "location_history": [
+        "Manchester",
+        "Glasgow"
+      ],
+      "biometric_enabled": true
+    }
+  ]
+}

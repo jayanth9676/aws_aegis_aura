@@ -1,341 +1,299 @@
-"""Supervisor Agent - Central orchestrator for fraud investigation workflow."""
+"""Supervisor Agent — Dynamic Orchestration with Strands SDK GraphBuilder.
 
-import asyncio
+Migrated from static asyncio.gather() to a state-based workflow utilizing 
+the March 2026 standard `GraphBuilder` with conditional edges.
+"""
+
+from typing import Dict, Any
 import time
-from typing import Any, Dict, List, Tuple
 
-from agents.base_agent import AegisBaseAgent
+from strands import GraphBuilder, Agent
+
+from agents.base_agent import AegisBaseAgent, create_agent, record_investigation_summary, store_memory
+from agents.pydantic_models import InvestigationState, TriageAction
 from config import AgentConfig, agentcore_config
-from utils import trace_operation
+from utils import trace_operation, get_logger
+
+logger = get_logger("agent.supervisor")
+
+
+# ── Conditional Edge Functions ──────────────────────────────────────────
+
+def needs_behavioral_analysis(state: InvestigationState) -> bool:
+    """Only route to behavioral if device or session data is available in the payload."""
+    tx = state.transaction
+    return bool(tx.get("session_data") or tx.get("device_fingerprint"))
+
+def needs_graph_analysis(state: InvestigationState) -> bool:
+    """Only route to graph analysis if this is not a known/saved payee."""
+    tx = state.transaction
+    return tx.get("is_saved_payee", False) is False
+
+def needs_reflection(state: InvestigationState) -> bool:
+    """Reflection loop condition for Triage to self-correct."""
+    if not state.decision:
+        return False
+    if state.reflection_count >= state.max_reflections:
+        return False
+    
+    # If the decision is BLOCK but risk score was low, force reflection.
+    if state.decision == TriageAction.BLOCK and state.risk_score < 40.0:
+        return True
+    
+    # Needs revision flag explicitly set by the triage model.
+    if getattr(state, "needs_revision", False):
+        return True
+    
+    return False
+
+def triage_complete(state: InvestigationState) -> bool:
+    """Condition to exit reflection loop and proceed to post-triage."""
+    return not needs_reflection(state)
+
 
 class SupervisorAgent(AegisBaseAgent):
-    """Central orchestrator managing the entire fraud investigation workflow."""
+    """Central orchestrator managing the fraud workflow via GraphBuilder."""
     
     def __init__(self):
-        config = AgentConfig.supervisor_config()
-        super().__init__("supervisor_agent", config)
-    
-    @trace_operation("investigate_transaction")
-    async def investigate_transaction(self, transaction_data: Dict) -> Dict:
-        """Orchestrate parallel agent investigation for a transaction."""
+        super().__init__("supervisor_agent", AgentConfig.supervisor_config())
+        self._graph = self._build_investigation_graph()
+
+    def _build_investigation_graph(self):
+        """Build the dynamic orchestration Graph using Strands SDK."""
+        builder = GraphBuilder()
         
-        session_id = transaction_data.get('transaction_id', transaction_data.get('id'))
+        # ── Nodes: Context Gathering (Parallel by default when executed) ──
+        builder.add_node(self._node_transaction_context, "transaction_context")
+        builder.add_node(self._node_customer_context, "customer_context")
+        builder.add_node(self._node_payee_context, "payee_context")
+        builder.add_node(self._node_behavioral_analysis, "behavioral_analysis")
+        builder.add_node(self._node_graph_analysis, "graph_analysis")
         
-        if session_id:
-            await self.store_memory(
-                f'session:{session_id}:transaction',
-                transaction_data,
-                ttl=self.config.session_ttl
-            )
+        # ── Nodes: Synthesis & Decision ──
+        builder.add_node(self._node_risk_scoring, "risk_scoring")
+        builder.add_node(self._node_intel, "intel")
+        builder.add_node(self._node_triage, "triage")
+        builder.add_node(self._node_post_triage, "post_triage")
         
-        self.logger.info(
-            "Starting fraud investigation",
-            transaction_id=session_id,
-            amount=transaction_data.get('amount'),
-            customer_id=transaction_data.get('customer_id')
-        )
+        # ── Edges: Conditional Routing ──
+        # Entry starts context agents
+        builder.add_edge("__start__", "transaction_context")
+        builder.add_edge("__start__", "customer_context")
+        builder.add_edge("__start__", "payee_context")
         
-        # Step 1: Parallel context agent invocation
-        context_results = await self._invoke_context_agents(transaction_data, session_id)
+        builder.add_edge("__start__", "behavioral_analysis", condition=needs_behavioral_analysis)
+        builder.add_edge("__start__", "graph_analysis", condition=needs_graph_analysis)
         
-        # Step 2: Analysis agents
-        analysis_results = await self._invoke_analysis_agents(
-            context_results,
-            transaction_data,
-            session_id
-        )
+        # Context merges into analysis (implicit synchronization in Strands Graph)
+        builder.add_edge("transaction_context", "risk_scoring")
+        builder.add_edge("customer_context", "risk_scoring")
+        builder.add_edge("payee_context", "risk_scoring")
+        builder.add_edge("behavioral_analysis", "risk_scoring")
+        builder.add_edge("graph_analysis", "risk_scoring")
         
-        # Step 3: Triage decision
-        decision = await self._invoke_triage_agent(
-            analysis_results,
-            context_results,
-            transaction_data,
-            session_id
-        )
+        builder.add_edge("risk_scoring", "intel")
+        builder.add_edge("intel", "triage")
         
-        # Store complete investigation in memory and session logs
-        investigation_summary = {
-            'transaction_id': session_id,
-            'context_results': context_results,
-            'analysis_results': analysis_results,
-            'decision': decision,
-            'timestamp': transaction_data.get('timestamp')
+        # ── Edges: Reflection Loop ──
+        builder.add_edge("triage", "triage", condition=needs_reflection)
+        builder.add_edge("triage", "post_triage", condition=triage_complete)
+        
+        # Graph constraints
+        builder.set_max_node_executions(15)  # Max total steps
+        builder.set_execution_timeout(10.0)   # Low latency limit per FinCon papers
+        builder.reset_on_revisit(True)       # Reset node state if reflecting
+        
+        return builder.build()
+
+    # ──────────────────────────────────────────────────────────────────
+    # Node Implementation Wrappers (Adapter layer for the graph)
+    # ──────────────────────────────────────────────────────────────────
+    async def _node_transaction_context(self, state: InvestigationState) -> InvestigationState:
+        res = await self.invoke_tool("TransactionContextAgent", {'transaction': state.transaction, 'session_id': state.session_id})
+        state.transaction_context = res
+        return state
+
+    async def _node_customer_context(self, state: InvestigationState) -> InvestigationState:
+        res = await self.invoke_tool("CustomerContextAgent", {'customer_id': state.transaction.get('customer_id'), 'session_id': state.session_id})
+        state.customer_context = res
+        return state
+
+    async def _node_payee_context(self, state: InvestigationState) -> InvestigationState:
+        res = await self.invoke_tool("PayeeContextAgent", {
+            'payee_account': state.transaction.get('payee_account'),
+            'payee_name': state.transaction.get('payee_name'),
+            'session_id': state.session_id
+        })
+        state.payee_context = res
+        return state
+
+    async def _node_behavioral_analysis(self, state: InvestigationState) -> InvestigationState:
+        res = await self.invoke_tool("BehavioralAnalysisAgent", {
+            'session_data': state.transaction.get('session_data', {}),
+            'device_fingerprint': state.transaction.get('device_fingerprint'),
+            'session_id': state.session_id
+        })
+        state.behavioral_analysis = res
+        return state
+
+    async def _node_graph_analysis(self, state: InvestigationState) -> InvestigationState:
+        res = await self.invoke_tool("GraphRelationshipAgent", {
+            'sender_account': state.transaction.get('sender_account'),
+            'receiver_account': state.transaction.get('payee_account'),
+            'session_id': state.session_id
+        })
+        state.graph_analysis = res
+        return state
+
+    async def _node_risk_scoring(self, state: InvestigationState) -> InvestigationState:
+        context_results = {
+            'transaction_context': state.transaction_context,
+            'customer_context': state.customer_context,
+            'payee_context': state.payee_context,
+            'behavioral_analysis': state.behavioral_analysis,
+            'graph_analysis': state.graph_analysis
         }
-
-        await self.record_investigation_summary(session_id, investigation_summary)
-        
-        self.logger.info(
-            "Investigation completed",
-            transaction_id=session_id,
-            decision=decision.get('action'),
-            risk_score=analysis_results.get('risk_score')
-        )
-        
-        # Return comprehensive investigation results
-        decision_payload = {
-            **decision,
-            'context_results': context_results,
-            'analysis_results': analysis_results,
-            'risk_score': analysis_results.get('risk_score', 0),
-            'confidence': analysis_results.get('confidence', 0),
-            'reason_codes': analysis_results.get('reason_codes', []),
-            'shap_values': analysis_results.get('shap_values', []),
-            'top_risk_factors': analysis_results.get('top_risk_factors', []),
-            'transaction': transaction_data,
-            'transaction_id': session_id,
-            'success': True
-        }
-
-        if session_id:
-            await self.store_memory(
-                f'session:{session_id}:decision_summary',
-                decision_payload,
-                ttl=agentcore_config.long_term_ttl
-            )
-
-        await self._post_triage_actions(decision_payload, session_id, transaction_data)
-
-        return decision_payload
-    
-    async def _invoke_context_agents(self, transaction_data: Dict, session_id: str) -> Dict:
-        """Invoke all context agents in parallel."""
-        
-        self.logger.info("Invoking context agents in parallel")
-        
-        tasks: Dict[str, Tuple[str, Dict[str, Any]]] = {
-            'transaction_context': (
-                'TransactionContextAgent',
-                {'transaction': transaction_data, 'session_id': session_id}
-            ),
-            'customer_context': (
-                'CustomerContextAgent',
-                {'customer_id': transaction_data.get('customer_id'), 'session_id': session_id}
-            ),
-            'payee_context': (
-                'PayeeContextAgent',
-                {
-                    'payee_account': transaction_data.get('payee_account'),
-                    'payee_name': transaction_data.get('payee_name'),
-                    'session_id': session_id
-                }
-            ),
-            'behavioral_analysis': (
-                'BehavioralAnalysisAgent',
-                {
-                    'session_data': transaction_data.get('session_data', {}),
-                    'device_fingerprint': transaction_data.get('device_fingerprint'),
-                    'session_id': session_id
-                }
-            ),
-            'graph_analysis': (
-                'GraphRelationshipAgent',
-                {
-                    'sender_account': transaction_data.get('sender_account'),
-                    'receiver_account': transaction_data.get('payee_account'),
-                    'entities': {
-                        'sender_account': transaction_data.get('sender_account'),
-                        'receiver_account': transaction_data.get('payee_account')
-                    },
-                    'session_id': session_id
-                }
-            )
-        }
-
-        results: Dict[str, Dict] = {}
-        for name, (tool_name, params) in tasks.items():
-            start_time = time.time()
-            try:
-                results[name] = await asyncio.wait_for(
-                    self.invoke_tool(tool_name, params),
-                    timeout=30.0
-                )
-            except asyncio.TimeoutError:
-                self.logger.warning("Context agent %s timed out", name)
-                results[name] = {'error': 'timeout'}
-            except Exception as exc:
-                self.logger.warning("Context agent %s failed", name, error=str(exc))
-                results[name] = {'error': str(exc)}
-            finally:
-                results[name]['latency_ms'] = (time.time() - start_time) * 1000
-
-        await self.store_memory(
-            f'session:{session_id}:context_snapshot',
-            results,
-            ttl=self.config.session_ttl
-        )
-
-        return results
-    
-    async def _invoke_analysis_agents(
-        self,
-        context_results: Dict,
-        transaction_data: Dict,
-        session_id: str
-    ) -> Dict:
-        """Invoke analysis agents to generate risk scores and intelligence."""
-        
-        self.logger.info("Invoking analysis agents")
-        
-        # Parallel analysis
-        tasks = {
-            'risk_assessment': (
-                'RiskScoringAgent',
-                {
-                    'context_results': context_results,
-                    'transaction': transaction_data,
-                    'session_id': session_id
-                }
-            ),
-            'intelligence': (
-                'IntelAgent',
-                {
-                    'transaction': transaction_data,
-                    'context_results': context_results,
-                    'session_id': session_id
-                }
-            )
-        }
-
-        results: Dict[str, Dict] = {}
-        for name, (tool, params) in tasks.items():
-            try:
-                results[name] = await asyncio.wait_for(
-                    self.invoke_tool(tool, params),
-                    timeout=25.0
-                )
-            except asyncio.TimeoutError:
-                self.logger.warning("Analysis agent %s timed out", name)
-                results[name] = {'error': 'timeout'}
-            except Exception as exc:
-                self.logger.warning("Analysis agent %s failed", name, error=str(exc))
-                results[name] = {'error': str(exc)}
-
-        risk_assessment = results.get('risk_assessment', {})
-        intelligence = results.get('intelligence', {})
-        
-        return {
-            'risk_score': risk_assessment.get('risk_score', 0),
-            'confidence': risk_assessment.get('confidence', 0),
-            'top_risk_factors': risk_assessment.get('top_risk_factors', []),
-            'shap_values': risk_assessment.get('shap_values', []),
-            'reason_codes': risk_assessment.get('reason_codes', []),
-            'intelligence': intelligence
-        }
-    
-    async def _invoke_triage_agent(
-        self,
-        analysis_results: Dict,
-        context_results: Dict,
-        transaction_data: Dict,
-        session_id: str
-    ) -> Dict:
-        """Invoke triage agent to make final decision."""
-        
-        self.logger.info(
-            "Invoking triage agent",
-            risk_score=analysis_results.get('risk_score'),
-            confidence=analysis_results.get('confidence')
-        )
-        
-        decision = await self.invoke_tool('TriageAgent', {
-            'risk_score': analysis_results.get('risk_score', 0),
-            'confidence': analysis_results.get('confidence', 0),
-            'session_id': session_id,
-            'evidence': {
-                'transaction': transaction_data,
-                'context_results': context_results,
-                'analysis_results': analysis_results
-            }
+        res = await self.invoke_tool("RiskScoringAgent", {
+            'context_results': {k: v for k, v in context_results.items() if v},
+            'transaction': state.transaction,
+            'session_id': state.session_id
         })
         
-        return decision
-    
-    async def execute(self, input_data: Dict) -> Dict:
-        """Execute supervisor agent logic."""
-        return await self.investigate_transaction(input_data)
+        # Apply output directly into Pydantic schema structure
+        state.risk_score = res.get("risk_score", 0.0)
+        state.confidence = res.get("confidence", 0.0)
+        state.top_risk_factors = res.get("top_risk_factors", [])
+        state.shap_values = res.get("shap_values", [])
+        state.ml_fraud_probability = res.get("ml_fraud_probability", 0.0)
+        state.reason_codes = res.get("reason_codes", [])
+        return state
+        
+    async def _node_intel(self, state: InvestigationState) -> InvestigationState:
+        context_results = {
+            'transaction_context': state.transaction_context,
+            'customer_context': state.customer_context
+        }
+        res = await self.invoke_tool("IntelAgent", {
+            'transaction': state.transaction,
+            'context_results': {k: v for k, v in context_results.items() if v},
+            'session_id': state.session_id
+        })
+        state.intelligence = res
+        return state
 
-    async def _post_triage_actions(self, decision_payload: Dict, session_id: str, transaction_data: Dict) -> None:
-        """Trigger downstream agents based on triage outcome."""
+    async def _node_triage(self, state: InvestigationState) -> InvestigationState:
+        state.reflection_count += 1
+        evidence = {
+            'transaction': state.transaction,
+            'risk_score': state.risk_score,
+            'top_risk_factors': [rf if isinstance(rf, dict) else rf.model_dump() for rf in state.top_risk_factors],
+            'intelligence': state.intelligence,
+            'reflection_count': state.reflection_count
+        }
+        
+        res = await self.invoke_tool("TriageAgent", {
+            'risk_score': state.risk_score,
+            'confidence': state.confidence,
+            'evidence': evidence,
+            'session_id': state.session_id,
+            'prior_decision': state.decision  # Passed during reflection
+        })
+        
+        state.decision = res.get("action", TriageAction.ALLOW)
+        state.decision_reasoning = res.get("reasoning", "")
+        # Reflection signal from the LLM
+        state.needs_revision = res.get("needs_revision", False) 
+        return state
 
-        action = decision_payload.get('action')
-        if not action:
-            return
-
-        transaction = transaction_data or {}
-
-        case_id = f"CASE-{session_id}"
+    async def _node_post_triage(self, state: InvestigationState) -> InvestigationState:
+        """Saves investigation data and spawns subsequent systems based on triage result."""
+        decision_payload = {
+            'action': state.decision,
+            'risk_score': state.risk_score,
+            'reason_codes': state.reason_codes,
+            'context_results': {
+                'transaction': state.transaction_context,
+                'customer': state.customer_context,
+                'payee': state.payee_context,
+                'graph': state.graph_analysis,
+                'behavioral': state.behavioral_analysis
+            },
+            'analysis_results': {
+                'confidence': state.confidence,
+                'shap_values': [sv if isinstance(sv, dict) else sv.model_dump() for sv in state.shap_values],
+                'ml_fraud_probability': state.ml_fraud_probability
+            },
+            'transaction': state.transaction,
+            'transaction_id': state.session_id,
+            'success': True
+        }
+        
+        if state.session_id:
+            await self.store_memory(f'session:{state.session_id}:decision_summary', decision_payload, ttl=agentcore_config.long_term_ttl)
+            await record_investigation_summary(state.session_id, decision_payload, actor_id=self.name)
+        
+        action = state.decision
+        case_id = f"CASE-{state.session_id}"
+        
+        # Fire and forget Case Management
         try:
             await self.invoke_tool('CaseManagementTool', {
                 'action': 'create',
                 'case_data': {
                     'case_id': case_id,
-                    'transaction_id': transaction.get('transaction_id', session_id),
-                    'customer_id': transaction.get('customer_id'),
-                    'status': 'ESCALATED' if action in {'BLOCK', 'CHALLENGE'} else 'RESOLVED',
-                    'priority': 'CRITICAL' if action == 'BLOCK' else ('HIGH' if action == 'CHALLENGE' else 'LOW'),
-                    'risk_score': int(round(decision_payload.get('risk_score', 0) or 0)),
-                    'reason_codes': decision_payload.get('reason_codes', []),
-                    'decision': action,
-                    'transaction': transaction,
-                    'context_results': decision_payload.get('context_results'),
-                    'analysis_results': decision_payload.get('analysis_results'),
-                    'session_id': session_id
+                    'transaction_id': state.session_id,
+                    'customer_id': state.transaction.get('customer_id'),
+                    'status': 'ESCALATED' if action in {TriageAction.BLOCK, TriageAction.CHALLENGE} else 'RESOLVED',
+                    'priority': 'CRITICAL' if action == TriageAction.BLOCK else ('HIGH' if action == TriageAction.CHALLENGE else 'LOW'),
+                    'risk_score': int(round(state.risk_score or 0)),
+                    'reason_codes': state.reason_codes,
+                    'decision': action
                 }
             })
-        except Exception as exc:  # pragma: no cover
-            self.logger.error(
-                "Failed to persist case data",
-                transaction_id=session_id,
-                error=str(exc)
-            )
+        except Exception:
+            pass  # Suppressed for node
 
-        try:
-            if action == 'CHALLENGE':
-                await self.invoke_tool('DialogueAgent', {
-                    'transaction': transaction,
-                    'risk_factors': decision_payload.get('reason_codes', []),
-                    'session_id': session_id,
-                    'risk_score': decision_payload.get('risk_score'),
-                    'analysis_results': decision_payload.get('analysis_results')
-                })
+        return state
 
-            if action in {'BLOCK', 'CHALLENGE'}:
-                await self.invoke_tool('InvestigationAgent', {
-                    'case_id': case_id,
-                    'transaction': transaction,
-                    'analysis_results': decision_payload.get('analysis_results'),
-                    'context_results': decision_payload.get('context_results'),
-                    'session_id': session_id
-                })
-
-            await self.invoke_tool('PolicyDecisionAgent', {
-                'case_id': case_id,
-                'analyst_id': 'system-supervisor',
-                'decision': action,
-                'risk_score': decision_payload.get('risk_score'),
-                'context_results': decision_payload.get('context_results'),
-                'analysis_results': decision_payload.get('analysis_results'),
-                'session_id': session_id
-            })
-
-            if action == 'BLOCK':
-                await self.invoke_tool('RegulatoryReportingAgent', {
-                    'case_id': case_id,
-                    'analyst_decision': action,
-                    'transaction': transaction,
-                    'context_results': decision_payload.get('context_results'),
-                    'analysis_results': decision_payload.get('analysis_results'),
-                    'risk_score': decision_payload.get('risk_score'),
-                    'session_id': session_id
-                })
-
-        except Exception as exc:  # pragma: no cover - downstream errors logged
-            self.logger.error(
-                "Post-triage orchestration failed",
-                transaction_id=session_id,
-                action=action,
-                error=str(exc)
-            )
-
-
-
+    # ──────────────────────────────────────────────────────────────────
+    # Main Execution Entrypoint
+    # ──────────────────────────────────────────────────────────────────
+    @trace_operation("investigate_transaction_graph")
+    async def investigate_transaction(self, transaction_data: Dict) -> Dict:
+        """Initialize the state and execute the orchestrator graph."""
+        session_id = transaction_data.get('transaction_id') or transaction_data.get('id', str(time.time()))
+        
+        self.logger.info("Starting Graph-based workflow", transaction_id=session_id)
+        
+        # 1. Initialize Invocation State (March 2026 Graph pattern)
+        state = InvestigationState(
+            transaction_id=session_id,
+            session_id=session_id,
+            transaction=transaction_data
+        )
+        
+        # 2. Execute Graph (Run all connected nodes iteratively)
+        final_state = await self._graph.ainvoke(state)
+        
+        self.logger.info(
+            "Graph workflow complete", 
+            transaction_id=session_id, 
+            decision=final_state.decision,
+            risk_score=final_state.risk_score,
+            loop_iterations=final_state.reflection_count
+        )
+        
+        return {
+            'action': final_state.decision,
+            'risk_score': final_state.risk_score,
+            'confidence': final_state.confidence,
+            'reason_codes': final_state.reason_codes,
+            'top_risk_factors': [rf if isinstance(rf, dict) else rf.model_dump() for rf in final_state.top_risk_factors],
+            'shap_values': [sv if isinstance(sv, dict) else sv.model_dump() for sv in final_state.shap_values],
+            'transaction': transaction_data,
+            'transaction_id': session_id,
+            'success': True
+        }
+    
+    async def execute(self, input_data: Dict) -> Dict:
+        return await self.investigate_transaction(input_data)

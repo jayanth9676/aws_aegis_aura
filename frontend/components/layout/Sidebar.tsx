@@ -31,6 +31,16 @@ const analystNavItems: NavItem[] = [
     icon: LayoutDashboard,
   },
   {
+    title: 'Agent Core',
+    href: '/analyst/agents',
+    icon: Activity,
+  },
+  {
+    title: 'Simulator',
+    href: '/analyst/simulator',
+    icon: FileText,
+  },
+  {
     title: 'Cases',
     href: '/analyst/cases',
     icon: FileText,

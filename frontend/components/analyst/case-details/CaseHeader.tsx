@@ -11,6 +11,7 @@ import {
   AlertTriangle,
   MoreVertical,
   User,
+  PlayCircle
 } from 'lucide-react'
 import Link from 'next/link'
 import type { Case } from '@/types'
@@ -27,6 +28,7 @@ interface CaseHeaderProps {
   onApprove?: () => void
   onBlock?: () => void
   onEscalate?: () => void
+  onInvestigate?: () => void
   onClose?: () => void
 }
 
@@ -63,6 +65,7 @@ export function CaseHeader({
   onApprove,
   onBlock,
   onEscalate,
+  onInvestigate,
   onClose,
 }: CaseHeaderProps) {
   const riskScore = caseData.risk_score || 0
@@ -140,6 +143,12 @@ export function CaseHeader({
 
           {/* Action Buttons */}
           <div className="flex sm:flex-col gap-2">
+            {caseData.status === 'NEW' && onInvestigate && (
+              <Button onClick={onInvestigate} variant="secondary" className="flex-1 sm:flex-none bg-blue-100 text-blue-700 hover:bg-blue-200">
+                <PlayCircle className="h-4 w-4 mr-2" />
+                Start Investigation
+              </Button>
+            )}
             {caseData.status === 'NEW' || caseData.status === 'INVESTIGATING' ? (
               <>
                 <Button onClick={onApprove} variant="default" className="flex-1 sm:flex-none">

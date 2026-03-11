@@ -27,7 +27,7 @@ const fraudTips = [
   {
     icon: Phone,
     title: 'Contact us if unsure',
-    description: 'If anything feels wrong or you're uncertain, stop and contact us immediately on 0800-123-4567.',
+    description: 'If anything feels wrong or you\'re uncertain, stop and contact us immediately on 0800-123-4567.',
     color: 'text-success',
   },
 ]

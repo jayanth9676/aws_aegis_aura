@@ -5,14 +5,17 @@ import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import { Shield, User, AlertTriangle } from 'lucide-react'
 import { ScrollArea } from '@/components/ui/scroll-area'
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import type { AgentMessage } from '@/types'
 
 interface CustomerChatProps {
   messages: AgentMessage[]
+  streamingMessage?: string | null
   onResponse: (response: string) => void
 }
 
-export function CustomerChat({ messages, onResponse }: CustomerChatProps) {
+export function CustomerChat({ messages, streamingMessage, onResponse }: CustomerChatProps) {
   const [selectedResponse, setSelectedResponse] = useState<string | null>(null)
 
   const latestMessage = messages[messages.length - 1]
@@ -48,14 +51,16 @@ export function CustomerChat({ messages, onResponse }: CustomerChatProps) {
                   }`}
                 >
                   {message.role === 'assistant' && message.content.includes('⚠️') && (
-                    <div className="flex items-center gap-2 mb-3 pb-3 border-b">
+                    <div className="flex items-center gap-2 mb-3 pb-3 border-b border-border/50">
                       <AlertTriangle className="h-5 w-5 text-warning" />
-                      <span className="font-semibold">Security Warning</span>
+                      <span className="font-semibold text-warning">Security Warning</span>
                     </div>
                   )}
-                  <p className="text-base leading-relaxed whitespace-pre-wrap">
-                    {message.content}
-                  </p>
+                  <div className="prose prose-sm dark:prose-invert max-w-none break-words">
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                      {message.content}
+                    </ReactMarkdown>
+                  </div>
                 </div>
                 <p className="text-xs text-muted-foreground mt-2 px-2">
                   {new Date(message.timestamp).toLocaleTimeString()}
@@ -63,6 +68,26 @@ export function CustomerChat({ messages, onResponse }: CustomerChatProps) {
               </div>
             </div>
           ))}
+
+          {/* Streaming Indicator Message */}
+          {streamingMessage && (
+            <div className="flex gap-4">
+              <Avatar className="h-10 w-10 flex-shrink-0">
+                <AvatarFallback className="bg-muted">
+                  <Shield className="h-5 w-5" />
+                </AvatarFallback>
+              </Avatar>
+              <div className="flex-1">
+                <div className="rounded-2xl p-6 bg-card border-2 mr-12">
+                  <div className="prose prose-sm dark:prose-invert max-w-none break-words">
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                      {streamingMessage}
+                    </ReactMarkdown>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </ScrollArea>
 

@@ -1,14 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-} from '@/components/ui/dialog'
+import { Dialog } from '@/components/ui/dialog'
 import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
@@ -70,20 +63,21 @@ export function ConfirmationModal({
   }
 
   return (
-    <Dialog open={open} onOpenChange={handleCancel}>
-      <DialogContent className="sm:max-w-md">
-        <DialogHeader>
-          <DialogTitle className="flex items-center gap-2">
-            {variant === 'destructive' && (
-              <AlertTriangle className="h-5 w-5 text-destructive" />
-            )}
-            {title}
-          </DialogTitle>
-          <DialogDescription>{description}</DialogDescription>
-        </DialogHeader>
+    <Dialog
+      open={open}
+      onClose={handleCancel}
+      title={title}
+    >
+      <div className="space-y-4">
+        <div className="flex items-start gap-4">
+          {variant === 'destructive' && (
+            <AlertTriangle className="h-5 w-5 text-destructive mt-0.5" />
+          )}
+          <p className="text-gray-700 dark:text-gray-300">{description}</p>
+        </div>
 
         {requireNotes && (
-          <div className="space-y-2">
+          <div className="space-y-2 mt-4">
             <Label htmlFor="notes">{notesLabel}</Label>
             <Textarea
               id="notes"
@@ -92,11 +86,12 @@ export function ConfirmationModal({
               placeholder={notesPlaceholder}
               rows={4}
               disabled={loading}
+              className="w-full"
             />
           </div>
         )}
 
-        <DialogFooter className="gap-2 sm:gap-0">
+        <div className="flex justify-end gap-2 mt-6">
           <Button
             variant="outline"
             onClick={handleCancel}
@@ -112,8 +107,8 @@ export function ConfirmationModal({
           >
             {loading ? 'Processing...' : confirmLabel}
           </Button>
-        </DialogFooter>
-      </DialogContent>
+        </div>
+      </div>
     </Dialog>
   )
 }

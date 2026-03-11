@@ -8,12 +8,15 @@ import { ScamEducation } from '@/components/customer/ScamEducation'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Shield, AlertTriangle, Phone, HelpCircle, Settings } from 'lucide-react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import type { Transaction } from '@/types'
+import { useQuery } from '@tanstack/react-query'
+import { apiClient } from '@/lib/api-client'
+import { Loader2 } from 'lucide-react'
 
-// Mock data
-const mockTransactions: Transaction[] = [
+const fallbackTransactions: Transaction[] = [
   {
+    id: 'TXN-8521',
     transaction_id: 'TXN-8521',
     customer_id: 'CUST-001',
     amount: 8500,
@@ -23,38 +26,35 @@ const mockTransactions: Transaction[] = [
     timestamp: new Date().toISOString(),
     status: 'CHALLENGED',
     risk_score: 92,
-    channel: 'ONLINE',
-    payment_method: 'BANK_TRANSFER',
-  },
-  {
-    transaction_id: 'TXN-8520',
-    customer_id: 'CUST-001',
-    amount: 125.50,
-    currency: '£',
-    payee_name: 'Tesco Stores',
-    payee_account: '87654321',
-    timestamp: new Date(Date.now() - 86400000).toISOString(),
-    status: 'COMPLETED',
-    channel: 'ONLINE',
-    payment_method: 'DEBIT_CARD',
-  },
-  {
-    transaction_id: 'TXN-8519',
-    customer_id: 'CUST-001',
-    amount: 45.00,
-    currency: '£',
-    payee_name: 'Amazon UK',
-    payee_account: '11223344',
-    timestamp: new Date(Date.now() - 172800000).toISOString(),
-    status: 'COMPLETED',
-    channel: 'ONLINE',
-    payment_method: 'DEBIT_CARD',
-  },
+    channel: 'WEB',
+    payment_method: 'FASTER_PAYMENT',
+  }
 ]
 
 export default function CustomerDashboard() {
   const [showEducation, setShowEducation] = useState(false)
-  const hasHighRiskTransaction = mockTransactions.some(t => t.risk_score && t.risk_score > 70)
+  
+  const { data: transactions = [], isLoading } = useQuery({
+    queryKey: ['customer-transactions', 'CUST-001'],
+    queryFn: () => apiClient.getCustomerTransactions('CUST-001'),
+  })
+
+  // Use fallback if no real transactions yet so the UI isn't completely empty
+  const displayTransactions = transactions.length > 0 ? transactions : fallbackTransactions
+  
+  const hasHighRiskTransaction = displayTransactions.some(t => t.risk_score && t.risk_score > 70)
+  const challengedTransactions = displayTransactions.filter(t => t.status === 'CHALLENGED' || (t.risk_score && t.risk_score > 70))
+  const latestChallenged = challengedTransactions[0]
+
+  if (isLoading) {
+    return (
+      <MainLayout>
+        <div className="flex h-[calc(100vh-4rem)] items-center justify-center">
+          <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />
+        </div>
+      </MainLayout>
+    )
+  }
 
   return (
     <MainLayout>
@@ -95,7 +95,7 @@ export default function CustomerDashboard() {
                   <Badge className="h-6 w-6" />
                 </div>
                 <div>
-                  <p className="text-2xl font-bold">{mockTransactions.length}</p>
+                  <p className="text-2xl font-bold">{displayTransactions.length}</p>
                   <p className="text-sm text-muted-foreground">Recent Transactions</p>
                 </div>
               </div>
@@ -105,14 +105,13 @@ export default function CustomerDashboard() {
           <Card>
             <CardContent className="pt-6">
               <div className="flex items-center gap-3">
-                <div className={`h-12 w-12 rounded-full flex items-center justify-center ${
-                  hasHighRiskTransaction ? 'bg-warning/10' : 'bg-muted'
-                }`}>
+                <div className={`h-12 w-12 rounded-full flex items-center justify-center ${hasHighRiskTransaction ? 'bg-warning/10' : 'bg-muted'
+                  }`}>
                   <AlertTriangle className={`h-6 w-6 ${hasHighRiskTransaction ? 'text-warning' : 'text-muted-foreground'}`} />
                 </div>
                 <div>
                   <p className="text-2xl font-bold">
-                    {mockTransactions.filter(t => t.status === 'CHALLENGED').length}
+                    {challengedTransactions.length}
                   </p>
                   <p className="text-sm text-muted-foreground">Pending Verification</p>
                 </div>
@@ -121,13 +120,12 @@ export default function CustomerDashboard() {
           </Card>
         </div>
 
-        {/* High Risk Alert */}
-        {hasHighRiskTransaction && (
+        {hasHighRiskTransaction && latestChallenged && (
           <SecurityAlert
             severity="high"
-            title="⚠️ Security Alert: Transaction Verification Required"
-            message="We've detected a high-risk transaction that needs your immediate attention. This payment has been temporarily held for your security. Please verify the transaction details before it can proceed."
-            onVerify={() => window.location.href = '/customer/dialogue/TXN-8521'}
+            title={`⚠️ Security Alert: Verification Required for £${latestChallenged.amount}`}
+            message={`We've temporarily held your payment to ${latestChallenged.payee_name} for your security. Our AI fraud analysts want to ask you a couple of questions.`}
+            onVerify={() => window.location.href = `/customer/dialogue/${latestChallenged.transaction_id}`}
             onLearnMore={() => setShowEducation(true)}
           />
         )}
@@ -159,7 +157,7 @@ export default function CustomerDashboard() {
             <CardDescription>Your latest payment activity</CardDescription>
           </CardHeader>
           <CardContent>
-            <TransactionList transactions={mockTransactions} />
+            <TransactionList transactions={displayTransactions} />
           </CardContent>
         </Card>
 

@@ -3,7 +3,14 @@
 import json
 from typing import Dict, Any
 
-from strands import tool
+
+try:
+    from strands import tool
+except (ImportError, Exception):
+    def tool(fn=None, **kwargs):
+        if fn is None:
+            return lambda f: f
+        return fn
 
 from config import aws_config, system_config
 from utils import get_logger

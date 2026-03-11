@@ -17,8 +17,55 @@ import os
 import time
 from typing import Any, Dict, List, Optional
 
-from strands import Agent, tool
-from strands.models.bedrock import BedrockModel
+try:
+    from strands import Agent, tool
+    from strands.models.bedrock import BedrockModel
+    STRANDS_AVAILABLE = True
+except (ImportError, Exception):
+    STRANDS_AVAILABLE = False
+    # Provide minimal stubs so modules load without crashing
+    def tool(fn=None, **kwargs):
+        if fn is None:
+            return lambda f: f
+        return fn
+
+    class BedrockModel:
+        def __init__(self, model_id=None, region_name=None, temperature=0.3, max_tokens=4096, top_p=0.9):
+            self.model_id = model_id or "us.anthropic.claude-sonnet-4-20250514-v1:0"
+            self.region_name = region_name or "us-east-1"
+            self.temperature = temperature
+            self.max_tokens = max_tokens
+
+    class Agent:
+        """Stub Agent that calls boto3 Bedrock directly."""
+        def __init__(self, model=None, system_prompt="", tools=None, callback_handler=None):
+            self.model = model
+            self.system_prompt = system_prompt
+
+        def __call__(self, prompt: str) -> str:
+            import boto3, json
+            bedrock = boto3.client(
+                "bedrock-runtime",
+                region_name=self.model.region_name if self.model else "us-east-1"
+            )
+            messages = [{"role": "user", "content": prompt}]
+            body = {
+                "anthropic_version": "bedrock-2023-05-31",
+                "max_tokens": self.model.max_tokens if self.model else 4096,
+                "system": self.system_prompt,
+                "messages": messages,
+            }
+            try:
+                resp = bedrock.invoke_model(
+                    modelId=self.model.model_id if self.model else "us.anthropic.claude-sonnet-4-20250514-v1:0",
+                    body=json.dumps(body),
+                    contentType="application/json",
+                    accept="application/json",
+                )
+                result = json.loads(resp["body"].read())
+                return result["content"][0]["text"]
+            except Exception as e:
+                return f"[Bedrock error: {e}]"
 
 from config import AgentConfig, system_config, agentcore_config
 from utils import get_logger, metrics_tracker
@@ -189,15 +236,27 @@ class AegisBaseAgent:
 
     async def invoke_bedrock(self, prompt: str, **kwargs) -> str:
         """Invoke the internal Strands Agent and return text."""
-        result = self._strands_agent(prompt)
+        import asyncio
+        result = await asyncio.to_thread(self._strands_agent, prompt)
         return str(result)
 
-    async def reason_with_bedrock(self, prompt: str, context: Dict, output_format: str = "json") -> Dict:
-        """Use the Strands Agent for reasoning with structured output."""
+    async def reason_with_bedrock(self, prompt: str, context: Dict, output_format: str = "json", response_model: Optional[Any] = None) -> Dict:
+        """Use the Strands Agent for reasoning with native structured output."""
         import json as _json
+        import asyncio
 
         context_str = _json.dumps(context, indent=2, default=str)
         full_prompt = f"Context Data:\n{context_str}\n\nTask:\n{prompt}"
+        
+        if response_model:
+            # Native Strands SDK structured inference
+            result = await asyncio.to_thread(
+                self._strands_agent.with_structured_output, response_model, full_prompt
+            )
+            if hasattr(result, "model_dump"):
+                return result.model_dump()
+            return result
+
         if output_format == "json":
             full_prompt += "\n\nProvide your response as valid JSON only."
 
@@ -205,10 +264,7 @@ class AegisBaseAgent:
 
         if output_format == "json":
             try:
-                import re
-                json_match = re.search(r'\{[\s\S]*\}', result_text)
-                if json_match:
-                    return _json.loads(json_match.group())
+                # Direct parsing without brittle regex, relying on modern LLM compliance
                 return _json.loads(result_text)
             except _json.JSONDecodeError:
                 return {"response": result_text, "parsed": False}

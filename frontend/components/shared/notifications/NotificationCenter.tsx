@@ -1,71 +1,31 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import { Bell, X, CheckCheck, AlertTriangle, Info, CheckCircle } from 'lucide-react'
+import { useState, useEffect, useCallback } from 'react'
+import { Bell, X, CheckCheck, AlertTriangle, Info, CheckCircle, Loader2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Badge } from '@/components/ui/badge'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import type { NotificationMessage } from '@/types'
+import { apiClient } from '@/lib/api-client'
 
 interface NotificationCenterProps {
   onClose: () => void
+  onUnreadCountChange?: (count: number) => void
 }
-
-// Mock notifications - in production, this would come from WebSocket/API
-const mockNotifications: NotificationMessage[] = [
-  {
-    id: '1',
-    type: 'WARNING',
-    title: 'High Risk Case Detected',
-    message: 'New case #CASE-1234 requires immediate attention. Risk score: 94',
-    priority: 'HIGH',
-    action_url: '/analyst/cases/CASE-1234',
-    read: false,
-    timestamp: new Date(Date.now() - 5 * 60 * 1000).toISOString(),
-  },
-  {
-    id: '2',
-    type: 'SUCCESS',
-    title: 'Case Resolved',
-    message: 'Case #CASE-1230 has been successfully resolved and closed.',
-    priority: 'MEDIUM',
-    action_url: '/analyst/cases/CASE-1230',
-    read: false,
-    timestamp: new Date(Date.now() - 15 * 60 * 1000).toISOString(),
-  },
-  {
-    id: '3',
-    type: 'INFO',
-    title: 'Model Updated',
-    message: 'Fraud detection model v2.3.1 deployed. AUC: 0.96',
-    priority: 'LOW',
-    read: false,
-    timestamp: new Date(Date.now() - 60 * 60 * 1000).toISOString(),
-  },
-  {
-    id: '4',
-    type: 'ERROR',
-    title: 'System Alert',
-    message: 'Graph database connection restored after brief interruption.',
-    priority: 'MEDIUM',
-    read: true,
-    timestamp: new Date(Date.now() - 120 * 60 * 1000).toISOString(),
-  },
-]
 
 function getNotificationIcon(type: NotificationMessage['type']) {
   switch (type) {
     case 'WARNING':
-      return <AlertTriangle className="h-5 w-5 text-warning" />
+      return <AlertTriangle className="h-5 w-5 text-yellow-500" />
     case 'ERROR':
       return <AlertTriangle className="h-5 w-5 text-destructive" />
     case 'SUCCESS':
-      return <CheckCircle className="h-5 w-5 text-success" />
+      return <CheckCircle className="h-5 w-5 text-green-500" />
     case 'INFO':
     default:
-      return <Info className="h-5 w-5 text-info" />
+      return <Info className="h-5 w-5 text-blue-500" />
   }
 }
 
@@ -84,19 +44,58 @@ function getTimeAgo(timestamp: string): string {
   return `${days}d ago`
 }
 
-export function NotificationCenter({ onClose }: NotificationCenterProps) {
-  const [notifications, setNotifications] = useState<NotificationMessage[]>(mockNotifications)
+export function NotificationCenter({ onClose, onUnreadCountChange }: NotificationCenterProps) {
+  const [notifications, setNotifications] = useState<NotificationMessage[]>([])
+  const [loading, setLoading] = useState(true)
+
+  const fetchNotifications = useCallback(async () => {
+    try {
+      const data = await apiClient.getNotifications()
+      setNotifications(data)
+      const unread = data.filter((n: NotificationMessage) => !n.read).length
+      onUnreadCountChange?.(unread)
+    } catch (err) {
+      // Silently fail - notifications are non-critical
+      console.warn('Failed to fetch notifications:', err)
+    } finally {
+      setLoading(false)
+    }
+  }, [onUnreadCountChange])
+
+  useEffect(() => {
+    fetchNotifications()
+    // Poll every 30s for new notifications
+    const interval = setInterval(fetchNotifications, 30000)
+    return () => clearInterval(interval)
+  }, [fetchNotifications])
 
   const unreadCount = notifications.filter((n) => !n.read).length
 
-  const markAsRead = (id: string) => {
-    setNotifications((prev) =>
-      prev.map((n) => (n.id === id ? { ...n, read: true } : n))
-    )
+  const markAsRead = async (id: string) => {
+    try {
+      await apiClient.markNotificationRead(id)
+      setNotifications((prev) =>
+        prev.map((n) => (n.id === id ? { ...n, read: true } : n))
+      )
+      onUnreadCountChange?.(unreadCount - 1)
+    } catch (err) {
+      console.warn('Failed to mark read:', err)
+      // Optimistic update anyway
+      setNotifications((prev) =>
+        prev.map((n) => (n.id === id ? { ...n, read: true } : n))
+      )
+    }
   }
 
-  const markAllAsRead = () => {
-    setNotifications((prev) => prev.map((n) => ({ ...n, read: true })))
+  const markAllAsRead = async () => {
+    try {
+      await apiClient.markAllNotificationsRead()
+      setNotifications((prev) => prev.map((n) => ({ ...n, read: true })))
+      onUnreadCountChange?.(0)
+    } catch (err) {
+      console.warn('Failed to mark all read:', err)
+      setNotifications((prev) => prev.map((n) => ({ ...n, read: true })))
+    }
   }
 
   return (
@@ -132,7 +131,11 @@ export function NotificationCenter({ onClose }: NotificationCenterProps) {
 
       {/* Notifications List */}
       <ScrollArea className="h-[400px]">
-        {notifications.length === 0 ? (
+        {loading ? (
+          <div className="flex items-center justify-center p-8">
+            <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
+          </div>
+        ) : notifications.length === 0 ? (
           <div className="flex flex-col items-center justify-center p-8 text-center">
             <Bell className="h-12 w-12 text-muted-foreground mb-3" />
             <p className="text-sm text-muted-foreground">No notifications</p>
@@ -146,7 +149,7 @@ export function NotificationCenter({ onClose }: NotificationCenterProps) {
                   'p-4 transition-colors hover:bg-muted/50 cursor-pointer',
                   !notification.read && 'bg-muted/30'
                 )}
-                onClick={() => markAsRead(notification.id)}
+                onClick={() => !notification.read && markAsRead(notification.id)}
               >
                 {notification.action_url ? (
                   <Link href={notification.action_url} onClick={onClose}>
@@ -163,11 +166,14 @@ export function NotificationCenter({ onClose }: NotificationCenterProps) {
 
       {/* Footer */}
       <div className="border-t p-3 text-center">
-        <Link href="/analyst/notifications" onClick={onClose}>
-          <Button variant="ghost" size="sm" className="text-xs w-full">
-            View all notifications
-          </Button>
-        </Link>
+        <Button
+          variant="ghost"
+          size="sm"
+          className="text-xs w-full"
+          onClick={() => { fetchNotifications(); }}
+        >
+          Refresh
+        </Button>
       </div>
     </div>
   )
@@ -196,4 +202,3 @@ function NotificationContent({ notification }: { notification: NotificationMessa
     </div>
   )
 }
-

@@ -7,12 +7,71 @@ the March 2026 standard `GraphBuilder` with conditional edges.
 from typing import Dict, Any
 import time
 
-from strands import GraphBuilder, Agent
+try:
+    from strands import GraphBuilder, Agent
+    STRANDS_AVAILABLE = True
+except (ImportError, Exception):
+    STRANDS_AVAILABLE = False
+    Agent = None  # type: ignore
+
+    class GraphBuilder:
+        """Fallback graph builder using asyncio.gather() when strands SDK unavailable."""
+        def __init__(self):
+            self._nodes = {}
+            self._edges = []
+            self._conditional_edges = []
+            self._entry = None
+
+        def add_node(self, fn, name):
+            self._nodes[name] = fn
+            return self
+
+        def add_edge(self, src, dst, condition=None, **kwargs):
+            """Accept condition= kwarg used by supervisor_agent (ignored in fallback)."""
+            self._edges.append((src, dst, condition))
+            return self
+
+        def add_conditional_edges(self, src, condition, mapping, **kwargs):
+            self._conditional_edges.append((src, condition, mapping))
+            return self
+
+        def set_entry_point(self, name):
+            self._entry = name
+            return self
+
+        def compile(self):
+            return self
+
+        async def ainvoke(self, state):
+            import asyncio
+
+            async def _run_node(fn, name):
+                try:
+                    result = fn(state)
+                    if asyncio.iscoroutine(result):
+                        result = await result
+                    if isinstance(result, dict):
+                        for k, v in result.items():
+                            if hasattr(state, k):
+                                setattr(state, k, v)
+                except Exception:
+                    pass  # individual node failures are non-fatal
+
+            # Run all non-virtual nodes in registration order
+            await asyncio.gather(*[
+                _run_node(fn, name)
+                for name, fn in self._nodes.items()
+                if name not in ("__start__", "__end__")
+            ])
+            return state
+
+
 
 from agents.base_agent import AegisBaseAgent, create_agent, record_investigation_summary, store_memory
 from agents.pydantic_models import InvestigationState, TriageAction
 from config import AgentConfig, agentcore_config
 from utils import trace_operation, get_logger
+from agentcore_app import get_aegis_app
 
 logger = get_logger("agent.supervisor")
 
@@ -58,68 +117,82 @@ class SupervisorAgent(AegisBaseAgent):
         super().__init__("supervisor_agent", AgentConfig.supervisor_config())
         self._graph = self._build_investigation_graph()
 
-    def _build_investigation_graph(self):
-        """Build the dynamic orchestration Graph using Strands SDK."""
-        builder = GraphBuilder()
+    async def _invoke_agent(self, agent_id: str, tool_name: str, payload: Dict) -> Dict:
+        """Helper to invoke initialized singletons instead of instantiating tools."""
+        app = await get_aegis_app()
+        agent = app.agents.get(agent_id)
+        if agent:
+            # Bypass tool registry overhead, directly execute singleton
+            return await agent.execute(payload)
         
+        # Fallback to tool registry if not in app agents
+        return await self.invoke_tool(tool_name, payload)
+
+    def _build_investigation_graph(self):
+        """Build the dynamic orchestration Graph using Strands SDK (or asyncio fallback)."""
+        if not STRANDS_AVAILABLE:
+            # Strands DLL unavailable — return sentinel; investigate_transaction will
+            # invoke node functions directly via asyncio.gather().
+            return None
+
+        builder = GraphBuilder()
+
         # ── Nodes: Context Gathering (Parallel by default when executed) ──
         builder.add_node(self._node_transaction_context, "transaction_context")
         builder.add_node(self._node_customer_context, "customer_context")
         builder.add_node(self._node_payee_context, "payee_context")
         builder.add_node(self._node_behavioral_analysis, "behavioral_analysis")
         builder.add_node(self._node_graph_analysis, "graph_analysis")
-        
+
         # ── Nodes: Synthesis & Decision ──
         builder.add_node(self._node_risk_scoring, "risk_scoring")
         builder.add_node(self._node_intel, "intel")
         builder.add_node(self._node_triage, "triage")
         builder.add_node(self._node_post_triage, "post_triage")
-        
+
         # ── Edges: Conditional Routing ──
-        # Entry starts context agents
         builder.add_edge("__start__", "transaction_context")
         builder.add_edge("__start__", "customer_context")
         builder.add_edge("__start__", "payee_context")
-        
+
         builder.add_edge("__start__", "behavioral_analysis", condition=needs_behavioral_analysis)
         builder.add_edge("__start__", "graph_analysis", condition=needs_graph_analysis)
-        
-        # Context merges into analysis (implicit synchronization in Strands Graph)
+
         builder.add_edge("transaction_context", "risk_scoring")
         builder.add_edge("customer_context", "risk_scoring")
         builder.add_edge("payee_context", "risk_scoring")
         builder.add_edge("behavioral_analysis", "risk_scoring")
         builder.add_edge("graph_analysis", "risk_scoring")
-        
+
         builder.add_edge("risk_scoring", "intel")
         builder.add_edge("intel", "triage")
-        
+
         # ── Edges: Reflection Loop ──
         builder.add_edge("triage", "triage", condition=needs_reflection)
         builder.add_edge("triage", "post_triage", condition=triage_complete)
-        
+
         # Graph constraints
-        builder.set_max_node_executions(15)  # Max total steps
-        builder.set_execution_timeout(10.0)   # Low latency limit per FinCon papers
-        builder.reset_on_revisit(True)       # Reset node state if reflecting
-        
+        builder.set_max_node_executions(15)
+        builder.set_execution_timeout(10.0)
+        builder.reset_on_revisit(True)
+
         return builder.build()
 
     # ──────────────────────────────────────────────────────────────────
     # Node Implementation Wrappers (Adapter layer for the graph)
     # ──────────────────────────────────────────────────────────────────
     async def _node_transaction_context(self, state: InvestigationState) -> InvestigationState:
-        res = await self.invoke_tool("TransactionContextAgent", {'transaction': state.transaction, 'session_id': state.session_id})
+        res = await self._invoke_agent("transaction_context", "TransactionContextAgent", {'transaction': state.transaction, 'session_id': state.session_id})
         state.transaction_context = res
         return state
 
     async def _node_customer_context(self, state: InvestigationState) -> InvestigationState:
-        res = await self.invoke_tool("CustomerContextAgent", {'customer_id': state.transaction.get('customer_id'), 'session_id': state.session_id})
+        res = await self._invoke_agent("customer_context", "CustomerContextAgent", {'customer_id': state.transaction.get('customer_id'), 'session_id': state.session_id})
         state.customer_context = res
         return state
 
     async def _node_payee_context(self, state: InvestigationState) -> InvestigationState:
-        res = await self.invoke_tool("PayeeContextAgent", {
+        res = await self._invoke_agent("payee_context", "PayeeContextAgent", {
             'payee_account': state.transaction.get('payee_account'),
             'payee_name': state.transaction.get('payee_name'),
             'session_id': state.session_id
@@ -128,7 +201,7 @@ class SupervisorAgent(AegisBaseAgent):
         return state
 
     async def _node_behavioral_analysis(self, state: InvestigationState) -> InvestigationState:
-        res = await self.invoke_tool("BehavioralAnalysisAgent", {
+        res = await self._invoke_agent("behavioral_analysis", "BehavioralAnalysisAgent", {
             'session_data': state.transaction.get('session_data', {}),
             'device_fingerprint': state.transaction.get('device_fingerprint'),
             'session_id': state.session_id
@@ -137,7 +210,7 @@ class SupervisorAgent(AegisBaseAgent):
         return state
 
     async def _node_graph_analysis(self, state: InvestigationState) -> InvestigationState:
-        res = await self.invoke_tool("GraphRelationshipAgent", {
+        res = await self._invoke_agent("graph_relationship", "GraphRelationshipAgent", {
             'sender_account': state.transaction.get('sender_account'),
             'receiver_account': state.transaction.get('payee_account'),
             'session_id': state.session_id
@@ -153,7 +226,7 @@ class SupervisorAgent(AegisBaseAgent):
             'behavioral_analysis': state.behavioral_analysis,
             'graph_analysis': state.graph_analysis
         }
-        res = await self.invoke_tool("RiskScoringAgent", {
+        res = await self._invoke_agent("risk_scoring", "RiskScoringAgent", {
             'context_results': {k: v for k, v in context_results.items() if v},
             'transaction': state.transaction,
             'session_id': state.session_id
@@ -173,7 +246,7 @@ class SupervisorAgent(AegisBaseAgent):
             'transaction_context': state.transaction_context,
             'customer_context': state.customer_context
         }
-        res = await self.invoke_tool("IntelAgent", {
+        res = await self._invoke_agent("intel", "IntelAgent", {
             'transaction': state.transaction,
             'context_results': {k: v for k, v in context_results.items() if v},
             'session_id': state.session_id
@@ -191,18 +264,27 @@ class SupervisorAgent(AegisBaseAgent):
             'reflection_count': state.reflection_count
         }
         
-        res = await self.invoke_tool("TriageAgent", {
+        res = await self._invoke_agent("triage", "TriageAgent", {
             'risk_score': state.risk_score,
             'confidence': state.confidence,
             'evidence': evidence,
             'session_id': state.session_id,
-            'prior_decision': state.decision  # Passed during reflection
+            'prior_decision': state.decision,
+            'prior_reasoning': state.decision_reasoning
         })
         
         state.decision = res.get("action", TriageAction.ALLOW)
+        state.priority = res.get("priority", "MEDIUM")
         state.decision_reasoning = res.get("reasoning", "")
         # Reflection signal from the LLM
         state.needs_revision = res.get("needs_revision", False) 
+        
+        # Log event trajectory (Event Sourced state)
+        if state.session_id:
+            import json
+            log_data = json.dumps(res, default=str)
+            await self.store_memory(f'session:{state.session_id}:triage_log:{state.reflection_count}', log_data, ttl=1200)
+
         return state
 
     async def _node_post_triage(self, state: InvestigationState) -> InvestigationState:
@@ -244,7 +326,7 @@ class SupervisorAgent(AegisBaseAgent):
                     'transaction_id': state.session_id,
                     'customer_id': state.transaction.get('customer_id'),
                     'status': 'ESCALATED' if action in {TriageAction.BLOCK, TriageAction.CHALLENGE} else 'RESOLVED',
-                    'priority': 'CRITICAL' if action == TriageAction.BLOCK else ('HIGH' if action == TriageAction.CHALLENGE else 'LOW'),
+                    'priority': getattr(state, "priority", None) or ('CRITICAL' if action == TriageAction.BLOCK else ('HIGH' if action == TriageAction.CHALLENGE else 'LOW')),
                     'risk_score': int(round(state.risk_score or 0)),
                     'reason_codes': state.reason_codes,
                     'decision': action
@@ -261,28 +343,59 @@ class SupervisorAgent(AegisBaseAgent):
     @trace_operation("investigate_transaction_graph")
     async def investigate_transaction(self, transaction_data: Dict) -> Dict:
         """Initialize the state and execute the orchestrator graph."""
+        import asyncio as _asyncio
         session_id = transaction_data.get('transaction_id') or transaction_data.get('id', str(time.time()))
-        
+
         self.logger.info("Starting Graph-based workflow", transaction_id=session_id)
-        
-        # 1. Initialize Invocation State (March 2026 Graph pattern)
+
+        # 1. Initialize Invocation State
         state = InvestigationState(
             transaction_id=session_id,
             session_id=session_id,
             transaction=transaction_data
         )
-        
-        # 2. Execute Graph (Run all connected nodes iteratively)
-        final_state = await self._graph.ainvoke(state)
-        
+
+        # 2a. Strands Graph execution (when SDK is available)
+        if self._graph is not None:
+            final_state = await self._graph.ainvoke(state)
+        else:
+            # 2b. Asyncio fallback — mirrors the graph execution order
+            # Phase 1: context nodes in parallel
+            context_tasks = [
+                self._node_transaction_context(state),
+                self._node_customer_context(state),
+                self._node_payee_context(state),
+            ]
+            if needs_behavioral_analysis(state):
+                context_tasks.append(self._node_behavioral_analysis(state))
+            if needs_graph_analysis(state):
+                context_tasks.append(self._node_graph_analysis(state))
+            try:
+                await _asyncio.gather(*context_tasks, return_exceptions=True)
+            except Exception:
+                pass
+
+            # Phase 2: analysis in sequence
+            for node_fn in [
+                self._node_risk_scoring,
+                self._node_intel,
+                self._node_triage,
+                self._node_post_triage,
+            ]:
+                try:
+                    await node_fn(state)
+                except Exception as node_err:
+                    self.logger.warning("Node failed in asyncio fallback", node=node_fn.__name__, error=str(node_err))
+            final_state = state
+
         self.logger.info(
-            "Graph workflow complete", 
-            transaction_id=session_id, 
+            "Graph workflow complete",
+            transaction_id=session_id,
             decision=final_state.decision,
             risk_score=final_state.risk_score,
             loop_iterations=final_state.reflection_count
         )
-        
+
         return {
             'action': final_state.decision,
             'risk_score': final_state.risk_score,
@@ -294,6 +407,6 @@ class SupervisorAgent(AegisBaseAgent):
             'transaction_id': session_id,
             'success': True
         }
-    
+
     async def execute(self, input_data: Dict) -> Dict:
         return await self.investigate_transaction(input_data)

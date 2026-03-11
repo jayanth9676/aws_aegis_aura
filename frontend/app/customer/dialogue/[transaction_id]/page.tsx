@@ -9,6 +9,7 @@ import { CustomerChat } from '@/components/customer/CustomerChat'
 import { ArrowLeft, Shield, AlertTriangle } from 'lucide-react'
 import Link from 'next/link'
 import type { AgentMessage } from '@/types'
+import { apiClient } from '@/lib/api-client'
 
 interface DialoguePageProps {
   params: { transaction_id: string }
@@ -27,9 +28,10 @@ export default function DialoguePage({ params }: DialoguePageProps) {
   ])
 
   const [step, setStep] = useState(1)
+  const [streamingMessage, setStreamingMessage] = useState<string | null>(null)
   const totalSteps = 3
 
-  const handleResponse = (response: string) => {
+  const handleResponse = async (response: string) => {
     // Add user message
     const userMessage: AgentMessage = {
       id: Date.now().toString(),
@@ -39,44 +41,58 @@ export default function DialoguePage({ params }: DialoguePageProps) {
     }
     setMessages((prev) => [...prev, userMessage])
 
-    // Simulate AI response
-    setTimeout(() => {
+    // Call backend API for AI response
+    try {
+      setStreamingMessage('Analyzing your response...')
+      
+      const result = await apiClient.customerDialogue(
+        params.transaction_id, 
+        response,
+        messages.map(m => ({ role: m.role, message: m.content }))
+      )
+
+      setStreamingMessage(null)
+      setStep((s) => s + 1)
+
+      const fullResponseText = result.message || 'I am processing your response.'
+      
+      // Use questions/education_tip/action to structure suggestions naturally
+      let nextSuggestions = result.questions || []
+      
+      // Build final text including education tip if present
+      let finalContent = fullResponseText
+      if (result.education_tip) {
+        finalContent += `\n\n💡 **Security Tip:** ${result.education_tip}`
+      }
+      
+      // Default suggestions if none provided
+      if (nextSuggestions.length === 0) {
+        if (result.recommended_action === 'CANCEL') {
+          nextSuggestions = ['Cancel this payment']
+        } else if (result.recommended_action === 'VERIFY') {
+          nextSuggestions = ['Proceed safely']
+        }
+      }
+
       const aiMessage: AgentMessage = {
         id: (Date.now() + 1).toString(),
         role: 'assistant',
-        content: getNextQuestion(step, response),
+        content: finalContent,
         timestamp: new Date().toISOString(),
         agent_name: 'Aegis Security',
-        suggestions: getNextSuggestions(step),
+        suggestions: nextSuggestions,
       }
       setMessages((prev) => [...prev, aiMessage])
-      setStep((s) => s + 1)
-    }, 1000)
-  }
-
-  const getNextQuestion = (currentStep: number, lastResponse: string): string => {
-    if (lastResponse.includes('not authorize')) {
-      return `Thank you for confirming. We've blocked this payment immediately.\n\nYour account is safe. We'll investigate this and contact you shortly.\n\nWhat would you like to do next?`
-    }
-
-    switch (currentStep) {
-      case 1:
-        return `Thank you. To verify this is legitimate:\n\nAre you currently on a phone call with someone asking you to make this payment?`
-      case 2:
-        return `⚠️ This is a common scam tactic. Fraudsters often stay on the phone to prevent you from thinking clearly.\n\nWe strongly recommend canceling this payment and contacting the recipient through official channels.\n\nWhat would you like to do?`
-      default:
-        return 'Thank you for your responses. Your security is our priority.'
-    }
-  }
-
-  const getNextSuggestions = (currentStep: number): string[] => {
-    switch (currentStep) {
-      case 1:
-        return ['Yes, I am on a call', 'No, I am not on a call']
-      case 2:
-        return ['Cancel this payment', 'Proceed anyway', 'Speak to an advisor']
-      default:
-        return []
+    } catch (error) {
+      console.error("Dialogue agent error:", error)
+      setStreamingMessage(null)
+      setMessages((prev) => [...prev, {
+        id: (Date.now() + 1).toString(),
+        role: 'assistant',
+        content: 'Sorry, I am having trouble connecting to the Aegis network right now.',
+        timestamp: new Date().toISOString(),
+        agent_name: 'System',
+      }])
     }
   }
 
@@ -126,8 +142,12 @@ export default function DialoguePage({ params }: DialoguePageProps) {
         </div>
 
         {/* Chat Interface */}
-        <Card className="h-[600px] flex flex-col">
-          <CustomerChat messages={messages} onResponse={handleResponse} />
+        <Card className="h-[600px] flex flex-col shadow-lg border-2">
+          <CustomerChat 
+            messages={messages} 
+            streamingMessage={streamingMessage}
+            onResponse={handleResponse} 
+          />
         </Card>
 
         {/* Emergency Contact */}

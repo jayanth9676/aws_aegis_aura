@@ -8,7 +8,7 @@ import { RiskAssessment } from '@/components/analyst/case-details/RiskAssessment
 import { EvidenceTimeline } from '@/components/analyst/case-details/EvidenceTimeline'
 import { AgentReasoning } from '@/components/analyst/case-details/AgentReasoning'
 import { ActionButtons } from '@/components/analyst/case-details/ActionButtons'
-import { NetworkGraph } from '@/components/visualizations/NetworkGraph'
+import { NetworkGraphViewer } from '@/components/cases/NetworkGraphViewer'
 import { SHAPChart } from '@/components/visualizations/SHAPChart'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
@@ -69,6 +69,20 @@ export default function CaseDetailsPage({ params }: CaseDetailsPageProps) {
     }
   }
 
+  const handleInvestigate = async () => {
+    setActionInProgress(true)
+    try {
+      await apiClient.investigateCase(params.id)
+      toast.success('Agentic Investigation started successfully')
+      refetch()
+    } catch (error: any) {
+      toast.error(error.message || 'Failed to start investigation')
+      console.error('Case investigation failed:', error)
+    } finally {
+      setActionInProgress(false)
+    }
+  }
+
   const handleApprove = () => {
     handleCaseAction({ action: 'APPROVE', reason: 'Approved after review' })
   }
@@ -117,6 +131,7 @@ export default function CaseDetailsPage({ params }: CaseDetailsPageProps) {
           onApprove={handleApprove}
           onBlock={handleBlock}
           onEscalate={handleEscalate}
+          onInvestigate={handleInvestigate}
           onClose={handleClose}
         />
 
@@ -129,7 +144,7 @@ export default function CaseDetailsPage({ params }: CaseDetailsPageProps) {
               <TransactionSummary transaction={transaction} customerName={caseData.customer_id} />
             )}
 
-          {/* Risk Assessment */}
+            {/* Risk Assessment */}
             <RiskAssessment caseData={caseData} />
 
             {/* Tabbed Content */}
@@ -161,14 +176,7 @@ export default function CaseDetailsPage({ params }: CaseDetailsPageProps) {
         <div className="space-y-6">
           {/* Network Graph */}
           {networkData && (
-            <Card>
-              <CardHeader>
-                <CardTitle>Network Analysis</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <NetworkGraph data={networkData} />
-              </CardContent>
-            </Card>
+            <NetworkGraphViewer data={networkData} />
           )}
 
           {/* SHAP Explanation */}

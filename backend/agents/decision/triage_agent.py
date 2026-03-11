@@ -33,6 +33,7 @@ class TriageAgent(AegisBaseAgent):
         
         reasoning_prompt = f"""You are the final decision-maker in the Aegis fraud prevention system.
 Based on the evidence, determine the final action: ALLOW, CHALLENGE, or BLOCK.
+You must also determine an appropriate escalation priority: LOW, MEDIUM, HIGH, or CRITICAL.
 
 Rules:
 - Usually BLOCK if risk_score >= {system_config.BLOCK_THRESHOLD}
@@ -56,17 +57,24 @@ Provide your response as structured output conforming to the required schema."""
             response_json = await self.reason_with_bedrock(
                 prompt=reasoning_prompt,
                 context={},
-                output_format="json"
+                response_model=TriageDecisionOutput
             )
             
             # Extract data from the assumed Strands structured output
-            action_str = response_json.get("action", "ALLOW").upper()
+            action_str = response_json.get("action", "ALLOW")
+            if hasattr(action_str, "value"): action_str = action_str.value
+            if isinstance(action_str, str): action_str = action_str.upper()
             action = TriageAction[action_str] if action_str in ["ALLOW", "CHALLENGE", "BLOCK"] else TriageAction.ALLOW
+            
+            priority_str = response_json.get("priority", "MEDIUM")
+            if hasattr(priority_str, "value"): priority_str = priority_str.value
+            if isinstance(priority_str, str): priority_str = priority_str.upper()
             
             return {
                 'action': action,
+                'priority': priority_str,
                 'risk_score': response_json.get("risk_score", risk_score),
-                'confidence': confidence,
+                'confidence': response_json.get("confidence", confidence),
                 'reasoning': response_json.get("reasoning", "No AI reasoning provided"),
                 'reason_codes': response_json.get("reason_codes", []),
                 'policy_applied': response_json.get("policy_applied", "AI_HYBRID"),

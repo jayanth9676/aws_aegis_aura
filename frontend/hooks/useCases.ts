@@ -4,23 +4,7 @@
 
 import { useState, useEffect } from 'react'
 import { apiClient } from '@/lib/api-client'
-
-export type CasePriority = 'HIGH' | 'MEDIUM' | 'LOW'
-export type CaseStatus = 'NEW' | 'INVESTIGATING' | 'ESCALATED' | 'RESOLVED' | 'CLOSED'
-
-export interface Case {
-  case_id: string
-  transaction_id: string
-  customer_id: string
-  risk_score: number
-  confidence: number
-  status: CaseStatus | string
-  priority: CasePriority | string
-  created_at: string
-  updated_at?: string
-  evidence?: any
-  decision?: any
-}
+import type { CaseQuery, Case } from '@/types'
 
 interface CaseFilters {
   status?: string
@@ -41,8 +25,13 @@ export function useCases(filters?: CaseFilters) {
     try {
       setLoading(true)
       setError(null)
-      const data = await apiClient.getCases(filters)
-      setCases(data.cases || [])
+      const query: CaseQuery = {}
+      if (filters) {
+        query.page_size = filters.limit
+        if (filters.status) query.filters = { status: [filters.status as any] } // bypass mismatch if any
+      }
+      const data = await apiClient.getCases(query)
+      setCases(data.items || [])
     } catch (err: any) {
       setError(err.message || 'Failed to load cases')
       console.error('Error loading cases:', err)

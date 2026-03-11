@@ -9,7 +9,15 @@ from typing import Any, Dict, Optional
 
 import aiohttp
 import requests
-from bedrock_agentcore_starter_toolkit.operations.gateway.client import GatewayClient
+
+try:
+    from bedrock_agentcore_starter_toolkit.operations.gateway.client import GatewayClient
+except (ImportError, Exception):
+    class GatewayClient:
+        """Stub GatewayClient when bedrock_agentcore_starter_toolkit is unavailable."""
+        def __init__(self, region_name=None):
+            pass
+
 
 from config import agentcore_config
 

@@ -6,7 +6,16 @@ via the `tools.ml_loader.registry` rather than simple rule-based mock matching.
 
 from typing import Dict, List
 from datetime import datetime
-from strands import tool
+
+try:
+    from strands import tool
+except (ImportError, Exception):
+    # strands DLL not available on this host — use identity decorator
+    def tool(fn=None, **kwargs):
+        """No-op @tool decorator when strands SDK is unavailable."""
+        if fn is None:
+            return lambda f: f
+        return fn
 from config import aws_config, system_config
 from utils import get_logger
 from tools.ml_loader import registry

@@ -33,6 +33,13 @@ class RiskLevel(str, Enum):
     CRITICAL = "CRITICAL"
 
 
+class PriorityLevel(str, Enum):
+    LOW = "LOW"
+    MEDIUM = "MEDIUM"
+    HIGH = "HIGH"
+    CRITICAL = "CRITICAL"
+
+
 class MulePattern(str, Enum):
     NORMAL = "normal"
     FAN_IN = "fan_in"
@@ -135,6 +142,7 @@ class IntelOutput(BaseModel):
 class TriageDecisionOutput(BaseModel):
     """Output of the Triage Agent — the final Allow/Challenge/Block decision."""
     action: TriageAction
+    priority: PriorityLevel = Field(default=PriorityLevel.MEDIUM, description="Escalation priority based on risk and context")
     risk_score: float = Field(ge=0, le=100)
     confidence: float = Field(ge=0, le=1)
     reasoning: str = Field(description="Explanation for the decision")
@@ -189,6 +197,7 @@ class InvestigationState(BaseModel):
 
     # Populated by triage agent
     decision: Optional[TriageAction] = None
+    priority: Optional[PriorityLevel] = None
     decision_reasoning: str = ""
 
     # Reflection metadata

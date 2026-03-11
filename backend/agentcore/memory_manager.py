@@ -6,9 +6,21 @@ import asyncio
 import json
 from typing import Any, Dict, List, Optional, Tuple
 
-from bedrock_agentcore.memory import MemoryClient
-from bedrock_agentcore.memory.constants import ConversationalMessage, MessageRole
-from bedrock_agentcore.memory.session import MemorySessionManager
+
+try:
+    from bedrock_agentcore.memory import MemoryClient
+    from bedrock_agentcore.memory.constants import ConversationalMessage, MessageRole
+    from bedrock_agentcore.memory.session import MemorySessionManager
+except (ImportError, Exception):
+    MemoryClient = None  # type: ignore
+    MemorySessionManager = None  # type: ignore
+
+    class _MessageRole:
+        ASSISTANT = type('Role', (), {'value': 'assistant'})()
+        USER = type('Role', (), {'value': 'user'})()
+    MessageRole = _MessageRole()
+    ConversationalMessage = dict  # type: ignore
+
 
 from config import agentcore_config
 

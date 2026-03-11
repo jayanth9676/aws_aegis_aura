@@ -95,6 +95,47 @@ class ApiClient {
     })
   }
 
+  async postStream(
+    endpoint: string, 
+    data: any, 
+    onChunk: (chunk: string) => void, 
+    options?: RequestInit
+  ): Promise<string> {
+    const url = `${this.baseURL}${endpoint}`
+    
+    const response = await fetch(url, {
+      ...options,
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        ...options?.headers,
+      },
+      body: JSON.stringify(data),
+    })
+
+    if (!response.ok) {
+      throw new Error(`API Error: ${response.status}`)
+    }
+
+    if (!response.body) {
+      throw new Error('ReadableStream not supported by the browser.')
+    }
+
+    const reader = response.body.getReader()
+    const decoder = new TextDecoder()
+    let fullResponse = ''
+
+    while (true) {
+      const { value, done } = await reader.read()
+      if (done) break
+      const chunk = decoder.decode(value, { stream: true })
+      fullResponse += chunk
+      onChunk(chunk)
+    }
+
+    return fullResponse
+  }
+
   async patch<T = any>(endpoint: string, data: any, options?: RequestInit): Promise<T> {
     return this.request<T>(endpoint, {
       ...options,
@@ -214,6 +255,10 @@ class ApiClient {
     return this.post<Case>(`/api/v1/cases/${caseId}/close`, { notes })
   }
 
+  async investigateCase(caseId: string): Promise<any> {
+    return this.post<any>(`/api/v1/cases/${caseId}/investigate`, {})
+  }
+
   async getCaseNetworkGraph(caseId: string): Promise<NetworkGraphData> {
     return this.get<NetworkGraphData>(`/api/v1/cases/${caseId}/network`)
   }
@@ -257,15 +302,26 @@ class ApiClient {
     return this.post<AgentMessage>('/api/v1/copilot/query', { query, context })
   }
 
-  async copilotChat(messages: AgentMessage[]): Promise<AgentMessage> {
+  async copilotChat(
+    messages: AgentMessage[],
+    onChunk?: (chunk: string) => void
+  ): Promise<AgentMessage | string> {
+    if (onChunk) {
+      return this.postStream('/api/v1/copilot/chat', { messages }, onChunk)
+    }
     return this.post<AgentMessage>('/api/v1/copilot/chat', { messages })
   }
 
   // Customer Dialogue API
-  async customerDialogue(transactionId: string, message: string): Promise<AgentMessage> {
-    return this.post<AgentMessage>('/api/v1/dialogue/customer', { 
+  async customerDialogue(
+    transactionId: string, 
+    message: string, 
+    messages: any[] = []
+  ): Promise<any> {
+    return this.post<any>('/api/v1/dialogue/customer', { 
       transaction_id: transactionId, 
-      message 
+      message,
+      messages
     })
   }
 
@@ -293,6 +349,11 @@ class ApiClient {
 
   async markAllNotificationsRead(): Promise<void> {
     return this.post<void>('/api/v1/notifications/read-all', {})
+  }
+
+  // Audit Logs API
+  async getAuditLogs(page: number = 1, pageSize: number = 50): Promise<PaginatedResponse<any>> {
+    return this.get<PaginatedResponse<any>>(`/api/v1/audit-logs?page=${page}&page_size=${pageSize}`)
   }
 }
 

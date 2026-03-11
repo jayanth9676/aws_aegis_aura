@@ -319,10 +319,10 @@ export default function Home() {
       <section className="container mx-auto px-4 py-20">
         <Card className="card-premium bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 border-0">
           <CardContent className="p-12 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
               Ready to Prevent Fraud?
             </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-black/90 mb-8 max-w-2xl mx-auto">
               Join the next generation of fraud prevention with AI-powered protection
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -333,7 +333,7 @@ export default function Home() {
                 </Button>
               </Link>
               <Link href="/customer">
-                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg">
+                <Button size="lg" variant="outline" className="border-2 border-white text-black hover:bg-white/10 px-8 py-6 text-lg">
                   Learn More
                 </Button>
               </Link>

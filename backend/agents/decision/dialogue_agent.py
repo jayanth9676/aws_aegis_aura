@@ -97,13 +97,13 @@ Return your response as JSON with this structure:
         self.logger.info(
             "Dialogue generated",
             transaction_id=transaction.get('transaction_id'),
-            guardrails_applied=bool(self.guardrails_id),
+            guardrails_applied=bool(getattr(self, 'guardrails_id', getattr(self.config, 'guardrail_identifier', False))),
             reasoning_source=reasoning_source
         )
         
         return {
             **response_data,
-            'guardrails_applied': bool(self.guardrails_id),
+            'guardrails_applied': bool(getattr(self, 'guardrails_id', getattr(self.config, 'guardrail_identifier', False))),
             'risk_factors_addressed': risk_factors,
             'reasoning_source': reasoning_source
         }

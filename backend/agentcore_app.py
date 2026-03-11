@@ -3,21 +3,16 @@
 import asyncio
 from typing import Dict, List, Optional
 
-from bedrock_agentcore.runtime import BedrockAgentCoreApp
 
-from agents.supervisor_agent import SupervisorAgent
-from agents.context.transaction_context_agent import TransactionContextAgent
-from agents.context.customer_context_agent import CustomerContextAgent
-from agents.context.payee_context_agent import PayeeContextAgent
-from agents.context.behavioral_analysis_agent import BehavioralAnalysisAgent
-from agents.context.graph_relationship_agent import GraphRelationshipAgent
-from agents.analysis.risk_scoring_agent import RiskScoringAgent
-from agents.analysis.intel_agent import IntelAgent
-from agents.decision.triage_agent import TriageAgent
-from agents.decision.dialogue_agent import DialogueAgent
-from agents.decision.investigation_agent import InvestigationAgent
-from agents.decision.policy_decision_agent import PolicyDecisionAgent
-from agents.decision.regulatory_reporting_agent import RegulatoryReportingAgent
+try:
+    from bedrock_agentcore.runtime import BedrockAgentCoreApp
+except (ImportError, Exception):
+    class BedrockAgentCoreApp:
+        """Stub for BedrockAgentCoreApp when bedrock_agentcore SDK is unavailable."""
+        def __init__(self):
+            pass
+
+
 
 from utils import get_logger
 
@@ -38,6 +33,21 @@ class AegisAgentCoreApp:
     async def initialize(self):
         """Initialize AgentCore Runtime components."""
         try:
+            # --- Lazy imports to break circular dependency ---
+            from agents.supervisor_agent import SupervisorAgent
+            from agents.context.transaction_context_agent import TransactionContextAgent
+            from agents.context.customer_context_agent import CustomerContextAgent
+            from agents.context.payee_context_agent import PayeeContextAgent
+            from agents.context.behavioral_analysis_agent import BehavioralAnalysisAgent
+            from agents.context.graph_relationship_agent import GraphRelationshipAgent
+            from agents.analysis.risk_scoring_agent import RiskScoringAgent
+            from agents.analysis.intel_agent import IntelAgent
+            from agents.decision.triage_agent import TriageAgent
+            from agents.decision.dialogue_agent import DialogueAgent
+            from agents.decision.investigation_agent import InvestigationAgent
+            from agents.decision.policy_decision_agent import PolicyDecisionAgent
+            from agents.decision.regulatory_reporting_agent import RegulatoryReportingAgent
+
             # Initialize Supervisor Agent
             logger.info("Initializing Supervisor Agent...")
             self.supervisor_agent = SupervisorAgent()

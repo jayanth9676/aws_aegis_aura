@@ -22,7 +22,7 @@ interface HeaderProps {
 
 export function Header({ onMenuClick, showMenuButton = true }: HeaderProps) {
   const [showNotifications, setShowNotifications] = useState(false)
-  const unreadCount = 3 // This would come from state/context
+  const [unreadCount, setUnreadCount] = useState(0)
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -84,7 +84,10 @@ export function Header({ onMenuClick, showMenuButton = true }: HeaderProps) {
             {/* Notification Dropdown */}
             {showNotifications && (
               <div className="absolute right-0 mt-2">
-                <NotificationCenter onClose={() => setShowNotifications(false)} />
+                <NotificationCenter
+                  onClose={() => setShowNotifications(false)}
+                  onUnreadCountChange={setUnreadCount}
+                />
               </div>
             )}
           </div>
